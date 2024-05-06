@@ -1,0 +1,5 @@
+{"obj": {"type": "AssignFloat", "path": ["model", "parameters", "lr"], "value": 0.046203970425970034}, "version": 1, "at": 1714937264.768561}
+{"obj": {"type": "AssignInt", "path": ["model", "parameters", "num_layers"], "value": 3}, "version": 2, "at": 1714937264.768561}
+{"obj": {"type": "AssignInt", "path": ["model", "parameters", "layer_0_nodes"], "value": 7}, "version": 3, "at": 1714937264.768561}
+{"obj": {"type": "AssignInt", "path": ["model", "parameters", "layer_1_nodes"], "value": 8}, "version": 4, "at": 1714937264.768561}
+{"obj": {"type": "AssignInt", "path": ["model", "parameters", "layer_2_nodes"], "value": 8}, "version": 5, "at": 1714937264.768561}

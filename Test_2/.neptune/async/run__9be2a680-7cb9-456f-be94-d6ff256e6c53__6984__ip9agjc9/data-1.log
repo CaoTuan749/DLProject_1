@@ -1,0 +1,10 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1, "at": 1713977584.0722015}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2, "at": 1713977584.0722015}
+{"obj": {"type": "AssignString", "path": ["monitoring", "399a6411", "hostname"], "value": "DESKTOP-Q57K5RF"}, "version": 3, "at": 1713977584.0722015}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "DESKTOP-Q57K5RF"}, "version": 4, "at": 1713977584.0722015}
+{"obj": {"type": "AssignString", "path": ["monitoring", "399a6411", "pid"], "value": "6984"}, "version": 5, "at": 1713977584.0722015}
+{"obj": {"type": "AssignString", "path": ["monitoring", "399a6411", "tid"], "value": "7436"}, "version": 6, "at": 1713977584.0722015}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 7, "at": 1713977584.0722015}
+{"obj": {"type": "AssignFloat", "path": ["Fold_0", "Validation_Loss"], "value": 5203.61572265625}, "version": 8, "at": 1713977584.9018762}
+{"obj": {"type": "AssignFloat", "path": ["Fold_0", "Hyperparameters", "Learning Rate"], "value": 0.0003091725413612134}, "version": 9, "at": 1713977584.9018762}
+{"obj": {"type": "AssignInt", "path": ["Fold_0", "Hyperparameters", "Number of Layers"], "value": 3}, "version": 10, "at": 1713977584.9018762}
