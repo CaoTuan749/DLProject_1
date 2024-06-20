@@ -2,6 +2,8 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
+from tqdm import tqdm
+
 class EWC(object):
     def __init__(self, model: nn.Module, dataset: list):
         self.model = model
@@ -43,39 +45,39 @@ class EWC(object):
         return loss
 
 class Trainer:
-    def __init__(self, model, train_loader, test_loader, ewc=None, importance=1000):
+    def __init__(self, model, train_loader, test_loader, ewc=None, importance=1000, epochs = 5):
         self.model = model
         self.train_loader = train_loader
         self.test_loader = test_loader
+        self.epochs = epochs
         self.ewc = ewc
         self.importance = importance
         self.optimizer = optim.Adam(self.model.parameters(), lr=0.001)
         self.train_losses = []
         self.val_accuracies = []
-        self.epoch_losses = []
 
     def train(self, use_ewc=False):
         self.model.train()
-        epoch_loss = 0
-        for input, target in self.train_loader:
-            input, target = input.view(input.size(0), -1), target
-            self.optimizer.zero_grad()
-            output = self.model(input)
-            loss = F.cross_entropy(output, target)
-            # Print the loss before applying EWC
-            print(f"Loss before EWC: {loss.item():.4f}")
-            if use_ewc:
-                ewc_loss = self.importance * self.ewc.penalty(self.model)
-                # Print the EWC loss
-                print(f"EWC Loss: {ewc_loss.item():.4f}")
-                loss += ewc_loss
-            epoch_loss += loss.item()
-            loss.backward()
-            self.optimizer.step()
-        avg_loss = epoch_loss / len(self.train_loader)
-        self.train_losses.append(avg_loss)
-        self.epoch_losses.append(avg_loss)
-        print(f"Training Loss: {avg_loss:.4f}")
+        for epoch in tqdm(range(self.epochs), desc="Epoch Progress"):
+            epoch_loss = 0
+            for input, target in self.train_loader:
+                input, target = input.view(input.size(0), -1), target
+                self.optimizer.zero_grad()
+                output = self.model(input)
+                loss = F.cross_entropy(output, target)
+                # Print the loss before applying EWC
+                #print(f"Epoch {epoch + 1}, Loss before EWC: {loss.item():.4f}")
+                if use_ewc:
+                    ewc_loss = self.importance * self.ewc.penalty(self.model)
+                    # Print the EWC loss
+                    #print(f"Epoch {epoch + 1}, EWC Loss: {ewc_loss.item():.4f}")
+                    loss += ewc_loss
+                epoch_loss += loss.item()
+                loss.backward()
+                self.optimizer.step()
+            avg_loss = epoch_loss / len(self.train_loader)
+            self.train_losses.append(avg_loss)
+            print(f"Epoch {epoch + 1}, Training Loss: {avg_loss:.4f}")
         return avg_loss
 
     def evaluate(self):
@@ -87,15 +89,8 @@ class Trainer:
                 output = self.model(input)
                 pred = output.argmax(dim=1, keepdim=True)
                 correct += pred.eq(target.view_as(pred)).sum().item()
-        accuracy = correct / len(self.test_loader.dataset)
-        self.val_accuracies.append(accuracy)
+            accuracy = correct / len(self.test_loader.dataset)
         return accuracy
 
     def get_train_losses(self):
         return self.train_losses
-
-    def get_val_accuracies(self):
-        return self.val_accuracies
-
-    def get_epoch_losses(self):
-        return self.epoch_losses

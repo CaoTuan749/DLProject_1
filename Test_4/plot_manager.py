@@ -24,7 +24,7 @@ class PlotManager:
         plt.show()
 
     @staticmethod
-    def plot_results(results):
+    def plot_acc_results(results):
         tasks = list(results.keys())
         accuracies = list(results.values())
         plt.plot(tasks, accuracies, marker='o')
@@ -34,10 +34,9 @@ class PlotManager:
         plt.show()
 
     @staticmethod
-    def plot_train_results(train_losses, val_accuracies, title='Training and Validation'):
+    def plot_train_results(train_losses, title='Training and Validation'):
         epochs = range(1, len(train_losses) + 1)
         plt.plot(epochs, train_losses, 'r', label='Training loss')
-        plt.plot(epochs, val_accuracies, 'b', label='Validation accuracy')
         plt.title(f'{title} - Loss and Accuracy')
         plt.xlabel('Epochs')
         plt.ylabel('Loss/Accuracy')
