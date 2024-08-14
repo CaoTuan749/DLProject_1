@@ -2,37 +2,49 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
+import tqdm
+
 class EWC(object):
     def __init__(self, model: nn.Module, dataset: list):
         self.model = model
         self.dataset = dataset
 
-        self.params = {n: p for n, p in self.model.named_parameters() if p.requires_grad}
         self._means = {}
         self._precision_matrices = self._diag_fisher()
+
+        self.data_loader = torch.utils.data.DataLoader(dataset, batch_size=1)
 
         for n, p in self.params.items():
             self._means[n] = p.data.clone()
 
     def _diag_fisher(self):
         precision_matrices = {}
-        for n, p in self.params.items():
-            p.data.zero_()
-            precision_matrices[n] = p.data.clone()
+        for n, p in self.model.named_parameters():
+            n = n.replace('.', '__')
+            precision_matrices[n] = p.detach().clone().zero_()
 
+        mode = self.model.training
         self.model.eval()
-        for input, _ in self.dataset:
+
+        for index, (x,y) in enumerate(self.data_loader):
             self.model.zero_grad()
-            input = input.view(input.size(0), -1)
-            output = self.model(input)
-            label = output.max(1)[1]
-            loss = F.nll_loss(F.log_softmax(output, dim=1), label)
-            loss.backward()
+            output = self.model(x)
 
-            for n, p in self.model.named_parameters():
-                precision_matrices[n].data += p.grad.data ** 2 / len(self.dataset)
+            with torch.no_grad():
+                label_weights = F.softmax(output, dim=1)
 
-        precision_matrices = {n: p for n, p in precision_matrices.items()}
+            for label_index in range(output.shape[1]):
+                label = torch.LongTensor([label_index])
+                loss = F.cross_entropy(output, label)
+                self.model.zero_grad()
+                loss.backward()
+
+                for n,p in self.model.named_parameters():
+                    n = n.replace('.', '__')
+                    if p.grad is not None:
+                        precision_matrices[n] += label_weights[0][label_index] * (p.grad.detach() ** 2)
+
+        precision_matrices = {n: p/index for n, p in precision_matrices.items()}
         return precision_matrices
 
     def penalty(self, model: nn.Module):
@@ -42,60 +54,48 @@ class EWC(object):
             loss += _loss.sum()
         return loss
 
+
+
 class Trainer:
-    def __init__(self, model, train_loader, test_loader, ewc=None, importance=1000):
+    def __init__(self, model, lr, epochs, dataset, batch_size, current_task):
         self.model = model
-        self.train_loader = train_loader
-        self.test_loader = test_loader
-        self.ewc = ewc
-        self.importance = importance
-        self.optimizer = optim.Adam(self.model.parameters(), lr=0.001)
-        self.train_losses = []
-        self.val_accuracies = []
-        self.epoch_losses = []
+        self.lr = lr
+        self.epochs = epochs
+        self.dataset = dataset
+        self.batch_size = batch_size
+        self.current_task = current_task
 
-    def train(self, use_ewc=False):
+    def train(self):
+        optimizer = torch.optim.Adam(self.model.parameters(), lr=self.lr, betas=(0.9, 0.999))
         self.model.train()
-        epoch_loss = 0
-        for input, target in self.train_loader:
-            input, target = input.view(input.size(0), -1), target
-            self.optimizer.zero_grad()
-            output = self.model(input)
-            loss = F.cross_entropy(output, target)
-            # Print the loss before applying EWC
-            print(f"Loss before EWC: {loss.item():.4f}")
-            if use_ewc:
-                ewc_loss = self.importance * self.ewc.penalty(self.model)
-                # Print the EWC loss
-                print(f"EWC Loss: {ewc_loss.item():.4f}")
-                loss += ewc_loss
-            epoch_loss += loss.item()
+        epochs_left = 1
+        progress_bar = tqdm.tqdm(range(1, self.epochs+1))
+
+        for _ in range(1, self.epochs+1):
+            epochs_left -= 1
+            if epochs_left==0:
+                data_loader = iter(torch.utils.data.DataLoader(self.dataset, batch_size=self.batch_size,
+                                                            shuffle=True, drop_last=True))
+                epochs_left = len(data_loader)
+
+            x, y = next(data_loader)
+            optimizer.zero_grad()
+            y_hat = self.model(x)
+            loss = torch.nn.functional.cross_entropy(input=y_hat, target=y, reduction='mean')
+
+            if self.current_task > 1:
+                ewc = 
+            else:
+                total_loss = loss
+            accuracy = (y == y_hat.max(1)[1]).sum().item()*100 / x.size(0)
+
+            # Backpropagate errors
             loss.backward()
-            self.optimizer.step()
-        avg_loss = epoch_loss / len(self.train_loader)
-        self.train_losses.append(avg_loss)
-        self.epoch_losses.append(avg_loss)
-        print(f"Training Loss: {avg_loss:.4f}")
-        return avg_loss
+            optimizer.step()
 
-    def evaluate(self):
-        self.model.eval()
-        correct = 0
-        with torch.no_grad():
-            for input, target in self.test_loader:
-                input, target = input.view(input.size(0), -1), target
-                output = self.model(input)
-                pred = output.argmax(dim=1, keepdim=True)
-                correct += pred.eq(target.view_as(pred)).sum().item()
-        accuracy = correct / len(self.test_loader.dataset)
-        self.val_accuracies.append(accuracy)
-        return accuracy
-
-    def get_train_losses(self):
-        return self.train_losses
-
-    def get_val_accuracies(self):
-        return self.val_accuracies
-
-    def get_epoch_losses(self):
-        return self.epoch_losses
+            progress_bar.set_description(
+            '<CLASSIFIER> | training loss: {loss:.3} | training accuracy: {prec:.3}% |'
+                .format(loss=loss.item(), prec=accuracy)
+            )
+            progress_bar.update(1)
+        progress_bar.close()       
