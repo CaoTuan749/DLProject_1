@@ -75,7 +75,7 @@ df_modified_labelled['waferMap_flat'] = df_modified_labelled['waferMap_padded'].
 df_modified_labelled.reset_index(drop=True, inplace=True)
 
 # Use 'trainTestLabel' column to split the data
-# Assuming 'trainTestLabel' values are 'Training' and 'Test'
+# Split 'trainTestLabel' values base on 'Training' and 'Test' columnns
 df_train = df_modified_labelled[df_modified_labelled['trainTestLabel'] == 'Training'].reset_index(drop=True)
 df_test = df_modified_labelled[df_modified_labelled['trainTestLabel'] == 'Test'].reset_index(drop=True)
 
@@ -141,27 +141,7 @@ train_dataset = WaferMapDataset(df_train_resampled, max_dim)
 test_dataset = WaferMapDataset(df_test_processed, max_dim)
 
 # Create DataLoaders
-batch_size = 64  # Adjust as needed
+batch_size = 64  
 train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 
-# Example usage: Iterate over the DataLoader
-for images, labels in train_loader:
-    # images: Tensor of shape (batch_size, 1, max_height, max_width)
-    # labels: Tensor of shape (batch_size)
-    # Your training code here
-    pass  # Replace with your training loop
-
-# Plotting 10 randomly selected padded wafer maps from the training set
-random_indices = random.sample(range(len(df_train_resampled)), 10)
-
-for idx in random_indices:
-    wafer_map = df_train_resampled.iloc[idx]['waferMap_flat'].reshape(max_dim)
-    label_enc = df_train_resampled.iloc[idx]['failureType_enc']
-    label = encoder.inverse_transform([label_enc])[0]
-   
-    plt.figure(figsize=(6, 6))
-    plt.imshow(wafer_map, cmap='gray')
-    plt.title(f'Failure Type: {label}')
-    plt.axis('off')  # Hide axis
-    plt.show()
