@@ -11,7 +11,7 @@ class WaferDataset(Dataset):
         Args:
             file_path (str): Path to the .pkl file containing the wafer dataset.
             split (str): 'train' or 'test' to specify dataset type.
-            oversample (bool): Whether to apply oversampling (only for training split).
+            oversample (bool): Whether to apply oversampling (should only be for training split).
         """
         self.file_path = file_path
         self.split = split.lower()
@@ -77,7 +77,7 @@ class WaferDataset(Dataset):
             X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
             X_train, y_train = X_resampled, y_resampled
 
-        # Encode labels using LabelEncoder fitted on training labels
+        # Encode labels on training labels
         encoder = LabelEncoder()
         encoder.fit(y_train)
         y_train_enc = encoder.transform(y_train)

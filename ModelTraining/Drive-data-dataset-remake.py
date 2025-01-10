@@ -8,12 +8,53 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 from torch.utils.data import Dataset, DataLoader
 
 class SMARTDataset(Dataset):
+    """
+    PyTorch custom Dataset for SMART data.
+
+    This dataset processes SMART attribute data from CSV files, prepares sequences of
+    SMART attributes leading up to a failure event, and encodes model types for use
+    in machine learning models.
+
+    Args:
+        data_directory (str): 
+            Path to the directory of SMART CSV data files.
+        
+        models_to_include (list, optional): 
+            List of encoded model identifiers to include in the dataset. 
+            If `None`, all models are included.
+        
+        days_before_failure (int, default=30): 
+            Number of days before a failure event to include in the dataset.
+            Only data within this window leading up to the failure is considered.
+        
+        sequence_length (int, default=10): 
+            Number of consecutive days to include in each input sequence.
+            Each sample will consist of `sequence_length` days of SMART attributes.
+        
+        smart_attribute_numbers (list, default=[5, 187, 197, 198]): 
+            List of SMART attribute numbers to include as features. 
+            These correspond to specific SMART metrics monitored by the drives.
+        
+        include_raw (bool, default=True): 
+            Whether to include raw SMART attribute values as features.
+        
+        include_normalized (bool, default=True): 
+            Whether to include normalized SMART attribute values as features.
+        
+        scaler (sklearn.preprocessing.StandardScaler, optional): 
+            Pre-fitted scaler for normalizing SMART attributes. 
+            If `None`, a new scaler is fitted on the training data.
+        
+        model_label_encoder (sklearn.preprocessing.LabelEncoder, optional): 
+            Pre-fitted label encoder for encoding model types. 
+            Ensures consistent encoding across training and test datasets.
+    """
     def __init__(
         self,
         data_directory,
         models_to_include=None,
         days_before_failure=30,
-        sequence_length=30,
+        sequence_length=10,
         smart_attribute_numbers=[5, 187, 197, 198],
         include_raw=True,
         include_normalized=True,
@@ -187,9 +228,21 @@ class SMARTDataset(Dataset):
         self.y = y
 
     def __len__(self):
+        """Returns the total number of samples in the dataset."""
         return len(self.y)
 
     def __getitem__(self, idx):
+        """
+        Retrieves the features and label for a given index.
+
+        Args:
+            idx (int): Index of the sample to retrieve.
+
+        Returns:
+            tuple: (features_tensor, label_tensor)
+                - features_tensor (torch.FloatTensor): Tensor of input features.
+                - label_tensor (torch.FloatTensor): Tensor of the target label (days until failure).
+        """
         features = self.X[idx]
         label = self.y[idx]
         features_tensor = torch.tensor(features, dtype=torch.float32)
