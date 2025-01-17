@@ -251,7 +251,8 @@ class SMARTDataset(Dataset):
 
 
 # Parameters
-data_directory = 'D:/Backblaze_Data/Training-Q1-data/'
+# data_directory = 'D:/Backblaze_Data/Training-Q1-data/'
+data_directory = '~/tmp/Dataset/Harddrive-dataset/data-Q1-2024'
 days_before_failure = 30
 sequence_length = 30
 smart_attribute_numbers = [5, 187, 197, 198]
