@@ -1,0 +1,105 @@
+PYTHONPATH=~/tmp/miniconda3/envs/MaProject/bin/python:
+Found 91 CSV files in '/home/anhcao/tmp/Dataset/Harddrive-dataset/data_Q1_2024'.
+2024-01-01.csv
+2024-01-02.csv
+2024-01-03.csv
+2024-01-04.csv
+2024-01-05.csv
+2024-01-06.csv
+2024-01-07.csv
+2024-01-08.csv
+2024-01-09.csv
+2024-01-10.csv
+2024-01-11.csv
+2024-01-12.csv
+2024-01-13.csv
+2024-01-14.csv
+2024-01-15.csv
+2024-01-16.csv
+2024-01-17.csv
+2024-01-18.csv
+2024-01-19.csv
+2024-01-20.csv
+2024-01-21.csv
+2024-01-22.csv
+2024-01-23.csv
+2024-01-24.csv
+2024-01-25.csv
+2024-01-26.csv
+2024-01-27.csv
+2024-01-28.csv
+2024-01-29.csv
+2024-01-30.csv
+2024-01-31.csv
+2024-02-01.csv
+2024-02-02.csv
+2024-02-03.csv
+2024-02-04.csv
+2024-02-05.csv
+2024-02-06.csv
+2024-02-07.csv
+2024-02-08.csv
+2024-02-09.csv
+2024-02-10.csv
+2024-02-11.csv
+2024-02-12.csv
+2024-02-13.csv
+2024-02-14.csv
+2024-02-15.csv
+2024-02-16.csv
+2024-02-17.csv
+2024-02-18.csv
+2024-02-19.csv
+2024-02-20.csv
+2024-02-21.csv
+2024-02-22.csv
+2024-02-23.csv
+2024-02-24.csv
+2024-02-25.csv
+2024-02-26.csv
+2024-02-27.csv
+2024-02-28.csv
+2024-02-29.csv
+2024-03-01.csv
+2024-03-02.csv
+2024-03-03.csv
+2024-03-04.csv
+2024-03-05.csv
+2024-03-06.csv
+2024-03-07.csv
+2024-03-08.csv
+2024-03-09.csv
+2024-03-10.csv
+2024-03-11.csv
+2024-03-12.csv
+2024-03-13.csv
+2024-03-14.csv
+2024-03-15.csv
+2024-03-16.csv
+2024-03-17.csv
+2024-03-18.csv
+2024-03-19.csv
+2024-03-20.csv
+2024-03-21.csv
+2024-03-22.csv
+2024-03-23.csv
+2024-03-24.csv
+2024-03-25.csv
+2024-03-26.csv
+2024-03-27.csv
+2024-03-28.csv
+2024-03-29.csv
+2024-03-30.csv
+2024-03-31.csv
+
+Reading sample file: /home/anhcao/tmp/Dataset/Harddrive-dataset/data_Q1_2024/2024-01-01.csv
+Columns: ['date', 'serial_number', 'model', 'capacity_bytes', 'failure', 'datacenter', 'cluster_id', 'vault_id', 'pod_id', 'pod_slot_num', 'is_legacy_format', 'smart_1_normalized', 'smart_1_raw', 'smart_2_normalized', 'smart_2_raw', 'smart_3_normalized', 'smart_3_raw', 'smart_4_normalized', 'smart_4_raw', 'smart_5_normalized', 'smart_5_raw', 'smart_7_normalized', 'smart_7_raw', 'smart_8_normalized', 'smart_8_raw', 'smart_9_normalized', 'smart_9_raw', 'smart_10_normalized', 'smart_10_raw', 'smart_11_normalized', 'smart_11_raw', 'smart_12_normalized', 'smart_12_raw', 'smart_13_normalized', 'smart_13_raw', 'smart_15_normalized', 'smart_15_raw', 'smart_16_normalized', 'smart_16_raw', 'smart_17_normalized', 'smart_17_raw', 'smart_18_normalized', 'smart_18_raw', 'smart_22_normalized', 'smart_22_raw', 'smart_23_normalized', 'smart_23_raw', 'smart_24_normalized', 'smart_24_raw', 'smart_27_normalized', 'smart_27_raw', 'smart_71_normalized', 'smart_71_raw', 'smart_82_normalized', 'smart_82_raw', 'smart_90_normalized', 'smart_90_raw', 'smart_160_normalized', 'smart_160_raw', 'smart_161_normalized', 'smart_161_raw', 'smart_163_normalized', 'smart_163_raw', 'smart_164_normalized', 'smart_164_raw', 'smart_165_normalized', 'smart_165_raw', 'smart_166_normalized', 'smart_166_raw', 'smart_167_normalized', 'smart_167_raw', 'smart_168_normalized', 'smart_168_raw', 'smart_169_normalized', 'smart_169_raw', 'smart_170_normalized', 'smart_170_raw', 'smart_171_normalized', 'smart_171_raw', 'smart_172_normalized', 'smart_172_raw', 'smart_173_normalized', 'smart_173_raw', 'smart_174_normalized', 'smart_174_raw', 'smart_175_normalized', 'smart_175_raw', 'smart_176_normalized', 'smart_176_raw', 'smart_177_normalized', 'smart_177_raw', 'smart_178_normalized', 'smart_178_raw', 'smart_179_normalized', 'smart_179_raw', 'smart_180_normalized', 'smart_180_raw', 'smart_181_normalized', 'smart_181_raw', 'smart_182_normalized', 'smart_182_raw', 'smart_183_normalized', 'smart_183_raw', 'smart_184_normalized', 'smart_184_raw', 'smart_187_normalized', 'smart_187_raw', 'smart_188_normalized', 'smart_188_raw', 'smart_189_normalized', 'smart_189_raw', 'smart_190_normalized', 'smart_190_raw', 'smart_191_normalized', 'smart_191_raw', 'smart_192_normalized', 'smart_192_raw', 'smart_193_normalized', 'smart_193_raw', 'smart_194_normalized', 'smart_194_raw', 'smart_195_normalized', 'smart_195_raw', 'smart_196_normalized', 'smart_196_raw', 'smart_197_normalized', 'smart_197_raw', 'smart_198_normalized', 'smart_198_raw', 'smart_199_normalized', 'smart_199_raw', 'smart_200_normalized', 'smart_200_raw', 'smart_201_normalized', 'smart_201_raw', 'smart_202_normalized', 'smart_202_raw', 'smart_206_normalized', 'smart_206_raw', 'smart_210_normalized', 'smart_210_raw', 'smart_218_normalized', 'smart_218_raw', 'smart_220_normalized', 'smart_220_raw', 'smart_222_normalized', 'smart_222_raw', 'smart_223_normalized', 'smart_223_raw', 'smart_224_normalized', 'smart_224_raw', 'smart_225_normalized', 'smart_225_raw', 'smart_226_normalized', 'smart_226_raw', 'smart_230_normalized', 'smart_230_raw', 'smart_231_normalized', 'smart_231_raw', 'smart_232_normalized', 'smart_232_raw', 'smart_233_normalized', 'smart_233_raw', 'smart_234_normalized', 'smart_234_raw', 'smart_235_normalized', 'smart_235_raw', 'smart_240_normalized', 'smart_240_raw', 'smart_241_normalized', 'smart_241_raw', 'smart_242_normalized', 'smart_242_raw', 'smart_244_normalized', 'smart_244_raw', 'smart_245_normalized', 'smart_245_raw', 'smart_246_normalized', 'smart_246_raw', 'smart_247_normalized', 'smart_247_raw', 'smart_248_normalized', 'smart_248_raw', 'smart_250_normalized', 'smart_250_raw', 'smart_251_normalized', 'smart_251_raw', 'smart_252_normalized', 'smart_252_raw', 'smart_254_normalized', 'smart_254_raw', 'smart_255_normalized', 'smart_255_raw']
+First 5 rows:
+         date    serial_number  ... smart_255_normalized  smart_255_raw
+0  2024-01-01  WD-WX31DB48X22V  ...                  NaN            NaN
+1  2024-01-01         Z4D00WGP  ...                  NaN            NaN
+2  2024-01-01         Z4D00YC6  ...                  NaN            NaN
+3  2024-01-01         Z4D00YS2  ...                  NaN            NaN
+4  2024-01-01         Z4D029JS  ...                  NaN            NaN
+
+[5 rows x 193 columns]

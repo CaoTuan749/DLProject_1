@@ -1,0 +1,38 @@
+PYTHONPATH=~/tmp/miniconda3/envs/MaProject/bin/python:
+Shape of the DataFrame: (811457, 6)
+
+Column names:
+  - dieSize
+  - failureType
+  - lotName
+  - trainTestLabel
+  - waferIndex
+  - waferMap
+
+Number of columns: 6
+
+First 5 rows of the DataFrame:
+   dieSize  ...                                           waferMap
+0   1683.0  ...  [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...
+1   1683.0  ...  [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...
+2   1683.0  ...  [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...
+3   1683.0  ...  [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...
+4   1683.0  ...  [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...
+
+[5 rows x 6 columns]
+
+DataFrame info:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 811457 entries, 0 to 811456
+Data columns (total 6 columns):
+ #   Column          Non-Null Count   Dtype  
+---  ------          --------------   -----  
+ 0   dieSize         811457 non-null  float64
+ 1   failureType     811457 non-null  object 
+ 2   lotName         811457 non-null  object 
+ 3   trainTestLabel  811457 non-null  object 
+ 4   waferIndex      811457 non-null  float64
+ 5   waferMap        811457 non-null  object 
+dtypes: float64(2), object(4)
+memory usage: 37.1+ MB
+None

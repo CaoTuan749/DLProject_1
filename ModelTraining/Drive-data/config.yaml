@@ -1,0 +1,20 @@
+# config.yaml
+dataset:
+  path: "~/tmp/Dataset/Harddrive-dataset/data_Q1_2024"
+
+model:
+  type: "simplenn"       # Options: "simplenn" or "advanced" (if implemented)
+  lr: 0.001              # Default learning rate
+  weight_decay: 0.0001   # Default weight decay
+  hidden_dim: 128        # Fixed hidden dimension (not tuned)
+
+experiment:
+  num_trials: 50
+  num_epochs: 20         # Number of epochs for each k-fold trial
+  final_epochs: 30       # Epochs for retraining the final model
+  batch_size: 64
+  k_folds: 5
+  early_stopping_patience: 2
+
+logging:
+  tensorboard_log_dir: "./runs"

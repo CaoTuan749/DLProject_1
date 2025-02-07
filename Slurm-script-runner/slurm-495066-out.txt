@@ -1,0 +1,603 @@
+PYTHONPATH=~/tmp/miniconda3/envs/MaProject/bin/python:
+[I 2025-02-05 18:41:50,198] A new study created in RDB with name: resnet_wafer_1738777308
+[I 2025-02-05 18:52:00,173] Trial 0 finished with value: 0.9644822695035462 and parameters: {'lr': 1.1880921285103461e-05, 'weight_decay': 2.209120842269991e-05}. Best is trial 0 with value: 0.9644822695035462.
+[I 2025-02-05 19:01:56,461] Trial 1 finished with value: 0.9668085106382979 and parameters: {'lr': 1.759017980384505e-05, 'weight_decay': 0.009114071181483848}. Best is trial 1 with value: 0.9668085106382979.
+[I 2025-02-05 19:11:51,373] Trial 2 finished with value: 0.9662411347517729 and parameters: {'lr': 1.3254930739584007e-05, 'weight_decay': 9.219632278220783e-05}. Best is trial 1 with value: 0.9668085106382979.
+[I 2025-02-05 19:20:34,336] Trial 3 finished with value: 0.9443971631205674 and parameters: {'lr': 0.0003980524943466098, 'weight_decay': 0.001019207878153751}. Best is trial 1 with value: 0.9668085106382979.
+[I 2025-02-05 19:30:28,672] Trial 4 finished with value: 0.969304964539007 and parameters: {'lr': 2.803586613487971e-05, 'weight_decay': 0.0015046006728408482}. Best is trial 4 with value: 0.969304964539007.
+[I 2025-02-05 19:40:00,757] Trial 5 finished with value: 0.9702695035460993 and parameters: {'lr': 5.3548964794229015e-05, 'weight_decay': 0.004198960896104081}. Best is trial 5 with value: 0.9702695035460993.
+[I 2025-02-05 19:49:08,138] Trial 6 finished with value: 0.9704964539007092 and parameters: {'lr': 3.278570576236702e-05, 'weight_decay': 0.003522444332414885}. Best is trial 6 with value: 0.9704964539007092.
+[I 2025-02-05 19:58:14,916] Trial 7 pruned. 
+[I 2025-02-05 20:06:34,428] Trial 8 finished with value: 0.9674893617021276 and parameters: {'lr': 0.00013111038908865538, 'weight_decay': 5.816936212395917e-06}. Best is trial 6 with value: 0.9704964539007092.
+[I 2025-02-05 20:16:05,560] Trial 9 finished with value: 0.9701560283687943 and parameters: {'lr': 3.055532176234174e-05, 'weight_decay': 8.61373040143787e-06}. Best is trial 6 with value: 0.9704964539007092.
+Loaded configuration:
+{'experiment': {'num_trials': 10, 'num_epochs': 5, 'final_epochs': 10}, 'model': {'type': 'resnet50', 'lr': 0.0001, 'weight_decay': 0.001}, 'dataset': {'path': '/home/anhcao/tmp/Dataset/Wafermap-dataset/WM811K.pkl'}}
+[INFO] Using device: cuda
+[INFO] Number of classes: 8
+[INFO] Classes: ['Center' 'Donut' 'Edge-Loc' 'Edge-Ring' 'Loc' 'Near-full' 'Random'
+ 'Scratch']
+[INFO] Creating Optuna study 'resnet_wafer_1738777308' with DB file: resnet_wafer.db
+[INFO] Starting study.optimize with 10 trials...
+
+
+[OPTUNA] Starting Trial #0 with lr=0.000012, weight_decay=0.000022
+[OPTUNA] Trial #0: Starting fold 1/5
+[DEBUG] Creating ResNet50 with lr=1.1880921285103461e-05, weight_decay=2.209120842269991e-05
+[INFO] >>> Starting fold 1 training (Trial #0) for 5 epochs...
+[Fold 1 Epoch 1/5] Train Loss: 0.6239, Train Acc: 0.8108 | Val Loss: 0.2972, Val Acc: 0.8996
+[Fold 1 Epoch 2/5] Train Loss: 0.1957, Train Acc: 0.9382 | Val Loss: 0.1605, Val Acc: 0.9498
+[Fold 1 Epoch 3/5] Train Loss: 0.0778, Train Acc: 0.9801 | Val Loss: 0.1380, Val Acc: 0.9586
+[Fold 1 Epoch 4/5] Train Loss: 0.0360, Train Acc: 0.9929 | Val Loss: 0.1352, Val Acc: 0.9643
+[Fold 1 Epoch 5/5] Train Loss: 0.0174, Train Acc: 0.9979 | Val Loss: 0.1238, Val Acc: 0.9662
+[INFO] <<< Finished fold 1, best val acc = 0.9662
+
+[OPTUNA] Trial #0: Starting fold 2/5
+[DEBUG] Creating ResNet50 with lr=1.1880921285103461e-05, weight_decay=2.209120842269991e-05
+[INFO] >>> Starting fold 2 training (Trial #0) for 5 epochs...
+[Fold 2 Epoch 1/5] Train Loss: 0.6348, Train Acc: 0.8130 | Val Loss: 0.2685, Val Acc: 0.9081
+[Fold 2 Epoch 2/5] Train Loss: 0.1890, Train Acc: 0.9413 | Val Loss: 0.1467, Val Acc: 0.9532
+[Fold 2 Epoch 3/5] Train Loss: 0.0786, Train Acc: 0.9812 | Val Loss: 0.1032, Val Acc: 0.9654
+[Fold 2 Epoch 4/5] Train Loss: 0.0361, Train Acc: 0.9928 | Val Loss: 0.1002, Val Acc: 0.9671
+[Fold 2 Epoch 5/5] Train Loss: 0.0188, Train Acc: 0.9975 | Val Loss: 0.1072, Val Acc: 0.9640
+[INFO] <<< Finished fold 2, best val acc = 0.9671
+
+[OPTUNA] Trial #0: Starting fold 3/5
+[DEBUG] Creating ResNet50 with lr=1.1880921285103461e-05, weight_decay=2.209120842269991e-05
+[INFO] >>> Starting fold 3 training (Trial #0) for 5 epochs...
+[Fold 3 Epoch 1/5] Train Loss: 0.6466, Train Acc: 0.8056 | Val Loss: 0.2960, Val Acc: 0.9052
+[Fold 3 Epoch 2/5] Train Loss: 0.2018, Train Acc: 0.9372 | Val Loss: 0.1420, Val Acc: 0.9563
+[Fold 3 Epoch 3/5] Train Loss: 0.0820, Train Acc: 0.9773 | Val Loss: 0.1159, Val Acc: 0.9628
+[Fold 3 Epoch 4/5] Train Loss: 0.0364, Train Acc: 0.9934 | Val Loss: 0.1100, Val Acc: 0.9643
+[Fold 3 Epoch 5/5] Train Loss: 0.0166, Train Acc: 0.9975 | Val Loss: 0.1044, Val Acc: 0.9671
+[INFO] <<< Finished fold 3, best val acc = 0.9671
+
+[OPTUNA] Trial #0: Starting fold 4/5
+[DEBUG] Creating ResNet50 with lr=1.1880921285103461e-05, weight_decay=2.209120842269991e-05
+[INFO] >>> Starting fold 4 training (Trial #0) for 5 epochs...
+[Fold 4 Epoch 1/5] Train Loss: 0.6237, Train Acc: 0.8159 | Val Loss: 0.2859, Val Acc: 0.9081
+[Fold 4 Epoch 2/5] Train Loss: 0.1876, Train Acc: 0.9415 | Val Loss: 0.1515, Val Acc: 0.9512
+[Fold 4 Epoch 3/5] Train Loss: 0.0760, Train Acc: 0.9813 | Val Loss: 0.1168, Val Acc: 0.9606
+[Fold 4 Epoch 4/5] Train Loss: 0.0343, Train Acc: 0.9933 | Val Loss: 0.1170, Val Acc: 0.9611
+[Fold 4 Epoch 5/5] Train Loss: 0.0196, Train Acc: 0.9969 | Val Loss: 0.1195, Val Acc: 0.9609
+[INFO] Early stopping on fold 4 at epoch 5
+[INFO] <<< Finished fold 4, best val acc = 0.9611
+
+[OPTUNA] Trial #0: Starting fold 5/5
+[DEBUG] Creating ResNet50 with lr=1.1880921285103461e-05, weight_decay=2.209120842269991e-05
+[INFO] >>> Starting fold 5 training (Trial #0) for 5 epochs...
+[Fold 5 Epoch 1/5] Train Loss: 0.6367, Train Acc: 0.7975 | Val Loss: 0.3018, Val Acc: 0.9092
+[Fold 5 Epoch 2/5] Train Loss: 0.2005, Train Acc: 0.9389 | Val Loss: 0.1561, Val Acc: 0.9484
+[Fold 5 Epoch 3/5] Train Loss: 0.0829, Train Acc: 0.9799 | Val Loss: 0.1204, Val Acc: 0.9609
+[Fold 5 Epoch 4/5] Train Loss: 0.0381, Train Acc: 0.9923 | Val Loss: 0.1189, Val Acc: 0.9583
+[Fold 5 Epoch 5/5] Train Loss: 0.0172, Train Acc: 0.9976 | Val Loss: 0.1139, Val Acc: 0.9606
+[INFO] <<< Finished fold 5, best val acc = 0.9609
+
+[OPTUNA] Trial #0 done. Fold Accuracies: [0.9662411347517731, 0.9670921985815603, 0.9670921985815603, 0.9611347517730496, 0.9608510638297872]. Avg Acc=0.9645
+
+[OPTUNA] Starting Trial #1 with lr=0.000018, weight_decay=0.009114
+[OPTUNA] Trial #1: Starting fold 1/5
+[DEBUG] Creating ResNet50 with lr=1.759017980384505e-05, weight_decay=0.009114071181483848
+[INFO] >>> Starting fold 1 training (Trial #1) for 5 epochs...
+[Fold 1 Epoch 1/5] Train Loss: 0.5385, Train Acc: 0.8362 | Val Loss: 0.1875, Val Acc: 0.9424
+[Fold 1 Epoch 2/5] Train Loss: 0.1321, Train Acc: 0.9608 | Val Loss: 0.1149, Val Acc: 0.9648
+[Fold 1 Epoch 3/5] Train Loss: 0.0497, Train Acc: 0.9879 | Val Loss: 0.1098, Val Acc: 0.9696
+[Fold 1 Epoch 4/5] Train Loss: 0.0210, Train Acc: 0.9960 | Val Loss: 0.1008, Val Acc: 0.9708
+[Fold 1 Epoch 5/5] Train Loss: 0.0172, Train Acc: 0.9963 | Val Loss: 0.1164, Val Acc: 0.9711
+[INFO] <<< Finished fold 1, best val acc = 0.9711
+
+[OPTUNA] Trial #1: Starting fold 2/5
+[DEBUG] Creating ResNet50 with lr=1.759017980384505e-05, weight_decay=0.009114071181483848
+[INFO] >>> Starting fold 2 training (Trial #1) for 5 epochs...
+[Fold 2 Epoch 1/5] Train Loss: 0.5264, Train Acc: 0.8343 | Val Loss: 0.2193, Val Acc: 0.9362
+[Fold 2 Epoch 2/5] Train Loss: 0.1375, Train Acc: 0.9579 | Val Loss: 0.1172, Val Acc: 0.9623
+[Fold 2 Epoch 3/5] Train Loss: 0.0525, Train Acc: 0.9869 | Val Loss: 0.0931, Val Acc: 0.9660
+[Fold 2 Epoch 4/5] Train Loss: 0.0234, Train Acc: 0.9956 | Val Loss: 0.0914, Val Acc: 0.9671
+[Fold 2 Epoch 5/5] Train Loss: 0.0156, Train Acc: 0.9968 | Val Loss: 0.0982, Val Acc: 0.9654
+[INFO] <<< Finished fold 2, best val acc = 0.9671
+
+[OPTUNA] Trial #1: Starting fold 3/5
+[DEBUG] Creating ResNet50 with lr=1.759017980384505e-05, weight_decay=0.009114071181483848
+[INFO] >>> Starting fold 3 training (Trial #1) for 5 epochs...
+[Fold 3 Epoch 1/5] Train Loss: 0.5377, Train Acc: 0.8331 | Val Loss: 0.1865, Val Acc: 0.9487
+[Fold 3 Epoch 2/5] Train Loss: 0.1297, Train Acc: 0.9630 | Val Loss: 0.0975, Val Acc: 0.9682
+[Fold 3 Epoch 3/5] Train Loss: 0.0501, Train Acc: 0.9879 | Val Loss: 0.0955, Val Acc: 0.9682
+[Fold 3 Epoch 4/5] Train Loss: 0.0226, Train Acc: 0.9955 | Val Loss: 0.0870, Val Acc: 0.9736
+[Fold 3 Epoch 5/5] Train Loss: 0.0137, Train Acc: 0.9979 | Val Loss: 0.0989, Val Acc: 0.9708
+[INFO] <<< Finished fold 3, best val acc = 0.9736
+
+[OPTUNA] Trial #1: Starting fold 4/5
+[DEBUG] Creating ResNet50 with lr=1.759017980384505e-05, weight_decay=0.009114071181483848
+[INFO] >>> Starting fold 4 training (Trial #1) for 5 epochs...
+[Fold 4 Epoch 1/5] Train Loss: 0.5550, Train Acc: 0.8211 | Val Loss: 0.2153, Val Acc: 0.9345
+[Fold 4 Epoch 2/5] Train Loss: 0.1379, Train Acc: 0.9573 | Val Loss: 0.1273, Val Acc: 0.9583
+[Fold 4 Epoch 3/5] Train Loss: 0.0489, Train Acc: 0.9890 | Val Loss: 0.1246, Val Acc: 0.9569
+[Fold 4 Epoch 4/5] Train Loss: 0.0236, Train Acc: 0.9948 | Val Loss: 0.1180, Val Acc: 0.9606
+[Fold 4 Epoch 5/5] Train Loss: 0.0141, Train Acc: 0.9977 | Val Loss: 0.1234, Val Acc: 0.9594
+[INFO] <<< Finished fold 4, best val acc = 0.9606
+
+[OPTUNA] Trial #1: Starting fold 5/5
+[DEBUG] Creating ResNet50 with lr=1.759017980384505e-05, weight_decay=0.009114071181483848
+[INFO] >>> Starting fold 5 training (Trial #1) for 5 epochs...
+[Fold 5 Epoch 1/5] Train Loss: 0.5300, Train Acc: 0.8340 | Val Loss: 0.2140, Val Acc: 0.9345
+[Fold 5 Epoch 2/5] Train Loss: 0.1406, Train Acc: 0.9579 | Val Loss: 0.1268, Val Acc: 0.9583
+[Fold 5 Epoch 3/5] Train Loss: 0.0504, Train Acc: 0.9882 | Val Loss: 0.1143, Val Acc: 0.9617
+[Fold 5 Epoch 4/5] Train Loss: 0.0242, Train Acc: 0.9953 | Val Loss: 0.1209, Val Acc: 0.9591
+[Fold 5 Epoch 5/5] Train Loss: 0.0158, Train Acc: 0.9970 | Val Loss: 0.1148, Val Acc: 0.9634
+[INFO] Early stopping on fold 5 at epoch 5
+[INFO] <<< Finished fold 5, best val acc = 0.9617
+
+[OPTUNA] Trial #1 done. Fold Accuracies: [0.971063829787234, 0.9670921985815603, 0.9736170212765958, 0.9605673758865249, 0.9617021276595744]. Avg Acc=0.9668
+
+[OPTUNA] Starting Trial #2 with lr=0.000013, weight_decay=0.000092
+[OPTUNA] Trial #2: Starting fold 1/5
+[DEBUG] Creating ResNet50 with lr=1.3254930739584007e-05, weight_decay=9.219632278220783e-05
+[INFO] >>> Starting fold 1 training (Trial #2) for 5 epochs...
+[Fold 1 Epoch 1/5] Train Loss: 0.6189, Train Acc: 0.8092 | Val Loss: 0.2488, Val Acc: 0.9265
+[Fold 1 Epoch 2/5] Train Loss: 0.1639, Train Acc: 0.9507 | Val Loss: 0.1294, Val Acc: 0.9589
+[Fold 1 Epoch 3/5] Train Loss: 0.0684, Train Acc: 0.9827 | Val Loss: 0.1020, Val Acc: 0.9668
+[Fold 1 Epoch 4/5] Train Loss: 0.0280, Train Acc: 0.9950 | Val Loss: 0.1018, Val Acc: 0.9702
+[Fold 1 Epoch 5/5] Train Loss: 0.0151, Train Acc: 0.9984 | Val Loss: 0.1122, Val Acc: 0.9688
+[INFO] <<< Finished fold 1, best val acc = 0.9702
+
+[OPTUNA] Trial #2: Starting fold 2/5
+[DEBUG] Creating ResNet50 with lr=1.3254930739584007e-05, weight_decay=9.219632278220783e-05
+[INFO] >>> Starting fold 2 training (Trial #2) for 5 epochs...
+[Fold 2 Epoch 1/5] Train Loss: 0.6129, Train Acc: 0.8054 | Val Loss: 0.2520, Val Acc: 0.9220
+[Fold 2 Epoch 2/5] Train Loss: 0.1774, Train Acc: 0.9442 | Val Loss: 0.1260, Val Acc: 0.9617
+[Fold 2 Epoch 3/5] Train Loss: 0.0743, Train Acc: 0.9812 | Val Loss: 0.1070, Val Acc: 0.9634
+[Fold 2 Epoch 4/5] Train Loss: 0.0292, Train Acc: 0.9946 | Val Loss: 0.0987, Val Acc: 0.9679
+[Fold 2 Epoch 5/5] Train Loss: 0.0136, Train Acc: 0.9985 | Val Loss: 0.0960, Val Acc: 0.9688
+[INFO] <<< Finished fold 2, best val acc = 0.9688
+
+[OPTUNA] Trial #2: Starting fold 3/5
+[DEBUG] Creating ResNet50 with lr=1.3254930739584007e-05, weight_decay=9.219632278220783e-05
+[INFO] >>> Starting fold 3 training (Trial #2) for 5 epochs...
+[Fold 3 Epoch 1/5] Train Loss: 0.6073, Train Acc: 0.8126 | Val Loss: 0.2580, Val Acc: 0.9169
+[Fold 3 Epoch 2/5] Train Loss: 0.1781, Train Acc: 0.9470 | Val Loss: 0.1356, Val Acc: 0.9552
+[Fold 3 Epoch 3/5] Train Loss: 0.0727, Train Acc: 0.9806 | Val Loss: 0.1172, Val Acc: 0.9600
+[Fold 3 Epoch 4/5] Train Loss: 0.0274, Train Acc: 0.9952 | Val Loss: 0.1092, Val Acc: 0.9628
+[Fold 3 Epoch 5/5] Train Loss: 0.0144, Train Acc: 0.9983 | Val Loss: 0.1044, Val Acc: 0.9665
+[INFO] <<< Finished fold 3, best val acc = 0.9665
+
+[OPTUNA] Trial #2: Starting fold 4/5
+[DEBUG] Creating ResNet50 with lr=1.3254930739584007e-05, weight_decay=9.219632278220783e-05
+[INFO] >>> Starting fold 4 training (Trial #2) for 5 epochs...
+[Fold 4 Epoch 1/5] Train Loss: 0.6020, Train Acc: 0.8230 | Val Loss: 0.2650, Val Acc: 0.9163
+[Fold 4 Epoch 2/5] Train Loss: 0.1770, Train Acc: 0.9460 | Val Loss: 0.1577, Val Acc: 0.9504
+[Fold 4 Epoch 3/5] Train Loss: 0.0677, Train Acc: 0.9827 | Val Loss: 0.1211, Val Acc: 0.9606
+[Fold 4 Epoch 4/5] Train Loss: 0.0295, Train Acc: 0.9945 | Val Loss: 0.1320, Val Acc: 0.9603
+[Fold 4 Epoch 5/5] Train Loss: 0.0134, Train Acc: 0.9986 | Val Loss: 0.1296, Val Acc: 0.9609
+[INFO] Early stopping on fold 4 at epoch 5
+[INFO] <<< Finished fold 4, best val acc = 0.9606
+
+[OPTUNA] Trial #2: Starting fold 5/5
+[DEBUG] Creating ResNet50 with lr=1.3254930739584007e-05, weight_decay=9.219632278220783e-05
+[INFO] >>> Starting fold 5 training (Trial #2) for 5 epochs...
+[Fold 5 Epoch 1/5] Train Loss: 0.6054, Train Acc: 0.8157 | Val Loss: 0.2490, Val Acc: 0.9234
+[Fold 5 Epoch 2/5] Train Loss: 0.1657, Train Acc: 0.9510 | Val Loss: 0.1333, Val Acc: 0.9577
+[Fold 5 Epoch 3/5] Train Loss: 0.0684, Train Acc: 0.9834 | Val Loss: 0.1128, Val Acc: 0.9620
+[Fold 5 Epoch 4/5] Train Loss: 0.0282, Train Acc: 0.9950 | Val Loss: 0.1082, Val Acc: 0.9645
+[Fold 5 Epoch 5/5] Train Loss: 0.0167, Train Acc: 0.9972 | Val Loss: 0.1143, Val Acc: 0.9651
+[INFO] <<< Finished fold 5, best val acc = 0.9651
+
+[OPTUNA] Trial #2 done. Fold Accuracies: [0.9702127659574468, 0.9687943262411347, 0.9665248226950355, 0.9605673758865249, 0.9651063829787234]. Avg Acc=0.9662
+
+[OPTUNA] Starting Trial #3 with lr=0.000398, weight_decay=0.001019
+[OPTUNA] Trial #3: Starting fold 1/5
+[DEBUG] Creating ResNet50 with lr=0.0003980524943466098, weight_decay=0.001019207878153751
+[INFO] >>> Starting fold 1 training (Trial #3) for 5 epochs...
+[Fold 1 Epoch 1/5] Train Loss: 0.2791, Train Acc: 0.9057 | Val Loss: 0.3234, Val Acc: 0.8953
+[Fold 1 Epoch 2/5] Train Loss: 0.1682, Train Acc: 0.9430 | Val Loss: 0.2178, Val Acc: 0.9274
+[Fold 1 Epoch 3/5] Train Loss: 0.1496, Train Acc: 0.9490 | Val Loss: 0.1814, Val Acc: 0.9413
+[Fold 1 Epoch 4/5] Train Loss: 0.1425, Train Acc: 0.9540 | Val Loss: 0.1316, Val Acc: 0.9589
+[Fold 1 Epoch 5/5] Train Loss: 0.1317, Train Acc: 0.9574 | Val Loss: 0.3763, Val Acc: 0.8800
+[INFO] <<< Finished fold 1, best val acc = 0.9589
+
+[OPTUNA] Trial #3: Starting fold 2/5
+[DEBUG] Creating ResNet50 with lr=0.0003980524943466098, weight_decay=0.001019207878153751
+[INFO] >>> Starting fold 2 training (Trial #3) for 5 epochs...
+[Fold 2 Epoch 1/5] Train Loss: 0.3009, Train Acc: 0.8965 | Val Loss: 0.2126, Val Acc: 0.9237
+[Fold 2 Epoch 2/5] Train Loss: 0.1745, Train Acc: 0.9406 | Val Loss: 0.2225, Val Acc: 0.9245
+[Fold 2 Epoch 3/5] Train Loss: 0.1557, Train Acc: 0.9489 | Val Loss: 0.1727, Val Acc: 0.9438
+[Fold 2 Epoch 4/5] Train Loss: 0.1475, Train Acc: 0.9499 | Val Loss: 0.2953, Val Acc: 0.9129
+[Fold 2 Epoch 5/5] Train Loss: 0.1375, Train Acc: 0.9537 | Val Loss: 0.2048, Val Acc: 0.9243
+[INFO] Early stopping on fold 2 at epoch 5
+[INFO] <<< Finished fold 2, best val acc = 0.9438
+
+[OPTUNA] Trial #3: Starting fold 3/5
+[DEBUG] Creating ResNet50 with lr=0.0003980524943466098, weight_decay=0.001019207878153751
+[INFO] >>> Starting fold 3 training (Trial #3) for 5 epochs...
+[Fold 3 Epoch 1/5] Train Loss: 0.2951, Train Acc: 0.8978 | Val Loss: 0.2976, Val Acc: 0.9047
+[Fold 3 Epoch 2/5] Train Loss: 0.1811, Train Acc: 0.9387 | Val Loss: 0.1895, Val Acc: 0.9438
+[Fold 3 Epoch 3/5] Train Loss: 0.1519, Train Acc: 0.9482 | Val Loss: 0.2003, Val Acc: 0.9362
+[Fold 3 Epoch 4/5] Train Loss: 0.1434, Train Acc: 0.9519 | Val Loss: 0.2576, Val Acc: 0.9189
+[INFO] Early stopping on fold 3 at epoch 4
+[INFO] <<< Finished fold 3, best val acc = 0.9438
+
+[OPTUNA] Trial #3: Starting fold 4/5
+[DEBUG] Creating ResNet50 with lr=0.0003980524943466098, weight_decay=0.001019207878153751
+[INFO] >>> Starting fold 4 training (Trial #3) for 5 epochs...
+[Fold 4 Epoch 1/5] Train Loss: 0.2890, Train Acc: 0.9040 | Val Loss: 0.3963, Val Acc: 0.8834
+[Fold 4 Epoch 2/5] Train Loss: 0.1717, Train Acc: 0.9426 | Val Loss: 0.2044, Val Acc: 0.9353
+[Fold 4 Epoch 3/5] Train Loss: 0.1432, Train Acc: 0.9531 | Val Loss: 0.4754, Val Acc: 0.8806
+[Fold 4 Epoch 4/5] Train Loss: 0.1427, Train Acc: 0.9536 | Val Loss: 0.2094, Val Acc: 0.9308
+[INFO] Early stopping on fold 4 at epoch 4
+[INFO] <<< Finished fold 4, best val acc = 0.9353
+
+[OPTUNA] Trial #3: Starting fold 5/5
+[DEBUG] Creating ResNet50 with lr=0.0003980524943466098, weight_decay=0.001019207878153751
+[INFO] >>> Starting fold 5 training (Trial #3) for 5 epochs...
+[Fold 5 Epoch 1/5] Train Loss: 0.3042, Train Acc: 0.8931 | Val Loss: 0.2088, Val Acc: 0.9311
+[Fold 5 Epoch 2/5] Train Loss: 0.1761, Train Acc: 0.9408 | Val Loss: 0.1808, Val Acc: 0.9401
+[Fold 5 Epoch 3/5] Train Loss: 0.1486, Train Acc: 0.9491 | Val Loss: 0.5762, Val Acc: 0.8196
+[Fold 5 Epoch 4/5] Train Loss: 0.1286, Train Acc: 0.9581 | Val Loss: 0.1899, Val Acc: 0.9401
+[INFO] Early stopping on fold 5 at epoch 4
+[INFO] <<< Finished fold 5, best val acc = 0.9401
+
+[OPTUNA] Trial #3 done. Fold Accuracies: [0.9588652482269504, 0.9438297872340425, 0.9438297872340425, 0.9353191489361702, 0.9401418439716313]. Avg Acc=0.9444
+
+[OPTUNA] Starting Trial #4 with lr=0.000028, weight_decay=0.001505
+[OPTUNA] Trial #4: Starting fold 1/5
+[DEBUG] Creating ResNet50 with lr=2.803586613487971e-05, weight_decay=0.0015046006728408482
+[INFO] >>> Starting fold 1 training (Trial #4) for 5 epochs...
+[Fold 1 Epoch 1/5] Train Loss: 0.3985, Train Acc: 0.8715 | Val Loss: 0.1364, Val Acc: 0.9543
+[Fold 1 Epoch 2/5] Train Loss: 0.0871, Train Acc: 0.9746 | Val Loss: 0.1365, Val Acc: 0.9617
+[Fold 1 Epoch 3/5] Train Loss: 0.0329, Train Acc: 0.9906 | Val Loss: 0.1004, Val Acc: 0.9702
+[Fold 1 Epoch 4/5] Train Loss: 0.0134, Train Acc: 0.9975 | Val Loss: 0.1141, Val Acc: 0.9688
+[Fold 1 Epoch 5/5] Train Loss: 0.0127, Train Acc: 0.9970 | Val Loss: 0.1415, Val Acc: 0.9574
+[INFO] Early stopping on fold 1 at epoch 5
+[INFO] <<< Finished fold 1, best val acc = 0.9702
+
+[OPTUNA] Trial #4: Starting fold 2/5
+[DEBUG] Creating ResNet50 with lr=2.803586613487971e-05, weight_decay=0.0015046006728408482
+[INFO] >>> Starting fold 2 training (Trial #4) for 5 epochs...
+[Fold 2 Epoch 1/5] Train Loss: 0.4155, Train Acc: 0.8668 | Val Loss: 0.1233, Val Acc: 0.9628
+[Fold 2 Epoch 2/5] Train Loss: 0.0939, Train Acc: 0.9715 | Val Loss: 0.0921, Val Acc: 0.9679
+[Fold 2 Epoch 3/5] Train Loss: 0.0330, Train Acc: 0.9913 | Val Loss: 0.0910, Val Acc: 0.9708
+[Fold 2 Epoch 4/5] Train Loss: 0.0161, Train Acc: 0.9965 | Val Loss: 0.0892, Val Acc: 0.9742
+[Fold 2 Epoch 5/5] Train Loss: 0.0127, Train Acc: 0.9970 | Val Loss: 0.1214, Val Acc: 0.9637
+[INFO] <<< Finished fold 2, best val acc = 0.9742
+
+[OPTUNA] Trial #4: Starting fold 3/5
+[DEBUG] Creating ResNet50 with lr=2.803586613487971e-05, weight_decay=0.0015046006728408482
+[INFO] >>> Starting fold 3 training (Trial #4) for 5 epochs...
+[Fold 3 Epoch 1/5] Train Loss: 0.4303, Train Acc: 0.8634 | Val Loss: 0.1288, Val Acc: 0.9603
+[Fold 3 Epoch 2/5] Train Loss: 0.0964, Train Acc: 0.9709 | Val Loss: 0.1184, Val Acc: 0.9662
+[Fold 3 Epoch 3/5] Train Loss: 0.0325, Train Acc: 0.9922 | Val Loss: 0.1201, Val Acc: 0.9702
+[Fold 3 Epoch 4/5] Train Loss: 0.0162, Train Acc: 0.9962 | Val Loss: 0.1094, Val Acc: 0.9648
+[Fold 3 Epoch 5/5] Train Loss: 0.0116, Train Acc: 0.9975 | Val Loss: 0.0936, Val Acc: 0.9679
+[INFO] <<< Finished fold 3, best val acc = 0.9702
+
+[OPTUNA] Trial #4: Starting fold 4/5
+[DEBUG] Creating ResNet50 with lr=2.803586613487971e-05, weight_decay=0.0015046006728408482
+[INFO] >>> Starting fold 4 training (Trial #4) for 5 epochs...
+[Fold 4 Epoch 1/5] Train Loss: 0.4045, Train Acc: 0.8730 | Val Loss: 0.1463, Val Acc: 0.9512
+[Fold 4 Epoch 2/5] Train Loss: 0.0922, Train Acc: 0.9725 | Val Loss: 0.1159, Val Acc: 0.9600
+[Fold 4 Epoch 3/5] Train Loss: 0.0337, Train Acc: 0.9911 | Val Loss: 0.1083, Val Acc: 0.9620
+[Fold 4 Epoch 4/5] Train Loss: 0.0164, Train Acc: 0.9957 | Val Loss: 0.1186, Val Acc: 0.9631
+[Fold 4 Epoch 5/5] Train Loss: 0.0143, Train Acc: 0.9968 | Val Loss: 0.1588, Val Acc: 0.9566
+[INFO] Early stopping on fold 4 at epoch 5
+[INFO] <<< Finished fold 4, best val acc = 0.9631
+
+[OPTUNA] Trial #4: Starting fold 5/5
+[DEBUG] Creating ResNet50 with lr=2.803586613487971e-05, weight_decay=0.0015046006728408482
+[INFO] >>> Starting fold 5 training (Trial #4) for 5 epochs...
+[Fold 5 Epoch 1/5] Train Loss: 0.4251, Train Acc: 0.8616 | Val Loss: 0.1385, Val Acc: 0.9532
+[Fold 5 Epoch 2/5] Train Loss: 0.0904, Train Acc: 0.9728 | Val Loss: 0.1059, Val Acc: 0.9648
+[Fold 5 Epoch 3/5] Train Loss: 0.0358, Train Acc: 0.9914 | Val Loss: 0.0964, Val Acc: 0.9660
+[Fold 5 Epoch 4/5] Train Loss: 0.0140, Train Acc: 0.9974 | Val Loss: 0.1034, Val Acc: 0.9688
+[Fold 5 Epoch 5/5] Train Loss: 0.0074, Train Acc: 0.9989 | Val Loss: 0.0993, Val Acc: 0.9688
+[INFO] Early stopping on fold 5 at epoch 5
+[INFO] <<< Finished fold 5, best val acc = 0.9688
+
+[OPTUNA] Trial #4 done. Fold Accuracies: [0.9702127659574468, 0.9741843971631206, 0.9702127659574468, 0.9631205673758865, 0.9687943262411347]. Avg Acc=0.9693
+
+[OPTUNA] Starting Trial #5 with lr=0.000054, weight_decay=0.004199
+[OPTUNA] Trial #5: Starting fold 1/5
+[DEBUG] Creating ResNet50 with lr=5.3548964794229015e-05, weight_decay=0.004198960896104081
+[INFO] >>> Starting fold 1 training (Trial #5) for 5 epochs...
+[Fold 1 Epoch 1/5] Train Loss: 0.3103, Train Acc: 0.8994 | Val Loss: 0.1240, Val Acc: 0.9603
+[Fold 1 Epoch 2/5] Train Loss: 0.0824, Train Acc: 0.9737 | Val Loss: 0.1142, Val Acc: 0.9702
+[Fold 1 Epoch 3/5] Train Loss: 0.0458, Train Acc: 0.9860 | Val Loss: 0.1450, Val Acc: 0.9623
+[Fold 1 Epoch 4/5] Train Loss: 0.0445, Train Acc: 0.9864 | Val Loss: 0.0852, Val Acc: 0.9696
+[Fold 1 Epoch 5/5] Train Loss: 0.0389, Train Acc: 0.9873 | Val Loss: 0.1555, Val Acc: 0.9549
+[INFO] <<< Finished fold 1, best val acc = 0.9702
+
+[OPTUNA] Trial #5: Starting fold 2/5
+[DEBUG] Creating ResNet50 with lr=5.3548964794229015e-05, weight_decay=0.004198960896104081
+[INFO] >>> Starting fold 2 training (Trial #5) for 5 epochs...
+[Fold 2 Epoch 1/5] Train Loss: 0.3093, Train Acc: 0.9016 | Val Loss: 0.1382, Val Acc: 0.9577
+[Fold 2 Epoch 2/5] Train Loss: 0.0813, Train Acc: 0.9740 | Val Loss: 0.0913, Val Acc: 0.9679
+[Fold 2 Epoch 3/5] Train Loss: 0.0485, Train Acc: 0.9860 | Val Loss: 0.1031, Val Acc: 0.9643
+[Fold 2 Epoch 4/5] Train Loss: 0.0412, Train Acc: 0.9877 | Val Loss: 0.0805, Val Acc: 0.9753
+[Fold 2 Epoch 5/5] Train Loss: 0.0358, Train Acc: 0.9889 | Val Loss: 0.1196, Val Acc: 0.9620
+[INFO] <<< Finished fold 2, best val acc = 0.9753
+
+[OPTUNA] Trial #5: Starting fold 3/5
+[DEBUG] Creating ResNet50 with lr=5.3548964794229015e-05, weight_decay=0.004198960896104081
+[INFO] >>> Starting fold 3 training (Trial #5) for 5 epochs...
+[Fold 3 Epoch 1/5] Train Loss: 0.3192, Train Acc: 0.8946 | Val Loss: 0.1158, Val Acc: 0.9651
+[Fold 3 Epoch 2/5] Train Loss: 0.0791, Train Acc: 0.9745 | Val Loss: 0.1549, Val Acc: 0.9572
+[Fold 3 Epoch 3/5] Train Loss: 0.0530, Train Acc: 0.9829 | Val Loss: 0.1063, Val Acc: 0.9679
+[Fold 3 Epoch 4/5] Train Loss: 0.0385, Train Acc: 0.9870 | Val Loss: 0.1519, Val Acc: 0.9535
+[Fold 3 Epoch 5/5] Train Loss: 0.0343, Train Acc: 0.9898 | Val Loss: 0.1086, Val Acc: 0.9668
+[INFO] Early stopping on fold 3 at epoch 5
+[INFO] <<< Finished fold 3, best val acc = 0.9679
+
+[OPTUNA] Trial #5: Starting fold 4/5
+[DEBUG] Creating ResNet50 with lr=5.3548964794229015e-05, weight_decay=0.004198960896104081
+[INFO] >>> Starting fold 4 training (Trial #5) for 5 epochs...
+[Fold 4 Epoch 1/5] Train Loss: 0.3062, Train Acc: 0.8999 | Val Loss: 0.1290, Val Acc: 0.9557
+[Fold 4 Epoch 2/5] Train Loss: 0.0770, Train Acc: 0.9765 | Val Loss: 0.1576, Val Acc: 0.9523
+[Fold 4 Epoch 3/5] Train Loss: 0.0458, Train Acc: 0.9857 | Val Loss: 0.1289, Val Acc: 0.9654
+[Fold 4 Epoch 4/5] Train Loss: 0.0349, Train Acc: 0.9899 | Val Loss: 0.1100, Val Acc: 0.9660
+[Fold 4 Epoch 5/5] Train Loss: 0.0464, Train Acc: 0.9862 | Val Loss: 0.1233, Val Acc: 0.9603
+[INFO] <<< Finished fold 4, best val acc = 0.9660
+
+[OPTUNA] Trial #5: Starting fold 5/5
+[DEBUG] Creating ResNet50 with lr=5.3548964794229015e-05, weight_decay=0.004198960896104081
+[INFO] >>> Starting fold 5 training (Trial #5) for 5 epochs...
+[Fold 5 Epoch 1/5] Train Loss: 0.3333, Train Acc: 0.8875 | Val Loss: 0.1376, Val Acc: 0.9560
+[Fold 5 Epoch 2/5] Train Loss: 0.0884, Train Acc: 0.9721 | Val Loss: 0.0834, Val Acc: 0.9719
+[Fold 5 Epoch 3/5] Train Loss: 0.0484, Train Acc: 0.9852 | Val Loss: 0.1053, Val Acc: 0.9654
+[Fold 5 Epoch 4/5] Train Loss: 0.0376, Train Acc: 0.9895 | Val Loss: 0.1178, Val Acc: 0.9660
+[INFO] Early stopping on fold 5 at epoch 4
+[INFO] <<< Finished fold 5, best val acc = 0.9719
+
+[OPTUNA] Trial #5 done. Fold Accuracies: [0.9702127659574468, 0.9753191489361702, 0.9679432624113475, 0.9659574468085106, 0.9719148936170213]. Avg Acc=0.9703
+
+[OPTUNA] Starting Trial #6 with lr=0.000033, weight_decay=0.003522
+[OPTUNA] Trial #6: Starting fold 1/5
+[DEBUG] Creating ResNet50 with lr=3.278570576236702e-05, weight_decay=0.003522444332414885
+[INFO] >>> Starting fold 1 training (Trial #6) for 5 epochs...
+[Fold 1 Epoch 1/5] Train Loss: 0.3958, Train Acc: 0.8694 | Val Loss: 0.1269, Val Acc: 0.9597
+[Fold 1 Epoch 2/5] Train Loss: 0.0912, Train Acc: 0.9695 | Val Loss: 0.0985, Val Acc: 0.9699
+[Fold 1 Epoch 3/5] Train Loss: 0.0386, Train Acc: 0.9895 | Val Loss: 0.1053, Val Acc: 0.9654
+[Fold 1 Epoch 4/5] Train Loss: 0.0196, Train Acc: 0.9952 | Val Loss: 0.1287, Val Acc: 0.9671
+[INFO] Early stopping on fold 1 at epoch 4
+[INFO] <<< Finished fold 1, best val acc = 0.9699
+
+[OPTUNA] Trial #6: Starting fold 2/5
+[DEBUG] Creating ResNet50 with lr=3.278570576236702e-05, weight_decay=0.003522444332414885
+[INFO] >>> Starting fold 2 training (Trial #6) for 5 epochs...
+[Fold 2 Epoch 1/5] Train Loss: 0.3897, Train Acc: 0.8763 | Val Loss: 0.1371, Val Acc: 0.9546
+[Fold 2 Epoch 2/5] Train Loss: 0.0867, Train Acc: 0.9743 | Val Loss: 0.0871, Val Acc: 0.9699
+[Fold 2 Epoch 3/5] Train Loss: 0.0345, Train Acc: 0.9915 | Val Loss: 0.0757, Val Acc: 0.9765
+[Fold 2 Epoch 4/5] Train Loss: 0.0159, Train Acc: 0.9967 | Val Loss: 0.1026, Val Acc: 0.9660
+[Fold 2 Epoch 5/5] Train Loss: 0.0205, Train Acc: 0.9951 | Val Loss: 0.1205, Val Acc: 0.9668
+[INFO] Early stopping on fold 2 at epoch 5
+[INFO] <<< Finished fold 2, best val acc = 0.9765
+
+[OPTUNA] Trial #6: Starting fold 3/5
+[DEBUG] Creating ResNet50 with lr=3.278570576236702e-05, weight_decay=0.003522444332414885
+[INFO] >>> Starting fold 3 training (Trial #6) for 5 epochs...
+[Fold 3 Epoch 1/5] Train Loss: 0.3761, Train Acc: 0.8813 | Val Loss: 0.1195, Val Acc: 0.9617
+[Fold 3 Epoch 2/5] Train Loss: 0.0840, Train Acc: 0.9743 | Val Loss: 0.0996, Val Acc: 0.9688
+[Fold 3 Epoch 3/5] Train Loss: 0.0304, Train Acc: 0.9918 | Val Loss: 0.0958, Val Acc: 0.9677
+[Fold 3 Epoch 4/5] Train Loss: 0.0204, Train Acc: 0.9943 | Val Loss: 0.0969, Val Acc: 0.9648
+[Fold 3 Epoch 5/5] Train Loss: 0.0216, Train Acc: 0.9933 | Val Loss: 0.0917, Val Acc: 0.9750
+[INFO] <<< Finished fold 3, best val acc = 0.9750
+
+[OPTUNA] Trial #6: Starting fold 4/5
+[DEBUG] Creating ResNet50 with lr=3.278570576236702e-05, weight_decay=0.003522444332414885
+[INFO] >>> Starting fold 4 training (Trial #6) for 5 epochs...
+[Fold 4 Epoch 1/5] Train Loss: 0.4019, Train Acc: 0.8702 | Val Loss: 0.1541, Val Acc: 0.9515
+[Fold 4 Epoch 2/5] Train Loss: 0.0887, Train Acc: 0.9740 | Val Loss: 0.1103, Val Acc: 0.9603
+[Fold 4 Epoch 3/5] Train Loss: 0.0342, Train Acc: 0.9904 | Val Loss: 0.1270, Val Acc: 0.9609
+[Fold 4 Epoch 4/5] Train Loss: 0.0207, Train Acc: 0.9948 | Val Loss: 0.1213, Val Acc: 0.9648
+[INFO] Early stopping on fold 4 at epoch 4
+[INFO] <<< Finished fold 4, best val acc = 0.9609
+
+[OPTUNA] Trial #6: Starting fold 5/5
+[DEBUG] Creating ResNet50 with lr=3.278570576236702e-05, weight_decay=0.003522444332414885
+[INFO] >>> Starting fold 5 training (Trial #6) for 5 epochs...
+[Fold 5 Epoch 1/5] Train Loss: 0.3854, Train Acc: 0.8755 | Val Loss: 0.1343, Val Acc: 0.9577
+[Fold 5 Epoch 2/5] Train Loss: 0.0882, Train Acc: 0.9730 | Val Loss: 0.1040, Val Acc: 0.9694
+[Fold 5 Epoch 3/5] Train Loss: 0.0347, Train Acc: 0.9918 | Val Loss: 0.0917, Val Acc: 0.9699
+[Fold 5 Epoch 4/5] Train Loss: 0.0199, Train Acc: 0.9952 | Val Loss: 0.0989, Val Acc: 0.9702
+[Fold 5 Epoch 5/5] Train Loss: 0.0197, Train Acc: 0.9941 | Val Loss: 0.1261, Val Acc: 0.9606
+[INFO] Early stopping on fold 5 at epoch 5
+[INFO] <<< Finished fold 5, best val acc = 0.9702
+
+[OPTUNA] Trial #6 done. Fold Accuracies: [0.9699290780141844, 0.9764539007092199, 0.9750354609929078, 0.9608510638297872, 0.9702127659574468]. Avg Acc=0.9705
+
+[OPTUNA] Starting Trial #7 with lr=0.000657, weight_decay=0.000308
+[OPTUNA] Trial #7: Starting fold 1/5
+[DEBUG] Creating ResNet50 with lr=0.0006566000574407098, weight_decay=0.00030839304027971095
+[INFO] >>> Starting fold 1 training (Trial #7) for 5 epochs...
+[Fold 1 Epoch 1/5] Train Loss: 0.3427, Train Acc: 0.8809 | Val Loss: 0.2827, Val Acc: 0.8970
+[Fold 1 Epoch 2/5] Train Loss: 0.1889, Train Acc: 0.9345 | Val Loss: 0.2113, Val Acc: 0.9299
+[Fold 1 Epoch 3/5] Train Loss: 0.1616, Train Acc: 0.9447 | Val Loss: 0.2340, Val Acc: 0.9291
+[Fold 1 Epoch 4/5] Train Loss: 0.1533, Train Acc: 0.9476 | Val Loss: 0.1495, Val Acc: 0.9506
+[Fold 1 Epoch 5/5] Train Loss: 0.1304, Train Acc: 0.9536 | Val Loss: 0.1879, Val Acc: 0.9390
+[INFO] <<< Finished fold 1, best val acc = 0.9506
+
+[OPTUNA] Trial #7: Starting fold 2/5
+[DEBUG] Creating ResNet50 with lr=0.0006566000574407098, weight_decay=0.00030839304027971095
+[INFO] >>> Starting fold 2 training (Trial #7) for 5 epochs...
+[Fold 2 Epoch 1/5] Train Loss: 0.3335, Train Acc: 0.8813 | Val Loss: 0.2299, Val Acc: 0.9191
+[Fold 2 Epoch 2/5] Train Loss: 0.1990, Train Acc: 0.9336 | Val Loss: 0.1650, Val Acc: 0.9447
+[Fold 2 Epoch 3/5] Train Loss: 0.1557, Train Acc: 0.9454 | Val Loss: 0.2000, Val Acc: 0.9464
+[Fold 2 Epoch 4/5] Train Loss: 0.1515, Train Acc: 0.9489 | Val Loss: 0.2541, Val Acc: 0.9166
+[INFO] Early stopping on fold 2 at epoch 4
+[INFO] <<< Finished fold 2, best val acc = 0.9464
+
+[OPTUNA] Trial #7: Starting fold 3/5
+[DEBUG] Creating ResNet50 with lr=0.0006566000574407098, weight_decay=0.00030839304027971095
+[INFO] >>> Starting fold 3 training (Trial #7) for 5 epochs...
+[Fold 3 Epoch 1/5] Train Loss: 0.3337, Train Acc: 0.8826 | Val Loss: 0.2331, Val Acc: 0.9277
+[Fold 3 Epoch 2/5] Train Loss: 0.1925, Train Acc: 0.9340 | Val Loss: 0.1917, Val Acc: 0.9319
+[Fold 3 Epoch 3/5] Train Loss: 0.1536, Train Acc: 0.9462 | Val Loss: 0.1301, Val Acc: 0.9606
+[Fold 3 Epoch 4/5] Train Loss: 0.1460, Train Acc: 0.9492 | Val Loss: 0.2102, Val Acc: 0.9328
+[Fold 3 Epoch 5/5] Train Loss: 0.1408, Train Acc: 0.9529 | Val Loss: 0.2133, Val Acc: 0.9345
+[INFO] Early stopping on fold 3 at epoch 5
+[INFO] <<< Finished fold 3, best val acc = 0.9606
+
+[OPTUNA] Trial #7: Starting fold 4/5
+[DEBUG] Creating ResNet50 with lr=0.0006566000574407098, weight_decay=0.00030839304027971095
+[INFO] >>> Starting fold 4 training (Trial #7) for 5 epochs...
+[Fold 4 Epoch 1/5] Train Loss: 0.3208, Train Acc: 0.8883 | Val Loss: 1.6582, Val Acc: 0.7382
+[Fold 4 Epoch 2/5] Train Loss: 0.1961, Train Acc: 0.9331 | Val Loss: 0.2244, Val Acc: 0.9211
+[Fold 4 Epoch 3/5] Train Loss: 0.1457, Train Acc: 0.9532 | Val Loss: 0.2124, Val Acc: 0.9294
+[Fold 4 Epoch 4/5] Train Loss: 0.1419, Train Acc: 0.9533 | Val Loss: 0.1849, Val Acc: 0.9401
+[Fold 4 Epoch 5/5] Train Loss: 0.1387, Train Acc: 0.9530 | Val Loss: 0.2746, Val Acc: 0.9081
+[INFO] <<< Finished fold 4, best val acc = 0.9401
+
+[OPTUNA] Trial #7: Starting fold 5/5
+[DEBUG] Creating ResNet50 with lr=0.0006566000574407098, weight_decay=0.00030839304027971095
+[INFO] >>> Starting fold 5 training (Trial #7) for 5 epochs...
+[Fold 5 Epoch 1/5] Train Loss: 0.3361, Train Acc: 0.8822 | Val Loss: 0.3513, Val Acc: 0.8857
+[Fold 5 Epoch 2/5] Train Loss: 0.1842, Train Acc: 0.9349 | Val Loss: 0.1382, Val Acc: 0.9569
+[Fold 5 Epoch 3/5] Train Loss: 0.1568, Train Acc: 0.9466 | Val Loss: 0.2476, Val Acc: 0.9234
+[Fold 5 Epoch 4/5] Train Loss: 0.1474, Train Acc: 0.9501 | Val Loss: 0.2051, Val Acc: 0.9234
+[INFO] Early stopping on fold 5 at epoch 4
+[INFO] <<< Finished fold 5, best val acc = 0.9569
+
+[OPTUNA] Trial #7 done. Fold Accuracies: [0.9506382978723404, 0.9463829787234043, 0.9605673758865249, 0.9401418439716313, 0.9568794326241135]. Avg Acc=0.9509
+
+[OPTUNA] Starting Trial #8 with lr=0.000131, weight_decay=0.000006
+[OPTUNA] Trial #8: Starting fold 1/5
+[DEBUG] Creating ResNet50 with lr=0.00013111038908865538, weight_decay=5.816936212395917e-06
+[INFO] >>> Starting fold 1 training (Trial #8) for 5 epochs...
+[Fold 1 Epoch 1/5] Train Loss: 0.2558, Train Acc: 0.9145 | Val Loss: 0.1175, Val Acc: 0.9611
+[Fold 1 Epoch 2/5] Train Loss: 0.0906, Train Acc: 0.9687 | Val Loss: 0.0909, Val Acc: 0.9696
+[Fold 1 Epoch 3/5] Train Loss: 0.0566, Train Acc: 0.9818 | Val Loss: 0.2365, Val Acc: 0.9464
+[Fold 1 Epoch 4/5] Train Loss: 0.0408, Train Acc: 0.9865 | Val Loss: 0.2033, Val Acc: 0.9540
+[INFO] Early stopping on fold 1 at epoch 4
+[INFO] <<< Finished fold 1, best val acc = 0.9696
+
+[OPTUNA] Trial #8: Starting fold 2/5
+[DEBUG] Creating ResNet50 with lr=0.00013111038908865538, weight_decay=5.816936212395917e-06
+[INFO] >>> Starting fold 2 training (Trial #8) for 5 epochs...
+[Fold 2 Epoch 1/5] Train Loss: 0.2531, Train Acc: 0.9139 | Val Loss: 0.1272, Val Acc: 0.9597
+[Fold 2 Epoch 2/5] Train Loss: 0.0942, Train Acc: 0.9684 | Val Loss: 0.1227, Val Acc: 0.9589
+[Fold 2 Epoch 3/5] Train Loss: 0.0549, Train Acc: 0.9821 | Val Loss: 0.1000, Val Acc: 0.9671
+[Fold 2 Epoch 4/5] Train Loss: 0.0396, Train Acc: 0.9879 | Val Loss: 0.1156, Val Acc: 0.9648
+[Fold 2 Epoch 5/5] Train Loss: 0.0445, Train Acc: 0.9871 | Val Loss: 0.0812, Val Acc: 0.9719
+[INFO] <<< Finished fold 2, best val acc = 0.9719
+
+[OPTUNA] Trial #8: Starting fold 3/5
+[DEBUG] Creating ResNet50 with lr=0.00013111038908865538, weight_decay=5.816936212395917e-06
+[INFO] >>> Starting fold 3 training (Trial #8) for 5 epochs...
+[Fold 3 Epoch 1/5] Train Loss: 0.2588, Train Acc: 0.9133 | Val Loss: 0.1046, Val Acc: 0.9651
+[Fold 3 Epoch 2/5] Train Loss: 0.0874, Train Acc: 0.9719 | Val Loss: 0.1158, Val Acc: 0.9611
+[Fold 3 Epoch 3/5] Train Loss: 0.0562, Train Acc: 0.9812 | Val Loss: 0.1159, Val Acc: 0.9586
+[INFO] Early stopping on fold 3 at epoch 3
+[INFO] <<< Finished fold 3, best val acc = 0.9651
+
+[OPTUNA] Trial #8: Starting fold 4/5
+[DEBUG] Creating ResNet50 with lr=0.00013111038908865538, weight_decay=5.816936212395917e-06
+[INFO] >>> Starting fold 4 training (Trial #8) for 5 epochs...
+[Fold 4 Epoch 1/5] Train Loss: 0.2676, Train Acc: 0.9093 | Val Loss: 0.1274, Val Acc: 0.9555
+[Fold 4 Epoch 2/5] Train Loss: 0.0932, Train Acc: 0.9687 | Val Loss: 0.1178, Val Acc: 0.9589
+[Fold 4 Epoch 3/5] Train Loss: 0.0490, Train Acc: 0.9844 | Val Loss: 0.1361, Val Acc: 0.9609
+[Fold 4 Epoch 4/5] Train Loss: 0.0432, Train Acc: 0.9861 | Val Loss: 0.1186, Val Acc: 0.9631
+[INFO] Early stopping on fold 4 at epoch 4
+[INFO] <<< Finished fold 4, best val acc = 0.9609
+
+[OPTUNA] Trial #8: Starting fold 5/5
+[DEBUG] Creating ResNet50 with lr=0.00013111038908865538, weight_decay=5.816936212395917e-06
+[INFO] >>> Starting fold 5 training (Trial #8) for 5 epochs...
+[Fold 5 Epoch 1/5] Train Loss: 0.2728, Train Acc: 0.9046 | Val Loss: 0.1247, Val Acc: 0.9645
+[Fold 5 Epoch 2/5] Train Loss: 0.0897, Train Acc: 0.9705 | Val Loss: 0.1151, Val Acc: 0.9651
+[Fold 5 Epoch 3/5] Train Loss: 0.0593, Train Acc: 0.9805 | Val Loss: 0.0991, Val Acc: 0.9679
+[Fold 5 Epoch 4/5] Train Loss: 0.0400, Train Acc: 0.9884 | Val Loss: 0.1007, Val Acc: 0.9699
+[Fold 5 Epoch 5/5] Train Loss: 0.0434, Train Acc: 0.9865 | Val Loss: 0.1022, Val Acc: 0.9651
+[INFO] Early stopping on fold 5 at epoch 5
+[INFO] <<< Finished fold 5, best val acc = 0.9699
+
+[OPTUNA] Trial #8 done. Fold Accuracies: [0.969645390070922, 0.9719148936170213, 0.9651063829787234, 0.9608510638297872, 0.9699290780141844]. Avg Acc=0.9675
+
+[OPTUNA] Starting Trial #9 with lr=0.000031, weight_decay=0.000009
+[OPTUNA] Trial #9: Starting fold 1/5
+[DEBUG] Creating ResNet50 with lr=3.055532176234174e-05, weight_decay=8.61373040143787e-06
+[INFO] >>> Starting fold 1 training (Trial #9) for 5 epochs...
+[Fold 1 Epoch 1/5] Train Loss: 0.4345, Train Acc: 0.8548 | Val Loss: 0.1408, Val Acc: 0.9552
+[Fold 1 Epoch 2/5] Train Loss: 0.0896, Train Acc: 0.9718 | Val Loss: 0.1118, Val Acc: 0.9640
+[Fold 1 Epoch 3/5] Train Loss: 0.0347, Train Acc: 0.9899 | Val Loss: 0.0842, Val Acc: 0.9739
+[Fold 1 Epoch 4/5] Train Loss: 0.0152, Train Acc: 0.9967 | Val Loss: 0.1021, Val Acc: 0.9716
+[Fold 1 Epoch 5/5] Train Loss: 0.0081, Train Acc: 0.9986 | Val Loss: 0.0989, Val Acc: 0.9705
+[INFO] Early stopping on fold 1 at epoch 5
+[INFO] <<< Finished fold 1, best val acc = 0.9739
+
+[OPTUNA] Trial #9: Starting fold 2/5
+[DEBUG] Creating ResNet50 with lr=3.055532176234174e-05, weight_decay=8.61373040143787e-06
+[INFO] >>> Starting fold 2 training (Trial #9) for 5 epochs...
+[Fold 2 Epoch 1/5] Train Loss: 0.4161, Train Acc: 0.8620 | Val Loss: 0.1273, Val Acc: 0.9552
+[Fold 2 Epoch 2/5] Train Loss: 0.0941, Train Acc: 0.9698 | Val Loss: 0.1107, Val Acc: 0.9609
+[Fold 2 Epoch 3/5] Train Loss: 0.0320, Train Acc: 0.9921 | Val Loss: 0.0913, Val Acc: 0.9685
+[Fold 2 Epoch 4/5] Train Loss: 0.0172, Train Acc: 0.9959 | Val Loss: 0.0833, Val Acc: 0.9716
+[Fold 2 Epoch 5/5] Train Loss: 0.0119, Train Acc: 0.9971 | Val Loss: 0.0978, Val Acc: 0.9711
+[INFO] <<< Finished fold 2, best val acc = 0.9716
+
+[OPTUNA] Trial #9: Starting fold 3/5
+[DEBUG] Creating ResNet50 with lr=3.055532176234174e-05, weight_decay=8.61373040143787e-06
+[INFO] >>> Starting fold 3 training (Trial #9) for 5 epochs...
+[Fold 3 Epoch 1/5] Train Loss: 0.4115, Train Acc: 0.8700 | Val Loss: 0.1431, Val Acc: 0.9552
+[Fold 3 Epoch 2/5] Train Loss: 0.0876, Train Acc: 0.9728 | Val Loss: 0.1218, Val Acc: 0.9603
+[Fold 3 Epoch 3/5] Train Loss: 0.0350, Train Acc: 0.9901 | Val Loss: 0.1144, Val Acc: 0.9614
+[Fold 3 Epoch 4/5] Train Loss: 0.0143, Train Acc: 0.9973 | Val Loss: 0.0991, Val Acc: 0.9654
+[Fold 3 Epoch 5/5] Train Loss: 0.0141, Train Acc: 0.9963 | Val Loss: 0.0895, Val Acc: 0.9733
+[INFO] <<< Finished fold 3, best val acc = 0.9733
+
+[OPTUNA] Trial #9: Starting fold 4/5
+[DEBUG] Creating ResNet50 with lr=3.055532176234174e-05, weight_decay=8.61373040143787e-06
+[INFO] >>> Starting fold 4 training (Trial #9) for 5 epochs...
+[Fold 4 Epoch 1/5] Train Loss: 0.3991, Train Acc: 0.8727 | Val Loss: 0.1723, Val Acc: 0.9316
+[Fold 4 Epoch 2/5] Train Loss: 0.0813, Train Acc: 0.9741 | Val Loss: 0.1319, Val Acc: 0.9574
+[Fold 4 Epoch 3/5] Train Loss: 0.0299, Train Acc: 0.9917 | Val Loss: 0.1360, Val Acc: 0.9606
+[Fold 4 Epoch 4/5] Train Loss: 0.0189, Train Acc: 0.9952 | Val Loss: 0.1378, Val Acc: 0.9617
+[INFO] Early stopping on fold 4 at epoch 4
+[INFO] <<< Finished fold 4, best val acc = 0.9606
+
+[OPTUNA] Trial #9: Starting fold 5/5
+[DEBUG] Creating ResNet50 with lr=3.055532176234174e-05, weight_decay=8.61373040143787e-06
+[INFO] >>> Starting fold 5 training (Trial #9) for 5 epochs...
+[Fold 5 Epoch 1/5] Train Loss: 0.4115, Train Acc: 0.8630 | Val Loss: 0.1526, Val Acc: 0.9515
+[Fold 5 Epoch 2/5] Train Loss: 0.0953, Train Acc: 0.9713 | Val Loss: 0.1044, Val Acc: 0.9643
+[Fold 5 Epoch 3/5] Train Loss: 0.0301, Train Acc: 0.9926 | Val Loss: 0.0888, Val Acc: 0.9694
+[Fold 5 Epoch 4/5] Train Loss: 0.0158, Train Acc: 0.9961 | Val Loss: 0.0863, Val Acc: 0.9713
+[Fold 5 Epoch 5/5] Train Loss: 0.0060, Train Acc: 0.9994 | Val Loss: 0.0937, Val Acc: 0.9708
+[INFO] <<< Finished fold 5, best val acc = 0.9713
+
+[OPTUNA] Trial #9 done. Fold Accuracies: [0.9739007092198582, 0.9716312056737588, 0.9733333333333334, 0.9605673758865249, 0.9713475177304964]. Avg Acc=0.9702
+[OPTUNA] Best trial found:
+  Trial number: 6
+  Avg k-fold acc: 0.9705
+    lr: 3.278570576236702e-05
+    weight_decay: 0.003522444332414885
+
+[INFO] Retraining final model on entire training set using best hyperparams...
+[DEBUG] Creating ResNet50 with lr=3.278570576236702e-05, weight_decay=0.003522444332414885
+[Final Train] Epoch 1/10 - Loss: 0.3353, Acc: 0.8934
+[Final Train] Epoch 2/10 - Loss: 0.0738, Acc: 0.9779
+[Final Train] Epoch 3/10 - Loss: 0.0307, Acc: 0.9911
+[Final Train] Epoch 4/10 - Loss: 0.0235, Acc: 0.9939
+[Final Train] Epoch 5/10 - Loss: 0.0197, Acc: 0.9938
+[Final Train] Epoch 6/10 - Loss: 0.0215, Acc: 0.9940
+[Final Train] Epoch 7/10 - Loss: 0.0203, Acc: 0.9941
+[Final Train] Epoch 8/10 - Loss: 0.0208, Acc: 0.9939
+[Final Train] Epoch 9/10 - Loss: 0.0209, Acc: 0.9946
+[Final Train] Epoch 10/10 - Loss: 0.0184, Acc: 0.9950
+
+[INFO] Evaluating final model on test set...
+[RESULT] Final Test Accuracy: 0.7327
+
+[RESULT] Classification Report:
+              precision    recall  f1-score   support
+
+      Center       0.70      0.86      0.77       832
+       Donut       0.68      0.62      0.65       146
+    Edge-Loc       0.76      0.76      0.76      2772
+   Edge-Ring       0.97      0.62      0.75      1126
+         Loc       0.63      0.73      0.68      1973
+   Near-full       0.91      0.91      0.91        95
+      Random       0.79      0.75      0.77       257
+     Scratch       0.74      0.64      0.68       693
+
+    accuracy                           0.73      7894
+   macro avg       0.77      0.74      0.75      7894
+weighted avg       0.75      0.73      0.73      7894
+
+
+[INFO] Done. You can now view logs in TensorBoard and the Optuna dashboard.
