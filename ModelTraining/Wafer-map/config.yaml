@@ -1,13 +1,41 @@
 # config.yaml
+
 experiment:
-  num_trials: 10
-  num_epochs: 5
-  final_epochs: 10
+  reproducibility: true
+  seed: 42
+  num_trials: 20
+  num_epochs: 20
+  final_epochs: 5
+  save_model: true
+  final_model_filename: "final_model.pth"
+  checkpoint_base_dir: "model_checkpoints"
+  tensorboard_log_dir: "Logs"
+  continual_learning: true
+  continual_method: ewc   # change to "baseline" for baseline training
+  ewc_lambda: 100.0       # regularization strength for EWC
+  task_list:
+    - [0, 1]
+    - [2, 3]
+    - [4, 5]
+    - [6, 7]
+  suggest:
+    lr:
+      low: 1e-5
+      high: 1e-3
+      log: true
+    weight_decay:
+      low: 1e-6
+      high: 1e-2
+      log: true
 
 model:
-  type: resnet50    # Options: resnet50, simplenn
-  lr: 0.0001
-  weight_decay: 0.001
+  type: resnet50
+  lr: 1e-4
+  weight_decay: 1e-4
 
 dataset:
   path: "~/tmp/Dataset/Wafermap-dataset/WM811K.pkl"
+
+
+
+
