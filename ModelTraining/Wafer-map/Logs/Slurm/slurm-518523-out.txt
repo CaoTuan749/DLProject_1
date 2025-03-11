@@ -1,0 +1,42 @@
+PYTHONPATH=~/tmp/miniconda3/envs/MaProject/bin/python:
+[I 2025-02-22 20:58:45,909] A new study created in RDB with name: resnet_wafer_1740254325
+[W 2025-02-22 20:58:48,837] Trial 0 failed with parameters: {'lr': 2.9849235893349164e-05, 'weight_decay': 0.0009259962117878871} because of the following error: TypeError("train_one_fold() got an unexpected keyword argument 'trial'").
+Traceback (most recent call last):
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/Wafer-data-dataset-resize-training.py", line 263, in objective
+    best_val_acc, fold_metrics = train_one_fold(
+TypeError: train_one_fold() got an unexpected keyword argument 'trial'
+[W 2025-02-22 20:58:48,839] Trial 0 failed with value None.
+Loaded configuration:
+{'experiment': {'reproducibility': True, 'seed': 42, 'num_trials': 10, 'num_epochs': 10, 'final_epochs': 5, 'save_model': True, 'model_save_path': 'final_model.pth', 'suggest': {'lr': {'low': '1e-5', 'high': '1e-3', 'log': True}, 'weight_decay': {'low': '1e-6', 'high': '1e-2', 'log': True}}}, 'model': {'type': 'resnet50', 'lr': '1e-4', 'weight_decay': '1e-4'}, 'dataset': {'path': '/home/anhcao/tmp/Dataset/Wafermap-dataset/WM811K.pkl'}}
+[INFO] Reproducibility enabled. Seed set to 42
+[INFO] Using device: cuda
+[INFO] Number of classes: 8
+[INFO] Classes: ['Center' 'Donut' 'Edge-Loc' 'Edge-Ring' 'Loc' 'Near-full' 'Random'
+ 'Scratch']
+[INFO] Creating Optuna study 'resnet_wafer_1740254325' with DB file: resnet_wafer_v2.db
+[INFO] Starting study.optimize with 10 trials...
+
+
+[OPTUNA] Starting Trial #0 with lr=0.000030, weight_decay=0.000926
+[OPTUNA] Trial #0: Starting fold 1/5
+[DEBUG] Creating ResNet50 with lr=2.9849235893349164e-05, weight_decay=0.0009259962117878871
+Traceback (most recent call last):
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/Wafer-data-dataset-resize-training.py", line 373, in <module>
+    main()
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/Wafer-data-dataset-resize-training.py", line 331, in main
+    study.optimize(objective, n_trials=num_trials)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/Wafer-data-dataset-resize-training.py", line 263, in objective
+    best_val_acc, fold_metrics = train_one_fold(
+TypeError: train_one_fold() got an unexpected keyword argument 'trial'

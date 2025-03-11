@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 import os
 import time
 import argparse
@@ -8,14 +7,15 @@ import torch
 from torch.utils.data import DataLoader, Subset
 from torch.utils.tensorboard import SummaryWriter
 from sklearn.metrics import mean_squared_error
-from sklearn.model_selection import KFold
+from sklearn.model_selection import KFold, train_test_split
 import optuna
 from optuna.exceptions import TrialPruned
+import random
 
-# Import the drive dataset
+# Import the SMARTDataset from your dataset file.
 from Drive_data_dataset import SMARTDataset
 
-# Import utilities from utils.py
+# Import utilities from utils.py (assumes you have these utilities)
 from utils import load_config, get_tensorboard_writer
 
 # ------------------------------------------------------------
@@ -74,26 +74,55 @@ def evaluate_model(model, dataloader, device):
     return np.array(all_preds), np.array(all_targets), mse
 
 # ------------------------------------------------------------
-# Data Loading and Splitting
+# Data Loading and Splitting using the New Processed Dataset
 # ------------------------------------------------------------
 def load_and_split_datasets(config):
     """
-    Loads the full drive dataset and returns the training and test sets.
+    Loads the full drive dataset using the new SMARTDataset and splits drives 
+    so that no drive appears in both training and test sets.
     The dataset path is read from config["dataset"]["path"].
     """
     dataset_path = config["dataset"]["path"]
     
-    # Create the full training dataset.
-    train_dataset_full = SMARTDataset(data_directory=dataset_path)
+    # Create the full dataset instance to extract all available drive IDs.
+    full_dataset = SMARTDataset(data_directory=dataset_path)
+    all_drives = list(full_dataset.drive_data.keys())
+    print(f"[INFO] Total drives available: {len(all_drives)}")
     
-    # For this example, assume that the test dataset is created separately.
-    # (If SMARTDataset supports a split flag, adjust accordingly.)
-    test_dataset = SMARTDataset(data_directory=dataset_path)
+    # Split drives into training and test sets (ensuring exclusivity)
+    train_drives, test_drives = train_test_split(all_drives, test_size=0.2, random_state=42, shuffle=True)
+    print(f"[INFO] Train drives: {train_drives}")
+    print(f"[INFO] Test drives: {test_drives}")
     
-    print(f"[INFO] Training dataset samples: {len(train_dataset_full)}")
-    print(f"[INFO] Test dataset samples: {len(test_dataset)}")
+    # Create training dataset using drives_to_include = train_drives.
+    train_dataset = SMARTDataset(
+        data_directory=dataset_path,
+        drives_to_include=train_drives,
+        days_before_failure=config["dataset"].get("days_before_failure", 30),
+        sequence_length=config["dataset"].get("sequence_length", 30),
+        smart_attribute_numbers=config["dataset"].get("smart_attribute_numbers", [5,187,197,198]),
+        include_raw=config["dataset"].get("include_raw", True),
+        include_normalized=config["dataset"].get("include_normalized", True),
+        scaler=None,  # Let training dataset fit its own scaler.
+        model_label_encoder=full_dataset.model_label_encoder,
+    )
     
-    return train_dataset_full, test_dataset
+    # Create test dataset. Use scaler fitted on training data.
+    test_dataset = SMARTDataset(
+        data_directory=dataset_path,
+        drives_to_include=test_drives,
+        days_before_failure=config["dataset"].get("days_before_failure", 30),
+        sequence_length=config["dataset"].get("sequence_length", 30),
+        smart_attribute_numbers=config["dataset"].get("smart_attribute_numbers", [5,187,197,198]),
+        include_raw=config["dataset"].get("include_raw", True),
+        include_normalized=config["dataset"].get("include_normalized", True),
+        scaler=train_dataset.scaler,  # Use scaler from training data.
+        model_label_encoder=full_dataset.model_label_encoder,
+    )
+    
+    print(f"[INFO] Training dataset candidate sequences: {len(train_dataset)}")
+    print(f"[INFO] Test dataset candidate sequences: {len(test_dataset)}")
+    return train_dataset, test_dataset
 
 # ------------------------------------------------------------
 # Main Training Pipeline
@@ -107,7 +136,7 @@ def main():
     
     # ------------------------------------------------------------------
     # Set up model factory based on YAML config.
-    # For example, if config["model"]["type"] is "simplenn", import from Models/Drive_simple_model.py.
+    # For example, if config["model"]["type"] is "simplenn", import from Models/simple_nn.py.
     # ------------------------------------------------------------------
     if config["model"]["type"] == "simplenn":
         from Models.simple_nn import create_simple_model
@@ -122,15 +151,19 @@ def main():
     batch_size = config["experiment"]["batch_size"]
     k_folds = config["experiment"]["k_folds"]
     early_stopping_patience = config["experiment"]["early_stopping_patience"]
-    # Fixed hidden dimension from config (not tuned)
     fixed_hidden_dim = config["model"]["hidden_dim"]
     
     # Set up device (CPU/GPU)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"[INFO] Using device: {device}")
     
-    # Load datasets
+    # Load and split datasets using the new processed dataset.
     train_dataset_full, test_dataset = load_and_split_datasets(config)
+    
+    # Determine input dimension from a sample in the training dataset.
+    sample_features, _ = train_dataset_full[0]
+    input_dim = sample_features.shape[0]
+    print(f"[INFO] Input dimension: {input_dim}")
     
     # ------------------------------------------------------------
     # Define a Single-Fold Training Routine
@@ -161,12 +194,10 @@ def main():
     # Define the Optuna Objective Function (for k-fold cross-validation)
     # ------------------------------------------------------------
     def objective(trial):
-        # Suggest hyperparameters: learning rate and weight decay.
         trial_lr = trial.suggest_float('lr', 1e-5, 1e-3, log=True)
         trial_weight_decay = trial.suggest_float('weight_decay', 1e-6, 1e-2, log=True)
         print(f"\n[OPTUNA] Starting Trial #{trial.number} with lr={trial_lr:.6f}, weight_decay={trial_weight_decay:.6f}")
         
-        # Set up k-fold cross validation.
         kf = KFold(n_splits=k_folds, shuffle=True, random_state=42)
         all_indices = np.arange(len(train_dataset_full))
         writer_dir = os.path.join(config["logging"]["tensorboard_log_dir"],
@@ -179,8 +210,6 @@ def main():
             val_subset = Subset(train_dataset_full, val_idx)
             train_loader_fold = DataLoader(train_subset, batch_size=batch_size, shuffle=True)
             val_loader_fold = DataLoader(val_subset, batch_size=batch_size, shuffle=False)
-            input_dim = train_dataset_full.X.shape[1]
-            # Create a new model instance for this fold using trial hyperparameters.
             model_fold = model_factory(trial_lr, trial_weight_decay, input_dim, fixed_hidden_dim, output_dim=1).to(device)
             criterion_fold = torch.nn.MSELoss()
             optimizer_fold = torch.optim.Adam(model_fold.parameters(), lr=trial_lr, weight_decay=trial_weight_decay)
@@ -226,17 +255,16 @@ def main():
     # Retrain the Final Model on the Full Training Set using Best Hyperparameters
     # ------------------------------------------------------------
     print("\n[INFO] Retraining final model on the entire training set using best hyperparameters...")
-    input_dim = train_dataset_full.X.shape[1]
     final_model = model_factory(best_lr, best_weight_decay, input_dim, fixed_hidden_dim, output_dim=1).to(device)
     final_criterion = torch.nn.MSELoss()
     final_optimizer = torch.optim.Adam(final_model.parameters(), lr=best_lr, weight_decay=best_weight_decay)
     final_train_loader = DataLoader(train_dataset_full, batch_size=batch_size, shuffle=True)
     writer_final = get_tensorboard_writer(os.path.join(config["logging"]["tensorboard_log_dir"],
                                                          f"final_training_{int(time.time())}"))
-    for epoch in range(final_epochs):
+    for epoch in range(config["experiment"]["final_epochs"]):
         train_loss = train_one_epoch(final_model, final_train_loader, final_criterion, final_optimizer, device)
         writer_final.add_scalar("Final_Train_Loss", train_loss, epoch)
-        print(f"[Final Train] Epoch {epoch+1}/{final_epochs} - Loss: {train_loss:.4f}")
+        print(f"[Final Train] Epoch {epoch+1}/{config['experiment']['final_epochs']} - Loss: {train_loss:.4f}")
     writer_final.close()
     
     # ------------------------------------------------------------
@@ -245,7 +273,45 @@ def main():
     final_test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
     all_preds, all_targets, test_mse = evaluate_model(final_model, final_test_loader, device)
     print(f"\n[RESULT] Final Test MSE: {test_mse:.4f}\n")
-    print("[INFO] Done. You can now view logs in TensorBoard and the Optuna dashboard.")
     
+    # ------------------------------------------------------------
+    # Visualization: Plot one candidate sequence for one random drive from the training set.
+    # ------------------------------------------------------------
+    import matplotlib.pyplot as plt
+    train_drive_ids = list(train_dataset_full.drive_data.keys())
+    if not train_drive_ids:
+        raise ValueError("No drive data available in training dataset.")
+    random_drive = random.choice(train_drive_ids)
+    print("Randomly selected drive for visualization:", random_drive)
+    
+    drive_candidates = [entry for entry in train_dataset_full.index_mapping if entry[0] == random_drive]
+    if not drive_candidates:
+        raise ValueError("No candidate sequences found for drive: " + random_drive)
+    selected_candidate = random.choice(drive_candidates)
+    drive_id, end_date, seq_label = selected_candidate
+    print(f"Selected candidate from drive {drive_id} ending at {end_date} with sequence label {seq_label}")
+    
+    sequence = train_dataset_full._generate_sequence(drive_id, end_date)
+    if sequence is None:
+        raise ValueError("The candidate sequence could not be generated.")
+    if train_dataset_full.scaler is not None:
+        sequence[1:] = train_dataset_full.scaler.transform(sequence[1:].reshape(1, -1))[0]
+    model_encoded = sequence[0]
+    flattened_data = sequence[1:]
+    num_attributes = len(train_dataset_full.smart_attributes)
+    sequence_array = flattened_data.reshape(train_dataset_full.sequence_length, num_attributes)
+    
+    plt.figure(figsize=(12, 6))
+    for i in range(num_attributes):
+        plt.plot(range(train_dataset_full.sequence_length), sequence_array[:, i], marker='o', label=train_dataset_full.smart_attributes[i])
+    plt.xlabel("Time Step (Day Index)")
+    plt.ylabel("Normalized SMART Attribute Value")
+    plt.title(f"SMART Sequence for Drive {drive_id} (Sequence Label {seq_label})")
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+    
+    print("\n[INFO] Training pipeline completed successfully. Check TensorBoard and Optuna logs for details.")
+
 if __name__ == '__main__':
     main()

@@ -3,7 +3,7 @@ dataset:
   path: "~/tmp/Dataset/Harddrive-dataset/data_Q1_2024"
 
 model:
-  type: "simplenn"       # Options: "simplenn" or "advanced" (if implemented)
+  type: "simplenn"       # Options: "simplenn"
   lr: 0.001              # Default learning rate
   weight_decay: 0.0001   # Default weight decay
   hidden_dim: 128        # Fixed hidden dimension (not tuned)

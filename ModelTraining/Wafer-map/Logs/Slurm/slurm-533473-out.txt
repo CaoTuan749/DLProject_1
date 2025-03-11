@@ -1,0 +1,47 @@
+PYTHONPATH=~/tmp/miniconda3/envs/MaProject/bin/python:
+Loaded configuration:
+{'experiment': {'reproducibility': True, 'seed': 42, 'num_trials': 10, 'num_epochs': 10, 'final_epochs': 5, 'save_model': True, 'model_save_path': 'final_model.pth', 'continual_learning': True, 'continual_method': 'baseline', 'task_list': [[0, 1], [2, 3]], 'suggest': {'lr': {'low': '1e-5', 'high': '1e-3', 'log': True}, 'weight_decay': {'low': '1e-6', 'high': '1e-2', 'log': True}}}, 'model': {'type': 'resnet50', 'lr': '1e-4', 'weight_decay': '1e-4'}, 'dataset': {'path': '/home/anhcao/tmp/Dataset/Wafermap-dataset/WM811K.pkl'}}
+[INFO] Reproducibility enabled. Seed set to 42
+[INFO] Using device: cuda
+[INFO] Number of classes: 8
+[INFO] Classes: ['Center' 'Donut' 'Edge-Loc' 'Edge-Ring' 'Loc' 'Near-full' 'Random'
+ 'Scratch']
+[INFO] Running continual learning training...
+[INFO] Starting Task 0 with classes: [0, 1]
+[DEBUG] Creating ResNet50 with lr=0.0001, weight_decay=0.0001
+[Task 0 Epoch 1] Train Loss: 0.0940 | Val Loss: 0.1419
+[Task 0 Epoch 2] Train Loss: 0.0166 | Val Loss: 0.2513
+[Task 0 Epoch 3] Train Loss: 0.0034 | Val Loss: 0.1473
+[Task 0 Epoch 4] Train Loss: 0.0008 | Val Loss: 0.2177
+[Task 0 Epoch 5] Train Loss: 0.0006 | Val Loss: 0.1497
+[Task 0 Epoch 6] Train Loss: 0.0065 | Val Loss: 0.2095
+[Task 0 Epoch 7] Train Loss: 0.0059 | Val Loss: 0.1865
+[Task 0 Epoch 8] Train Loss: 0.0087 | Val Loss: 0.0902
+[Task 0 Epoch 9] Train Loss: 0.0069 | Val Loss: 0.2102
+[Task 0 Epoch 10] Train Loss: 0.0050 | Val Loss: 0.1179
+[INFO] Model checkpoint saved to networkModel/baseline/20250228_202556/task0/model_20250228_202556.pth
+[INFO] Starting Task 1 with new classes: [2, 3]
+Traceback (most recent call last):
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/Wafer-data-dataset-resize-training.py", line 316, in <module>
+    main()
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/Wafer-data-dataset-resize-training.py", line 183, in main
+    continual_training_pipeline(config, model_factory, device, num_classes)
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/Wafer-data-dataset-resize-training.py", line 131, in continual_training_pipeline
+    t_loss, t_acc = train_one_epoch(model, train_loader, criterion, optimizer, device)
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/utils.py", line 88, in train_one_epoch
+    outputs = model(inputs)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/torchvision/models/resnet.py", line 285, in forward
+    return self._forward_impl(x)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/torchvision/models/resnet.py", line 280, in _forward_impl
+    x = self.fc(x)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0! (when checking argument for argument mat1 in method wrapper_CUDA_addmm)

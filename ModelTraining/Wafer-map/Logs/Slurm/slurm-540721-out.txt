@@ -1,0 +1,224 @@
+PYTHONPATH=~/tmp/miniconda3/envs/MaProject/bin/python:
+[I 2025-03-03 13:46:44,957] A new study created in memory with name: no-name-9d39eff0-d612-4c89-9498-b0a128e08b48
+[I 2025-03-03 13:59:30,030] Trial 0 finished with value: 0.044791147746663124 and parameters: {'lr': 1.0337957064959803e-05, 'weight_decay': 3.120883931864776e-06}. Best is trial 0 with value: 0.044791147746663124.
+[I 2025-03-03 14:12:13,565] Trial 1 finished with value: 0.008638448061353143 and parameters: {'lr': 9.623207538336933e-05, 'weight_decay': 0.0009178611321503746}. Best is trial 1 with value: 0.008638448061353143.
+[I 2025-03-03 14:24:57,286] Trial 2 finished with value: 0.006776891200374054 and parameters: {'lr': 0.0002570649110418117, 'weight_decay': 0.00014793777517348045}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 14:37:41,024] Trial 3 finished with value: 0.008692404234200998 and parameters: {'lr': 0.000800327370759243, 'weight_decay': 8.276095478283078e-06}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 14:50:25,040] Trial 4 finished with value: 0.011235718836172645 and parameters: {'lr': 8.006568049365429e-05, 'weight_decay': 0.008217512880738917}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 15:03:08,906] Trial 5 finished with value: 0.00767429550047555 and parameters: {'lr': 0.00033316826715210036, 'weight_decay': 8.093343716380304e-06}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 15:15:52,693] Trial 6 finished with value: 0.04291968692707578 and parameters: {'lr': 1.9384566778788686e-05, 'weight_decay': 0.004521353732545746}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 15:28:37,066] Trial 7 finished with value: 0.027577820617432098 and parameters: {'lr': 3.0194379561618988e-05, 'weight_decay': 1.667446641540096e-05}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 15:41:20,431] Trial 8 finished with value: 0.012029927347532702 and parameters: {'lr': 0.0005756327871704452, 'weight_decay': 0.0002572271178964317}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 15:54:04,119] Trial 9 finished with value: 0.009463338472414762 and parameters: {'lr': 0.0001668996837010605, 'weight_decay': 0.0019425345820623396}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 16:06:48,613] Trial 10 finished with value: 0.008641854524833592 and parameters: {'lr': 0.00021341201299354825, 'weight_decay': 0.00010938997427655107}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 16:19:32,595] Trial 11 finished with value: 0.006960592504309182 and parameters: {'lr': 0.00033913414895062483, 'weight_decay': 2.7497028238859264e-05}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 16:32:17,309] Trial 12 finished with value: 0.010287943351859067 and parameters: {'lr': 0.0003346866934913874, 'weight_decay': 3.605583189623754e-05}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 16:45:03,082] Trial 13 finished with value: 0.01035833820048812 and parameters: {'lr': 6.115535139036228e-05, 'weight_decay': 0.00021170676425725647}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 16:57:48,656] Trial 14 finished with value: 0.010071405215707532 and parameters: {'lr': 0.00037103594988592916, 'weight_decay': 1.0876376606088854e-06}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 17:10:34,155] Trial 15 finished with value: 0.007844688102277505 and parameters: {'lr': 0.00017694283124268655, 'weight_decay': 4.267410097768478e-05}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 17:23:19,331] Trial 16 finished with value: 0.02006386928330776 and parameters: {'lr': 0.0007960778226144684, 'weight_decay': 0.0005809746256294577}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 17:36:04,739] Trial 17 finished with value: 0.008004841587795193 and parameters: {'lr': 0.0004558705617294939, 'weight_decay': 6.28557315725479e-05}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 17:48:50,430] Trial 18 finished with value: 0.01160435016208794 and parameters: {'lr': 0.00022046465779498948, 'weight_decay': 0.00015128687450030758}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 18:01:36,735] Trial 19 finished with value: 0.011671513378840042 and parameters: {'lr': 5.595678531987455e-05, 'weight_decay': 1.9796289402853985e-05}. Best is trial 2 with value: 0.006776891200374054.
+[I 2025-03-03 18:08:23,964] A new study created in memory with name: no-name-ad1ee60d-0329-48f0-9f94-d70a85fcd9b2
+[I 2025-03-03 18:44:26,402] Trial 0 finished with value: 0.02820986269942154 and parameters: {'lr': 0.000724837555154921, 'weight_decay': 9.348980804268558e-05}. Best is trial 0 with value: 0.02820986269942154.
+[I 2025-03-03 19:20:15,447] Trial 1 finished with value: 0.05559314964586687 and parameters: {'lr': 0.0006252045229410725, 'weight_decay': 0.005441872605301681}. Best is trial 0 with value: 0.02820986269942154.
+[I 2025-03-03 19:56:20,964] Trial 2 finished with value: 0.023150583247032088 and parameters: {'lr': 0.00012965227304904264, 'weight_decay': 8.41055392957051e-06}. Best is trial 2 with value: 0.023150583247032088.
+[I 2025-03-03 20:32:26,649] Trial 3 finished with value: 0.02767244901903838 and parameters: {'lr': 5.242558173445042e-05, 'weight_decay': 0.008220238841499243}. Best is trial 2 with value: 0.023150583247032088.
+[I 2025-03-03 21:08:31,913] Trial 4 finished with value: 0.02271925798332036 and parameters: {'lr': 0.00014357249500577055, 'weight_decay': 9.583166468491376e-06}. Best is trial 4 with value: 0.02271925798332036.
+[I 2025-03-03 21:44:39,038] Trial 5 finished with value: 0.027059703774587735 and parameters: {'lr': 0.0001315663404577784, 'weight_decay': 8.532209363505335e-06}. Best is trial 4 with value: 0.02271925798332036.
+[I 2025-03-03 22:20:40,634] Trial 6 finished with value: 0.03361824384197415 and parameters: {'lr': 0.0005661076271896784, 'weight_decay': 0.0003175783135465191}. Best is trial 4 with value: 0.02271925798332036.
+[I 2025-03-03 22:56:44,078] Trial 7 finished with value: 0.032226898842849155 and parameters: {'lr': 3.2199058555685604e-05, 'weight_decay': 0.005937743929353581}. Best is trial 4 with value: 0.02271925798332036.
+[I 2025-03-03 23:32:47,304] Trial 8 finished with value: 0.026408976010326563 and parameters: {'lr': 4.569202799299298e-05, 'weight_decay': 0.0004996366355571095}. Best is trial 4 with value: 0.02271925798332036.
+[I 2025-03-04 00:08:52,066] Trial 9 finished with value: 0.03674127812843219 and parameters: {'lr': 1.32590274089478e-05, 'weight_decay': 0.00016488146027416578}. Best is trial 4 with value: 0.02271925798332036.
+[I 2025-03-04 00:44:50,765] Trial 10 finished with value: 0.023695183463350932 and parameters: {'lr': 0.0002657402416857598, 'weight_decay': 1.1379868631874819e-06}. Best is trial 4 with value: 0.02271925798332036.
+[I 2025-03-04 01:20:46,587] Trial 11 finished with value: 0.020729072558563873 and parameters: {'lr': 0.00015960380051472, 'weight_decay': 1.0717324426190044e-05}. Best is trial 11 with value: 0.020729072558563873.
+[I 2025-03-04 01:56:34,634] Trial 12 finished with value: 0.02518439479498165 and parameters: {'lr': 0.0002578713646297205, 'weight_decay': 1.4248718330637724e-05}. Best is trial 11 with value: 0.020729072558563873.
+[I 2025-03-04 02:32:26,625] Trial 13 finished with value: 0.023393762078940863 and parameters: {'lr': 0.00024414733101213107, 'weight_decay': 1.180906234792689e-06}. Best is trial 11 with value: 0.020729072558563873.
+[I 2025-03-04 03:08:29,712] Trial 14 finished with value: 0.024323137157995823 and parameters: {'lr': 8.435051840342024e-05, 'weight_decay': 3.2705378561379434e-05}. Best is trial 11 with value: 0.020729072558563873.
+[I 2025-03-04 03:44:35,264] Trial 15 finished with value: 0.0233192772249519 and parameters: {'lr': 0.00019074426558912547, 'weight_decay': 2.392154858211108e-06}. Best is trial 11 with value: 0.020729072558563873.
+[I 2025-03-04 04:20:36,741] Trial 16 finished with value: 0.02621139917244301 and parameters: {'lr': 8.185991666651847e-05, 'weight_decay': 3.863964582125862e-05}. Best is trial 11 with value: 0.020729072558563873.
+[I 2025-03-04 04:56:34,972] Trial 17 finished with value: 0.02726336037168384 and parameters: {'lr': 0.0003717250473637142, 'weight_decay': 3.91377889924661e-06}. Best is trial 11 with value: 0.020729072558563873.
+[I 2025-03-04 05:32:40,020] Trial 18 finished with value: 0.0318708213032143 and parameters: {'lr': 2.0470472929357787e-05, 'weight_decay': 0.0010658068827894464}. Best is trial 11 with value: 0.020729072558563873.
+[I 2025-03-04 06:08:44,334] Trial 19 finished with value: 0.02933640998341241 and parameters: {'lr': 0.00041199397449438133, 'weight_decay': 2.5374950985007625e-05}. Best is trial 11 with value: 0.020729072558563873.
+Loaded configuration:
+{'experiment': {'reproducibility': True, 'seed': 42, 'num_trials': 20, 'num_epochs': 20, 'final_epochs': 5, 'save_model': True, 'model_save_path': 'final_model.pth', 'continual_learning': True, 'continual_method': 'baseline', 'task_list': [[0, 1], [2, 3]], 'suggest': {'lr': {'low': '1e-5', 'high': '1e-3', 'log': True}, 'weight_decay': {'low': '1e-6', 'high': '1e-2', 'log': True}}}, 'model': {'type': 'resnet50', 'lr': '1e-4', 'weight_decay': '1e-4'}, 'dataset': {'path': '/home/anhcao/tmp/Dataset/Wafermap-dataset/WM811K.pkl'}}
+[INFO] Reproducibility enabled. Seed set to 42
+[INFO] Using device: cuda
+[INFO] Number of classes: 8
+[INFO] Classes: ['Center' 'Donut' 'Edge-Loc' 'Edge-Ring' 'Loc' 'Near-full' 'Random'
+ 'Scratch']
+[INFO] Running continual learning training with HPO per task...
+[INFO] Starting Task 0 with classes: [0, 1]
+[DEBUG] Creating ResNet50 with lr=1.0337957064959803e-05, weight_decay=3.120883931864776e-06
+[DEBUG] Creating ResNet50 with lr=1.0337957064959803e-05, weight_decay=3.120883931864776e-06
+[DEBUG] Creating ResNet50 with lr=1.0337957064959803e-05, weight_decay=3.120883931864776e-06
+[DEBUG] Creating ResNet50 with lr=9.623207538336933e-05, weight_decay=0.0009178611321503746
+[DEBUG] Creating ResNet50 with lr=9.623207538336933e-05, weight_decay=0.0009178611321503746
+[DEBUG] Creating ResNet50 with lr=9.623207538336933e-05, weight_decay=0.0009178611321503746
+[DEBUG] Creating ResNet50 with lr=0.0002570649110418117, weight_decay=0.00014793777517348045
+[DEBUG] Creating ResNet50 with lr=0.0002570649110418117, weight_decay=0.00014793777517348045
+[DEBUG] Creating ResNet50 with lr=0.0002570649110418117, weight_decay=0.00014793777517348045
+[DEBUG] Creating ResNet50 with lr=0.000800327370759243, weight_decay=8.276095478283078e-06
+[DEBUG] Creating ResNet50 with lr=0.000800327370759243, weight_decay=8.276095478283078e-06
+[DEBUG] Creating ResNet50 with lr=0.000800327370759243, weight_decay=8.276095478283078e-06
+[DEBUG] Creating ResNet50 with lr=8.006568049365429e-05, weight_decay=0.008217512880738917
+[DEBUG] Creating ResNet50 with lr=8.006568049365429e-05, weight_decay=0.008217512880738917
+[DEBUG] Creating ResNet50 with lr=8.006568049365429e-05, weight_decay=0.008217512880738917
+[DEBUG] Creating ResNet50 with lr=0.00033316826715210036, weight_decay=8.093343716380304e-06
+[DEBUG] Creating ResNet50 with lr=0.00033316826715210036, weight_decay=8.093343716380304e-06
+[DEBUG] Creating ResNet50 with lr=0.00033316826715210036, weight_decay=8.093343716380304e-06
+[DEBUG] Creating ResNet50 with lr=1.9384566778788686e-05, weight_decay=0.004521353732545746
+[DEBUG] Creating ResNet50 with lr=1.9384566778788686e-05, weight_decay=0.004521353732545746
+[DEBUG] Creating ResNet50 with lr=1.9384566778788686e-05, weight_decay=0.004521353732545746
+[DEBUG] Creating ResNet50 with lr=3.0194379561618988e-05, weight_decay=1.667446641540096e-05
+[DEBUG] Creating ResNet50 with lr=3.0194379561618988e-05, weight_decay=1.667446641540096e-05
+[DEBUG] Creating ResNet50 with lr=3.0194379561618988e-05, weight_decay=1.667446641540096e-05
+[DEBUG] Creating ResNet50 with lr=0.0005756327871704452, weight_decay=0.0002572271178964317
+[DEBUG] Creating ResNet50 with lr=0.0005756327871704452, weight_decay=0.0002572271178964317
+[DEBUG] Creating ResNet50 with lr=0.0005756327871704452, weight_decay=0.0002572271178964317
+[DEBUG] Creating ResNet50 with lr=0.0001668996837010605, weight_decay=0.0019425345820623396
+[DEBUG] Creating ResNet50 with lr=0.0001668996837010605, weight_decay=0.0019425345820623396
+[DEBUG] Creating ResNet50 with lr=0.0001668996837010605, weight_decay=0.0019425345820623396
+[DEBUG] Creating ResNet50 with lr=0.00021341201299354825, weight_decay=0.00010938997427655107
+[DEBUG] Creating ResNet50 with lr=0.00021341201299354825, weight_decay=0.00010938997427655107
+[DEBUG] Creating ResNet50 with lr=0.00021341201299354825, weight_decay=0.00010938997427655107
+[DEBUG] Creating ResNet50 with lr=0.00033913414895062483, weight_decay=2.7497028238859264e-05
+[DEBUG] Creating ResNet50 with lr=0.00033913414895062483, weight_decay=2.7497028238859264e-05
+[DEBUG] Creating ResNet50 with lr=0.00033913414895062483, weight_decay=2.7497028238859264e-05
+[DEBUG] Creating ResNet50 with lr=0.0003346866934913874, weight_decay=3.605583189623754e-05
+[DEBUG] Creating ResNet50 with lr=0.0003346866934913874, weight_decay=3.605583189623754e-05
+[DEBUG] Creating ResNet50 with lr=0.0003346866934913874, weight_decay=3.605583189623754e-05
+[DEBUG] Creating ResNet50 with lr=6.115535139036228e-05, weight_decay=0.00021170676425725647
+[DEBUG] Creating ResNet50 with lr=6.115535139036228e-05, weight_decay=0.00021170676425725647
+[DEBUG] Creating ResNet50 with lr=6.115535139036228e-05, weight_decay=0.00021170676425725647
+[DEBUG] Creating ResNet50 with lr=0.00037103594988592916, weight_decay=1.0876376606088854e-06
+[DEBUG] Creating ResNet50 with lr=0.00037103594988592916, weight_decay=1.0876376606088854e-06
+[DEBUG] Creating ResNet50 with lr=0.00037103594988592916, weight_decay=1.0876376606088854e-06
+[DEBUG] Creating ResNet50 with lr=0.00017694283124268655, weight_decay=4.267410097768478e-05
+[DEBUG] Creating ResNet50 with lr=0.00017694283124268655, weight_decay=4.267410097768478e-05
+[DEBUG] Creating ResNet50 with lr=0.00017694283124268655, weight_decay=4.267410097768478e-05
+[DEBUG] Creating ResNet50 with lr=0.0007960778226144684, weight_decay=0.0005809746256294577
+[DEBUG] Creating ResNet50 with lr=0.0007960778226144684, weight_decay=0.0005809746256294577
+[DEBUG] Creating ResNet50 with lr=0.0007960778226144684, weight_decay=0.0005809746256294577
+[DEBUG] Creating ResNet50 with lr=0.0004558705617294939, weight_decay=6.28557315725479e-05
+[DEBUG] Creating ResNet50 with lr=0.0004558705617294939, weight_decay=6.28557315725479e-05
+[DEBUG] Creating ResNet50 with lr=0.0004558705617294939, weight_decay=6.28557315725479e-05
+[DEBUG] Creating ResNet50 with lr=0.00022046465779498948, weight_decay=0.00015128687450030758
+[DEBUG] Creating ResNet50 with lr=0.00022046465779498948, weight_decay=0.00015128687450030758
+[DEBUG] Creating ResNet50 with lr=0.00022046465779498948, weight_decay=0.00015128687450030758
+[DEBUG] Creating ResNet50 with lr=5.595678531987455e-05, weight_decay=1.9796289402853985e-05
+[DEBUG] Creating ResNet50 with lr=5.595678531987455e-05, weight_decay=1.9796289402853985e-05
+[DEBUG] Creating ResNet50 with lr=5.595678531987455e-05, weight_decay=1.9796289402853985e-05
+[INFO] Best hyperparameters for Task 0: lr=0.0002570649110418117, weight_decay=0.00014793777517348045
+[DEBUG] Creating ResNet50 with lr=0.0002570649110418117, weight_decay=0.00014793777517348045
+[Task 0 Final Epoch 1] Train Loss: 0.0981 | Val Loss: 0.1532
+[Task 0 Final Epoch 2] Train Loss: 0.0198 | Val Loss: 0.1037
+[Task 0 Final Epoch 3] Train Loss: 0.0113 | Val Loss: 0.1770
+[Task 0 Final Epoch 4] Train Loss: 0.0039 | Val Loss: 0.1084
+[Task 0 Final Epoch 5] Train Loss: 0.0082 | Val Loss: 0.2269
+[Task 0 Final Epoch 6] Train Loss: 0.0093 | Val Loss: 0.1424
+[Task 0 Final Epoch 7] Train Loss: 0.0127 | Val Loss: 0.1148
+[Task 0 Final Epoch 8] Train Loss: 0.0129 | Val Loss: 0.3334
+[Task 0 Final Epoch 9] Train Loss: 0.0006 | Val Loss: 0.0894
+[Task 0 Final Epoch 10] Train Loss: 0.0003 | Val Loss: 0.1002
+[Task 0 Final Epoch 11] Train Loss: 0.0002 | Val Loss: 0.0984
+[Task 0 Final Epoch 12] Train Loss: 0.0001 | Val Loss: 0.1041
+[Task 0 Final Epoch 13] Train Loss: 0.0001 | Val Loss: 0.1030
+[Task 0 Final Epoch 14] Train Loss: 0.0001 | Val Loss: 0.0972
+[Task 0 Final Epoch 15] Train Loss: 0.0001 | Val Loss: 0.1026
+[Task 0 Final Epoch 16] Train Loss: 0.0001 | Val Loss: 0.1023
+[Task 0 Final Epoch 17] Train Loss: 0.0001 | Val Loss: 0.1099
+[Task 0 Final Epoch 18] Train Loss: 0.0001 | Val Loss: 0.1049
+[Task 0 Final Epoch 19] Train Loss: 0.0001 | Val Loss: 0.1108
+[Task 0 Final Epoch 20] Train Loss: 0.0001 | Val Loss: 0.1008
+[INFO] Model checkpoint saved to networkModel/baseline/20250303_180734/task0/model_20250303_180734.pth
+[INFO] Starting Task 1 with new classes: [2, 3]
+[DEBUG] Creating ResNet50 with lr=0.000724837555154921, weight_decay=9.348980804268558e-05
+[DEBUG] Creating ResNet50 with lr=0.000724837555154921, weight_decay=9.348980804268558e-05
+[DEBUG] Creating ResNet50 with lr=0.000724837555154921, weight_decay=9.348980804268558e-05
+[DEBUG] Creating ResNet50 with lr=0.0006252045229410725, weight_decay=0.005441872605301681
+[DEBUG] Creating ResNet50 with lr=0.0006252045229410725, weight_decay=0.005441872605301681
+[DEBUG] Creating ResNet50 with lr=0.0006252045229410725, weight_decay=0.005441872605301681
+[DEBUG] Creating ResNet50 with lr=0.00012965227304904264, weight_decay=8.41055392957051e-06
+[DEBUG] Creating ResNet50 with lr=0.00012965227304904264, weight_decay=8.41055392957051e-06
+[DEBUG] Creating ResNet50 with lr=0.00012965227304904264, weight_decay=8.41055392957051e-06
+[DEBUG] Creating ResNet50 with lr=5.242558173445042e-05, weight_decay=0.008220238841499243
+[DEBUG] Creating ResNet50 with lr=5.242558173445042e-05, weight_decay=0.008220238841499243
+[DEBUG] Creating ResNet50 with lr=5.242558173445042e-05, weight_decay=0.008220238841499243
+[DEBUG] Creating ResNet50 with lr=0.00014357249500577055, weight_decay=9.583166468491376e-06
+[DEBUG] Creating ResNet50 with lr=0.00014357249500577055, weight_decay=9.583166468491376e-06
+[DEBUG] Creating ResNet50 with lr=0.00014357249500577055, weight_decay=9.583166468491376e-06
+[DEBUG] Creating ResNet50 with lr=0.0001315663404577784, weight_decay=8.532209363505335e-06
+[DEBUG] Creating ResNet50 with lr=0.0001315663404577784, weight_decay=8.532209363505335e-06
+[DEBUG] Creating ResNet50 with lr=0.0001315663404577784, weight_decay=8.532209363505335e-06
+[DEBUG] Creating ResNet50 with lr=0.0005661076271896784, weight_decay=0.0003175783135465191
+[DEBUG] Creating ResNet50 with lr=0.0005661076271896784, weight_decay=0.0003175783135465191
+[DEBUG] Creating ResNet50 with lr=0.0005661076271896784, weight_decay=0.0003175783135465191
+[DEBUG] Creating ResNet50 with lr=3.2199058555685604e-05, weight_decay=0.005937743929353581
+[DEBUG] Creating ResNet50 with lr=3.2199058555685604e-05, weight_decay=0.005937743929353581
+[DEBUG] Creating ResNet50 with lr=3.2199058555685604e-05, weight_decay=0.005937743929353581
+[DEBUG] Creating ResNet50 with lr=4.569202799299298e-05, weight_decay=0.0004996366355571095
+[DEBUG] Creating ResNet50 with lr=4.569202799299298e-05, weight_decay=0.0004996366355571095
+[DEBUG] Creating ResNet50 with lr=4.569202799299298e-05, weight_decay=0.0004996366355571095
+[DEBUG] Creating ResNet50 with lr=1.32590274089478e-05, weight_decay=0.00016488146027416578
+[DEBUG] Creating ResNet50 with lr=1.32590274089478e-05, weight_decay=0.00016488146027416578
+[DEBUG] Creating ResNet50 with lr=1.32590274089478e-05, weight_decay=0.00016488146027416578
+[DEBUG] Creating ResNet50 with lr=0.0002657402416857598, weight_decay=1.1379868631874819e-06
+[DEBUG] Creating ResNet50 with lr=0.0002657402416857598, weight_decay=1.1379868631874819e-06
+[DEBUG] Creating ResNet50 with lr=0.0002657402416857598, weight_decay=1.1379868631874819e-06
+[DEBUG] Creating ResNet50 with lr=0.00015960380051472, weight_decay=1.0717324426190044e-05
+[DEBUG] Creating ResNet50 with lr=0.00015960380051472, weight_decay=1.0717324426190044e-05
+[DEBUG] Creating ResNet50 with lr=0.00015960380051472, weight_decay=1.0717324426190044e-05
+[DEBUG] Creating ResNet50 with lr=0.0002578713646297205, weight_decay=1.4248718330637724e-05
+[DEBUG] Creating ResNet50 with lr=0.0002578713646297205, weight_decay=1.4248718330637724e-05
+[DEBUG] Creating ResNet50 with lr=0.0002578713646297205, weight_decay=1.4248718330637724e-05
+[DEBUG] Creating ResNet50 with lr=0.00024414733101213107, weight_decay=1.180906234792689e-06
+[DEBUG] Creating ResNet50 with lr=0.00024414733101213107, weight_decay=1.180906234792689e-06
+[DEBUG] Creating ResNet50 with lr=0.00024414733101213107, weight_decay=1.180906234792689e-06
+[DEBUG] Creating ResNet50 with lr=8.435051840342024e-05, weight_decay=3.2705378561379434e-05
+[DEBUG] Creating ResNet50 with lr=8.435051840342024e-05, weight_decay=3.2705378561379434e-05
+[DEBUG] Creating ResNet50 with lr=8.435051840342024e-05, weight_decay=3.2705378561379434e-05
+[DEBUG] Creating ResNet50 with lr=0.00019074426558912547, weight_decay=2.392154858211108e-06
+[DEBUG] Creating ResNet50 with lr=0.00019074426558912547, weight_decay=2.392154858211108e-06
+[DEBUG] Creating ResNet50 with lr=0.00019074426558912547, weight_decay=2.392154858211108e-06
+[DEBUG] Creating ResNet50 with lr=8.185991666651847e-05, weight_decay=3.863964582125862e-05
+[DEBUG] Creating ResNet50 with lr=8.185991666651847e-05, weight_decay=3.863964582125862e-05
+[DEBUG] Creating ResNet50 with lr=8.185991666651847e-05, weight_decay=3.863964582125862e-05
+[DEBUG] Creating ResNet50 with lr=0.0003717250473637142, weight_decay=3.91377889924661e-06
+[DEBUG] Creating ResNet50 with lr=0.0003717250473637142, weight_decay=3.91377889924661e-06
+[DEBUG] Creating ResNet50 with lr=0.0003717250473637142, weight_decay=3.91377889924661e-06
+[DEBUG] Creating ResNet50 with lr=2.0470472929357787e-05, weight_decay=0.0010658068827894464
+[DEBUG] Creating ResNet50 with lr=2.0470472929357787e-05, weight_decay=0.0010658068827894464
+[DEBUG] Creating ResNet50 with lr=2.0470472929357787e-05, weight_decay=0.0010658068827894464
+[DEBUG] Creating ResNet50 with lr=0.00041199397449438133, weight_decay=2.5374950985007625e-05
+[DEBUG] Creating ResNet50 with lr=0.00041199397449438133, weight_decay=2.5374950985007625e-05
+[DEBUG] Creating ResNet50 with lr=0.00041199397449438133, weight_decay=2.5374950985007625e-05
+[INFO] Best hyperparameters for Task 1: lr=0.00015960380051472, weight_decay=1.0717324426190044e-05
+[Task 1 Final Epoch 1] Train Loss: 2.9413 | Val Loss: 1.2754
+[Task 1 Final Epoch 2] Train Loss: 0.4505 | Val Loss: 0.7887
+[Task 1 Final Epoch 3] Train Loss: 0.2659 | Val Loss: 0.6403
+[Task 1 Final Epoch 4] Train Loss: 0.2208 | Val Loss: 0.5788
+[Task 1 Final Epoch 5] Train Loss: 0.1995 | Val Loss: 0.5516
+[Task 1 Final Epoch 6] Train Loss: 0.1866 | Val Loss: 0.5293
+[Task 1 Final Epoch 7] Train Loss: 0.1778 | Val Loss: 0.5160
+[Task 1 Final Epoch 8] Train Loss: 0.1698 | Val Loss: 0.5000
+[Task 1 Final Epoch 9] Train Loss: 0.1627 | Val Loss: 0.4884
+[Task 1 Final Epoch 10] Train Loss: 0.1569 | Val Loss: 0.4781
+[Task 1 Final Epoch 11] Train Loss: 0.1512 | Val Loss: 0.4674
+[Task 1 Final Epoch 12] Train Loss: 0.1469 | Val Loss: 0.4624
+[Task 1 Final Epoch 13] Train Loss: 0.1436 | Val Loss: 0.4574
+[Task 1 Final Epoch 14] Train Loss: 0.1392 | Val Loss: 0.4539
+[Task 1 Final Epoch 15] Train Loss: 0.1374 | Val Loss: 0.4534
+[Task 1 Final Epoch 16] Train Loss: 0.1341 | Val Loss: 0.4450
+[Task 1 Final Epoch 17] Train Loss: 0.1319 | Val Loss: 0.4437
+[Task 1 Final Epoch 18] Train Loss: 0.1303 | Val Loss: 0.4416
+[Task 1 Final Epoch 19] Train Loss: 0.1280 | Val Loss: 0.4330
+[Task 1 Final Epoch 20] Train Loss: 0.1275 | Val Loss: 0.4323
+[INFO] Model checkpoint saved to networkModel/baseline/20250304_062555/task1/model_20250304_062555.pth
+[INFO] Continual learning training complete.
+
+[INFO] Evaluating cumulative performance per task:
+Task 0 test set accuracy: 0.8722
+Task 1 test set accuracy: 0.8304
+Cumulative test set accuracy (all tasks): 0.8388

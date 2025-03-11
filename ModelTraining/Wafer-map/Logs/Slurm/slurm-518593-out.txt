@@ -1,0 +1,50 @@
+PYTHONPATH=~/tmp/miniconda3/envs/MaProject/bin/python:
+[I 2025-02-22 23:21:22,450] A new study created in RDB with name: resnet_wafer_1740262881
+[W 2025-02-22 23:25:49,188] Trial 0 failed with parameters: {'lr': 2.3240892350138875e-05, 'weight_decay': 0.00011465999838014673} because of the following error: TypeError('cannot unpack non-iterable float object').
+Traceback (most recent call last):
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/Wafer-data-dataset-resize-training.py", line 263, in objective
+    best_val_acc, fold_metrics = train_one_fold(
+TypeError: cannot unpack non-iterable float object
+[W 2025-02-22 23:25:49,191] Trial 0 failed with value None.
+Loaded configuration:
+{'experiment': {'reproducibility': True, 'seed': 42, 'num_trials': 10, 'num_epochs': 10, 'final_epochs': 5, 'save_model': True, 'model_save_path': 'final_model.pth', 'suggest': {'lr': {'low': '1e-5', 'high': '1e-3', 'log': True}, 'weight_decay': {'low': '1e-6', 'high': '1e-2', 'log': True}}}, 'model': {'type': 'resnet50', 'lr': '1e-4', 'weight_decay': '1e-4'}, 'dataset': {'path': '/home/anhcao/tmp/Dataset/Wafermap-dataset/WM811K.pkl'}}
+[INFO] Reproducibility enabled. Seed set to 42
+[INFO] Using device: cuda
+[INFO] Number of classes: 8
+[INFO] Classes: ['Center' 'Donut' 'Edge-Loc' 'Edge-Ring' 'Loc' 'Near-full' 'Random'
+ 'Scratch']
+[INFO] Creating Optuna study 'resnet_wafer_1740262881' with DB file: resnet_wafer_v2.db
+[INFO] Starting study.optimize with 10 trials...
+
+
+[OPTUNA] Starting Trial #0 with lr=0.000023, weight_decay=0.000115
+[OPTUNA] Trial #0: Starting fold 1/5
+[DEBUG] Creating ResNet50 with lr=2.3240892350138875e-05, weight_decay=0.00011465999838014673
+[INFO] >>> Starting fold 1 training (Trial #0) for 10 epochs...
+[Fold 1 Epoch 1/10] Train Loss: 0.4478, Train Acc: 0.8586 | Val Loss: 0.1601, Val Acc: 0.9509
+[Fold 1 Epoch 2/10] Train Loss: 0.1010, Train Acc: 0.9680 | Val Loss: 0.0978, Val Acc: 0.9665
+[Fold 1 Epoch 3/10] Train Loss: 0.0351, Train Acc: 0.9914 | Val Loss: 0.1025, Val Acc: 0.9733
+[Fold 1 Epoch 4/10] Train Loss: 0.0178, Train Acc: 0.9965 | Val Loss: 0.1001, Val Acc: 0.9694
+[INFO] Early stopping on fold 1 at epoch 4
+[INFO] <<< Finished fold 1, best val acc = 0.9733
+
+Traceback (most recent call last):
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/Wafer-data-dataset-resize-training.py", line 373, in <module>
+    main()
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/Wafer-data-dataset-resize-training.py", line 331, in main
+    study.optimize(objective, n_trials=num_trials)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/Wafer-data-dataset-resize-training.py", line 263, in objective
+    best_val_acc, fold_metrics = train_one_fold(
+TypeError: cannot unpack non-iterable float object
