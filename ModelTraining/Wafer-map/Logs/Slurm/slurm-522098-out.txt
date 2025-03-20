@@ -1,8 +1,0 @@
-PYTHONPATH=~/tmp/miniconda3/envs/MaProject/bin/python:
-[I 2025-02-24 13:06:06,052] A new study created in RDB with name: resnet_wafer_1740398762
-[I 2025-02-24 13:33:34,127] Trial 0 finished with value: 0.11778931089191766 and parameters: {'lr': 0.00033027891820452645, 'weight_decay': 1.5955309676871252e-06}. Best is trial 0 with value: 0.11778931089191766.
-[I 2025-02-24 14:14:43,604] Trial 1 finished with value: 0.12069553385258425 and parameters: {'lr': 0.000702448264437888, 'weight_decay': 8.417204729724506e-06}. Best is trial 0 with value: 0.11778931089191766.
-[I 2025-02-24 14:44:29,156] Trial 2 finished with value: 0.09509674334808389 and parameters: {'lr': 0.00016420203974485073, 'weight_decay': 0.0002472692292726014}. Best is trial 2 with value: 0.09509674334808389.
-[I 2025-02-24 15:16:17,213] Trial 3 finished with value: 0.09927776477987729 and parameters: {'lr': 1.6825782065600145e-05, 'weight_decay': 1.8011052544241712e-06}. Best is trial 2 with value: 0.09509674334808389.
-[I 2025-02-24 15:43:15,533] Trial 4 finished with value: 0.13098199252890158 and parameters: {'lr': 0.0004778924199368968, 'weight_decay': 5.351711911235509e-06}. Best is trial 2 with value: 0.09509674334808389.
-slurmstepd: error: *** JOB 522098 ON cc2g02 CANCELLED AT 2025-02-24T16:03:13 DUE TO TIME LIMIT ***

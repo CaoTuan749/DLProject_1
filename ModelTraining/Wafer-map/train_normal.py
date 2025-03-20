@@ -27,7 +27,7 @@ import matplotlib.pyplot as plt
 
 # Import shared utilities and dataset
 from utils import set_seed, save_model_checkpoint
-from utils import train_one_epoch, validate_one_epoch, evaluate_model, plot_confusion_matrix, figure_to_tensor
+from utils import train_one_epoch, validate_one_epoch, evaluate_model, plot_confusion_matrix, figure_to_tensor, plot_training_curve
 from Wafer_data_dataset_resize import WaferMapDataset
 
 def load_config(config_path="config.yaml"):
@@ -45,14 +45,28 @@ def train_one_fold_standard(model, train_loader, val_loader, criterion, optimize
     print(f"[INFO] >>> Starting fold {fold_idx+1} training (Trial #{trial_idx}) for {num_epochs} epochs...")
     best_val_loss = float('inf')
     epochs_no_improve = 0
+
+    # Lists to store metrics for plotting curves later
+    train_loss_list = []
+    val_loss_list = []
+    train_acc_list = []
+    val_acc_list = []
+
     for epoch in range(num_epochs):
         t_loss, t_acc = train_one_epoch(model, train_loader, criterion, optimizer, device)
         v_loss, v_acc = validate_one_epoch(model, val_loader, criterion, device)
+
+        train_loss_list.append(t_loss)
+        val_loss_list.append(v_loss)
+        train_acc_list.append(t_acc)
+        val_acc_list.append(v_acc)
+
         writer.add_scalar(f"Fold{fold_idx}/Train_Loss", t_loss, epoch)
         writer.add_scalar(f"Fold{fold_idx}/Train_Acc", t_acc, epoch)
         writer.add_scalar(f"Fold{fold_idx}/Val_Loss", v_loss, epoch)
         writer.add_scalar(f"Fold{fold_idx}/Val_Acc", v_acc, epoch)
         print(f"[Fold {fold_idx+1} Epoch {epoch+1}/{num_epochs}] Train Loss: {t_loss:.4f}, Val Loss: {v_loss:.4f}")
+        
         if v_loss < best_val_loss:
             best_val_loss = v_loss
             epochs_no_improve = 0
@@ -61,6 +75,17 @@ def train_one_fold_standard(model, train_loader, val_loader, criterion, optimize
             if epochs_no_improve >= early_stopping_patience:
                 print(f"[INFO] Early stopping on fold {fold_idx+1} at epoch {epoch+1}")
                 break
+
+    # Plot and log training and validation loss curve
+    fig_loss = plot_training_curve(train_loss_list, val_loss_list, metric_name="Loss")
+    writer.add_image(f"Fold{fold_idx}/Loss_Curve", figure_to_tensor(fig_loss), global_step=fold_idx+1)
+    plt.close(fig_loss)
+
+    # Plot and log training and validation accuracy curve
+    fig_acc = plot_training_curve(train_acc_list, val_acc_list, metric_name="Accuracy")
+    writer.add_image(f"Fold{fold_idx}/Accuracy_Curve", figure_to_tensor(fig_acc), global_step=fold_idx+1)
+    plt.close(fig_acc)
+
     print(f"[INFO] <<< Finished fold {fold_idx+1}, best val loss = {best_val_loss:.4f}\n")
     return best_val_loss
 
@@ -93,12 +118,14 @@ def objective(trial, config, train_dataset_full, model_factory, num_classes, dev
         best_val_loss = train_one_fold_standard(model_fold, train_loader_fold, val_loader_fold, criterion_fold, optimizer_fold, writer,
                                                 fold_idx=fold_idx, trial_idx=trial.number, num_epochs=num_epochs, early_stopping_patience=2, device=device)
         fold_accuracies.append(1 - best_val_loss)  # converting loss to an accuracy-like measure (lower loss => higher acc)
+        
         # Log confusion matrix for each fold
         val_preds, val_labels = evaluate_model(model_fold, val_loader_fold, device)
         cm = confusion_matrix(val_labels, val_preds)
-        fig = plot_confusion_matrix(cm, train_dataset_full.encoder.classes_)
-        writer.add_image(f"Fold_{fold_idx+1}_Confusion_Matrix", figure_to_tensor(fig), global_step=fold_idx+1)
-        plt.close(fig)
+        fig_cm = plot_confusion_matrix(cm, train_dataset_full.encoder.classes_)
+        writer.add_image(f"Fold_{fold_idx+1}_Confusion_Matrix", figure_to_tensor(fig_cm), global_step=fold_idx+1)
+        plt.close(fig_cm)
+        
     writer.close()
     avg_acc = np.mean(fold_accuracies)
     print(f"[OPTUNA] Trial #{trial.number} done. Fold Accuracies: {fold_accuracies}. Avg Acc={avg_acc:.4f}")

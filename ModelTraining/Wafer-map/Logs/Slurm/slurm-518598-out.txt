@@ -1,9 +1,0 @@
-PYTHONPATH=~/tmp/miniconda3/envs/MaProject/bin/python:
-[I 2025-02-22 23:51:04,113] A new study created in RDB with name: resnet_wafer_1740264663
-[I 2025-02-23 00:25:38,986] Trial 0 finished with value: 0.96777304964539 and parameters: {'lr': 1.5614072911095286e-05, 'weight_decay': 4.969878536667919e-05}. Best is trial 0 with value: 0.96777304964539.
-[I 2025-02-23 00:51:41,596] Trial 1 finished with value: 0.9664113475177304 and parameters: {'lr': 0.00014342116972017652, 'weight_decay': 0.0004588636983708942}. Best is trial 0 with value: 0.96777304964539.
-[I 2025-02-23 01:16:43,694] Trial 2 finished with value: 0.9673758865248226 and parameters: {'lr': 2.202763613534632e-05, 'weight_decay': 0.00798771287257967}. Best is trial 0 with value: 0.96777304964539.
-[I 2025-02-23 01:47:05,873] Trial 3 finished with value: 0.9589219858156028 and parameters: {'lr': 0.0005435378287327445, 'weight_decay': 1.077274402436351e-06}. Best is trial 0 with value: 0.96777304964539.
-[I 2025-02-23 02:16:24,523] Trial 4 finished with value: 0.9725390070921985 and parameters: {'lr': 3.49653188649757e-05, 'weight_decay': 7.599986152132224e-06}. Best is trial 4 with value: 0.9725390070921985.
-[I 2025-02-23 02:44:35,669] Trial 5 finished with value: 0.9649929078014183 and parameters: {'lr': 0.0003324025323214333, 'weight_decay': 1.1481280993444154e-05}. Best is trial 4 with value: 0.9725390070921985.
-slurmstepd: error: *** JOB 518598 ON cc1g03 CANCELLED AT 2025-02-23T02:50:05 DUE TO TIME LIMIT ***

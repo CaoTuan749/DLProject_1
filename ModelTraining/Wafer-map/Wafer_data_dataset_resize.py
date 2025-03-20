@@ -17,11 +17,10 @@ class WaferMapDataset(Dataset):
         """
         Args:
             file_path (str): Path to .pkl file.
-            split (str): 'train' or 'test' (checked via `trainTestLabel` column).
+            split (str): 'train' or 'test'.
             oversample (bool): Apply oversampling on training split.
-            target_dim (tuple): (width, height) to resize wafer maps.
-            task_classes (list or None): If provided, only samples with these class indices (after encoding)
-                                         will be kept. If None, all classes are used.
+            target_dim (tuple): Dimensions to resize wafer maps.
+            task_classes (list or None): If provided, only samples with these class indices are kept.
         """
         self.file_path = file_path
         self.split = split.lower()
@@ -77,12 +76,11 @@ class WaferMapDataset(Dataset):
             df_test['encoded'] = encoder.transform(df_test['failureType'].values)
             df_train = df_train[df_train['encoded'].isin(self.task_classes)].reset_index(drop=True)
             df_test = df_test[df_test['encoded'].isin(self.task_classes)].reset_index(drop=True)
-            # Re-fit the encoder on the filtered training set so that the labels become contiguous.
             new_encoder = LabelEncoder()
             new_encoder.fit(df_train['failureType'].values)
             self.encoder = new_encoder
 
-        # 9) Oversample only if in training split and oversample is True.
+        # 9) Oversample if in training split and oversample is True.
         if self.oversample and self.split == 'train':
             X_train = np.stack(df_train['waferMap_flat'].values).astype('float32')
             y_train = df_train['failureType'].values
@@ -114,7 +112,6 @@ class WaferMapDataset(Dataset):
         wafer_map_flat = self.X[idx]
         label = self.y[idx]
         wafer_map_tensor = torch.from_numpy(wafer_map_flat).float()
-        # Reshape and repeat to form a 3-channel image (for models expecting RGB)
         wafer_map_tensor = wafer_map_tensor.view(1, self.target_dim[0], self.target_dim[1]).repeat(3, 1, 1)
         label_tensor = torch.tensor(label, dtype=torch.long)
         return wafer_map_tensor, label_tensor

@@ -1,5 +1,3 @@
-#utils.py
-
 import os
 import yaml
 import random
@@ -8,6 +6,21 @@ import torch
 from datetime import datetime as time
 import io
 import matplotlib.pyplot as plt
+from torch.utils.data import DataLoader, ConcatDataset
+from sklearn.metrics import classification_report
+from Wafer_data_dataset_resize import WaferMapDataset
+from collections import Counter
+from sklearn.model_selection import StratifiedKFold
+from imblearn.over_sampling import RandomOverSampler
+import numpy as np
+from torch.utils.data import Subset
+import PIL.Image as Image
+import argparse
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Continual Learning Training Pipeline")
+    parser.add_argument("--config", type=str, default="config.yaml", help="Path to YAML configuration file")
+    return parser.parse_args()
 
 def load_config(config_path="config.yaml"):
     """
@@ -15,10 +28,8 @@ def load_config(config_path="config.yaml"):
     """
     with open(config_path, "r") as f:
         config = yaml.safe_load(f)
-    # Expand the tilde in the dataset path if present.
     config["dataset"]["path"] = os.path.expanduser(config["dataset"]["path"])
     return config
-
 
 def set_seed(seed=42):
     """
@@ -28,7 +39,6 @@ def set_seed(seed=42):
     np.random.seed(seed)
     torch.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
-    # Enforce deterministic behavior in cudnn
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
@@ -38,26 +48,23 @@ def update_model_output(model, new_classes_count, device):
     current_out = old_fc.out_features
     new_out = current_out + new_classes_count
     new_fc = torch.nn.Linear(in_features, new_out).to(device)
-    new_fc.weight.data[:current_out] = old_fc.weight.data.to(device)
-    new_fc.bias.data[:current_out] = old_fc.bias.data.to(device)
+
+    # Critical step explicitly copy old weights clearly:
+    new_fc.weight.data[:current_out] = old_fc.weight.data
+    new_fc.bias.data[:current_out] = old_fc.bias.data
+
     model.fc = new_fc
     return model
-
 
 def save_model_checkpoint(model, config, task_idx=None, timestamp=None):
     """
     Save the model's state dictionary in an organized directory structure.
-    Uses the base directory and final model filename from the config.
-    
-    If task_idx is provided, the model is saved under:
-       checkpoint_base_dir/continual_method/timestamp/task{task_idx}/model_{timestamp}.pth
-    Otherwise, it is saved as the final model in:
-       checkpoint_base_dir/continual_method/timestamp/final/final_model_filename
     """
     base_dir = config["experiment"].get("checkpoint_base_dir", "model_checkpoints")
     method = config["experiment"].get("continual_method", "baseline")
     if timestamp is None:
-        timestamp = time.strftime("%Y%m%d_%H%M%S")
+        # Use time.now() to get the current datetime and then format it.
+        timestamp = time.now().strftime("%Y%m%d_%H%M%S")
     
     if task_idx is not None:
         folder = os.path.join(base_dir, method, timestamp, f"task{task_idx}")
@@ -83,14 +90,21 @@ def train_one_epoch(model, dataloader, criterion, optimizer, device):
         inputs, labels = inputs.to(device), labels.to(device)
         optimizer.zero_grad()
         outputs = model(inputs)
+
+        # Debug clearly:
+        print(f"Outputs shape: {outputs.shape}, Labels: {labels}")
+
         loss = criterion(outputs, labels)
         loss.backward()
         optimizer.step()
+
         total_loss += loss.item()
         _, predicted = torch.max(outputs, 1)
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
+
     return total_loss / len(dataloader), correct / total
+
 
 def validate_one_epoch(model, dataloader, criterion, device):
     model.eval()
@@ -143,78 +157,139 @@ def plot_confusion_matrix(cm, class_names):
     fig.tight_layout()
     return fig
 
+def plot_training_curve(train_values, val_values, metric_name="Loss"):
+    """
+    Plots training and validation curves for a given metric.
+    """
+    fig, ax = plt.subplots(figsize=(8, 6))
+    epochs = range(1, len(train_values) + 1)
+    ax.plot(epochs, train_values, label=f"Train {metric_name}")
+    ax.plot(epochs, val_values, label=f"Validation {metric_name}")
+    ax.set_title(f"Training and Validation {metric_name} Curve")
+    ax.set_xlabel("Epoch")
+    ax.set_ylabel(metric_name)
+    ax.legend()
+    fig.tight_layout()
+    return fig
+
 def figure_to_tensor(figure):
     buf = io.BytesIO()
     figure.savefig(buf, format='png')
     buf.seek(0)
-    import PIL.Image as Image
     img = Image.open(buf)
-    img = np.array(img).astype(np.float32) / 255.0  # normalize
-    # Convert H x W x C to C x H x W
+    img = np.array(img).astype(np.float32) / 255.0
     img = np.transpose(img, (2, 0, 1))
     buf.close()
     return torch.tensor(img)
 
 def evaluate_cumulative_tasks(config, model, device, task_list):
-    """
-    Evaluate the final model on each task's test set individually and on cumulative test sets.
-    
-    For each task t:
-      - Evaluate the model on the test set for task t.
-      - Combine test sets from task 0 to t and evaluate on the cumulative test set.
-    """
-    from Wafer_data_dataset_resize import WaferMapDataset  # Ensure dataset class is imported
+    cumulative_datasets = []
 
-    cumulative_X = []
-    cumulative_y = []
-    print("\n[INFO] Evaluating cumulative performance per task:")
-    for t, classes in enumerate(task_list):
-        # Load current task test set
-        current_test_ds = WaferMapDataset(
+    print("\n[INFO] Starting cumulative evaluation...")
+
+    for task_idx, classes in enumerate(task_list):
+        print(f"\n[Evaluation] Task {task_idx} (classes: {classes})")
+
+        # Load current task test dataset explicitly
+        current_test_dataset = WaferMapDataset(
             file_path=config["dataset"]["path"],
             split="test",
             oversample=False,
             target_dim=(224, 224),
             task_classes=classes
         )
-        current_loader = DataLoader(current_test_ds, batch_size=64, shuffle=False)
+        current_loader = DataLoader(current_test_dataset, batch_size=64, shuffle=False)
+
+        # Evaluate on the current task dataset
         preds, labels = evaluate_model(model, current_loader, device)
-        acc = (preds == labels).mean()
-        print(f"Task {t} test set accuracy: {acc:.4f}")
+        current_acc = (preds == labels).mean()
+        current_report = classification_report(labels, preds, digits=3)
+        print(f"Current Task {task_idx} Accuracy: {current_acc:.4f}")
+        print(current_report)
 
-        # Accumulate test data
-        cumulative_X.append(current_test_ds.X)
-        cumulative_y.append(current_test_ds.y)
-        cum_X = np.concatenate(cumulative_X, axis=0)
-        cum_y = np.concatenate(cumulative_y, axis=0)
-        # Create a TensorDataset from cumulative data
-        cum_tensor_X = torch.tensor(cum_X)
-        cum_tensor_y = torch.tensor(cum_y)
-        cum_dataset = torch.utils.data.TensorDataset(cum_tensor_X, cum_tensor_y)
-        cum_loader = DataLoader(cum_dataset, batch_size=64, shuffle=False)
-        cum_preds, cum_labels = evaluate_model(model, cum_loader, device)
+        # Add current dataset to cumulative list
+        cumulative_datasets.append(current_test_dataset)
+
+        # For the first task, cumulative test is same as current test
+        if task_idx == 0:
+            continue  # Skip cumulative test since it's identical to current
+
+        # Combine datasets for cumulative evaluation
+        cumulative_dataset = ConcatDataset(cumulative_datasets)
+        cumulative_loader = DataLoader(cumulative_dataset, batch_size=64, shuffle=False)
+
+        # Evaluate cumulatively (tasks 0..task_idx)
+        cum_preds, cum_labels = evaluate_model(model, cumulative_loader, device)
         cum_acc = (cum_preds == cum_labels).mean()
-        print(f"Cumulative test set accuracy (tasks 0..{t}): {cum_acc:.4f}")
+        cum_report = classification_report(cum_labels, cum_preds, digits=3)
 
+        print(f"Cumulative Accuracy (tasks 0 to {task_idx}): {cum_acc:.4f}")
+        print(cum_report)
 
 def apply_mask(outputs, task_id):
     """
     Applies a mask to the outputs so that only the entries corresponding 
-    to the current task are retained and all other entries are set to zero.
-    
-    Assumes each task uses 2 output units, so for a given task_id,
-    only columns [2*task_id : 2*(task_id+1)] are active.
-    
-    Parameters:
-      outputs (torch.Tensor): The raw model outputs of shape [batch_size, total_classes].
-      task_id (int): The current task id.
-      
-    Returns:
-      torch.Tensor: The masked outputs.
+    to the current task are retained.
     """
     mask = torch.zeros_like(outputs)
     start = 2 * task_id
     end = 2 * (task_id + 1)
-    # Set the relevant columns to one
     mask[:, start:end] = 1.0
     return outputs * mask
+
+def plot_training_curve(train_values, val_values, metric_name="Loss"):
+    fig, ax = plt.subplots(figsize=(8, 6))
+    epochs = range(1, len(train_values) + 1)
+    ax.plot(epochs, train_values, label=f"Train {metric_name}")
+    ax.plot(epochs, val_values, label=f"Validation {metric_name}")
+    ax.set_title(f"Training and Validation {metric_name} Curve")
+    ax.set_xlabel("Epoch")
+    ax.set_ylabel(metric_name)
+    ax.legend()
+    fig.tight_layout()
+    return fig
+
+def print_model_info(model, task_idx):
+    total_params = sum(p.numel() for p in model.parameters())
+    trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    output_units = None
+    if hasattr(model, 'fc'):
+        output_units = model.fc.out_features
+    elif hasattr(model, 'classifier'):
+        if isinstance(model.classifier, torch.nn.Sequential):
+            last_layer = list(model.classifier.children())[-1]
+            if hasattr(last_layer, 'out_features'):
+                output_units = last_layer.out_features
+    print(f"[MODEL INFO] Task {task_idx}: {model.__class__.__name__} has total {total_params} parameters ({trainable_params} trainable).")
+    if output_units is not None:
+        print(f"[MODEL INFO] Task {task_idx}: Output layer has {output_units} units.")
+
+
+
+def robust_stratified_split(dataset, n_splits=3, oversample_small_classes=True, seed=42):
+    labels = np.array(dataset.y) if hasattr(dataset, 'y') else np.array([dataset.dataset.y[i] for i in dataset.indices])
+    class_counts = Counter(labels)
+    min_class_count = min(class_counts.values())
+
+    # Adjust number of splits safely
+    safe_n_splits = min(n_splits, min_class_count)
+    safe_n_splits = max(safe_n_splits, 2)
+
+    indices = np.arange(len(labels)).reshape(-1, 1)
+
+    if oversample_small_classes and min_class_count < safe_n_splits:
+        ros = RandomOverSampler(random_state=seed)
+        indices_resampled, labels_resampled = ros.fit_resample(indices, labels)
+        indices_resampled = indices_resampled.flatten()
+    else:
+        indices_resampled, labels_resampled = indices.flatten(), labels
+
+    skf = StratifiedKFold(n_splits=safe_n_splits, shuffle=True, random_state=seed)
+
+    splits = []
+    for train_idx, val_idx in skf.split(indices_resampled, labels_resampled):
+        splits.append({
+            'train': Subset(dataset, indices_resampled[train_idx]),
+            'val': Subset(dataset, indices_resampled[val_idx])
+        })
+    return splits
