@@ -1,9 +1,9 @@
 experiment:
   reproducibility: true
   seed: 42
-  num_trials: 1
-  num_epochs: 5
-  final_epochs: 5
+  num_trials: 5
+  num_epochs: 10
+  final_epochs: 10
   save_model: true
   final_model_filename: "final_model.pth"
   checkpoint_base_dir: "model_checkpoints"
@@ -30,10 +30,10 @@ logging:
   base_log_dir: "./Logs"
 
 model:
-  type: resnet50
+  type: resnet50  #simplenn  resnet50
   lr: 1e-4
   weight_decay: 1e-4
 
 dataset:
-  path: "D:/Waffer Data/WM811K.pkl"
-# path: "~/tmp/Dataset/Wafermap-dataset/WM811K.pkl"
+#  path: "D:/Waffer Data/WM811K.pkl"
+  path: "~/tmp/Dataset/Wafermap-dataset/WM811K.pkl"

@@ -1,0 +1,222 @@
+PYTHONPATH=~/tmp/miniconda3/envs/MaProject/bin/python:
+[I 2025-03-24 19:08:39,868] A new study created in memory with name: no-name-4ac77213-a088-4583-9a23-cb805718c470
+[I 2025-03-24 19:09:55,012] Trial 0 finished with value: 0.0637785574421756 and parameters: {'lr': 0.000514762571123942, 'weight_decay': 0.00011305439970158003}. Best is trial 0 with value: 0.0637785574421756.
+[I 2025-03-24 19:11:51,480] A new study created in memory with name: no-name-5612d905-3f1a-4c53-ae57-4334dff32c3b
+[I 2025-03-24 19:15:09,655] Trial 0 finished with value: 0.058767738822457755 and parameters: {'lr': 1.01682951275139e-05, 'weight_decay': 1.7837791072977424e-05}. Best is trial 0 with value: 0.058767738822457755.
+[I 2025-03-24 22:00:17,757] A new study created in memory with name: no-name-6d78911a-a8dc-4f3f-81c2-95334342d4ab
+[I 2025-03-24 22:00:49,398] Trial 0 finished with value: 0.02217719715554267 and parameters: {'lr': 0.00011745557815851651, 'weight_decay': 7.4844996062911e-06}. Best is trial 0 with value: 0.02217719715554267.
+[I 2025-03-24 22:27:07,895] A new study created in memory with name: no-name-99a362d4-157d-44ad-8f53-3ee3133132fd
+[W 2025-03-24 22:27:18,296] Trial 0 failed with parameters: {'lr': 1.0133307233046952e-05, 'weight_decay': 0.00014157158294028453} because of the following error: ValueError('The number of FixedLocator locations (3), usually from a call to set_ticks, does not match the number of labels (2).').
+Traceback (most recent call last):
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/train_continual.py", line 249, in objective
+    fig_cm = plot_confusion_matrix(cm, class_names=[str(cls) for cls in np.unique(labels)])
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/utils.py", line 142, in plot_confusion_matrix
+    ax.set(xticks=np.arange(cm.shape[1]),
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/matplotlib/artist.py", line 147, in <lambda>
+    cls.set = lambda self, **kwargs: Artist.set(self, **kwargs)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/matplotlib/artist.py", line 1224, in set
+    return self._internal_update(cbook.normalize_kwargs(kwargs, self))
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/matplotlib/artist.py", line 1216, in _internal_update
+    return self._update_props(
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/matplotlib/artist.py", line 1192, in _update_props
+    ret.append(func(v))
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/matplotlib/axes/_base.py", line 74, in wrapper
+    return get_method(self)(*args, **kwargs)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/matplotlib/axis.py", line 2071, in set_ticklabels
+    raise ValueError(
+ValueError: The number of FixedLocator locations (3), usually from a call to set_ticks, does not match the number of labels (2).
+[W 2025-03-24 22:27:19,006] Trial 0 failed with value None.
+[INFO] Loaded configuration:
+dataset:
+  path: /home/anhcao/tmp/Dataset/Wafermap-dataset/WM811K.pkl
+experiment:
+  checkpoint_base_dir: model_checkpoints
+  continual_learning: true
+  continual_method: ewc
+  ewc_lambda: 100.0
+  final_epochs: 3
+  final_model_filename: final_model.pth
+  num_epochs: 3
+  num_trials: 1
+  reproducibility: true
+  save_model: true
+  seed: 42
+  suggest:
+    lr:
+      high: 1e-3
+      log: true
+      low: 1e-5
+    weight_decay:
+      high: 1e-2
+      log: true
+      low: 1e-6
+  task_list:
+  - - 0
+    - 1
+  - - 2
+    - 3
+  - - 4
+    - 5
+  - - 6
+    - 7
+  tensorboard_log_dir: Logs
+logging:
+  base_log_dir: ./Logs
+model:
+  lr: 1e-4
+  type: resnet50
+  weight_decay: 1e-4
+
+[INFO] Reproducibility enabled. Seed set to 42
+[INFO] Using device: cuda
+[INFO] Starting continual learning training pipeline with method: ewc
+[INFO] Configuration being used:
+dataset:
+  path: /home/anhcao/tmp/Dataset/Wafermap-dataset/WM811K.pkl
+experiment:
+  checkpoint_base_dir: model_checkpoints
+  continual_learning: true
+  continual_method: ewc
+  ewc_lambda: 100.0
+  final_epochs: 3
+  final_model_filename: final_model.pth
+  num_epochs: 3
+  num_trials: 1
+  reproducibility: true
+  save_model: true
+  seed: 42
+  suggest:
+    lr:
+      high: 1e-3
+      log: true
+      low: 1e-5
+    weight_decay:
+      high: 1e-2
+      log: true
+      low: 1e-6
+  task_list:
+  - - 0
+    - 1
+  - - 2
+    - 3
+  - - 4
+    - 5
+  - - 6
+    - 7
+  tensorboard_log_dir: Logs
+logging:
+  base_log_dir: ./Logs
+model:
+  lr: 1e-4
+  type: resnet50
+  weight_decay: 1e-4
+
+[DEBUG] Creating ResNet50 with lr=0.000514762571123942, weight_decay=0.00011305439970158003
+[HPO] Trial 0 Fold 0 Epoch 0: Train Loss=0.1202, Val Loss=0.5985, Time=14.2s
+[HPO] Trial 0 Fold 0 Epoch 1: Train Loss=0.0247, Val Loss=0.0728, Time=10.5s
+[HPO] Trial 0 Fold 0 Epoch 2: Train Loss=0.0282, Val Loss=0.0212, Time=10.6s
+[DEBUG] Creating ResNet50 with lr=0.000514762571123942, weight_decay=0.00011305439970158003
+[HPO] Trial 0 Fold 1 Epoch 0: Train Loss=0.1390, Val Loss=0.1457, Time=10.6s
+[HPO] Trial 0 Fold 1 Epoch 1: Train Loss=0.0283, Val Loss=0.3620, Time=10.6s
+[HPO] Trial 0 Fold 1 Epoch 2: Train Loss=0.0457, Val Loss=0.1064, Time=10.6s
+[HPO] Trial 0: Average Loss=0.0638
+[Debug] Best trial: lr=0.000514762571123942, weight_decay=0.00011305439970158003
+[INFO] Best hyperparameters for Task 0: lr=0.000514762571123942, weight_decay=0.00011305439970158003
+[DEBUG] Creating ResNet50 with lr=0.000514762571123942, weight_decay=0.00011305439970158003
+[MODEL INFO] Task 0: ResNet has total 23512130 parameters (23512130 trainable).
+[MODEL INFO] Task 0: Output layer has 2 units.
+[INFO] Task 0 Epoch 0: Train Loss=0.0828, Val Loss=0.1152, Train Acc=0.9685, Val Acc=0.9571
+[INFO] Task 0 Epoch 1: Train Loss=0.0154, Val Loss=0.4456, Train Acc=0.9948, Val Acc=0.8865
+[INFO] Task 0 Epoch 2: Train Loss=0.0269, Val Loss=0.1921, Train Acc=0.9897, Val Acc=0.9458
+[INFO] Finished Task 0
+[INFO] Model checkpoint saved to model_checkpoints/ewc/20250324_190747/task0/model_20250324_190747.pth
+[INFO] Evaluating performance for tasks 1 to 1...
+ => Ave accuracy (this task):    94.581
+ => Ave accuracy (tasks so far): 94.581
+[DEBUG] Creating ResNet50 with lr=1.01682951275139e-05, weight_decay=1.7837791072977424e-05
+[HPO] Trial 0 Fold 0 Epoch 0: Train Loss=0.5461, Val Loss=0.1773, Time=30.0s
+[HPO] Trial 0 Fold 0 Epoch 1: Train Loss=0.0997, Val Loss=0.0899, Time=30.2s
+[HPO] Trial 0 Fold 0 Epoch 2: Train Loss=0.0399, Val Loss=0.0524, Time=30.4s
+[DEBUG] Creating ResNet50 with lr=1.01682951275139e-05, weight_decay=1.7837791072977424e-05
+[HPO] Trial 0 Fold 1 Epoch 0: Train Loss=0.5121, Val Loss=0.1527, Time=30.7s
+[HPO] Trial 0 Fold 1 Epoch 1: Train Loss=0.0771, Val Loss=0.0821, Time=30.6s
+[HPO] Trial 0 Fold 1 Epoch 2: Train Loss=0.0309, Val Loss=0.0652, Time=30.6s
+[HPO] Trial 0: Average Loss=0.0588
+[Debug] Best trial: lr=1.01682951275139e-05, weight_decay=1.7837791072977424e-05
+[INFO] Best hyperparameters for Task 1: lr=1.01682951275139e-05, weight_decay=1.7837791072977424e-05
+[MODEL INFO] Task 1: ResNet has total 23516228 parameters (23516228 trainable).
+[MODEL INFO] Task 1: Output layer has 4 units.
+[INFO] Finished Task 1
+[INFO] Model checkpoint saved to model_checkpoints/ewc/20250324_190747/task1/model_20250324_190747.pth
+[INFO] Evaluating performance for tasks 1 to 2...
+ => Ave accuracy (this task):    91.406
+ => Ave accuracy (tasks so far): 45.703
+[DEBUG] Creating ResNet50 with lr=0.00011745557815851651, weight_decay=7.4844996062911e-06
+[HPO] Trial 0 Fold 0 Epoch 0: Train Loss=0.7208, Val Loss=0.1820, Time=4.7s
+[HPO] Trial 0 Fold 0 Epoch 1: Train Loss=0.0546, Val Loss=0.0837, Time=4.6s
+[HPO] Trial 0 Fold 0 Epoch 2: Train Loss=0.0119, Val Loss=0.0148, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=0.00011745557815851651, weight_decay=7.4844996062911e-06
+[HPO] Trial 0 Fold 1 Epoch 0: Train Loss=0.5659, Val Loss=0.3455, Time=4.6s
+[HPO] Trial 0 Fold 1 Epoch 1: Train Loss=0.0216, Val Loss=0.0743, Time=4.6s
+[HPO] Trial 0 Fold 1 Epoch 2: Train Loss=0.0095, Val Loss=0.0295, Time=4.6s
+[HPO] Trial 0: Average Loss=0.0222
+[Debug] Best trial: lr=0.00011745557815851651, weight_decay=7.4844996062911e-06
+[INFO] Best hyperparameters for Task 2: lr=0.00011745557815851651, weight_decay=7.4844996062911e-06
+[MODEL INFO] Task 2: ResNet has total 23520326 parameters (23520326 trainable).
+[MODEL INFO] Task 2: Output layer has 6 units.
+[INFO] Finished Task 2
+[INFO] Model checkpoint saved to model_checkpoints/ewc/20250324_190747/task2/model_20250324_190747.pth
+[INFO] Evaluating performance for tasks 1 to 3...
+ => Ave accuracy (this task):    99.855
+ => Ave accuracy (tasks so far): 33.285
+[DEBUG] Creating ResNet50 with lr=1.0133307233046952e-05, weight_decay=0.00014157158294028453
+[HPO] Trial 0 Fold 0 Epoch 0: Train Loss=1.5759, Val Loss=1.4945, Time=3.1s
+[HPO] Trial 0 Fold 0 Epoch 1: Train Loss=1.0641, Val Loss=1.0559, Time=3.0s
+[HPO] Trial 0 Fold 0 Epoch 2: Train Loss=0.7177, Val Loss=0.6999, Time=3.0s
+Traceback (most recent call last):
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/train_continual.py", line 440, in <module>
+    main()
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/train_continual.py", line 436, in main
+    final_model = continual_training_pipeline(config, model_factory, device)
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/train_continual.py", line 354, in continual_training_pipeline
+    best_lr, best_wd = tune_hyperparameters_for_task(
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/train_continual.py", line 260, in tune_hyperparameters_for_task
+    study.optimize(objective, n_trials=num_trials)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/train_continual.py", line 249, in objective
+    fig_cm = plot_confusion_matrix(cm, class_names=[str(cls) for cls in np.unique(labels)])
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/utils.py", line 142, in plot_confusion_matrix
+    ax.set(xticks=np.arange(cm.shape[1]),
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/matplotlib/artist.py", line 147, in <lambda>
+    cls.set = lambda self, **kwargs: Artist.set(self, **kwargs)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/matplotlib/artist.py", line 1224, in set
+    return self._internal_update(cbook.normalize_kwargs(kwargs, self))
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/matplotlib/artist.py", line 1216, in _internal_update
+    return self._update_props(
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/matplotlib/artist.py", line 1192, in _update_props
+    ret.append(func(v))
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/matplotlib/axes/_base.py", line 74, in wrapper
+    return get_method(self)(*args, **kwargs)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/matplotlib/axis.py", line 2071, in set_ticklabels
+    raise ValueError(
+ValueError: The number of FixedLocator locations (3), usually from a call to set_ticks, does not match the number of labels (2).
+Launching Continual Learning Training Pipeline...
+Traceback (most recent call last):
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/main_train.py", line 36, in <module>
+    main()
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/main_train.py", line 30, in main
+    subprocess.run(["python", "Wafer-map/train_continual.py", "--config", args.config], check=True)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', 'Wafer-map/train_continual.py', '--config', 'Wafer-map/config.yaml']' returned non-zero exit status 1.

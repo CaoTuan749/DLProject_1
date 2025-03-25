@@ -1,0 +1,109 @@
+PYTHONPATH=~/tmp/miniconda3/envs/MaProject/bin/python:
+[INFO] Loaded configuration:
+dataset:
+  path: D:/Waffer Data/WM811K.pkl
+experiment:
+  checkpoint_base_dir: model_checkpoints
+  continual_learning: true
+  continual_method: baseline
+  ewc_lambda: 100.0
+  final_epochs: 5
+  final_model_filename: final_model.pth
+  num_epochs: 5
+  num_trials: 1
+  reproducibility: true
+  save_model: true
+  seed: 42
+  suggest:
+    lr:
+      high: 1e-3
+      log: true
+      low: 1e-5
+    weight_decay:
+      high: 1e-2
+      log: true
+      low: 1e-6
+  task_list:
+  - - 0
+    - 1
+  - - 2
+    - 3
+  - - 4
+    - 5
+  - - 6
+    - 7
+  tensorboard_log_dir: Logs
+logging:
+  base_log_dir: ./Logs
+model:
+  lr: 1e-4
+  type: resnet50
+  weight_decay: 1e-4
+
+[INFO] Reproducibility enabled. Seed set to 42
+[INFO] Using device: cuda
+[INFO] Starting continual learning training pipeline with method: baseline
+[INFO] Configuration being used:
+dataset:
+  path: D:/Waffer Data/WM811K.pkl
+experiment:
+  checkpoint_base_dir: model_checkpoints
+  continual_learning: true
+  continual_method: baseline
+  ewc_lambda: 100.0
+  final_epochs: 5
+  final_model_filename: final_model.pth
+  num_epochs: 5
+  num_trials: 1
+  reproducibility: true
+  save_model: true
+  seed: 42
+  suggest:
+    lr:
+      high: 1e-3
+      log: true
+      low: 1e-5
+    weight_decay:
+      high: 1e-2
+      log: true
+      low: 1e-6
+  task_list:
+  - - 0
+    - 1
+  - - 2
+    - 3
+  - - 4
+    - 5
+  - - 6
+    - 7
+  tensorboard_log_dir: Logs
+logging:
+  base_log_dir: ./Logs
+model:
+  lr: 1e-4
+  type: resnet50
+  weight_decay: 1e-4
+
+Traceback (most recent call last):
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/train_continual.py", line 455, in <module>
+    main()
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/train_continual.py", line 451, in main
+    final_model = continual_training_pipeline(config, model_factory, device)
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/train_continual.py", line 352, in continual_training_pipeline
+    global_train_ds = WaferMapDataset(
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/Wafer_data_dataset_resize.py", line 32, in __init__
+    df = pd.read_pickle(self.file_path)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/pandas/io/pickle.py", line 185, in read_pickle
+    with get_handle(
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/pandas/io/common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/Waffer Data/WM811K.pkl'
+Launching Continual Learning Training Pipeline...
+Traceback (most recent call last):
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/main_train.py", line 36, in <module>
+    main()
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/main_train.py", line 30, in main
+    subprocess.run(["python", "Wafer-map/train_continual.py", "--config", args.config], check=True)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', 'Wafer-map/train_continual.py', '--config', 'Wafer-map/config.yaml']' returned non-zero exit status 1.

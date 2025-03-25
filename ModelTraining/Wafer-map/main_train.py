@@ -27,10 +27,10 @@ def main():
     args = parse_args()
     if args.mode == "continual":
         print("Launching Continual Learning Training Pipeline...")
-        subprocess.run(["python", "train_continual.py", "--config", args.config], check=True)
+        subprocess.run(["python", "Wafer-map/train_continual.py", "--config", args.config], check=True)
     else:
         print("Launching Standard Training Pipeline...")
-        subprocess.run(["python", "train_normal.py", "--config", args.config], check=True)
+        subprocess.run(["python", "Wafer-map/train_normal.py", "--config", args.config], check=True)
 
 if __name__ == '__main__':
     main()

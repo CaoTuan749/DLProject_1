@@ -1,0 +1,172 @@
+PYTHONPATH=~/tmp/miniconda3/envs/MaProject/bin/python:
+[I 2025-03-24 20:05:15,508] A new study created in memory with name: no-name-4a104aea-4575-42d8-a9b8-594257fc5a4b
+[I 2025-03-24 20:06:30,989] Trial 0 finished with value: 0.024737049610731417 and parameters: {'lr': 0.00013674369455366031, 'weight_decay': 0.0016422730271558473}. Best is trial 0 with value: 0.024737049610731417.
+[I 2025-03-24 20:08:20,147] A new study created in memory with name: no-name-4365ba6b-b767-485b-9a13-b93c519bdbc4
+[I 2025-03-24 20:11:36,619] Trial 0 finished with value: 0.0438120795717073 and parameters: {'lr': 2.0324595435187214e-05, 'weight_decay': 0.00015730629268105977}. Best is trial 0 with value: 0.0438120795717073.
+[I 2025-03-24 22:55:47,369] A new study created in memory with name: no-name-27b1ec6e-71f5-4e30-a765-3091d1f5eeb2
+[I 2025-03-24 22:56:18,720] Trial 0 finished with value: 0.03311747092603972 and parameters: {'lr': 0.0006855652558225741, 'weight_decay': 0.0027375816424849266}. Best is trial 0 with value: 0.03311747092603972.
+[I 2025-03-24 23:22:09,377] A new study created in memory with name: no-name-46af1af4-5937-4522-91c0-c1a1fbba110c
+[I 2025-03-24 23:22:30,644] Trial 0 finished with value: 0.07922581826440162 and parameters: {'lr': 5.214370373786145e-05, 'weight_decay': 5.036193001800806e-06}. Best is trial 0 with value: 0.07922581826440162.
+[INFO] Loaded configuration:
+dataset:
+  path: /home/anhcao/tmp/Dataset/Wafermap-dataset/WM811K.pkl
+experiment:
+  checkpoint_base_dir: model_checkpoints
+  continual_learning: true
+  continual_method: ewc
+  ewc_lambda: 100.0
+  final_epochs: 3
+  final_model_filename: final_model.pth
+  num_epochs: 3
+  num_trials: 1
+  reproducibility: true
+  save_model: true
+  seed: 42
+  suggest:
+    lr:
+      high: 1e-3
+      log: true
+      low: 1e-5
+    weight_decay:
+      high: 1e-2
+      log: true
+      low: 1e-6
+  task_list:
+  - - 0
+    - 1
+  - - 2
+    - 3
+  - - 4
+    - 5
+  - - 6
+    - 7
+  tensorboard_log_dir: Logs
+logging:
+  base_log_dir: ./Logs
+model:
+  lr: 1e-4
+  type: resnet50
+  weight_decay: 1e-4
+
+[INFO] Reproducibility enabled. Seed set to 42
+[INFO] Using device: cuda
+[INFO] Starting continual learning training pipeline with method: ewc
+[INFO] Configuration being used:
+dataset:
+  path: /home/anhcao/tmp/Dataset/Wafermap-dataset/WM811K.pkl
+experiment:
+  checkpoint_base_dir: model_checkpoints
+  continual_learning: true
+  continual_method: ewc
+  ewc_lambda: 100.0
+  final_epochs: 3
+  final_model_filename: final_model.pth
+  num_epochs: 3
+  num_trials: 1
+  reproducibility: true
+  save_model: true
+  seed: 42
+  suggest:
+    lr:
+      high: 1e-3
+      log: true
+      low: 1e-5
+    weight_decay:
+      high: 1e-2
+      log: true
+      low: 1e-6
+  task_list:
+  - - 0
+    - 1
+  - - 2
+    - 3
+  - - 4
+    - 5
+  - - 6
+    - 7
+  tensorboard_log_dir: Logs
+logging:
+  base_log_dir: ./Logs
+model:
+  lr: 1e-4
+  type: resnet50
+  weight_decay: 1e-4
+
+[DEBUG] Creating ResNet50 with lr=0.00013674369455366031, weight_decay=0.0016422730271558473
+[HPO] Trial 0 Fold 0 Epoch 0: Train Loss=0.1340, Val Loss=0.1592, Time=14.6s
+[HPO] Trial 0 Fold 0 Epoch 1: Train Loss=0.0486, Val Loss=0.0381, Time=10.6s
+[HPO] Trial 0 Fold 0 Epoch 2: Train Loss=0.0098, Val Loss=0.0170, Time=10.6s
+[DEBUG] Creating ResNet50 with lr=0.00013674369455366031, weight_decay=0.0016422730271558473
+[HPO] Trial 0 Fold 1 Epoch 0: Train Loss=0.1303, Val Loss=0.0748, Time=10.5s
+[HPO] Trial 0 Fold 1 Epoch 1: Train Loss=0.0151, Val Loss=0.0340, Time=10.8s
+[HPO] Trial 0 Fold 1 Epoch 2: Train Loss=0.0161, Val Loss=0.0325, Time=10.7s
+[HPO] Trial 0: Average Loss=0.0247
+[Debug] Best trial: lr=0.00013674369455366031, weight_decay=0.0016422730271558473
+[INFO] Best hyperparameters for Task 0: lr=0.00013674369455366031, weight_decay=0.0016422730271558473
+[DEBUG] Creating ResNet50 with lr=0.00013674369455366031, weight_decay=0.0016422730271558473
+[MODEL INFO] Task 0: ResNet has total 23512130 parameters (23512130 trainable).
+[MODEL INFO] Task 0: Output layer has 2 units.
+[INFO] Task 0 Epoch 0: Train Loss=0.0647, Val Loss=0.1300, Train Acc=0.9817, Val Acc=0.9417
+[INFO] Task 0 Epoch 1: Train Loss=0.0076, Val Loss=0.1891, Train Acc=0.9979, Val Acc=0.9509
+[INFO] Task 0 Epoch 2: Train Loss=0.0124, Val Loss=0.2260, Train Acc=0.9969, Val Acc=0.9233
+[INFO] Finished Task 0
+[INFO] Model checkpoint saved to model_checkpoints/ewc/20250324_200423/task0/model_20250324_200423.pth
+[INFO] Evaluating performance for tasks 1 to 1...
+ => Ave accuracy (this task):    92.331
+ => Ave accuracy (tasks so far): 92.331
+[DEBUG] Creating ResNet50 with lr=2.0324595435187214e-05, weight_decay=0.00015730629268105977
+[HPO] Trial 0 Fold 0 Epoch 0: Train Loss=0.3404, Val Loss=0.0835, Time=30.2s
+[HPO] Trial 0 Fold 0 Epoch 1: Train Loss=0.0440, Val Loss=0.0624, Time=30.2s
+[HPO] Trial 0 Fold 0 Epoch 2: Train Loss=0.0159, Val Loss=0.0361, Time=30.2s
+[DEBUG] Creating ResNet50 with lr=2.0324595435187214e-05, weight_decay=0.00015730629268105977
+[HPO] Trial 0 Fold 1 Epoch 0: Train Loss=0.3158, Val Loss=0.0830, Time=30.2s
+[HPO] Trial 0 Fold 1 Epoch 1: Train Loss=0.0337, Val Loss=0.0590, Time=30.4s
+[HPO] Trial 0 Fold 1 Epoch 2: Train Loss=0.0169, Val Loss=0.0515, Time=30.3s
+[HPO] Trial 0: Average Loss=0.0438
+[Debug] Best trial: lr=2.0324595435187214e-05, weight_decay=0.00015730629268105977
+[INFO] Best hyperparameters for Task 1: lr=2.0324595435187214e-05, weight_decay=0.00015730629268105977
+[MODEL INFO] Task 1: ResNet has total 23516228 parameters (23516228 trainable).
+[MODEL INFO] Task 1: Output layer has 4 units.
+[INFO] Finished Task 1
+[INFO] Model checkpoint saved to model_checkpoints/ewc/20250324_200423/task1/model_20250324_200423.pth
+[INFO] Evaluating performance for tasks 1 to 2...
+ => Ave accuracy (this task):    92.278
+ => Ave accuracy (tasks so far): 46.139
+[DEBUG] Creating ResNet50 with lr=0.0006855652558225741, weight_decay=0.0027375816424849266
+[HPO] Trial 0 Fold 0 Epoch 0: Train Loss=0.2753, Val Loss=10.2828, Time=4.6s
+[HPO] Trial 0 Fold 0 Epoch 1: Train Loss=0.0252, Val Loss=0.0504, Time=4.6s
+[HPO] Trial 0 Fold 0 Epoch 2: Train Loss=0.0140, Val Loss=0.0631, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=0.0006855652558225741, weight_decay=0.0027375816424849266
+[HPO] Trial 0 Fold 1 Epoch 0: Train Loss=0.2430, Val Loss=23.1400, Time=4.6s
+[HPO] Trial 0 Fold 1 Epoch 1: Train Loss=0.0296, Val Loss=0.1526, Time=4.6s
+[HPO] Trial 0 Fold 1 Epoch 2: Train Loss=0.0059, Val Loss=0.0158, Time=4.6s
+[HPO] Trial 0: Average Loss=0.0331
+[Debug] Best trial: lr=0.0006855652558225741, weight_decay=0.0027375816424849266
+[INFO] Best hyperparameters for Task 2: lr=0.0006855652558225741, weight_decay=0.0027375816424849266
+[MODEL INFO] Task 2: ResNet has total 23520326 parameters (23520326 trainable).
+[MODEL INFO] Task 2: Output layer has 6 units.
+[INFO] Finished Task 2
+[INFO] Model checkpoint saved to model_checkpoints/ewc/20250324_200423/task2/model_20250324_200423.pth
+[INFO] Evaluating performance for tasks 1 to 3...
+ => Ave accuracy (this task):    99.952
+ => Ave accuracy (tasks so far): 33.317
+[DEBUG] Creating ResNet50 with lr=5.214370373786145e-05, weight_decay=5.036193001800806e-06
+[HPO] Trial 0 Fold 0 Epoch 0: Train Loss=0.9147, Val Loss=0.5049, Time=3.0s
+[HPO] Trial 0 Fold 0 Epoch 1: Train Loss=0.1338, Val Loss=0.0926, Time=3.0s
+[HPO] Trial 0 Fold 0 Epoch 2: Train Loss=0.0323, Val Loss=0.0743, Time=3.0s
+[DEBUG] Creating ResNet50 with lr=5.214370373786145e-05, weight_decay=5.036193001800806e-06
+[HPO] Trial 0 Fold 1 Epoch 0: Train Loss=0.9345, Val Loss=0.5495, Time=3.0s
+[HPO] Trial 0 Fold 1 Epoch 1: Train Loss=0.1188, Val Loss=0.0841, Time=3.0s
+[HPO] Trial 0 Fold 1 Epoch 2: Train Loss=0.0407, Val Loss=0.0964, Time=3.0s
+[HPO] Trial 0: Average Loss=0.0792
+[Debug] Best trial: lr=5.214370373786145e-05, weight_decay=5.036193001800806e-06
+[INFO] Best hyperparameters for Task 3: lr=5.214370373786145e-05, weight_decay=5.036193001800806e-06
+[MODEL INFO] Task 3: ResNet has total 23524424 parameters (23524424 trainable).
+[MODEL INFO] Task 3: Output layer has 8 units.
+[INFO] Finished Task 3
+[INFO] Model checkpoint saved to model_checkpoints/ewc/20250324_200423/task3/model_20250324_200423.pth
+[INFO] Evaluating performance for tasks 1 to 4...
+ => Ave accuracy (this task):    99.053
+ => Ave accuracy (tasks so far): 24.763
+[INFO] Continual learning training completed.
+Launching Continual Learning Training Pipeline...

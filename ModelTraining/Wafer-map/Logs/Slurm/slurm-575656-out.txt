@@ -1,0 +1,2109 @@
+PYTHONPATH=~/tmp/miniconda3/envs/MaProject/bin/python:
+[I 2025-03-22 20:26:45,776] A new study created in memory with name: no-name-ed740df1-51d0-4275-9bbc-a08245aeb0bd
+[I 2025-03-22 20:30:26,494] Trial 0 finished with value: 0.01490978998704269 and parameters: {'lr': 0.0001330862387910449, 'weight_decay': 2.4811450703626462e-06}. Best is trial 0 with value: 0.01490978998704269.
+[I 2025-03-22 20:34:06,702] Trial 1 finished with value: 0.04675169441203076 and parameters: {'lr': 3.067625473207156e-05, 'weight_decay': 2.3398995732034208e-06}. Best is trial 0 with value: 0.01490978998704269.
+[I 2025-03-22 20:37:46,843] Trial 2 finished with value: 0.03370555607421744 and parameters: {'lr': 0.0004146647592902759, 'weight_decay': 0.0022458277155404317}. Best is trial 0 with value: 0.01490978998704269.
+[I 2025-03-22 20:41:26,959] Trial 3 finished with value: 0.051355173961529804 and parameters: {'lr': 1.4911405013388075e-05, 'weight_decay': 4.524763250322279e-06}. Best is trial 0 with value: 0.01490978998704269.
+[I 2025-03-22 20:45:07,180] Trial 4 finished with value: 0.02666935482392869 and parameters: {'lr': 6.319980221491184e-05, 'weight_decay': 6.839817350429558e-05}. Best is trial 0 with value: 0.01490978998704269.
+[I 2025-03-22 20:48:47,393] Trial 5 finished with value: 0.02166440064695874 and parameters: {'lr': 0.00013950080850612994, 'weight_decay': 0.004818450578235087}. Best is trial 0 with value: 0.01490978998704269.
+[I 2025-03-22 20:52:27,615] Trial 6 finished with value: 0.017902033760507155 and parameters: {'lr': 0.0001132742535274816, 'weight_decay': 0.00013027542764056216}. Best is trial 0 with value: 0.01490978998704269.
+[I 2025-03-22 20:56:08,108] Trial 7 finished with value: 0.05396499157312416 and parameters: {'lr': 1.1431618711795738e-05, 'weight_decay': 0.009865181904963221}. Best is trial 0 with value: 0.01490978998704269.
+[I 2025-03-22 20:59:48,218] Trial 8 finished with value: 0.04576628862114082 and parameters: {'lr': 2.169376373659187e-05, 'weight_decay': 0.005766120972140368}. Best is trial 0 with value: 0.01490978998704269.
+[I 2025-03-22 21:03:29,141] Trial 9 finished with value: 0.01495467567527216 and parameters: {'lr': 0.00018253759158265955, 'weight_decay': 0.0026004744862795034}. Best is trial 0 with value: 0.01490978998704269.
+/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/utils.py:139: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  fig, ax = plt.subplots(figsize=(8, 6))
+[I 2025-03-22 21:07:10,570] Trial 10 finished with value: 0.017935835918310217 and parameters: {'lr': 0.0006875152058921338, 'weight_decay': 1.5973220768174203e-05}. Best is trial 0 with value: 0.01490978998704269.
+[I 2025-03-22 21:10:52,061] Trial 11 finished with value: 0.0105009272012408 and parameters: {'lr': 0.00023814123407148275, 'weight_decay': 0.00031435791962763123}. Best is trial 11 with value: 0.0105009272012408.
+[I 2025-03-22 21:14:33,554] Trial 12 finished with value: 0.018974984090046717 and parameters: {'lr': 0.0002827498385914109, 'weight_decay': 0.0002242547306905876}. Best is trial 11 with value: 0.0105009272012408.
+[I 2025-03-22 21:18:15,099] Trial 13 finished with value: 0.027340923413454045 and parameters: {'lr': 5.443495709060718e-05, 'weight_decay': 0.0004397268767579895}. Best is trial 11 with value: 0.0105009272012408.
+[I 2025-03-22 21:21:56,751] Trial 14 finished with value: 0.01545908556281281 and parameters: {'lr': 0.00023129389188329485, 'weight_decay': 1.0163462650227904e-06}. Best is trial 11 with value: 0.0105009272012408.
+[I 2025-03-22 21:25:38,102] Trial 15 finished with value: 0.013369193812267102 and parameters: {'lr': 0.0008256157892998916, 'weight_decay': 2.233180266789928e-05}. Best is trial 11 with value: 0.0105009272012408.
+[I 2025-03-22 21:29:19,392] Trial 16 finished with value: 0.015620477515620868 and parameters: {'lr': 0.0006939528952674663, 'weight_decay': 2.9592663148385215e-05}. Best is trial 11 with value: 0.0105009272012408.
+[I 2025-03-22 21:33:00,779] Trial 17 finished with value: 0.02959948329108527 and parameters: {'lr': 0.0009554645464244859, 'weight_decay': 0.0006709433517170336}. Best is trial 11 with value: 0.0105009272012408.
+[I 2025-03-22 21:36:41,257] Trial 18 finished with value: 0.01603591194047875 and parameters: {'lr': 0.00039010295991641873, 'weight_decay': 1.644033303138382e-05}. Best is trial 11 with value: 0.0105009272012408.
+[I 2025-03-22 21:40:22,205] Trial 19 finished with value: 0.02270541591508757 and parameters: {'lr': 0.0005324855494378074, 'weight_decay': 0.0009217803333037536}. Best is trial 11 with value: 0.0105009272012408.
+[I 2025-03-22 21:44:11,859] A new study created in memory with name: no-name-81b29ee3-3cff-4522-962e-8a205d70dee2
+[I 2025-03-22 21:54:35,290] Trial 0 finished with value: 0.08923300708015314 and parameters: {'lr': 0.00042360477768797164, 'weight_decay': 0.008794611839544284}. Best is trial 0 with value: 0.08923300708015314.
+[I 2025-03-22 22:04:58,689] Trial 1 finished with value: 0.03537804891624716 and parameters: {'lr': 2.648533123892393e-05, 'weight_decay': 0.0018462233945209685}. Best is trial 1 with value: 0.03537804891624716.
+[I 2025-03-22 22:15:21,775] Trial 2 finished with value: 0.05076057101237089 and parameters: {'lr': 1.051753094198139e-05, 'weight_decay': 0.00012800487541468806}. Best is trial 1 with value: 0.03537804891624716.
+[I 2025-03-22 22:25:45,836] Trial 3 finished with value: 0.02912491855631531 and parameters: {'lr': 7.500451126588129e-05, 'weight_decay': 1.804003445421789e-06}. Best is trial 3 with value: 0.02912491855631531.
+[I 2025-03-22 22:36:10,799] Trial 4 finished with value: 0.030390722471813687 and parameters: {'lr': 0.0002726428622001803, 'weight_decay': 6.504683169251704e-06}. Best is trial 3 with value: 0.02912491855631531.
+[I 2025-03-22 22:46:33,167] Trial 5 finished with value: 0.06660710281594642 and parameters: {'lr': 0.0006170514628524333, 'weight_decay': 0.002711794901958899}. Best is trial 3 with value: 0.02912491855631531.
+[I 2025-03-22 22:56:55,263] Trial 6 finished with value: 0.03241861418961022 and parameters: {'lr': 4.6223382295840276e-05, 'weight_decay': 0.006823850570341315}. Best is trial 3 with value: 0.02912491855631531.
+[I 2025-03-22 23:07:18,224] Trial 7 finished with value: 0.04465480330725049 and parameters: {'lr': 1.570831726100393e-05, 'weight_decay': 3.611364822439125e-05}. Best is trial 3 with value: 0.02912491855631531.
+[I 2025-03-22 23:17:42,613] Trial 8 finished with value: 0.04618757816176587 and parameters: {'lr': 0.0007572238905342682, 'weight_decay': 0.0007000813707462365}. Best is trial 3 with value: 0.02912491855631531.
+[I 2025-03-22 23:28:06,410] Trial 9 finished with value: 0.025359649601912594 and parameters: {'lr': 0.0001972310578432149, 'weight_decay': 2.3330120259651262e-05}. Best is trial 9 with value: 0.025359649601912594.
+[I 2025-03-22 23:38:29,827] Trial 10 finished with value: 0.02652348391986279 and parameters: {'lr': 0.00017501268471157617, 'weight_decay': 3.771091070422107e-05}. Best is trial 9 with value: 0.025359649601912594.
+[I 2025-03-22 23:48:51,728] Trial 11 finished with value: 0.028237193546971844 and parameters: {'lr': 0.0001784893154402019, 'weight_decay': 3.3565655516527826e-05}. Best is trial 9 with value: 0.025359649601912594.
+[I 2025-03-22 23:59:13,479] Trial 12 finished with value: 0.029941170238258607 and parameters: {'lr': 0.0001127438639719898, 'weight_decay': 0.00015809104744001761}. Best is trial 9 with value: 0.025359649601912594.
+[I 2025-03-23 00:09:35,072] Trial 13 finished with value: 0.026975062491220704 and parameters: {'lr': 0.000182401008217435, 'weight_decay': 1.1373084883419422e-05}. Best is trial 9 with value: 0.025359649601912594.
+[I 2025-03-23 00:19:56,393] Trial 14 finished with value: 0.029029236904407722 and parameters: {'lr': 9.339157484897128e-05, 'weight_decay': 1.22844334429298e-06}. Best is trial 9 with value: 0.025359649601912594.
+[I 2025-03-23 00:30:21,620] Trial 15 finished with value: 0.026280041504410188 and parameters: {'lr': 0.00030446832309387074, 'weight_decay': 3.385024224898792e-05}. Best is trial 9 with value: 0.025359649601912594.
+[I 2025-03-23 00:40:46,633] Trial 16 finished with value: 0.02817016811677551 and parameters: {'lr': 0.00034930440553626547, 'weight_decay': 0.0002775948902780089}. Best is trial 9 with value: 0.025359649601912594.
+[I 2025-03-23 00:51:08,242] Trial 17 finished with value: 0.035740482873897673 and parameters: {'lr': 0.0008848249917178627, 'weight_decay': 6.582899941825856e-06}. Best is trial 9 with value: 0.025359649601912594.
+[I 2025-03-23 01:01:29,508] Trial 18 finished with value: 0.03125711393016012 and parameters: {'lr': 5.941675761238076e-05, 'weight_decay': 1.542533397997363e-05}. Best is trial 9 with value: 0.025359649601912594.
+[I 2025-03-23 01:11:51,554] Trial 19 finished with value: 0.02679082366512557 and parameters: {'lr': 0.0004683896595883568, 'weight_decay': 3.1205609107766963e-06}. Best is trial 9 with value: 0.025359649601912594.
+[I 2025-03-23 01:21:25,463] A new study created in memory with name: no-name-7a8b5466-836b-4227-b345-a8d91f35ac70
+[I 2025-03-23 01:23:01,421] Trial 0 finished with value: 0.008736424962210419 and parameters: {'lr': 0.0005184194873933105, 'weight_decay': 5.866743151394987e-05}. Best is trial 0 with value: 0.008736424962210419.
+[I 2025-03-23 01:24:37,882] Trial 1 finished with value: 0.039905243885836425 and parameters: {'lr': 1.9322886599760858e-05, 'weight_decay': 0.0021018914086327607}. Best is trial 0 with value: 0.008736424962210419.
+[I 2025-03-23 01:26:14,553] Trial 2 finished with value: 0.006717695343208366 and parameters: {'lr': 9.286814701846055e-05, 'weight_decay': 0.0008846438660883361}. Best is trial 2 with value: 0.006717695343208366.
+/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+[I 2025-03-23 01:27:52,481] Trial 3 finished with value: 0.014080521530559054 and parameters: {'lr': 0.0008945729759834544, 'weight_decay': 0.002865315132257372}. Best is trial 2 with value: 0.006717695343208366.
+[I 2025-03-23 01:29:28,711] Trial 4 finished with value: 0.00638107542389272 and parameters: {'lr': 0.0002451402542712165, 'weight_decay': 0.0005061631649846791}. Best is trial 4 with value: 0.00638107542389272.
+[I 2025-03-23 01:31:04,975] Trial 5 finished with value: 0.002552621991656322 and parameters: {'lr': 0.0001667936150687349, 'weight_decay': 4.335126239542579e-05}. Best is trial 5 with value: 0.002552621991656322.
+[I 2025-03-23 01:32:41,350] Trial 6 finished with value: 0.014171838777006736 and parameters: {'lr': 3.390737000597879e-05, 'weight_decay': 0.0005701845297270417}. Best is trial 5 with value: 0.002552621991656322.
+[I 2025-03-23 01:34:17,977] Trial 7 finished with value: 0.008440696000824184 and parameters: {'lr': 0.0005095029776218012, 'weight_decay': 0.002311490292793}. Best is trial 5 with value: 0.002552621991656322.
+[I 2025-03-23 01:35:54,387] Trial 8 finished with value: 0.027793769192482744 and parameters: {'lr': 1.9439406596638904e-05, 'weight_decay': 0.00023752256655677181}. Best is trial 5 with value: 0.002552621991656322.
+[I 2025-03-23 01:37:30,727] Trial 9 finished with value: 0.014577927034614342 and parameters: {'lr': 5.989041543037434e-05, 'weight_decay': 0.006465658648393908}. Best is trial 5 with value: 0.002552621991656322.
+[I 2025-03-23 01:39:07,078] Trial 10 finished with value: 0.004169914902636914 and parameters: {'lr': 0.0001846957839770533, 'weight_decay': 4.066304100505998e-06}. Best is trial 5 with value: 0.002552621991656322.
+[I 2025-03-23 01:40:43,457] Trial 11 finished with value: 0.006250578235527168 and parameters: {'lr': 0.00019934876369831015, 'weight_decay': 3.8116692260635082e-06}. Best is trial 5 with value: 0.002552621991656322.
+[I 2025-03-23 01:42:19,762] Trial 12 finished with value: 0.0035558098731728804 and parameters: {'lr': 0.00019301465320643472, 'weight_decay': 8.149176388801632e-06}. Best is trial 5 with value: 0.002552621991656322.
+[I 2025-03-23 01:43:56,111] Trial 13 finished with value: 0.007405433429604662 and parameters: {'lr': 9.372105748318819e-05, 'weight_decay': 2.346986122380745e-05}. Best is trial 5 with value: 0.002552621991656322.
+[I 2025-03-23 01:45:32,465] Trial 14 finished with value: 0.0014787199210591745 and parameters: {'lr': 0.0002611327051634124, 'weight_decay': 2.1054629466059106e-05}. Best is trial 14 with value: 0.0014787199210591745.
+[I 2025-03-23 01:47:08,820] Trial 15 finished with value: 0.002886156614554888 and parameters: {'lr': 0.00032882797527298625, 'weight_decay': 3.214923918687804e-05}. Best is trial 14 with value: 0.0014787199210591745.
+[I 2025-03-23 01:48:45,356] Trial 16 finished with value: 0.009677894845870989 and parameters: {'lr': 6.0966247277291605e-05, 'weight_decay': 1.341560857915924e-06}. Best is trial 14 with value: 0.0014787199210591745.
+[I 2025-03-23 01:50:22,142] Trial 17 finished with value: 0.0066493039734528536 and parameters: {'lr': 0.00013126881846746587, 'weight_decay': 0.00010275497617928522}. Best is trial 14 with value: 0.0014787199210591745.
+[I 2025-03-23 01:51:58,631] Trial 18 finished with value: 0.000898038847675967 and parameters: {'lr': 0.0004397363873106315, 'weight_decay': 2.388690942570528e-05}. Best is trial 18 with value: 0.000898038847675967.
+[I 2025-03-23 01:53:35,461] Trial 19 finished with value: 0.0013196270249490486 and parameters: {'lr': 0.0007873335348991763, 'weight_decay': 1.5260759953197976e-05}. Best is trial 18 with value: 0.000898038847675967.
+/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+[I 2025-03-23 01:56:14,042] A new study created in memory with name: no-name-feae2183-cf92-4bb3-8f30-02fecfebb083
+[I 2025-03-23 01:57:17,496] Trial 0 finished with value: 0.015712691367500357 and parameters: {'lr': 4.790577232896264e-05, 'weight_decay': 0.00011703017431847844}. Best is trial 0 with value: 0.015712691367500357.
+[I 2025-03-23 01:58:21,499] Trial 1 finished with value: 0.013788332156764227 and parameters: {'lr': 0.000328447654226703, 'weight_decay': 0.0009126012904546927}. Best is trial 1 with value: 0.013788332156764227.
+[I 2025-03-23 01:59:25,675] Trial 2 finished with value: 0.015175481921889715 and parameters: {'lr': 6.401296005054995e-05, 'weight_decay': 0.007752329327990219}. Best is trial 1 with value: 0.013788332156764227.
+[I 2025-03-23 02:00:29,778] Trial 3 finished with value: 0.006837775641745087 and parameters: {'lr': 0.00021349902183087838, 'weight_decay': 0.0018528936438395173}. Best is trial 3 with value: 0.006837775641745087.
+[I 2025-03-23 02:01:33,845] Trial 4 finished with value: 0.004814671252259157 and parameters: {'lr': 0.0004667502851330464, 'weight_decay': 3.97473379666185e-06}. Best is trial 4 with value: 0.004814671252259157.
+[I 2025-03-23 02:02:38,437] Trial 5 finished with value: 0.004666623455300901 and parameters: {'lr': 0.0005021347119315867, 'weight_decay': 0.00011531435974017791}. Best is trial 5 with value: 0.004666623455300901.
+[I 2025-03-23 02:03:42,738] Trial 6 finished with value: 0.01448445015315277 and parameters: {'lr': 0.00010185186283982347, 'weight_decay': 0.0009944524955099643}. Best is trial 5 with value: 0.004666623455300901.
+[I 2025-03-23 02:04:47,319] Trial 7 finished with value: 0.07824980157117048 and parameters: {'lr': 1.1800521706217325e-05, 'weight_decay': 0.0041946287964871485}. Best is trial 5 with value: 0.004666623455300901.
+/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+[I 2025-03-23 02:05:51,792] Trial 8 finished with value: 0.05095793850099047 and parameters: {'lr': 0.0008872605720054755, 'weight_decay': 0.0073945553952149065}. Best is trial 5 with value: 0.004666623455300901.
+[I 2025-03-23 02:06:56,223] Trial 9 finished with value: 0.009459759066683344 and parameters: {'lr': 0.0005070092080295254, 'weight_decay': 0.0017518841610521267}. Best is trial 5 with value: 0.004666623455300901.
+[I 2025-03-23 02:08:00,686] Trial 10 finished with value: 0.014686161555194607 and parameters: {'lr': 0.00015321583039964063, 'weight_decay': 7.073552393964882e-06}. Best is trial 5 with value: 0.004666623455300901.
+[I 2025-03-23 02:09:05,072] Trial 11 finished with value: 0.010184478556564298 and parameters: {'lr': 0.0009791564065281715, 'weight_decay': 1.0815020148229942e-06}. Best is trial 5 with value: 0.004666623455300901.
+[I 2025-03-23 02:10:09,271] Trial 12 finished with value: 0.007457495631468999 and parameters: {'lr': 0.0004223780268230506, 'weight_decay': 2.8766797827136332e-05}. Best is trial 5 with value: 0.004666623455300901.
+[I 2025-03-23 02:11:13,224] Trial 13 finished with value: 0.023227259723676577 and parameters: {'lr': 2.6648420437766805e-05, 'weight_decay': 0.00018028525634753044}. Best is trial 5 with value: 0.004666623455300901.
+[I 2025-03-23 02:12:17,341] Trial 14 finished with value: 0.01261029478256306 and parameters: {'lr': 0.00025301699918822506, 'weight_decay': 1.674340229958318e-05}. Best is trial 5 with value: 0.004666623455300901.
+[I 2025-03-23 02:13:21,351] Trial 15 finished with value: 0.01552585474605116 and parameters: {'lr': 0.0005789567968626578, 'weight_decay': 1.7163835978331356e-06}. Best is trial 5 with value: 0.004666623455300901.
+[I 2025-03-23 02:14:25,371] Trial 16 finished with value: 0.007932519790807014 and parameters: {'lr': 0.00013879622255999995, 'weight_decay': 0.00029147707860167405}. Best is trial 5 with value: 0.004666623455300901.
+[I 2025-03-23 02:15:29,638] Trial 17 finished with value: 0.007230340864322689 and parameters: {'lr': 0.0007221892257318899, 'weight_decay': 6.527957320960774e-06}. Best is trial 5 with value: 0.004666623455300901.
+[I 2025-03-23 02:16:33,775] Trial 18 finished with value: 0.0036755032682170468 and parameters: {'lr': 0.0003254129055326989, 'weight_decay': 4.384077535679588e-05}. Best is trial 18 with value: 0.0036755032682170468.
+[I 2025-03-23 02:17:37,903] Trial 19 finished with value: 0.002865794194399819 and parameters: {'lr': 0.00022869841983697302, 'weight_decay': 5.9708412642481604e-05}. Best is trial 19 with value: 0.002865794194399819.
+[INFO] Loaded configuration:
+dataset:
+  path: /home/anhcao/tmp/Dataset/Wafermap-dataset/WM811K.pkl
+experiment:
+  checkpoint_base_dir: model_checkpoints
+  continual_learning: true
+  continual_method: baseline
+  ewc_lambda: 100.0
+  final_epochs: 20
+  final_model_filename: final_model.pth
+  num_epochs: 10
+  num_trials: 20
+  reproducibility: true
+  save_model: true
+  seed: 42
+  suggest:
+    lr:
+      high: 1e-3
+      log: true
+      low: 1e-5
+    weight_decay:
+      high: 1e-2
+      log: true
+      low: 1e-6
+  task_list:
+  - - 0
+    - 1
+  - - 2
+    - 3
+  - - 4
+    - 5
+  - - 6
+    - 7
+  tensorboard_log_dir: Logs
+logging:
+  base_log_dir: ./Logs
+model:
+  lr: 1e-4
+  type: resnet50
+  weight_decay: 1e-4
+
+[INFO] Reproducibility enabled. Seed set to 42
+[INFO] Using device: cuda
+[INFO] Starting continual learning training pipeline with method: baseline
+[INFO] Configuration being used:
+dataset:
+  path: /home/anhcao/tmp/Dataset/Wafermap-dataset/WM811K.pkl
+experiment:
+  checkpoint_base_dir: model_checkpoints
+  continual_learning: true
+  continual_method: baseline
+  ewc_lambda: 100.0
+  final_epochs: 20
+  final_model_filename: final_model.pth
+  num_epochs: 10
+  num_trials: 20
+  reproducibility: true
+  save_model: true
+  seed: 42
+  suggest:
+    lr:
+      high: 1e-3
+      log: true
+      low: 1e-5
+    weight_decay:
+      high: 1e-2
+      log: true
+      low: 1e-6
+  task_list:
+  - - 0
+    - 1
+  - - 2
+    - 3
+  - - 4
+    - 5
+  - - 6
+    - 7
+  tensorboard_log_dir: Logs
+logging:
+  base_log_dir: ./Logs
+model:
+  lr: 1e-4
+  type: resnet50
+  weight_decay: 1e-4
+
+[DEBUG] Creating ResNet50 with lr=0.0001330862387910449, weight_decay=2.4811450703626462e-06
+[HPO] Trial 0 Fold 0 Epoch 0: Train Loss=0.1331, Val Loss=0.0658, Time=10.7s
+[HPO] Trial 0 Fold 0 Epoch 1: Train Loss=0.0528, Val Loss=0.0299, Time=10.5s
+[HPO] Trial 0 Fold 0 Epoch 2: Train Loss=0.0114, Val Loss=0.0325, Time=10.5s
+[HPO] Trial 0 Fold 0 Epoch 3: Train Loss=0.0073, Val Loss=0.0201, Time=10.5s
+[HPO] Trial 0 Fold 0 Epoch 4: Train Loss=0.0028, Val Loss=0.0262, Time=10.6s
+[HPO] Trial 0 Fold 0 Epoch 5: Train Loss=0.0104, Val Loss=0.0372, Time=10.6s
+[HPO] Trial 0 Fold 0 Epoch 6: Train Loss=0.0034, Val Loss=0.0360, Time=10.6s
+[HPO] Trial 0 Fold 0 Epoch 7: Train Loss=0.0022, Val Loss=0.0222, Time=10.6s
+[HPO] Trial 0 Fold 0 Epoch 8: Train Loss=0.0072, Val Loss=0.0212, Time=10.7s
+[HPO] Trial 0 Fold 0 Epoch 9: Train Loss=0.0068, Val Loss=0.0190, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=0.0001330862387910449, weight_decay=2.4811450703626462e-06
+[HPO] Trial 0 Fold 1 Epoch 0: Train Loss=0.1084, Val Loss=0.0630, Time=10.7s
+[HPO] Trial 0 Fold 1 Epoch 1: Train Loss=0.0191, Val Loss=0.0215, Time=10.6s
+[HPO] Trial 0 Fold 1 Epoch 2: Train Loss=0.0093, Val Loss=0.0128, Time=10.7s
+[HPO] Trial 0 Fold 1 Epoch 3: Train Loss=0.0011, Val Loss=0.0128, Time=10.7s
+[HPO] Trial 0 Fold 1 Epoch 4: Train Loss=0.0005, Val Loss=0.0108, Time=10.7s
+[HPO] Trial 0 Fold 1 Epoch 5: Train Loss=0.0023, Val Loss=0.0131, Time=10.7s
+[HPO] Trial 0 Fold 1 Epoch 6: Train Loss=0.0130, Val Loss=0.0241, Time=10.7s
+[HPO] Trial 0 Fold 1 Epoch 7: Train Loss=0.0046, Val Loss=0.0334, Time=10.7s
+[HPO] Trial 0 Fold 1 Epoch 8: Train Loss=0.0112, Val Loss=0.0129, Time=10.7s
+[HPO] Trial 0 Fold 1 Epoch 9: Train Loss=0.0058, Val Loss=0.0314, Time=10.7s
+[HPO] Trial 0: Average Loss=0.0149
+[DEBUG] Creating ResNet50 with lr=3.067625473207156e-05, weight_decay=2.3398995732034208e-06
+[HPO] Trial 1 Fold 0 Epoch 0: Train Loss=0.2142, Val Loss=0.1425, Time=10.7s
+[HPO] Trial 1 Fold 0 Epoch 1: Train Loss=0.0399, Val Loss=0.0765, Time=10.7s
+[HPO] Trial 1 Fold 0 Epoch 2: Train Loss=0.0106, Val Loss=0.0528, Time=10.7s
+[HPO] Trial 1 Fold 0 Epoch 3: Train Loss=0.0104, Val Loss=0.0520, Time=10.7s
+[HPO] Trial 1 Fold 0 Epoch 4: Train Loss=0.0073, Val Loss=0.0547, Time=10.7s
+[HPO] Trial 1 Fold 0 Epoch 5: Train Loss=0.0065, Val Loss=0.0537, Time=10.7s
+[HPO] Trial 1 Fold 0 Epoch 6: Train Loss=0.0036, Val Loss=0.0547, Time=10.7s
+[HPO] Trial 1 Fold 0 Epoch 7: Train Loss=0.0020, Val Loss=0.0495, Time=10.7s
+[HPO] Trial 1 Fold 0 Epoch 8: Train Loss=0.0093, Val Loss=0.0561, Time=10.7s
+[HPO] Trial 1 Fold 0 Epoch 9: Train Loss=0.0218, Val Loss=0.0456, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=3.067625473207156e-05, weight_decay=2.3398995732034208e-06
+[HPO] Trial 1 Fold 1 Epoch 0: Train Loss=0.3798, Val Loss=0.2060, Time=10.7s
+[HPO] Trial 1 Fold 1 Epoch 1: Train Loss=0.0482, Val Loss=0.1033, Time=10.7s
+[HPO] Trial 1 Fold 1 Epoch 2: Train Loss=0.0156, Val Loss=0.0593, Time=10.7s
+[HPO] Trial 1 Fold 1 Epoch 3: Train Loss=0.0093, Val Loss=0.0529, Time=10.7s
+[HPO] Trial 1 Fold 1 Epoch 4: Train Loss=0.0082, Val Loss=0.0498, Time=10.7s
+[HPO] Trial 1 Fold 1 Epoch 5: Train Loss=0.0058, Val Loss=0.0497, Time=10.7s
+[HPO] Trial 1 Fold 1 Epoch 6: Train Loss=0.0084, Val Loss=0.0589, Time=10.7s
+[HPO] Trial 1 Fold 1 Epoch 7: Train Loss=0.0037, Val Loss=0.0479, Time=10.7s
+[HPO] Trial 1 Fold 1 Epoch 8: Train Loss=0.0079, Val Loss=0.0557, Time=10.7s
+[HPO] Trial 1 Fold 1 Epoch 9: Train Loss=0.0063, Val Loss=0.0522, Time=10.7s
+[HPO] Trial 1: Average Loss=0.0468
+[DEBUG] Creating ResNet50 with lr=0.0004146647592902759, weight_decay=0.0022458277155404317
+[HPO] Trial 2 Fold 0 Epoch 0: Train Loss=0.1341, Val Loss=0.0744, Time=10.7s
+[HPO] Trial 2 Fold 0 Epoch 1: Train Loss=0.0174, Val Loss=0.0354, Time=10.7s
+[HPO] Trial 2 Fold 0 Epoch 2: Train Loss=0.0362, Val Loss=0.0564, Time=10.7s
+[HPO] Trial 2 Fold 0 Epoch 3: Train Loss=0.0294, Val Loss=0.0615, Time=10.7s
+[HPO] Trial 2 Fold 0 Epoch 4: Train Loss=0.0167, Val Loss=0.0450, Time=10.7s
+[HPO] Trial 2 Fold 0 Epoch 5: Train Loss=0.0049, Val Loss=0.0393, Time=10.7s
+[HPO] Trial 2 Fold 0 Epoch 6: Train Loss=0.0244, Val Loss=0.3853, Time=10.7s
+[HPO] Trial 2 Fold 0 Epoch 7: Train Loss=0.0422, Val Loss=0.2992, Time=10.7s
+[HPO] Trial 2 Fold 0 Epoch 8: Train Loss=0.0290, Val Loss=0.0538, Time=10.7s
+[HPO] Trial 2 Fold 0 Epoch 9: Train Loss=0.0241, Val Loss=0.0403, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=0.0004146647592902759, weight_decay=0.0022458277155404317
+[HPO] Trial 2 Fold 1 Epoch 0: Train Loss=0.1381, Val Loss=0.4353, Time=10.7s
+[HPO] Trial 2 Fold 1 Epoch 1: Train Loss=0.0208, Val Loss=0.0434, Time=10.7s
+[HPO] Trial 2 Fold 1 Epoch 2: Train Loss=0.0130, Val Loss=0.0357, Time=10.7s
+[HPO] Trial 2 Fold 1 Epoch 3: Train Loss=0.0508, Val Loss=0.0924, Time=10.7s
+[HPO] Trial 2 Fold 1 Epoch 4: Train Loss=0.0561, Val Loss=0.1374, Time=10.7s
+[HPO] Trial 2 Fold 1 Epoch 5: Train Loss=0.0283, Val Loss=0.1592, Time=10.7s
+[HPO] Trial 2 Fold 1 Epoch 6: Train Loss=0.0158, Val Loss=0.0320, Time=10.7s
+[HPO] Trial 2 Fold 1 Epoch 7: Train Loss=0.0020, Val Loss=0.1576, Time=10.7s
+[HPO] Trial 2 Fold 1 Epoch 8: Train Loss=0.0016, Val Loss=0.1058, Time=10.7s
+[HPO] Trial 2 Fold 1 Epoch 9: Train Loss=0.0153, Val Loss=0.1882, Time=10.7s
+[HPO] Trial 2: Average Loss=0.0337
+[DEBUG] Creating ResNet50 with lr=1.4911405013388075e-05, weight_decay=4.524763250322279e-06
+[HPO] Trial 3 Fold 0 Epoch 0: Train Loss=0.2924, Val Loss=0.2047, Time=10.7s
+[HPO] Trial 3 Fold 0 Epoch 1: Train Loss=0.0970, Val Loss=0.1184, Time=10.7s
+[HPO] Trial 3 Fold 0 Epoch 2: Train Loss=0.0361, Val Loss=0.0664, Time=10.7s
+[HPO] Trial 3 Fold 0 Epoch 3: Train Loss=0.0174, Val Loss=0.0620, Time=10.7s
+[HPO] Trial 3 Fold 0 Epoch 4: Train Loss=0.0119, Val Loss=0.0501, Time=10.7s
+[HPO] Trial 3 Fold 0 Epoch 5: Train Loss=0.0108, Val Loss=0.0461, Time=10.7s
+[HPO] Trial 3 Fold 0 Epoch 6: Train Loss=0.0053, Val Loss=0.0467, Time=10.7s
+[HPO] Trial 3 Fold 0 Epoch 7: Train Loss=0.0044, Val Loss=0.0521, Time=10.7s
+[HPO] Trial 3 Fold 0 Epoch 8: Train Loss=0.0063, Val Loss=0.0506, Time=10.7s
+[HPO] Trial 3 Fold 0 Epoch 9: Train Loss=0.0097, Val Loss=0.0707, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=1.4911405013388075e-05, weight_decay=4.524763250322279e-06
+[HPO] Trial 3 Fold 1 Epoch 0: Train Loss=0.4119, Val Loss=0.3299, Time=10.7s
+[HPO] Trial 3 Fold 1 Epoch 1: Train Loss=0.1040, Val Loss=0.1347, Time=10.7s
+[HPO] Trial 3 Fold 1 Epoch 2: Train Loss=0.0415, Val Loss=0.0700, Time=10.7s
+[HPO] Trial 3 Fold 1 Epoch 3: Train Loss=0.0183, Val Loss=0.0622, Time=10.7s
+[HPO] Trial 3 Fold 1 Epoch 4: Train Loss=0.0102, Val Loss=0.0570, Time=10.7s
+[HPO] Trial 3 Fold 1 Epoch 5: Train Loss=0.0070, Val Loss=0.0568, Time=10.7s
+[HPO] Trial 3 Fold 1 Epoch 6: Train Loss=0.0126, Val Loss=0.0609, Time=10.7s
+[HPO] Trial 3 Fold 1 Epoch 7: Train Loss=0.0110, Val Loss=0.0568, Time=10.7s
+[HPO] Trial 3 Fold 1 Epoch 8: Train Loss=0.0056, Val Loss=0.0566, Time=10.7s
+[HPO] Trial 3 Fold 1 Epoch 9: Train Loss=0.0045, Val Loss=0.0595, Time=10.7s
+[HPO] Trial 3: Average Loss=0.0514
+[DEBUG] Creating ResNet50 with lr=6.319980221491184e-05, weight_decay=6.839817350429558e-05
+[HPO] Trial 4 Fold 0 Epoch 0: Train Loss=0.2075, Val Loss=0.1036, Time=10.7s
+[HPO] Trial 4 Fold 0 Epoch 1: Train Loss=0.0214, Val Loss=0.0984, Time=10.7s
+[HPO] Trial 4 Fold 0 Epoch 2: Train Loss=0.0229, Val Loss=0.0528, Time=10.7s
+[HPO] Trial 4 Fold 0 Epoch 3: Train Loss=0.0125, Val Loss=0.0710, Time=10.7s
+[HPO] Trial 4 Fold 0 Epoch 4: Train Loss=0.0061, Val Loss=0.0258, Time=10.7s
+[HPO] Trial 4 Fold 0 Epoch 5: Train Loss=0.0041, Val Loss=0.0370, Time=10.7s
+[HPO] Trial 4 Fold 0 Epoch 6: Train Loss=0.0073, Val Loss=0.0793, Time=10.7s
+[HPO] Trial 4 Fold 0 Epoch 7: Train Loss=0.0019, Val Loss=0.0506, Time=10.7s
+[HPO] Trial 4 Fold 0 Epoch 8: Train Loss=0.0015, Val Loss=0.0383, Time=10.7s
+[HPO] Trial 4 Fold 0 Epoch 9: Train Loss=0.0008, Val Loss=0.0400, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=6.319980221491184e-05, weight_decay=6.839817350429558e-05
+[HPO] Trial 4 Fold 1 Epoch 0: Train Loss=0.2552, Val Loss=0.1323, Time=10.7s
+[HPO] Trial 4 Fold 1 Epoch 1: Train Loss=0.0289, Val Loss=0.0368, Time=10.7s
+[HPO] Trial 4 Fold 1 Epoch 2: Train Loss=0.0169, Val Loss=0.0374, Time=10.7s
+[HPO] Trial 4 Fold 1 Epoch 3: Train Loss=0.0091, Val Loss=0.0275, Time=10.7s
+[HPO] Trial 4 Fold 1 Epoch 4: Train Loss=0.0066, Val Loss=0.0319, Time=10.7s
+[HPO] Trial 4 Fold 1 Epoch 5: Train Loss=0.0106, Val Loss=0.0325, Time=10.7s
+[HPO] Trial 4 Fold 1 Epoch 6: Train Loss=0.0035, Val Loss=0.0325, Time=10.7s
+[HPO] Trial 4 Fold 1 Epoch 7: Train Loss=0.0016, Val Loss=0.0371, Time=10.7s
+[HPO] Trial 4 Fold 1 Epoch 8: Train Loss=0.0017, Val Loss=0.0337, Time=10.7s
+[HPO] Trial 4 Fold 1 Epoch 9: Train Loss=0.0013, Val Loss=0.0396, Time=10.7s
+[HPO] Trial 4: Average Loss=0.0267
+[DEBUG] Creating ResNet50 with lr=0.00013950080850612994, weight_decay=0.004818450578235087
+[HPO] Trial 5 Fold 0 Epoch 0: Train Loss=0.1523, Val Loss=0.0716, Time=10.7s
+[HPO] Trial 5 Fold 0 Epoch 1: Train Loss=0.0181, Val Loss=0.0229, Time=10.7s
+[HPO] Trial 5 Fold 0 Epoch 2: Train Loss=0.0171, Val Loss=0.0165, Time=10.7s
+[HPO] Trial 5 Fold 0 Epoch 3: Train Loss=0.0063, Val Loss=0.0693, Time=10.7s
+[HPO] Trial 5 Fold 0 Epoch 4: Train Loss=0.0211, Val Loss=0.0497, Time=10.7s
+[HPO] Trial 5 Fold 0 Epoch 5: Train Loss=0.0038, Val Loss=0.0235, Time=10.6s
+[HPO] Trial 5 Fold 0 Epoch 6: Train Loss=0.0007, Val Loss=0.0238, Time=10.7s
+[HPO] Trial 5 Fold 0 Epoch 7: Train Loss=0.0176, Val Loss=0.6239, Time=10.7s
+[HPO] Trial 5 Fold 0 Epoch 8: Train Loss=0.0734, Val Loss=0.0474, Time=10.7s
+[HPO] Trial 5 Fold 0 Epoch 9: Train Loss=0.0208, Val Loss=0.0385, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=0.00013950080850612994, weight_decay=0.004818450578235087
+[HPO] Trial 5 Fold 1 Epoch 0: Train Loss=0.1216, Val Loss=0.1992, Time=10.7s
+[HPO] Trial 5 Fold 1 Epoch 1: Train Loss=0.0331, Val Loss=0.0286, Time=10.7s
+[HPO] Trial 5 Fold 1 Epoch 2: Train Loss=0.0104, Val Loss=0.0407, Time=10.7s
+[HPO] Trial 5 Fold 1 Epoch 3: Train Loss=0.0127, Val Loss=0.0459, Time=10.7s
+[HPO] Trial 5 Fold 1 Epoch 4: Train Loss=0.0108, Val Loss=0.0268, Time=10.7s
+[HPO] Trial 5 Fold 1 Epoch 5: Train Loss=0.0094, Val Loss=0.0372, Time=10.7s
+[HPO] Trial 5 Fold 1 Epoch 6: Train Loss=0.0074, Val Loss=0.0717, Time=10.7s
+[HPO] Trial 5 Fold 1 Epoch 7: Train Loss=0.0313, Val Loss=0.3058, Time=10.7s
+[HPO] Trial 5 Fold 1 Epoch 8: Train Loss=0.0163, Val Loss=0.0493, Time=10.7s
+[HPO] Trial 5 Fold 1 Epoch 9: Train Loss=0.0188, Val Loss=0.0469, Time=10.7s
+[HPO] Trial 5: Average Loss=0.0217
+[DEBUG] Creating ResNet50 with lr=0.0001132742535274816, weight_decay=0.00013027542764056216
+[HPO] Trial 6 Fold 0 Epoch 0: Train Loss=0.1259, Val Loss=0.0793, Time=10.7s
+[HPO] Trial 6 Fold 0 Epoch 1: Train Loss=0.0209, Val Loss=0.0274, Time=10.7s
+[HPO] Trial 6 Fold 0 Epoch 2: Train Loss=0.0111, Val Loss=0.0196, Time=10.7s
+[HPO] Trial 6 Fold 0 Epoch 3: Train Loss=0.0044, Val Loss=0.0591, Time=10.7s
+[HPO] Trial 6 Fold 0 Epoch 4: Train Loss=0.0025, Val Loss=0.0368, Time=10.7s
+[HPO] Trial 6 Fold 0 Epoch 5: Train Loss=0.0019, Val Loss=0.0210, Time=10.7s
+[HPO] Trial 6 Fold 0 Epoch 6: Train Loss=0.0010, Val Loss=0.0290, Time=10.7s
+[HPO] Trial 6 Fold 0 Epoch 7: Train Loss=0.0146, Val Loss=0.0308, Time=10.7s
+[HPO] Trial 6 Fold 0 Epoch 8: Train Loss=0.0156, Val Loss=0.0243, Time=10.7s
+[HPO] Trial 6 Fold 0 Epoch 9: Train Loss=0.0016, Val Loss=0.0233, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=0.0001132742535274816, weight_decay=0.00013027542764056216
+[HPO] Trial 6 Fold 1 Epoch 0: Train Loss=0.1534, Val Loss=0.0717, Time=10.7s
+[HPO] Trial 6 Fold 1 Epoch 1: Train Loss=0.0225, Val Loss=0.0519, Time=10.7s
+[HPO] Trial 6 Fold 1 Epoch 2: Train Loss=0.0083, Val Loss=0.0341, Time=10.7s
+[HPO] Trial 6 Fold 1 Epoch 3: Train Loss=0.0170, Val Loss=0.0313, Time=10.7s
+[HPO] Trial 6 Fold 1 Epoch 4: Train Loss=0.0101, Val Loss=0.0293, Time=10.7s
+[HPO] Trial 6 Fold 1 Epoch 5: Train Loss=0.0029, Val Loss=0.0223, Time=10.7s
+[HPO] Trial 6 Fold 1 Epoch 6: Train Loss=0.0006, Val Loss=0.0162, Time=10.7s
+[HPO] Trial 6 Fold 1 Epoch 7: Train Loss=0.0004, Val Loss=0.0162, Time=10.7s
+[HPO] Trial 6 Fold 1 Epoch 8: Train Loss=0.0003, Val Loss=0.0173, Time=10.7s
+[HPO] Trial 6 Fold 1 Epoch 9: Train Loss=0.0003, Val Loss=0.0165, Time=10.7s
+[HPO] Trial 6: Average Loss=0.0179
+[DEBUG] Creating ResNet50 with lr=1.1431618711795738e-05, weight_decay=0.009865181904963221
+[HPO] Trial 7 Fold 0 Epoch 0: Train Loss=0.4112, Val Loss=0.3615, Time=10.7s
+[HPO] Trial 7 Fold 0 Epoch 1: Train Loss=0.1635, Val Loss=0.1718, Time=10.7s
+[HPO] Trial 7 Fold 0 Epoch 2: Train Loss=0.0747, Val Loss=0.0911, Time=10.7s
+[HPO] Trial 7 Fold 0 Epoch 3: Train Loss=0.0337, Val Loss=0.0737, Time=10.7s
+[HPO] Trial 7 Fold 0 Epoch 4: Train Loss=0.0215, Val Loss=0.0688, Time=10.7s
+[HPO] Trial 7 Fold 0 Epoch 5: Train Loss=0.0187, Val Loss=0.0616, Time=10.7s
+[HPO] Trial 7 Fold 0 Epoch 6: Train Loss=0.0134, Val Loss=0.0603, Time=10.8s
+[HPO] Trial 7 Fold 0 Epoch 7: Train Loss=0.0088, Val Loss=0.0609, Time=10.7s
+[HPO] Trial 7 Fold 0 Epoch 8: Train Loss=0.0073, Val Loss=0.0580, Time=10.7s
+[HPO] Trial 7 Fold 0 Epoch 9: Train Loss=0.0064, Val Loss=0.0564, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=1.1431618711795738e-05, weight_decay=0.009865181904963221
+[HPO] Trial 7 Fold 1 Epoch 0: Train Loss=0.4033, Val Loss=0.2521, Time=10.7s
+[HPO] Trial 7 Fold 1 Epoch 1: Train Loss=0.1706, Val Loss=0.1584, Time=10.7s
+[HPO] Trial 7 Fold 1 Epoch 2: Train Loss=0.0725, Val Loss=0.0879, Time=10.7s
+[HPO] Trial 7 Fold 1 Epoch 3: Train Loss=0.0415, Val Loss=0.0707, Time=10.7s
+[HPO] Trial 7 Fold 1 Epoch 4: Train Loss=0.0289, Val Loss=0.0589, Time=10.7s
+[HPO] Trial 7 Fold 1 Epoch 5: Train Loss=0.0187, Val Loss=0.0563, Time=10.7s
+[HPO] Trial 7 Fold 1 Epoch 6: Train Loss=0.0124, Val Loss=0.0573, Time=10.7s
+[HPO] Trial 7 Fold 1 Epoch 7: Train Loss=0.0200, Val Loss=0.0528, Time=10.7s
+[HPO] Trial 7 Fold 1 Epoch 8: Train Loss=0.0186, Val Loss=0.0621, Time=10.7s
+[HPO] Trial 7 Fold 1 Epoch 9: Train Loss=0.0092, Val Loss=0.0515, Time=10.7s
+[HPO] Trial 7: Average Loss=0.0540
+[DEBUG] Creating ResNet50 with lr=2.169376373659187e-05, weight_decay=0.005766120972140368
+[HPO] Trial 8 Fold 0 Epoch 0: Train Loss=0.4125, Val Loss=0.2202, Time=10.7s
+[HPO] Trial 8 Fold 0 Epoch 1: Train Loss=0.0720, Val Loss=0.0793, Time=10.7s
+[HPO] Trial 8 Fold 0 Epoch 2: Train Loss=0.0227, Val Loss=0.0494, Time=10.7s
+[HPO] Trial 8 Fold 0 Epoch 3: Train Loss=0.0106, Val Loss=0.0486, Time=10.7s
+[HPO] Trial 8 Fold 0 Epoch 4: Train Loss=0.0079, Val Loss=0.0524, Time=10.7s
+[HPO] Trial 8 Fold 0 Epoch 5: Train Loss=0.0060, Val Loss=0.0469, Time=10.7s
+[HPO] Trial 8 Fold 0 Epoch 6: Train Loss=0.0044, Val Loss=0.0463, Time=10.7s
+[HPO] Trial 8 Fold 0 Epoch 7: Train Loss=0.0037, Val Loss=0.0462, Time=10.7s
+[HPO] Trial 8 Fold 0 Epoch 8: Train Loss=0.0037, Val Loss=0.0478, Time=10.7s
+[HPO] Trial 8 Fold 0 Epoch 9: Train Loss=0.0048, Val Loss=0.0412, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=2.169376373659187e-05, weight_decay=0.005766120972140368
+[HPO] Trial 8 Fold 1 Epoch 0: Train Loss=0.4322, Val Loss=0.3446, Time=10.7s
+[HPO] Trial 8 Fold 1 Epoch 1: Train Loss=0.0771, Val Loss=0.1292, Time=10.7s
+[HPO] Trial 8 Fold 1 Epoch 2: Train Loss=0.0243, Val Loss=0.0636, Time=10.7s
+[HPO] Trial 8 Fold 1 Epoch 3: Train Loss=0.0105, Val Loss=0.0503, Time=10.7s
+[HPO] Trial 8 Fold 1 Epoch 4: Train Loss=0.0077, Val Loss=0.0509, Time=10.7s
+[HPO] Trial 8 Fold 1 Epoch 5: Train Loss=0.0059, Val Loss=0.0525, Time=10.7s
+[HPO] Trial 8 Fold 1 Epoch 6: Train Loss=0.0038, Val Loss=0.0529, Time=10.7s
+[HPO] Trial 8 Fold 1 Epoch 7: Train Loss=0.0037, Val Loss=0.0537, Time=10.7s
+[HPO] Trial 8 Fold 1 Epoch 8: Train Loss=0.0093, Val Loss=0.0623, Time=10.7s
+[HPO] Trial 8 Fold 1 Epoch 9: Train Loss=0.0128, Val Loss=0.0829, Time=10.7s
+[HPO] Trial 8: Average Loss=0.0458
+[DEBUG] Creating ResNet50 with lr=0.00018253759158265955, weight_decay=0.0026004744862795034
+[HPO] Trial 9 Fold 0 Epoch 0: Train Loss=0.1314, Val Loss=0.0764, Time=10.7s
+[HPO] Trial 9 Fold 0 Epoch 1: Train Loss=0.0232, Val Loss=0.0385, Time=10.7s
+[HPO] Trial 9 Fold 0 Epoch 2: Train Loss=0.0127, Val Loss=0.1159, Time=10.7s
+[HPO] Trial 9 Fold 0 Epoch 3: Train Loss=0.0091, Val Loss=0.0260, Time=10.7s
+[HPO] Trial 9 Fold 0 Epoch 4: Train Loss=0.0258, Val Loss=0.1418, Time=10.7s
+[HPO] Trial 9 Fold 0 Epoch 5: Train Loss=0.0125, Val Loss=0.0198, Time=10.7s
+[HPO] Trial 9 Fold 0 Epoch 6: Train Loss=0.0114, Val Loss=0.0240, Time=10.7s
+[HPO] Trial 9 Fold 0 Epoch 7: Train Loss=0.0252, Val Loss=0.0599, Time=10.7s
+[HPO] Trial 9 Fold 0 Epoch 8: Train Loss=0.0084, Val Loss=0.0431, Time=10.7s
+[HPO] Trial 9 Fold 0 Epoch 9: Train Loss=0.0114, Val Loss=0.0386, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=0.00018253759158265955, weight_decay=0.0026004744862795034
+[HPO] Trial 9 Fold 1 Epoch 0: Train Loss=0.1334, Val Loss=0.0947, Time=10.7s
+[HPO] Trial 9 Fold 1 Epoch 1: Train Loss=0.0244, Val Loss=0.0171, Time=10.7s
+[HPO] Trial 9 Fold 1 Epoch 2: Train Loss=0.0093, Val Loss=0.0402, Time=10.7s
+[HPO] Trial 9 Fold 1 Epoch 3: Train Loss=0.0133, Val Loss=0.0853, Time=10.7s
+[HPO] Trial 9 Fold 1 Epoch 4: Train Loss=0.0163, Val Loss=0.0422, Time=10.8s
+[HPO] Trial 9 Fold 1 Epoch 5: Train Loss=0.0105, Val Loss=0.0217, Time=10.7s
+[HPO] Trial 9 Fold 1 Epoch 6: Train Loss=0.0162, Val Loss=0.0361, Time=10.7s
+[HPO] Trial 9 Fold 1 Epoch 7: Train Loss=0.0131, Val Loss=0.0198, Time=10.7s
+[HPO] Trial 9 Fold 1 Epoch 8: Train Loss=0.0028, Val Loss=0.0101, Time=10.7s
+[HPO] Trial 9 Fold 1 Epoch 9: Train Loss=0.0006, Val Loss=0.0160, Time=10.8s
+[HPO] Trial 9: Average Loss=0.0150
+[DEBUG] Creating ResNet50 with lr=0.0006875152058921338, weight_decay=1.5973220768174203e-05
+[HPO] Trial 10 Fold 0 Epoch 0: Train Loss=0.1638, Val Loss=0.4083, Time=10.7s
+[HPO] Trial 10 Fold 0 Epoch 1: Train Loss=0.0542, Val Loss=0.0227, Time=10.7s
+[HPO] Trial 10 Fold 0 Epoch 2: Train Loss=0.0199, Val Loss=0.1440, Time=10.7s
+[HPO] Trial 10 Fold 0 Epoch 3: Train Loss=0.0486, Val Loss=1.0915, Time=10.7s
+[HPO] Trial 10 Fold 0 Epoch 4: Train Loss=0.0247, Val Loss=0.1978, Time=10.7s
+[HPO] Trial 10 Fold 0 Epoch 5: Train Loss=0.0075, Val Loss=0.0246, Time=10.7s
+[HPO] Trial 10 Fold 0 Epoch 6: Train Loss=0.0023, Val Loss=0.0172, Time=10.7s
+[HPO] Trial 10 Fold 0 Epoch 7: Train Loss=0.0094, Val Loss=0.3157, Time=10.7s
+[HPO] Trial 10 Fold 0 Epoch 8: Train Loss=0.0016, Val Loss=0.0275, Time=10.7s
+[HPO] Trial 10 Fold 0 Epoch 9: Train Loss=0.0019, Val Loss=0.0349, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=0.0006875152058921338, weight_decay=1.5973220768174203e-05
+[HPO] Trial 10 Fold 1 Epoch 0: Train Loss=0.1561, Val Loss=0.1108, Time=10.8s
+[HPO] Trial 10 Fold 1 Epoch 1: Train Loss=0.0579, Val Loss=0.0577, Time=10.8s
+[HPO] Trial 10 Fold 1 Epoch 2: Train Loss=0.0383, Val Loss=0.9909, Time=10.8s
+[HPO] Trial 10 Fold 1 Epoch 3: Train Loss=0.0300, Val Loss=0.0400, Time=10.7s
+[HPO] Trial 10 Fold 1 Epoch 4: Train Loss=0.0190, Val Loss=0.3368, Time=10.8s
+[HPO] Trial 10 Fold 1 Epoch 5: Train Loss=0.0126, Val Loss=0.0356, Time=10.7s
+[HPO] Trial 10 Fold 1 Epoch 6: Train Loss=0.0061, Val Loss=0.0211, Time=10.7s
+[HPO] Trial 10 Fold 1 Epoch 7: Train Loss=0.0049, Val Loss=0.0186, Time=10.7s
+[HPO] Trial 10 Fold 1 Epoch 8: Train Loss=0.0078, Val Loss=0.0929, Time=10.7s
+[HPO] Trial 10 Fold 1 Epoch 9: Train Loss=0.0105, Val Loss=0.0227, Time=10.7s
+[HPO] Trial 10: Average Loss=0.0179
+[DEBUG] Creating ResNet50 with lr=0.00023814123407148275, weight_decay=0.00031435791962763123
+[HPO] Trial 11 Fold 0 Epoch 0: Train Loss=0.1112, Val Loss=0.1257, Time=10.7s
+[HPO] Trial 11 Fold 0 Epoch 1: Train Loss=0.0194, Val Loss=0.0113, Time=10.7s
+[HPO] Trial 11 Fold 0 Epoch 2: Train Loss=0.0043, Val Loss=0.0201, Time=10.7s
+[HPO] Trial 11 Fold 0 Epoch 3: Train Loss=0.0027, Val Loss=0.0238, Time=10.7s
+[HPO] Trial 11 Fold 0 Epoch 4: Train Loss=0.0012, Val Loss=0.0266, Time=10.7s
+[HPO] Trial 11 Fold 0 Epoch 5: Train Loss=0.0165, Val Loss=0.0652, Time=10.7s
+[HPO] Trial 11 Fold 0 Epoch 6: Train Loss=0.0134, Val Loss=0.0325, Time=10.8s
+[HPO] Trial 11 Fold 0 Epoch 7: Train Loss=0.0180, Val Loss=0.2072, Time=10.7s
+[HPO] Trial 11 Fold 0 Epoch 8: Train Loss=0.0168, Val Loss=0.0286, Time=10.8s
+[HPO] Trial 11 Fold 0 Epoch 9: Train Loss=0.0207, Val Loss=0.0180, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=0.00023814123407148275, weight_decay=0.00031435791962763123
+[HPO] Trial 11 Fold 1 Epoch 0: Train Loss=0.1485, Val Loss=0.4632, Time=10.7s
+[HPO] Trial 11 Fold 1 Epoch 1: Train Loss=0.0338, Val Loss=0.0566, Time=10.7s
+[HPO] Trial 11 Fold 1 Epoch 2: Train Loss=0.0133, Val Loss=0.0242, Time=10.7s
+[HPO] Trial 11 Fold 1 Epoch 3: Train Loss=0.0096, Val Loss=0.0288, Time=10.8s
+[HPO] Trial 11 Fold 1 Epoch 4: Train Loss=0.0118, Val Loss=0.0189, Time=10.8s
+[HPO] Trial 11 Fold 1 Epoch 5: Train Loss=0.0037, Val Loss=0.0354, Time=10.7s
+[HPO] Trial 11 Fold 1 Epoch 6: Train Loss=0.0049, Val Loss=0.0199, Time=10.8s
+[HPO] Trial 11 Fold 1 Epoch 7: Train Loss=0.0055, Val Loss=0.0116, Time=10.7s
+[HPO] Trial 11 Fold 1 Epoch 8: Train Loss=0.0006, Val Loss=0.0101, Time=10.8s
+[HPO] Trial 11 Fold 1 Epoch 9: Train Loss=0.0003, Val Loss=0.0097, Time=10.7s
+[HPO] Trial 11: Average Loss=0.0105
+[DEBUG] Creating ResNet50 with lr=0.0002827498385914109, weight_decay=0.0002242547306905876
+[HPO] Trial 12 Fold 0 Epoch 0: Train Loss=0.1671, Val Loss=0.0701, Time=10.7s
+[HPO] Trial 12 Fold 0 Epoch 1: Train Loss=0.0279, Val Loss=0.0964, Time=10.7s
+[HPO] Trial 12 Fold 0 Epoch 2: Train Loss=0.0154, Val Loss=0.0390, Time=10.7s
+[HPO] Trial 12 Fold 0 Epoch 3: Train Loss=0.0065, Val Loss=0.0422, Time=10.7s
+[HPO] Trial 12 Fold 0 Epoch 4: Train Loss=0.0094, Val Loss=0.3251, Time=10.7s
+[HPO] Trial 12 Fold 0 Epoch 5: Train Loss=0.0071, Val Loss=0.0422, Time=10.7s
+[HPO] Trial 12 Fold 0 Epoch 6: Train Loss=0.0170, Val Loss=0.0892, Time=10.8s
+[HPO] Trial 12 Fold 0 Epoch 7: Train Loss=0.0097, Val Loss=0.0251, Time=10.8s
+[HPO] Trial 12 Fold 0 Epoch 8: Train Loss=0.0033, Val Loss=0.0331, Time=10.7s
+[HPO] Trial 12 Fold 0 Epoch 9: Train Loss=0.0025, Val Loss=0.0176, Time=10.8s
+[DEBUG] Creating ResNet50 with lr=0.0002827498385914109, weight_decay=0.0002242547306905876
+[HPO] Trial 12 Fold 1 Epoch 0: Train Loss=0.1275, Val Loss=0.1091, Time=10.8s
+[HPO] Trial 12 Fold 1 Epoch 1: Train Loss=0.0480, Val Loss=0.0697, Time=10.7s
+[HPO] Trial 12 Fold 1 Epoch 2: Train Loss=0.0291, Val Loss=0.0246, Time=10.7s
+[HPO] Trial 12 Fold 1 Epoch 3: Train Loss=0.0071, Val Loss=0.0211, Time=10.8s
+[HPO] Trial 12 Fold 1 Epoch 4: Train Loss=0.0021, Val Loss=0.0222, Time=10.8s
+[HPO] Trial 12 Fold 1 Epoch 5: Train Loss=0.0141, Val Loss=0.0722, Time=10.8s
+[HPO] Trial 12 Fold 1 Epoch 6: Train Loss=0.0119, Val Loss=0.0282, Time=10.8s
+[HPO] Trial 12 Fold 1 Epoch 7: Train Loss=0.0012, Val Loss=0.0221, Time=10.8s
+[HPO] Trial 12 Fold 1 Epoch 8: Train Loss=0.0004, Val Loss=0.0203, Time=10.8s
+[HPO] Trial 12 Fold 1 Epoch 9: Train Loss=0.0004, Val Loss=0.0213, Time=10.8s
+[HPO] Trial 12: Average Loss=0.0190
+[DEBUG] Creating ResNet50 with lr=5.443495709060718e-05, weight_decay=0.0004397268767579895
+[HPO] Trial 13 Fold 0 Epoch 0: Train Loss=0.1488, Val Loss=0.0762, Time=10.8s
+[HPO] Trial 13 Fold 0 Epoch 1: Train Loss=0.0144, Val Loss=0.0410, Time=10.7s
+[HPO] Trial 13 Fold 0 Epoch 2: Train Loss=0.0036, Val Loss=0.0398, Time=10.8s
+[HPO] Trial 13 Fold 0 Epoch 3: Train Loss=0.0029, Val Loss=0.0454, Time=10.8s
+[HPO] Trial 13 Fold 0 Epoch 4: Train Loss=0.0030, Val Loss=0.0548, Time=10.7s
+[HPO] Trial 13 Fold 0 Epoch 5: Train Loss=0.0026, Val Loss=0.0375, Time=10.8s
+[HPO] Trial 13 Fold 0 Epoch 6: Train Loss=0.0116, Val Loss=0.0374, Time=10.7s
+[HPO] Trial 13 Fold 0 Epoch 7: Train Loss=0.0174, Val Loss=0.0394, Time=10.7s
+[HPO] Trial 13 Fold 0 Epoch 8: Train Loss=0.0143, Val Loss=0.0422, Time=10.8s
+[HPO] Trial 13 Fold 0 Epoch 9: Train Loss=0.0102, Val Loss=0.0257, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=5.443495709060718e-05, weight_decay=0.0004397268767579895
+[HPO] Trial 13 Fold 1 Epoch 0: Train Loss=0.2018, Val Loss=0.1520, Time=10.7s
+[HPO] Trial 13 Fold 1 Epoch 1: Train Loss=0.0191, Val Loss=0.0892, Time=10.8s
+[HPO] Trial 13 Fold 1 Epoch 2: Train Loss=0.0120, Val Loss=0.0580, Time=10.7s
+[HPO] Trial 13 Fold 1 Epoch 3: Train Loss=0.0060, Val Loss=0.0392, Time=10.7s
+[HPO] Trial 13 Fold 1 Epoch 4: Train Loss=0.0045, Val Loss=0.0491, Time=10.8s
+[HPO] Trial 13 Fold 1 Epoch 5: Train Loss=0.0077, Val Loss=0.0290, Time=10.7s
+[HPO] Trial 13 Fold 1 Epoch 6: Train Loss=0.0147, Val Loss=0.0768, Time=10.8s
+[HPO] Trial 13 Fold 1 Epoch 7: Train Loss=0.0147, Val Loss=0.0295, Time=10.7s
+[HPO] Trial 13 Fold 1 Epoch 8: Train Loss=0.0042, Val Loss=0.0414, Time=10.8s
+[HPO] Trial 13 Fold 1 Epoch 9: Train Loss=0.0061, Val Loss=0.0307, Time=10.8s
+[HPO] Trial 13: Average Loss=0.0273
+[DEBUG] Creating ResNet50 with lr=0.00023129389188329485, weight_decay=1.0163462650227904e-06
+[HPO] Trial 14 Fold 0 Epoch 0: Train Loss=0.1269, Val Loss=0.0559, Time=10.8s
+[HPO] Trial 14 Fold 0 Epoch 1: Train Loss=0.0145, Val Loss=0.0257, Time=10.8s
+[HPO] Trial 14 Fold 0 Epoch 2: Train Loss=0.0213, Val Loss=0.0196, Time=10.8s
+[HPO] Trial 14 Fold 0 Epoch 3: Train Loss=0.0078, Val Loss=0.0246, Time=10.8s
+[HPO] Trial 14 Fold 0 Epoch 4: Train Loss=0.0069, Val Loss=0.0176, Time=10.8s
+[HPO] Trial 14 Fold 0 Epoch 5: Train Loss=0.0118, Val Loss=0.0154, Time=10.8s
+[HPO] Trial 14 Fold 0 Epoch 6: Train Loss=0.0028, Val Loss=0.0178, Time=10.8s
+[HPO] Trial 14 Fold 0 Epoch 7: Train Loss=0.0018, Val Loss=0.0166, Time=10.8s
+[HPO] Trial 14 Fold 0 Epoch 8: Train Loss=0.0008, Val Loss=0.0134, Time=10.8s
+[HPO] Trial 14 Fold 0 Epoch 9: Train Loss=0.0003, Val Loss=0.0158, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=0.00023129389188329485, weight_decay=1.0163462650227904e-06
+[HPO] Trial 14 Fold 1 Epoch 0: Train Loss=0.1493, Val Loss=0.1410, Time=10.8s
+[HPO] Trial 14 Fold 1 Epoch 1: Train Loss=0.0360, Val Loss=0.0473, Time=10.8s
+[HPO] Trial 14 Fold 1 Epoch 2: Train Loss=0.0125, Val Loss=0.0277, Time=10.8s
+[HPO] Trial 14 Fold 1 Epoch 3: Train Loss=0.0035, Val Loss=0.0267, Time=10.7s
+[HPO] Trial 14 Fold 1 Epoch 4: Train Loss=0.0072, Val Loss=0.0332, Time=10.8s
+[HPO] Trial 14 Fold 1 Epoch 5: Train Loss=0.0142, Val Loss=0.0404, Time=10.8s
+[HPO] Trial 14 Fold 1 Epoch 6: Train Loss=0.0047, Val Loss=0.0357, Time=10.8s
+[HPO] Trial 14 Fold 1 Epoch 7: Train Loss=0.0011, Val Loss=0.0175, Time=10.8s
+[HPO] Trial 14 Fold 1 Epoch 8: Train Loss=0.0035, Val Loss=0.0490, Time=10.8s
+[HPO] Trial 14 Fold 1 Epoch 9: Train Loss=0.0052, Val Loss=0.0343, Time=10.8s
+[HPO] Trial 14: Average Loss=0.0155
+[DEBUG] Creating ResNet50 with lr=0.0008256157892998916, weight_decay=2.233180266789928e-05
+[HPO] Trial 15 Fold 0 Epoch 0: Train Loss=0.2185, Val Loss=0.2206, Time=10.8s
+[HPO] Trial 15 Fold 0 Epoch 1: Train Loss=0.1025, Val Loss=0.0679, Time=10.7s
+[HPO] Trial 15 Fold 0 Epoch 2: Train Loss=0.0354, Val Loss=1.2890, Time=10.7s
+[HPO] Trial 15 Fold 0 Epoch 3: Train Loss=0.0360, Val Loss=0.1132, Time=10.7s
+[HPO] Trial 15 Fold 0 Epoch 4: Train Loss=0.0205, Val Loss=0.0602, Time=10.7s
+[HPO] Trial 15 Fold 0 Epoch 5: Train Loss=0.0105, Val Loss=0.0913, Time=10.7s
+[HPO] Trial 15 Fold 0 Epoch 6: Train Loss=0.0190, Val Loss=0.0740, Time=10.7s
+[HPO] Trial 15 Fold 0 Epoch 7: Train Loss=0.0036, Val Loss=0.0219, Time=10.7s
+[HPO] Trial 15 Fold 0 Epoch 8: Train Loss=0.0013, Val Loss=0.0203, Time=10.7s
+[HPO] Trial 15 Fold 0 Epoch 9: Train Loss=0.0041, Val Loss=0.1902, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=0.0008256157892998916, weight_decay=2.233180266789928e-05
+[HPO] Trial 15 Fold 1 Epoch 0: Train Loss=0.1659, Val Loss=4.3748, Time=10.7s
+[HPO] Trial 15 Fold 1 Epoch 1: Train Loss=0.0765, Val Loss=0.0413, Time=10.7s
+[HPO] Trial 15 Fold 1 Epoch 2: Train Loss=0.0300, Val Loss=0.9794, Time=10.8s
+[HPO] Trial 15 Fold 1 Epoch 3: Train Loss=0.0231, Val Loss=0.8235, Time=10.7s
+[HPO] Trial 15 Fold 1 Epoch 4: Train Loss=0.0306, Val Loss=0.0297, Time=10.8s
+[HPO] Trial 15 Fold 1 Epoch 5: Train Loss=0.0069, Val Loss=0.0166, Time=10.7s
+[HPO] Trial 15 Fold 1 Epoch 6: Train Loss=0.0029, Val Loss=0.0087, Time=10.7s
+[HPO] Trial 15 Fold 1 Epoch 7: Train Loss=0.0005, Val Loss=0.0067, Time=10.7s
+[HPO] Trial 15 Fold 1 Epoch 8: Train Loss=0.0005, Val Loss=0.0082, Time=10.8s
+[HPO] Trial 15 Fold 1 Epoch 9: Train Loss=0.0018, Val Loss=0.0064, Time=10.7s
+[HPO] Trial 15: Average Loss=0.0134
+[DEBUG] Creating ResNet50 with lr=0.0006939528952674663, weight_decay=2.9592663148385215e-05
+[HPO] Trial 16 Fold 0 Epoch 0: Train Loss=0.1543, Val Loss=0.2380, Time=10.7s
+[HPO] Trial 16 Fold 0 Epoch 1: Train Loss=0.0479, Val Loss=0.0782, Time=10.7s
+[HPO] Trial 16 Fold 0 Epoch 2: Train Loss=0.0117, Val Loss=0.0376, Time=10.7s
+[HPO] Trial 16 Fold 0 Epoch 3: Train Loss=0.0147, Val Loss=0.0956, Time=10.7s
+[HPO] Trial 16 Fold 0 Epoch 4: Train Loss=0.0130, Val Loss=0.0251, Time=10.7s
+[HPO] Trial 16 Fold 0 Epoch 5: Train Loss=0.0034, Val Loss=0.0241, Time=10.7s
+[HPO] Trial 16 Fold 0 Epoch 6: Train Loss=0.0015, Val Loss=0.0150, Time=10.7s
+[HPO] Trial 16 Fold 0 Epoch 7: Train Loss=0.0013, Val Loss=0.0240, Time=10.7s
+[HPO] Trial 16 Fold 0 Epoch 8: Train Loss=0.0076, Val Loss=0.0913, Time=10.7s
+[HPO] Trial 16 Fold 0 Epoch 9: Train Loss=0.0212, Val Loss=0.0687, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=0.0006939528952674663, weight_decay=2.9592663148385215e-05
+[HPO] Trial 16 Fold 1 Epoch 0: Train Loss=0.1401, Val Loss=25.1041, Time=10.7s
+[HPO] Trial 16 Fold 1 Epoch 1: Train Loss=0.0486, Val Loss=0.6072, Time=10.7s
+[HPO] Trial 16 Fold 1 Epoch 2: Train Loss=0.0149, Val Loss=0.0774, Time=10.7s
+[HPO] Trial 16 Fold 1 Epoch 3: Train Loss=0.0202, Val Loss=2.6523, Time=10.8s
+[HPO] Trial 16 Fold 1 Epoch 4: Train Loss=0.0413, Val Loss=0.1185, Time=10.8s
+[HPO] Trial 16 Fold 1 Epoch 5: Train Loss=0.0331, Val Loss=0.0278, Time=10.7s
+[HPO] Trial 16 Fold 1 Epoch 6: Train Loss=0.0302, Val Loss=0.2608, Time=10.8s
+[HPO] Trial 16 Fold 1 Epoch 7: Train Loss=0.0100, Val Loss=0.0275, Time=10.7s
+[HPO] Trial 16 Fold 1 Epoch 8: Train Loss=0.0028, Val Loss=0.0212, Time=10.8s
+[HPO] Trial 16 Fold 1 Epoch 9: Train Loss=0.0031, Val Loss=0.0162, Time=10.8s
+[HPO] Trial 16: Average Loss=0.0156
+[DEBUG] Creating ResNet50 with lr=0.0009554645464244859, weight_decay=0.0006709433517170336
+[HPO] Trial 17 Fold 0 Epoch 0: Train Loss=0.2510, Val Loss=0.4430, Time=10.7s
+[HPO] Trial 17 Fold 0 Epoch 1: Train Loss=0.0869, Val Loss=0.7593, Time=10.7s
+[HPO] Trial 17 Fold 0 Epoch 2: Train Loss=0.0454, Val Loss=0.0563, Time=10.7s
+[HPO] Trial 17 Fold 0 Epoch 3: Train Loss=0.0424, Val Loss=0.2485, Time=10.7s
+[HPO] Trial 17 Fold 0 Epoch 4: Train Loss=0.0446, Val Loss=0.1040, Time=10.7s
+[HPO] Trial 17 Fold 0 Epoch 5: Train Loss=0.0348, Val Loss=0.0557, Time=10.7s
+[HPO] Trial 17 Fold 0 Epoch 6: Train Loss=0.0148, Val Loss=0.0216, Time=10.7s
+[HPO] Trial 17 Fold 0 Epoch 7: Train Loss=0.0155, Val Loss=0.0397, Time=10.7s
+[HPO] Trial 17 Fold 0 Epoch 8: Train Loss=0.0130, Val Loss=0.1191, Time=10.7s
+[HPO] Trial 17 Fold 0 Epoch 9: Train Loss=0.0173, Val Loss=0.0514, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=0.0009554645464244859, weight_decay=0.0006709433517170336
+[HPO] Trial 17 Fold 1 Epoch 0: Train Loss=0.2022, Val Loss=28.7513, Time=10.7s
+[HPO] Trial 17 Fold 1 Epoch 1: Train Loss=0.0660, Val Loss=0.2290, Time=10.7s
+[HPO] Trial 17 Fold 1 Epoch 2: Train Loss=0.0467, Val Loss=0.0743, Time=10.7s
+[HPO] Trial 17 Fold 1 Epoch 3: Train Loss=0.0236, Val Loss=0.0395, Time=10.7s
+[HPO] Trial 17 Fold 1 Epoch 4: Train Loss=0.0169, Val Loss=0.0794, Time=10.8s
+[HPO] Trial 17 Fold 1 Epoch 5: Train Loss=0.0221, Val Loss=0.4543, Time=10.7s
+[HPO] Trial 17 Fold 1 Epoch 6: Train Loss=0.0410, Val Loss=51.4197, Time=10.8s
+[HPO] Trial 17 Fold 1 Epoch 7: Train Loss=0.0519, Val Loss=0.0695, Time=10.8s
+[HPO] Trial 17 Fold 1 Epoch 8: Train Loss=0.0343, Val Loss=1.0860, Time=10.7s
+[HPO] Trial 17 Fold 1 Epoch 9: Train Loss=0.0480, Val Loss=0.0376, Time=10.7s
+[HPO] Trial 17: Average Loss=0.0296
+[DEBUG] Creating ResNet50 with lr=0.00039010295991641873, weight_decay=1.644033303138382e-05
+[HPO] Trial 18 Fold 0 Epoch 0: Train Loss=0.1267, Val Loss=0.1844, Time=10.8s
+[HPO] Trial 18 Fold 0 Epoch 1: Train Loss=0.0405, Val Loss=0.0217, Time=10.7s
+[HPO] Trial 18 Fold 0 Epoch 2: Train Loss=0.0165, Val Loss=0.0529, Time=10.7s
+[HPO] Trial 18 Fold 0 Epoch 3: Train Loss=0.0195, Val Loss=0.0773, Time=10.7s
+[HPO] Trial 18 Fold 0 Epoch 4: Train Loss=0.0163, Val Loss=0.0259, Time=10.7s
+[HPO] Trial 18 Fold 0 Epoch 5: Train Loss=0.0068, Val Loss=0.0180, Time=10.7s
+[HPO] Trial 18 Fold 0 Epoch 6: Train Loss=0.0013, Val Loss=0.0219, Time=10.7s
+[HPO] Trial 18 Fold 0 Epoch 7: Train Loss=0.0004, Val Loss=0.0192, Time=10.7s
+[HPO] Trial 18 Fold 0 Epoch 8: Train Loss=0.0002, Val Loss=0.0193, Time=10.7s
+[HPO] Trial 18 Fold 0 Epoch 9: Train Loss=0.0002, Val Loss=0.0193, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=0.00039010295991641873, weight_decay=1.644033303138382e-05
+[HPO] Trial 18 Fold 1 Epoch 0: Train Loss=0.1398, Val Loss=0.8702, Time=10.7s
+[HPO] Trial 18 Fold 1 Epoch 1: Train Loss=0.0150, Val Loss=0.0212, Time=10.7s
+[HPO] Trial 18 Fold 1 Epoch 2: Train Loss=0.0235, Val Loss=0.1886, Time=10.7s
+[HPO] Trial 18 Fold 1 Epoch 3: Train Loss=0.0236, Val Loss=0.0411, Time=10.7s
+[HPO] Trial 18 Fold 1 Epoch 4: Train Loss=0.0093, Val Loss=0.0144, Time=10.7s
+[HPO] Trial 18 Fold 1 Epoch 5: Train Loss=0.0045, Val Loss=0.0168, Time=10.7s
+[HPO] Trial 18 Fold 1 Epoch 6: Train Loss=0.0068, Val Loss=0.0278, Time=10.7s
+[HPO] Trial 18 Fold 1 Epoch 7: Train Loss=0.0043, Val Loss=0.0164, Time=10.7s
+[HPO] Trial 18 Fold 1 Epoch 8: Train Loss=0.0016, Val Loss=0.0299, Time=10.8s
+[HPO] Trial 18 Fold 1 Epoch 9: Train Loss=0.0014, Val Loss=0.0141, Time=10.8s
+[HPO] Trial 18: Average Loss=0.0160
+[DEBUG] Creating ResNet50 with lr=0.0005324855494378074, weight_decay=0.0009217803333037536
+[HPO] Trial 19 Fold 0 Epoch 0: Train Loss=0.1476, Val Loss=0.1169, Time=10.8s
+[HPO] Trial 19 Fold 0 Epoch 1: Train Loss=0.0217, Val Loss=0.0180, Time=10.7s
+[HPO] Trial 19 Fold 0 Epoch 2: Train Loss=0.0050, Val Loss=0.0255, Time=10.8s
+[HPO] Trial 19 Fold 0 Epoch 3: Train Loss=0.0021, Val Loss=0.0413, Time=10.8s
+[HPO] Trial 19 Fold 0 Epoch 4: Train Loss=0.0022, Val Loss=0.0276, Time=10.8s
+[HPO] Trial 19 Fold 0 Epoch 5: Train Loss=0.0284, Val Loss=3.1455, Time=10.8s
+[HPO] Trial 19 Fold 0 Epoch 6: Train Loss=0.0731, Val Loss=0.5496, Time=10.7s
+[HPO] Trial 19 Fold 0 Epoch 7: Train Loss=0.0644, Val Loss=0.0468, Time=10.7s
+[HPO] Trial 19 Fold 0 Epoch 8: Train Loss=0.0251, Val Loss=0.0219, Time=10.7s
+[HPO] Trial 19 Fold 0 Epoch 9: Train Loss=0.0117, Val Loss=0.0303, Time=10.7s
+[DEBUG] Creating ResNet50 with lr=0.0005324855494378074, weight_decay=0.0009217803333037536
+[HPO] Trial 19 Fold 1 Epoch 0: Train Loss=0.1453, Val Loss=0.6094, Time=10.7s
+[HPO] Trial 19 Fold 1 Epoch 1: Train Loss=0.0506, Val Loss=0.0723, Time=10.7s
+[HPO] Trial 19 Fold 1 Epoch 2: Train Loss=0.0492, Val Loss=0.0946, Time=10.7s
+[HPO] Trial 19 Fold 1 Epoch 3: Train Loss=0.0594, Val Loss=0.0619, Time=10.7s
+[HPO] Trial 19 Fold 1 Epoch 4: Train Loss=0.0114, Val Loss=0.0840, Time=10.7s
+[HPO] Trial 19 Fold 1 Epoch 5: Train Loss=0.0027, Val Loss=0.0485, Time=10.7s
+[HPO] Trial 19 Fold 1 Epoch 6: Train Loss=0.0237, Val Loss=0.0323, Time=10.7s
+[HPO] Trial 19 Fold 1 Epoch 7: Train Loss=0.0069, Val Loss=0.0274, Time=10.7s
+[HPO] Trial 19 Fold 1 Epoch 8: Train Loss=0.0032, Val Loss=0.0349, Time=10.7s
+[HPO] Trial 19 Fold 1 Epoch 9: Train Loss=0.0019, Val Loss=0.4835, Time=10.7s
+[HPO] Trial 19: Average Loss=0.0227
+[Debug] Best trial: lr=0.00023814123407148275, weight_decay=0.00031435791962763123
+[INFO] Best hyperparameters for Task 0: lr=0.00023814123407148275, weight_decay=0.00031435791962763123
+[DEBUG] Creating ResNet50 with lr=0.00023814123407148275, weight_decay=0.00031435791962763123
+[MODEL INFO] Task 0: ResNet has total 23512130 parameters (23512130 trainable).
+[MODEL INFO] Task 0: Output layer has 2 units.
+[INFO] Task 0 Epoch 0: Train Loss=0.0765, Val Loss=0.1880, Train Acc=0.9675, Val Acc=0.9448
+[INFO] Task 0 Epoch 1: Train Loss=0.0138, Val Loss=0.2697, Train Acc=0.9966, Val Acc=0.8885
+[INFO] Task 0 Epoch 2: Train Loss=0.0116, Val Loss=0.1484, Train Acc=0.9956, Val Acc=0.9550
+[INFO] Task 0 Epoch 3: Train Loss=0.0183, Val Loss=0.1691, Train Acc=0.9946, Val Acc=0.9489
+[INFO] Task 0 Epoch 4: Train Loss=0.0088, Val Loss=0.2376, Train Acc=0.9974, Val Acc=0.9387
+[INFO] Task 0 Epoch 5: Train Loss=0.0162, Val Loss=0.2262, Train Acc=0.9959, Val Acc=0.9223
+[INFO] Task 0 Epoch 6: Train Loss=0.0061, Val Loss=0.2925, Train Acc=0.9985, Val Acc=0.8967
+[INFO] Task 0 Epoch 7: Train Loss=0.0082, Val Loss=0.3809, Train Acc=0.9982, Val Acc=0.9008
+[INFO] Task 0 Epoch 8: Train Loss=0.0026, Val Loss=0.1979, Train Acc=0.9997, Val Acc=0.9376
+[INFO] Task 0 Epoch 9: Train Loss=0.0005, Val Loss=0.1317, Train Acc=1.0000, Val Acc=0.9632
+[INFO] Finished Task 0
+[INFO] Model checkpoint saved to model_checkpoints/baseline/20250322_202558/task0/model_20250322_202558.pth
+[INFO] Evaluating performance for tasks 1 to 1...
+ => Ave accuracy (this task):    96.319
+ => Ave accuracy (tasks so far): 96.319
+[DEBUG] Creating ResNet50 with lr=0.00042360477768797164, weight_decay=0.008794611839544284
+[HPO] Trial 0 Fold 0 Epoch 0: Train Loss=0.1161, Val Loss=0.1679, Time=30.1s
+[HPO] Trial 0 Fold 0 Epoch 1: Train Loss=0.0709, Val Loss=0.3668, Time=30.3s
+[HPO] Trial 0 Fold 0 Epoch 2: Train Loss=0.0715, Val Loss=0.1182, Time=30.4s
+[HPO] Trial 0 Fold 0 Epoch 3: Train Loss=0.0545, Val Loss=0.3838, Time=30.4s
+[HPO] Trial 0 Fold 0 Epoch 4: Train Loss=0.0848, Val Loss=0.3792, Time=30.4s
+[HPO] Trial 0 Fold 0 Epoch 5: Train Loss=0.0591, Val Loss=0.1620, Time=30.4s
+[HPO] Trial 0 Fold 0 Epoch 6: Train Loss=0.0538, Val Loss=0.1948, Time=30.5s
+[HPO] Trial 0 Fold 0 Epoch 7: Train Loss=0.0789, Val Loss=0.5858, Time=30.4s
+[HPO] Trial 0 Fold 0 Epoch 8: Train Loss=0.0568, Val Loss=0.1294, Time=30.4s
+[HPO] Trial 0 Fold 0 Epoch 9: Train Loss=0.0560, Val Loss=0.3679, Time=30.4s
+[DEBUG] Creating ResNet50 with lr=0.00042360477768797164, weight_decay=0.008794611839544284
+[HPO] Trial 0 Fold 1 Epoch 0: Train Loss=0.0984, Val Loss=1.1716, Time=30.4s
+[HPO] Trial 0 Fold 1 Epoch 1: Train Loss=0.0654, Val Loss=1.5476, Time=30.5s
+[HPO] Trial 0 Fold 1 Epoch 2: Train Loss=0.0699, Val Loss=0.2654, Time=30.4s
+[HPO] Trial 0 Fold 1 Epoch 3: Train Loss=0.0620, Val Loss=0.1068, Time=30.4s
+[HPO] Trial 0 Fold 1 Epoch 4: Train Loss=0.0603, Val Loss=0.6980, Time=30.4s
+[HPO] Trial 0 Fold 1 Epoch 5: Train Loss=0.0611, Val Loss=0.5680, Time=30.4s
+[HPO] Trial 0 Fold 1 Epoch 6: Train Loss=0.0494, Val Loss=0.1544, Time=30.5s
+[HPO] Trial 0 Fold 1 Epoch 7: Train Loss=0.0582, Val Loss=1.3678, Time=30.4s
+[HPO] Trial 0 Fold 1 Epoch 8: Train Loss=0.0487, Val Loss=0.0602, Time=30.4s
+[HPO] Trial 0 Fold 1 Epoch 9: Train Loss=0.0570, Val Loss=0.7216, Time=30.4s
+[HPO] Trial 0: Average Loss=0.0892
+[DEBUG] Creating ResNet50 with lr=2.648533123892393e-05, weight_decay=0.0018462233945209685
+[HPO] Trial 1 Fold 0 Epoch 0: Train Loss=0.2449, Val Loss=0.0611, Time=30.5s
+[HPO] Trial 1 Fold 0 Epoch 1: Train Loss=0.0304, Val Loss=0.0515, Time=30.5s
+[HPO] Trial 1 Fold 0 Epoch 2: Train Loss=0.0096, Val Loss=0.0322, Time=30.5s
+[HPO] Trial 1 Fold 0 Epoch 3: Train Loss=0.0067, Val Loss=0.0362, Time=30.5s
+[HPO] Trial 1 Fold 0 Epoch 4: Train Loss=0.0042, Val Loss=0.0289, Time=30.4s
+[HPO] Trial 1 Fold 0 Epoch 5: Train Loss=0.0053, Val Loss=0.0461, Time=30.3s
+[HPO] Trial 1 Fold 0 Epoch 6: Train Loss=0.0035, Val Loss=0.0347, Time=30.3s
+[HPO] Trial 1 Fold 0 Epoch 7: Train Loss=0.0075, Val Loss=0.0502, Time=30.3s
+[HPO] Trial 1 Fold 0 Epoch 8: Train Loss=0.0037, Val Loss=0.0489, Time=30.4s
+[HPO] Trial 1 Fold 0 Epoch 9: Train Loss=0.0022, Val Loss=0.0337, Time=30.3s
+[DEBUG] Creating ResNet50 with lr=2.648533123892393e-05, weight_decay=0.0018462233945209685
+[HPO] Trial 1 Fold 1 Epoch 0: Train Loss=0.2683, Val Loss=0.0697, Time=30.3s
+[HPO] Trial 1 Fold 1 Epoch 1: Train Loss=0.0332, Val Loss=0.0481, Time=30.3s
+[HPO] Trial 1 Fold 1 Epoch 2: Train Loss=0.0151, Val Loss=0.0481, Time=30.3s
+[HPO] Trial 1 Fold 1 Epoch 3: Train Loss=0.0115, Val Loss=0.0583, Time=30.4s
+[HPO] Trial 1 Fold 1 Epoch 4: Train Loss=0.0045, Val Loss=0.0494, Time=30.5s
+[HPO] Trial 1 Fold 1 Epoch 5: Train Loss=0.0028, Val Loss=0.0440, Time=30.5s
+[HPO] Trial 1 Fold 1 Epoch 6: Train Loss=0.0043, Val Loss=0.0418, Time=30.5s
+[HPO] Trial 1 Fold 1 Epoch 7: Train Loss=0.0023, Val Loss=0.0426, Time=30.5s
+[HPO] Trial 1 Fold 1 Epoch 8: Train Loss=0.0014, Val Loss=0.0430, Time=30.4s
+[HPO] Trial 1 Fold 1 Epoch 9: Train Loss=0.0013, Val Loss=0.0477, Time=30.4s
+[HPO] Trial 1: Average Loss=0.0354
+[DEBUG] Creating ResNet50 with lr=1.051753094198139e-05, weight_decay=0.00012800487541468806
+[HPO] Trial 2 Fold 0 Epoch 0: Train Loss=0.6125, Val Loss=0.2003, Time=30.5s
+[HPO] Trial 2 Fold 0 Epoch 1: Train Loss=0.0963, Val Loss=0.0740, Time=30.4s
+[HPO] Trial 2 Fold 0 Epoch 2: Train Loss=0.0358, Val Loss=0.0658, Time=30.3s
+[HPO] Trial 2 Fold 0 Epoch 3: Train Loss=0.0190, Val Loss=0.0750, Time=30.5s
+[HPO] Trial 2 Fold 0 Epoch 4: Train Loss=0.0153, Val Loss=0.0521, Time=30.4s
+[HPO] Trial 2 Fold 0 Epoch 5: Train Loss=0.0095, Val Loss=0.0613, Time=30.5s
+[HPO] Trial 2 Fold 0 Epoch 6: Train Loss=0.0062, Val Loss=0.0589, Time=30.5s
+[HPO] Trial 2 Fold 0 Epoch 7: Train Loss=0.0055, Val Loss=0.0488, Time=30.5s
+[HPO] Trial 2 Fold 0 Epoch 8: Train Loss=0.0041, Val Loss=0.0535, Time=30.5s
+[HPO] Trial 2 Fold 0 Epoch 9: Train Loss=0.0047, Val Loss=0.0512, Time=30.5s
+[DEBUG] Creating ResNet50 with lr=1.051753094198139e-05, weight_decay=0.00012800487541468806
+[HPO] Trial 2 Fold 1 Epoch 0: Train Loss=0.4443, Val Loss=0.1500, Time=30.5s
+[HPO] Trial 2 Fold 1 Epoch 1: Train Loss=0.0813, Val Loss=0.0746, Time=30.3s
+[HPO] Trial 2 Fold 1 Epoch 2: Train Loss=0.0303, Val Loss=0.0825, Time=30.3s
+[HPO] Trial 2 Fold 1 Epoch 3: Train Loss=0.0151, Val Loss=0.0743, Time=30.3s
+[HPO] Trial 2 Fold 1 Epoch 4: Train Loss=0.0093, Val Loss=0.0558, Time=30.3s
+[HPO] Trial 2 Fold 1 Epoch 5: Train Loss=0.0090, Val Loss=0.0772, Time=30.3s
+[HPO] Trial 2 Fold 1 Epoch 6: Train Loss=0.0056, Val Loss=0.0647, Time=30.3s
+[HPO] Trial 2 Fold 1 Epoch 7: Train Loss=0.0036, Val Loss=0.0641, Time=30.3s
+[HPO] Trial 2 Fold 1 Epoch 8: Train Loss=0.0076, Val Loss=0.0527, Time=30.3s
+[HPO] Trial 2 Fold 1 Epoch 9: Train Loss=0.0048, Val Loss=0.0598, Time=30.3s
+[HPO] Trial 2: Average Loss=0.0508
+[DEBUG] Creating ResNet50 with lr=7.500451126588129e-05, weight_decay=1.804003445421789e-06
+[HPO] Trial 3 Fold 0 Epoch 0: Train Loss=0.1561, Val Loss=0.0359, Time=30.3s
+[HPO] Trial 3 Fold 0 Epoch 1: Train Loss=0.0210, Val Loss=0.0458, Time=30.3s
+[HPO] Trial 3 Fold 0 Epoch 2: Train Loss=0.0103, Val Loss=0.0253, Time=30.3s
+[HPO] Trial 3 Fold 0 Epoch 3: Train Loss=0.0065, Val Loss=0.0433, Time=30.3s
+[HPO] Trial 3 Fold 0 Epoch 4: Train Loss=0.0046, Val Loss=0.0526, Time=30.3s
+[HPO] Trial 3 Fold 0 Epoch 5: Train Loss=0.0079, Val Loss=0.0335, Time=30.3s
+[HPO] Trial 3 Fold 0 Epoch 6: Train Loss=0.0033, Val Loss=0.0455, Time=30.5s
+[HPO] Trial 3 Fold 0 Epoch 7: Train Loss=0.0021, Val Loss=0.0401, Time=30.6s
+[HPO] Trial 3 Fold 0 Epoch 8: Train Loss=0.0031, Val Loss=0.0943, Time=30.5s
+[HPO] Trial 3 Fold 0 Epoch 9: Train Loss=0.0085, Val Loss=0.0439, Time=30.5s
+[DEBUG] Creating ResNet50 with lr=7.500451126588129e-05, weight_decay=1.804003445421789e-06
+[HPO] Trial 3 Fold 1 Epoch 0: Train Loss=0.1282, Val Loss=0.0330, Time=30.5s
+[HPO] Trial 3 Fold 1 Epoch 1: Train Loss=0.0210, Val Loss=0.0650, Time=30.5s
+[HPO] Trial 3 Fold 1 Epoch 2: Train Loss=0.0095, Val Loss=0.0390, Time=30.4s
+[HPO] Trial 3 Fold 1 Epoch 3: Train Loss=0.0087, Val Loss=0.0364, Time=30.5s
+[HPO] Trial 3 Fold 1 Epoch 4: Train Loss=0.0031, Val Loss=0.0348, Time=30.5s
+[HPO] Trial 3 Fold 1 Epoch 5: Train Loss=0.0024, Val Loss=0.0336, Time=30.5s
+[HPO] Trial 3 Fold 1 Epoch 6: Train Loss=0.0013, Val Loss=0.0414, Time=30.5s
+[HPO] Trial 3 Fold 1 Epoch 7: Train Loss=0.0068, Val Loss=0.1354, Time=30.5s
+[HPO] Trial 3 Fold 1 Epoch 8: Train Loss=0.0176, Val Loss=0.0423, Time=30.5s
+[HPO] Trial 3 Fold 1 Epoch 9: Train Loss=0.0020, Val Loss=0.0384, Time=30.5s
+[HPO] Trial 3: Average Loss=0.0291
+[DEBUG] Creating ResNet50 with lr=0.0002726428622001803, weight_decay=6.504683169251704e-06
+[HPO] Trial 4 Fold 0 Epoch 0: Train Loss=0.1017, Val Loss=0.0576, Time=30.4s
+[HPO] Trial 4 Fold 0 Epoch 1: Train Loss=0.0184, Val Loss=0.0407, Time=30.5s
+[HPO] Trial 4 Fold 0 Epoch 2: Train Loss=0.0142, Val Loss=0.0484, Time=30.5s
+[HPO] Trial 4 Fold 0 Epoch 3: Train Loss=0.0207, Val Loss=0.0374, Time=30.5s
+[HPO] Trial 4 Fold 0 Epoch 4: Train Loss=0.0135, Val Loss=0.0759, Time=30.5s
+[HPO] Trial 4 Fold 0 Epoch 5: Train Loss=0.0029, Val Loss=0.0269, Time=30.5s
+[HPO] Trial 4 Fold 0 Epoch 6: Train Loss=0.0030, Val Loss=0.0362, Time=30.5s
+[HPO] Trial 4 Fold 0 Epoch 7: Train Loss=0.0075, Val Loss=0.0288, Time=30.5s
+[HPO] Trial 4 Fold 0 Epoch 8: Train Loss=0.0072, Val Loss=0.0804, Time=30.5s
+[HPO] Trial 4 Fold 0 Epoch 9: Train Loss=0.0061, Val Loss=0.0657, Time=30.5s
+[DEBUG] Creating ResNet50 with lr=0.0002726428622001803, weight_decay=6.504683169251704e-06
+[HPO] Trial 4 Fold 1 Epoch 0: Train Loss=0.1091, Val Loss=0.0422, Time=30.5s
+[HPO] Trial 4 Fold 1 Epoch 1: Train Loss=0.0401, Val Loss=0.0532, Time=30.5s
+[HPO] Trial 4 Fold 1 Epoch 2: Train Loss=0.0189, Val Loss=0.0389, Time=30.5s
+[HPO] Trial 4 Fold 1 Epoch 3: Train Loss=0.0153, Val Loss=0.0806, Time=30.5s
+[HPO] Trial 4 Fold 1 Epoch 4: Train Loss=0.0057, Val Loss=0.0381, Time=30.5s
+[HPO] Trial 4 Fold 1 Epoch 5: Train Loss=0.0016, Val Loss=0.0358, Time=30.5s
+[HPO] Trial 4 Fold 1 Epoch 6: Train Loss=0.0036, Val Loss=0.0397, Time=30.5s
+[HPO] Trial 4 Fold 1 Epoch 7: Train Loss=0.0206, Val Loss=0.0352, Time=30.5s
+[HPO] Trial 4 Fold 1 Epoch 8: Train Loss=0.0084, Val Loss=0.0339, Time=30.5s
+[HPO] Trial 4 Fold 1 Epoch 9: Train Loss=0.0041, Val Loss=0.0576, Time=30.5s
+[HPO] Trial 4: Average Loss=0.0304
+[DEBUG] Creating ResNet50 with lr=0.0006170514628524333, weight_decay=0.002711794901958899
+[HPO] Trial 5 Fold 0 Epoch 0: Train Loss=0.0997, Val Loss=0.1113, Time=30.5s
+[HPO] Trial 5 Fold 0 Epoch 1: Train Loss=0.0500, Val Loss=0.0624, Time=30.5s
+[HPO] Trial 5 Fold 0 Epoch 2: Train Loss=0.0536, Val Loss=0.0753, Time=30.4s
+[HPO] Trial 5 Fold 0 Epoch 3: Train Loss=0.0532, Val Loss=1.3094, Time=30.4s
+[HPO] Trial 5 Fold 0 Epoch 4: Train Loss=0.0546, Val Loss=0.3442, Time=30.4s
+[HPO] Trial 5 Fold 0 Epoch 5: Train Loss=0.0492, Val Loss=0.8689, Time=30.5s
+[HPO] Trial 5 Fold 0 Epoch 6: Train Loss=0.0640, Val Loss=0.1293, Time=30.5s
+[HPO] Trial 5 Fold 0 Epoch 7: Train Loss=0.0570, Val Loss=0.7165, Time=30.5s
+[HPO] Trial 5 Fold 0 Epoch 8: Train Loss=0.0524, Val Loss=1.2638, Time=30.5s
+[HPO] Trial 5 Fold 0 Epoch 9: Train Loss=0.0449, Val Loss=0.9714, Time=30.3s
+[DEBUG] Creating ResNet50 with lr=0.0006170514628524333, weight_decay=0.002711794901958899
+[HPO] Trial 5 Fold 1 Epoch 0: Train Loss=0.1066, Val Loss=0.1566, Time=30.3s
+[HPO] Trial 5 Fold 1 Epoch 1: Train Loss=0.0593, Val Loss=0.2794, Time=30.3s
+[HPO] Trial 5 Fold 1 Epoch 2: Train Loss=0.0530, Val Loss=0.3121, Time=30.3s
+[HPO] Trial 5 Fold 1 Epoch 3: Train Loss=0.0475, Val Loss=0.3493, Time=30.3s
+[HPO] Trial 5 Fold 1 Epoch 4: Train Loss=0.0620, Val Loss=0.0708, Time=30.3s
+[HPO] Trial 5 Fold 1 Epoch 5: Train Loss=0.0599, Val Loss=0.5600, Time=30.3s
+[HPO] Trial 5 Fold 1 Epoch 6: Train Loss=0.0597, Val Loss=0.1128, Time=30.3s
+[HPO] Trial 5 Fold 1 Epoch 7: Train Loss=0.0577, Val Loss=1.1036, Time=30.3s
+[HPO] Trial 5 Fold 1 Epoch 8: Train Loss=0.0449, Val Loss=0.1010, Time=30.2s
+[HPO] Trial 5 Fold 1 Epoch 9: Train Loss=0.0461, Val Loss=0.0997, Time=30.3s
+[HPO] Trial 5: Average Loss=0.0666
+[DEBUG] Creating ResNet50 with lr=4.6223382295840276e-05, weight_decay=0.006823850570341315
+[HPO] Trial 6 Fold 0 Epoch 0: Train Loss=0.2350, Val Loss=0.0387, Time=30.3s
+[HPO] Trial 6 Fold 0 Epoch 1: Train Loss=0.0302, Val Loss=0.0338, Time=30.3s
+[HPO] Trial 6 Fold 0 Epoch 2: Train Loss=0.0121, Val Loss=0.0358, Time=30.3s
+[HPO] Trial 6 Fold 0 Epoch 3: Train Loss=0.0077, Val Loss=0.0515, Time=30.3s
+[HPO] Trial 6 Fold 0 Epoch 4: Train Loss=0.0088, Val Loss=0.0611, Time=30.4s
+[HPO] Trial 6 Fold 0 Epoch 5: Train Loss=0.0173, Val Loss=0.0450, Time=30.3s
+[HPO] Trial 6 Fold 0 Epoch 6: Train Loss=0.0114, Val Loss=0.0533, Time=30.4s
+[HPO] Trial 6 Fold 0 Epoch 7: Train Loss=0.0043, Val Loss=0.0560, Time=30.3s
+[HPO] Trial 6 Fold 0 Epoch 8: Train Loss=0.0049, Val Loss=0.0270, Time=30.3s
+[HPO] Trial 6 Fold 0 Epoch 9: Train Loss=0.0049, Val Loss=0.0427, Time=30.5s
+[DEBUG] Creating ResNet50 with lr=4.6223382295840276e-05, weight_decay=0.006823850570341315
+[HPO] Trial 6 Fold 1 Epoch 0: Train Loss=0.1942, Val Loss=0.0524, Time=30.4s
+[HPO] Trial 6 Fold 1 Epoch 1: Train Loss=0.0263, Val Loss=0.0378, Time=30.3s
+[HPO] Trial 6 Fold 1 Epoch 2: Train Loss=0.0170, Val Loss=0.0450, Time=30.4s
+[HPO] Trial 6 Fold 1 Epoch 3: Train Loss=0.0212, Val Loss=0.0422, Time=30.3s
+[HPO] Trial 6 Fold 1 Epoch 4: Train Loss=0.0144, Val Loss=0.0643, Time=30.3s
+[HPO] Trial 6 Fold 1 Epoch 5: Train Loss=0.0058, Val Loss=0.0781, Time=30.3s
+[HPO] Trial 6 Fold 1 Epoch 6: Train Loss=0.0056, Val Loss=0.0656, Time=30.3s
+[HPO] Trial 6 Fold 1 Epoch 7: Train Loss=0.0098, Val Loss=0.0432, Time=30.3s
+[HPO] Trial 6 Fold 1 Epoch 8: Train Loss=0.0086, Val Loss=0.0614, Time=30.3s
+[HPO] Trial 6 Fold 1 Epoch 9: Train Loss=0.0112, Val Loss=0.0610, Time=30.3s
+[HPO] Trial 6: Average Loss=0.0324
+[DEBUG] Creating ResNet50 with lr=1.570831726100393e-05, weight_decay=3.611364822439125e-05
+[HPO] Trial 7 Fold 0 Epoch 0: Train Loss=0.3331, Val Loss=0.0904, Time=30.4s
+[HPO] Trial 7 Fold 0 Epoch 1: Train Loss=0.0502, Val Loss=0.0539, Time=30.5s
+[HPO] Trial 7 Fold 0 Epoch 2: Train Loss=0.0185, Val Loss=0.0451, Time=30.3s
+[HPO] Trial 7 Fold 0 Epoch 3: Train Loss=0.0095, Val Loss=0.0484, Time=30.4s
+[HPO] Trial 7 Fold 0 Epoch 4: Train Loss=0.0066, Val Loss=0.0465, Time=30.3s
+[HPO] Trial 7 Fold 0 Epoch 5: Train Loss=0.0034, Val Loss=0.0492, Time=30.3s
+[HPO] Trial 7 Fold 0 Epoch 6: Train Loss=0.0035, Val Loss=0.0422, Time=30.3s
+[HPO] Trial 7 Fold 0 Epoch 7: Train Loss=0.0025, Val Loss=0.0550, Time=30.3s
+[HPO] Trial 7 Fold 0 Epoch 8: Train Loss=0.0020, Val Loss=0.0386, Time=30.3s
+[HPO] Trial 7 Fold 0 Epoch 9: Train Loss=0.0020, Val Loss=0.0434, Time=30.3s
+[DEBUG] Creating ResNet50 with lr=1.570831726100393e-05, weight_decay=3.611364822439125e-05
+[HPO] Trial 7 Fold 1 Epoch 0: Train Loss=0.3838, Val Loss=0.1125, Time=30.3s
+[HPO] Trial 7 Fold 1 Epoch 1: Train Loss=0.0502, Val Loss=0.0722, Time=30.3s
+[HPO] Trial 7 Fold 1 Epoch 2: Train Loss=0.0201, Val Loss=0.0563, Time=30.3s
+[HPO] Trial 7 Fold 1 Epoch 3: Train Loss=0.0123, Val Loss=0.0509, Time=30.5s
+[HPO] Trial 7 Fold 1 Epoch 4: Train Loss=0.0078, Val Loss=0.0507, Time=30.5s
+[HPO] Trial 7 Fold 1 Epoch 5: Train Loss=0.0047, Val Loss=0.0626, Time=30.3s
+[HPO] Trial 7 Fold 1 Epoch 6: Train Loss=0.0035, Val Loss=0.0553, Time=30.3s
+[HPO] Trial 7 Fold 1 Epoch 7: Train Loss=0.0136, Val Loss=0.0605, Time=30.5s
+[HPO] Trial 7 Fold 1 Epoch 8: Train Loss=0.0047, Val Loss=0.0524, Time=30.5s
+[HPO] Trial 7 Fold 1 Epoch 9: Train Loss=0.0026, Val Loss=0.0574, Time=30.5s
+[HPO] Trial 7: Average Loss=0.0447
+[DEBUG] Creating ResNet50 with lr=0.0007572238905342682, weight_decay=0.0007000813707462365
+[HPO] Trial 8 Fold 0 Epoch 0: Train Loss=0.0930, Val Loss=0.0446, Time=30.5s
+[HPO] Trial 8 Fold 0 Epoch 1: Train Loss=0.0439, Val Loss=0.0689, Time=30.5s
+[HPO] Trial 8 Fold 0 Epoch 2: Train Loss=0.0367, Val Loss=0.1080, Time=30.5s
+[HPO] Trial 8 Fold 0 Epoch 3: Train Loss=0.0470, Val Loss=0.0559, Time=30.5s
+[HPO] Trial 8 Fold 0 Epoch 4: Train Loss=0.0349, Val Loss=0.2954, Time=30.5s
+[HPO] Trial 8 Fold 0 Epoch 5: Train Loss=0.0475, Val Loss=0.1495, Time=30.5s
+[HPO] Trial 8 Fold 0 Epoch 6: Train Loss=0.0512, Val Loss=0.0531, Time=30.5s
+[HPO] Trial 8 Fold 0 Epoch 7: Train Loss=0.0408, Val Loss=0.6275, Time=30.5s
+[HPO] Trial 8 Fold 0 Epoch 8: Train Loss=0.0539, Val Loss=0.1360, Time=30.5s
+[HPO] Trial 8 Fold 0 Epoch 9: Train Loss=0.0378, Val Loss=0.6568, Time=30.5s
+[DEBUG] Creating ResNet50 with lr=0.0007572238905342682, weight_decay=0.0007000813707462365
+[HPO] Trial 8 Fold 1 Epoch 0: Train Loss=0.1018, Val Loss=0.1560, Time=30.5s
+[HPO] Trial 8 Fold 1 Epoch 1: Train Loss=0.0477, Val Loss=0.0655, Time=30.4s
+[HPO] Trial 8 Fold 1 Epoch 2: Train Loss=0.0413, Val Loss=0.0511, Time=30.4s
+[HPO] Trial 8 Fold 1 Epoch 3: Train Loss=0.0490, Val Loss=0.0478, Time=30.4s
+[HPO] Trial 8 Fold 1 Epoch 4: Train Loss=0.0348, Val Loss=0.1503, Time=30.4s
+[HPO] Trial 8 Fold 1 Epoch 5: Train Loss=0.0399, Val Loss=0.0539, Time=30.4s
+[HPO] Trial 8 Fold 1 Epoch 6: Train Loss=0.0350, Val Loss=0.4610, Time=30.4s
+[HPO] Trial 8 Fold 1 Epoch 7: Train Loss=0.0492, Val Loss=0.0886, Time=30.4s
+[HPO] Trial 8 Fold 1 Epoch 8: Train Loss=0.0267, Val Loss=0.0524, Time=30.4s
+[HPO] Trial 8 Fold 1 Epoch 9: Train Loss=0.0247, Val Loss=0.2015, Time=30.4s
+[HPO] Trial 8: Average Loss=0.0462
+[DEBUG] Creating ResNet50 with lr=0.0001972310578432149, weight_decay=2.3330120259651262e-05
+[HPO] Trial 9 Fold 0 Epoch 0: Train Loss=0.1091, Val Loss=0.0514, Time=30.5s
+[HPO] Trial 9 Fold 0 Epoch 1: Train Loss=0.0266, Val Loss=0.0336, Time=30.5s
+[HPO] Trial 9 Fold 0 Epoch 2: Train Loss=0.0119, Val Loss=0.0200, Time=30.5s
+[HPO] Trial 9 Fold 0 Epoch 3: Train Loss=0.0084, Val Loss=0.0333, Time=30.5s
+[HPO] Trial 9 Fold 0 Epoch 4: Train Loss=0.0140, Val Loss=0.0437, Time=30.5s
+[HPO] Trial 9 Fold 0 Epoch 5: Train Loss=0.0102, Val Loss=0.0375, Time=30.5s
+[HPO] Trial 9 Fold 0 Epoch 6: Train Loss=0.0117, Val Loss=0.0277, Time=30.5s
+[HPO] Trial 9 Fold 0 Epoch 7: Train Loss=0.0046, Val Loss=0.0206, Time=30.5s
+[HPO] Trial 9 Fold 0 Epoch 8: Train Loss=0.0007, Val Loss=0.0235, Time=30.5s
+[HPO] Trial 9 Fold 0 Epoch 9: Train Loss=0.0002, Val Loss=0.0231, Time=30.5s
+[DEBUG] Creating ResNet50 with lr=0.0001972310578432149, weight_decay=2.3330120259651262e-05
+[HPO] Trial 9 Fold 1 Epoch 0: Train Loss=0.0911, Val Loss=0.0337, Time=30.4s
+[HPO] Trial 9 Fold 1 Epoch 1: Train Loss=0.0279, Val Loss=0.0308, Time=30.5s
+[HPO] Trial 9 Fold 1 Epoch 2: Train Loss=0.0140, Val Loss=0.0412, Time=30.5s
+[HPO] Trial 9 Fold 1 Epoch 3: Train Loss=0.0099, Val Loss=0.0464, Time=30.5s
+[HPO] Trial 9 Fold 1 Epoch 4: Train Loss=0.0069, Val Loss=0.0646, Time=30.4s
+[HPO] Trial 9 Fold 1 Epoch 5: Train Loss=0.0123, Val Loss=0.0334, Time=30.3s
+[HPO] Trial 9 Fold 1 Epoch 6: Train Loss=0.0034, Val Loss=0.0358, Time=30.3s
+[HPO] Trial 9 Fold 1 Epoch 7: Train Loss=0.0006, Val Loss=0.0389, Time=30.3s
+[HPO] Trial 9 Fold 1 Epoch 8: Train Loss=0.0046, Val Loss=0.0547, Time=30.3s
+[HPO] Trial 9 Fold 1 Epoch 9: Train Loss=0.0091, Val Loss=0.0536, Time=30.3s
+[HPO] Trial 9: Average Loss=0.0254
+[DEBUG] Creating ResNet50 with lr=0.00017501268471157617, weight_decay=3.771091070422107e-05
+[HPO] Trial 10 Fold 0 Epoch 0: Train Loss=0.1031, Val Loss=0.0352, Time=30.3s
+[HPO] Trial 10 Fold 0 Epoch 1: Train Loss=0.0230, Val Loss=0.0260, Time=30.4s
+[HPO] Trial 10 Fold 0 Epoch 2: Train Loss=0.0168, Val Loss=0.0426, Time=30.5s
+[HPO] Trial 10 Fold 0 Epoch 3: Train Loss=0.0159, Val Loss=0.0470, Time=30.5s
+[HPO] Trial 10 Fold 0 Epoch 4: Train Loss=0.0084, Val Loss=0.0436, Time=30.5s
+[HPO] Trial 10 Fold 0 Epoch 5: Train Loss=0.0089, Val Loss=0.0388, Time=30.5s
+[HPO] Trial 10 Fold 0 Epoch 6: Train Loss=0.0039, Val Loss=0.0270, Time=30.5s
+[HPO] Trial 10 Fold 0 Epoch 7: Train Loss=0.0006, Val Loss=0.0271, Time=30.5s
+[HPO] Trial 10 Fold 0 Epoch 8: Train Loss=0.0011, Val Loss=0.0327, Time=30.4s
+[HPO] Trial 10 Fold 0 Epoch 9: Train Loss=0.0036, Val Loss=0.0492, Time=30.3s
+[DEBUG] Creating ResNet50 with lr=0.00017501268471157617, weight_decay=3.771091070422107e-05
+[HPO] Trial 10 Fold 1 Epoch 0: Train Loss=0.0972, Val Loss=0.0556, Time=30.3s
+[HPO] Trial 10 Fold 1 Epoch 1: Train Loss=0.0178, Val Loss=0.0337, Time=30.3s
+[HPO] Trial 10 Fold 1 Epoch 2: Train Loss=0.0190, Val Loss=0.0460, Time=30.3s
+[HPO] Trial 10 Fold 1 Epoch 3: Train Loss=0.0137, Val Loss=0.0649, Time=30.5s
+[HPO] Trial 10 Fold 1 Epoch 4: Train Loss=0.0105, Val Loss=0.0271, Time=30.5s
+[HPO] Trial 10 Fold 1 Epoch 5: Train Loss=0.0034, Val Loss=0.0316, Time=30.5s
+[HPO] Trial 10 Fold 1 Epoch 6: Train Loss=0.0072, Val Loss=0.0424, Time=30.4s
+[HPO] Trial 10 Fold 1 Epoch 7: Train Loss=0.0120, Val Loss=0.0334, Time=30.3s
+[HPO] Trial 10 Fold 1 Epoch 8: Train Loss=0.0046, Val Loss=0.0374, Time=30.3s
+[HPO] Trial 10 Fold 1 Epoch 9: Train Loss=0.0009, Val Loss=0.0437, Time=30.5s
+[HPO] Trial 10: Average Loss=0.0265
+[DEBUG] Creating ResNet50 with lr=0.0001784893154402019, weight_decay=3.3565655516527826e-05
+[HPO] Trial 11 Fold 0 Epoch 0: Train Loss=0.1123, Val Loss=0.0546, Time=30.3s
+[HPO] Trial 11 Fold 0 Epoch 1: Train Loss=0.0257, Val Loss=0.0527, Time=30.3s
+[HPO] Trial 11 Fold 0 Epoch 2: Train Loss=0.0114, Val Loss=0.0346, Time=30.3s
+[HPO] Trial 11 Fold 0 Epoch 3: Train Loss=0.0144, Val Loss=0.0440, Time=30.2s
+[HPO] Trial 11 Fold 0 Epoch 4: Train Loss=0.0069, Val Loss=0.0328, Time=30.3s
+[HPO] Trial 11 Fold 0 Epoch 5: Train Loss=0.0027, Val Loss=0.0284, Time=30.5s
+[HPO] Trial 11 Fold 0 Epoch 6: Train Loss=0.0051, Val Loss=0.0427, Time=30.4s
+[HPO] Trial 11 Fold 0 Epoch 7: Train Loss=0.0089, Val Loss=0.1861, Time=30.3s
+[HPO] Trial 11 Fold 0 Epoch 8: Train Loss=0.0085, Val Loss=0.0473, Time=30.3s
+[HPO] Trial 11 Fold 0 Epoch 9: Train Loss=0.0041, Val Loss=0.0291, Time=30.3s
+[DEBUG] Creating ResNet50 with lr=0.0001784893154402019, weight_decay=3.3565655516527826e-05
+[HPO] Trial 11 Fold 1 Epoch 0: Train Loss=0.1011, Val Loss=0.0379, Time=30.3s
+[HPO] Trial 11 Fold 1 Epoch 1: Train Loss=0.0237, Val Loss=0.0318, Time=30.3s
+[HPO] Trial 11 Fold 1 Epoch 2: Train Loss=0.0155, Val Loss=0.0378, Time=30.3s
+[HPO] Trial 11 Fold 1 Epoch 3: Train Loss=0.0169, Val Loss=0.0412, Time=30.2s
+[HPO] Trial 11 Fold 1 Epoch 4: Train Loss=0.0095, Val Loss=0.0281, Time=30.3s
+[HPO] Trial 11 Fold 1 Epoch 5: Train Loss=0.0065, Val Loss=0.0337, Time=30.3s
+[HPO] Trial 11 Fold 1 Epoch 6: Train Loss=0.0051, Val Loss=0.0464, Time=30.3s
+[HPO] Trial 11 Fold 1 Epoch 7: Train Loss=0.0035, Val Loss=0.0665, Time=30.2s
+[HPO] Trial 11 Fold 1 Epoch 8: Train Loss=0.0064, Val Loss=0.0379, Time=30.4s
+[HPO] Trial 11 Fold 1 Epoch 9: Train Loss=0.0027, Val Loss=0.0348, Time=30.5s
+[HPO] Trial 11: Average Loss=0.0282
+[DEBUG] Creating ResNet50 with lr=0.0001127438639719898, weight_decay=0.00015809104744001761
+[HPO] Trial 12 Fold 0 Epoch 0: Train Loss=0.1095, Val Loss=0.0467, Time=30.5s
+[HPO] Trial 12 Fold 0 Epoch 1: Train Loss=0.0209, Val Loss=0.0318, Time=30.5s
+[HPO] Trial 12 Fold 0 Epoch 2: Train Loss=0.0146, Val Loss=0.0240, Time=30.5s
+[HPO] Trial 12 Fold 0 Epoch 3: Train Loss=0.0051, Val Loss=0.0402, Time=30.4s
+[HPO] Trial 12 Fold 0 Epoch 4: Train Loss=0.0043, Val Loss=0.0300, Time=30.3s
+[HPO] Trial 12 Fold 0 Epoch 5: Train Loss=0.0067, Val Loss=0.0739, Time=30.4s
+[HPO] Trial 12 Fold 0 Epoch 6: Train Loss=0.0070, Val Loss=0.0498, Time=30.4s
+[HPO] Trial 12 Fold 0 Epoch 7: Train Loss=0.0027, Val Loss=0.0409, Time=30.3s
+[HPO] Trial 12 Fold 0 Epoch 8: Train Loss=0.0037, Val Loss=0.0491, Time=30.3s
+[HPO] Trial 12 Fold 0 Epoch 9: Train Loss=0.0042, Val Loss=0.0591, Time=30.3s
+[DEBUG] Creating ResNet50 with lr=0.0001127438639719898, weight_decay=0.00015809104744001761
+[HPO] Trial 12 Fold 1 Epoch 0: Train Loss=0.1149, Val Loss=0.0517, Time=30.3s
+[HPO] Trial 12 Fold 1 Epoch 1: Train Loss=0.0211, Val Loss=0.0507, Time=30.3s
+[HPO] Trial 12 Fold 1 Epoch 2: Train Loss=0.0074, Val Loss=0.0398, Time=30.3s
+[HPO] Trial 12 Fold 1 Epoch 3: Train Loss=0.0065, Val Loss=0.0403, Time=30.3s
+[HPO] Trial 12 Fold 1 Epoch 4: Train Loss=0.0155, Val Loss=0.0405, Time=30.3s
+[HPO] Trial 12 Fold 1 Epoch 5: Train Loss=0.0091, Val Loss=0.0359, Time=30.3s
+[HPO] Trial 12 Fold 1 Epoch 6: Train Loss=0.0014, Val Loss=0.0582, Time=30.3s
+[HPO] Trial 12 Fold 1 Epoch 7: Train Loss=0.0092, Val Loss=0.0997, Time=30.3s
+[HPO] Trial 12 Fold 1 Epoch 8: Train Loss=0.0044, Val Loss=0.0471, Time=30.3s
+[HPO] Trial 12 Fold 1 Epoch 9: Train Loss=0.0020, Val Loss=0.0415, Time=30.3s
+[HPO] Trial 12: Average Loss=0.0299
+[DEBUG] Creating ResNet50 with lr=0.000182401008217435, weight_decay=1.1373084883419422e-05
+[HPO] Trial 13 Fold 0 Epoch 0: Train Loss=0.1126, Val Loss=0.0529, Time=30.3s
+[HPO] Trial 13 Fold 0 Epoch 1: Train Loss=0.0282, Val Loss=0.0500, Time=30.3s
+[HPO] Trial 13 Fold 0 Epoch 2: Train Loss=0.0185, Val Loss=0.0306, Time=30.5s
+[HPO] Trial 13 Fold 0 Epoch 3: Train Loss=0.0046, Val Loss=0.0366, Time=30.4s
+[HPO] Trial 13 Fold 0 Epoch 4: Train Loss=0.0049, Val Loss=0.0412, Time=30.3s
+[HPO] Trial 13 Fold 0 Epoch 5: Train Loss=0.0102, Val Loss=0.0517, Time=30.3s
+[HPO] Trial 13 Fold 0 Epoch 6: Train Loss=0.0195, Val Loss=0.0354, Time=30.3s
+[HPO] Trial 13 Fold 0 Epoch 7: Train Loss=0.0097, Val Loss=0.0490, Time=30.3s
+[HPO] Trial 13 Fold 0 Epoch 8: Train Loss=0.0047, Val Loss=0.0275, Time=30.3s
+[HPO] Trial 13 Fold 0 Epoch 9: Train Loss=0.0008, Val Loss=0.0248, Time=30.3s
+[DEBUG] Creating ResNet50 with lr=0.000182401008217435, weight_decay=1.1373084883419422e-05
+[HPO] Trial 13 Fold 1 Epoch 0: Train Loss=0.1010, Val Loss=0.0485, Time=30.5s
+[HPO] Trial 13 Fold 1 Epoch 1: Train Loss=0.0269, Val Loss=0.0442, Time=30.3s
+[HPO] Trial 13 Fold 1 Epoch 2: Train Loss=0.0168, Val Loss=0.0408, Time=30.3s
+[HPO] Trial 13 Fold 1 Epoch 3: Train Loss=0.0119, Val Loss=0.0340, Time=30.3s
+[HPO] Trial 13 Fold 1 Epoch 4: Train Loss=0.0046, Val Loss=0.0403, Time=30.3s
+[HPO] Trial 13 Fold 1 Epoch 5: Train Loss=0.0036, Val Loss=0.0313, Time=30.3s
+[HPO] Trial 13 Fold 1 Epoch 6: Train Loss=0.0004, Val Loss=0.0292, Time=30.3s
+[HPO] Trial 13 Fold 1 Epoch 7: Train Loss=0.0005, Val Loss=0.0388, Time=30.3s
+[HPO] Trial 13 Fold 1 Epoch 8: Train Loss=0.0002, Val Loss=0.0367, Time=30.3s
+[HPO] Trial 13 Fold 1 Epoch 9: Train Loss=0.0001, Val Loss=0.0365, Time=30.3s
+[HPO] Trial 13: Average Loss=0.0270
+[DEBUG] Creating ResNet50 with lr=9.339157484897128e-05, weight_decay=1.22844334429298e-06
+[HPO] Trial 14 Fold 0 Epoch 0: Train Loss=0.1363, Val Loss=0.0388, Time=30.3s
+[HPO] Trial 14 Fold 0 Epoch 1: Train Loss=0.0226, Val Loss=0.0269, Time=30.2s
+[HPO] Trial 14 Fold 0 Epoch 2: Train Loss=0.0057, Val Loss=0.0376, Time=30.3s
+[HPO] Trial 14 Fold 0 Epoch 3: Train Loss=0.0013, Val Loss=0.0285, Time=30.3s
+[HPO] Trial 14 Fold 0 Epoch 4: Train Loss=0.0137, Val Loss=0.0596, Time=30.3s
+[HPO] Trial 14 Fold 0 Epoch 5: Train Loss=0.0091, Val Loss=0.0315, Time=30.3s
+[HPO] Trial 14 Fold 0 Epoch 6: Train Loss=0.0118, Val Loss=0.0460, Time=30.3s
+[HPO] Trial 14 Fold 0 Epoch 7: Train Loss=0.0097, Val Loss=0.0270, Time=30.3s
+[HPO] Trial 14 Fold 0 Epoch 8: Train Loss=0.0037, Val Loss=0.0336, Time=30.3s
+[HPO] Trial 14 Fold 0 Epoch 9: Train Loss=0.0016, Val Loss=0.0309, Time=30.3s
+[DEBUG] Creating ResNet50 with lr=9.339157484897128e-05, weight_decay=1.22844334429298e-06
+[HPO] Trial 14 Fold 1 Epoch 0: Train Loss=0.1126, Val Loss=0.0436, Time=30.4s
+[HPO] Trial 14 Fold 1 Epoch 1: Train Loss=0.0234, Val Loss=0.0365, Time=30.3s
+[HPO] Trial 14 Fold 1 Epoch 2: Train Loss=0.0121, Val Loss=0.0478, Time=30.3s
+[HPO] Trial 14 Fold 1 Epoch 3: Train Loss=0.0072, Val Loss=0.0312, Time=30.3s
+[HPO] Trial 14 Fold 1 Epoch 4: Train Loss=0.0012, Val Loss=0.0335, Time=30.3s
+[HPO] Trial 14 Fold 1 Epoch 5: Train Loss=0.0046, Val Loss=0.0708, Time=30.3s
+[HPO] Trial 14 Fold 1 Epoch 6: Train Loss=0.0166, Val Loss=0.0316, Time=30.3s
+[HPO] Trial 14 Fold 1 Epoch 7: Train Loss=0.0029, Val Loss=0.0471, Time=30.3s
+[HPO] Trial 14 Fold 1 Epoch 8: Train Loss=0.0041, Val Loss=0.0436, Time=30.3s
+[HPO] Trial 14 Fold 1 Epoch 9: Train Loss=0.0009, Val Loss=0.0367, Time=30.3s
+[HPO] Trial 14: Average Loss=0.0290
+[DEBUG] Creating ResNet50 with lr=0.00030446832309387074, weight_decay=3.385024224898792e-05
+[HPO] Trial 15 Fold 0 Epoch 0: Train Loss=0.1093, Val Loss=0.0279, Time=30.5s
+[HPO] Trial 15 Fold 0 Epoch 1: Train Loss=0.0286, Val Loss=0.0464, Time=30.5s
+[HPO] Trial 15 Fold 0 Epoch 2: Train Loss=0.0252, Val Loss=0.0385, Time=30.5s
+[HPO] Trial 15 Fold 0 Epoch 3: Train Loss=0.0088, Val Loss=0.0372, Time=30.5s
+[HPO] Trial 15 Fold 0 Epoch 4: Train Loss=0.0048, Val Loss=0.0374, Time=30.5s
+[HPO] Trial 15 Fold 0 Epoch 5: Train Loss=0.0042, Val Loss=0.0521, Time=30.5s
+[HPO] Trial 15 Fold 0 Epoch 6: Train Loss=0.0112, Val Loss=0.0423, Time=30.5s
+[HPO] Trial 15 Fold 0 Epoch 7: Train Loss=0.0123, Val Loss=0.0503, Time=30.5s
+[HPO] Trial 15 Fold 0 Epoch 8: Train Loss=0.0073, Val Loss=0.0337, Time=30.5s
+[HPO] Trial 15 Fold 0 Epoch 9: Train Loss=0.0055, Val Loss=0.0355, Time=30.5s
+[DEBUG] Creating ResNet50 with lr=0.00030446832309387074, weight_decay=3.385024224898792e-05
+[HPO] Trial 15 Fold 1 Epoch 0: Train Loss=0.1100, Val Loss=0.1256, Time=30.5s
+[HPO] Trial 15 Fold 1 Epoch 1: Train Loss=0.0324, Val Loss=0.0246, Time=30.5s
+[HPO] Trial 15 Fold 1 Epoch 2: Train Loss=0.0194, Val Loss=0.0293, Time=30.5s
+[HPO] Trial 15 Fold 1 Epoch 3: Train Loss=0.0114, Val Loss=0.0389, Time=30.5s
+[HPO] Trial 15 Fold 1 Epoch 4: Train Loss=0.0020, Val Loss=0.0252, Time=30.5s
+[HPO] Trial 15 Fold 1 Epoch 5: Train Loss=0.0012, Val Loss=0.0383, Time=30.5s
+[HPO] Trial 15 Fold 1 Epoch 6: Train Loss=0.0139, Val Loss=0.0756, Time=30.5s
+[HPO] Trial 15 Fold 1 Epoch 7: Train Loss=0.0114, Val Loss=0.0558, Time=30.5s
+[HPO] Trial 15 Fold 1 Epoch 8: Train Loss=0.0120, Val Loss=0.1581, Time=30.5s
+[HPO] Trial 15 Fold 1 Epoch 9: Train Loss=0.0127, Val Loss=0.0357, Time=30.5s
+[HPO] Trial 15: Average Loss=0.0263
+[DEBUG] Creating ResNet50 with lr=0.00034930440553626547, weight_decay=0.0002775948902780089
+[HPO] Trial 16 Fold 0 Epoch 0: Train Loss=0.0995, Val Loss=0.0509, Time=30.5s
+[HPO] Trial 16 Fold 0 Epoch 1: Train Loss=0.0286, Val Loss=0.0612, Time=30.5s
+[HPO] Trial 16 Fold 0 Epoch 2: Train Loss=0.0266, Val Loss=0.0339, Time=30.5s
+[HPO] Trial 16 Fold 0 Epoch 3: Train Loss=0.0119, Val Loss=0.0584, Time=30.5s
+[HPO] Trial 16 Fold 0 Epoch 4: Train Loss=0.0190, Val Loss=0.0345, Time=30.5s
+[HPO] Trial 16 Fold 0 Epoch 5: Train Loss=0.0209, Val Loss=0.0286, Time=30.5s
+[HPO] Trial 16 Fold 0 Epoch 6: Train Loss=0.0185, Val Loss=0.0258, Time=30.5s
+[HPO] Trial 16 Fold 0 Epoch 7: Train Loss=0.0072, Val Loss=0.0568, Time=30.5s
+[HPO] Trial 16 Fold 0 Epoch 8: Train Loss=0.0069, Val Loss=0.0397, Time=30.5s
+[HPO] Trial 16 Fold 0 Epoch 9: Train Loss=0.0060, Val Loss=0.0339, Time=30.5s
+[DEBUG] Creating ResNet50 with lr=0.00034930440553626547, weight_decay=0.0002775948902780089
+[HPO] Trial 16 Fold 1 Epoch 0: Train Loss=0.1032, Val Loss=0.0535, Time=30.5s
+[HPO] Trial 16 Fold 1 Epoch 1: Train Loss=0.0335, Val Loss=0.0384, Time=30.5s
+[HPO] Trial 16 Fold 1 Epoch 2: Train Loss=0.0304, Val Loss=0.0305, Time=30.5s
+[HPO] Trial 16 Fold 1 Epoch 3: Train Loss=0.0141, Val Loss=0.0639, Time=30.5s
+[HPO] Trial 16 Fold 1 Epoch 4: Train Loss=0.0228, Val Loss=0.0451, Time=30.5s
+[HPO] Trial 16 Fold 1 Epoch 5: Train Loss=0.0104, Val Loss=0.0444, Time=30.5s
+[HPO] Trial 16 Fold 1 Epoch 6: Train Loss=0.0165, Val Loss=0.0595, Time=30.5s
+[HPO] Trial 16 Fold 1 Epoch 7: Train Loss=0.0161, Val Loss=0.0388, Time=30.5s
+[HPO] Trial 16 Fold 1 Epoch 8: Train Loss=0.0142, Val Loss=0.1448, Time=30.5s
+[HPO] Trial 16 Fold 1 Epoch 9: Train Loss=0.0050, Val Loss=0.0441, Time=30.5s
+[HPO] Trial 16: Average Loss=0.0282
+[DEBUG] Creating ResNet50 with lr=0.0008848249917178627, weight_decay=6.582899941825856e-06
+[HPO] Trial 17 Fold 0 Epoch 0: Train Loss=0.1173, Val Loss=0.0581, Time=30.5s
+[HPO] Trial 17 Fold 0 Epoch 1: Train Loss=0.0400, Val Loss=0.1451, Time=30.5s
+[HPO] Trial 17 Fold 0 Epoch 2: Train Loss=0.0354, Val Loss=0.0913, Time=30.3s
+[HPO] Trial 17 Fold 0 Epoch 3: Train Loss=0.0313, Val Loss=0.0453, Time=30.3s
+[HPO] Trial 17 Fold 0 Epoch 4: Train Loss=0.0240, Val Loss=0.0452, Time=30.3s
+[HPO] Trial 17 Fold 0 Epoch 5: Train Loss=0.0205, Val Loss=0.1682, Time=30.5s
+[HPO] Trial 17 Fold 0 Epoch 6: Train Loss=0.0110, Val Loss=0.0476, Time=30.5s
+[HPO] Trial 17 Fold 0 Epoch 7: Train Loss=0.0140, Val Loss=0.0902, Time=30.3s
+[HPO] Trial 17 Fold 0 Epoch 8: Train Loss=0.0143, Val Loss=0.0704, Time=30.3s
+[HPO] Trial 17 Fold 0 Epoch 9: Train Loss=0.0087, Val Loss=0.0385, Time=30.3s
+[DEBUG] Creating ResNet50 with lr=0.0008848249917178627, weight_decay=6.582899941825856e-06
+[HPO] Trial 17 Fold 1 Epoch 0: Train Loss=0.1336, Val Loss=0.1235, Time=30.3s
+[HPO] Trial 17 Fold 1 Epoch 1: Train Loss=0.0430, Val Loss=0.0361, Time=30.2s
+[HPO] Trial 17 Fold 1 Epoch 2: Train Loss=0.0404, Val Loss=0.0481, Time=30.3s
+[HPO] Trial 17 Fold 1 Epoch 3: Train Loss=0.0282, Val Loss=0.0498, Time=30.3s
+[HPO] Trial 17 Fold 1 Epoch 4: Train Loss=0.0090, Val Loss=0.0330, Time=30.3s
+[HPO] Trial 17 Fold 1 Epoch 5: Train Loss=0.0136, Val Loss=0.0817, Time=30.2s
+[HPO] Trial 17 Fold 1 Epoch 6: Train Loss=0.0357, Val Loss=0.0534, Time=30.3s
+[HPO] Trial 17 Fold 1 Epoch 7: Train Loss=0.0169, Val Loss=0.0353, Time=30.2s
+[HPO] Trial 17 Fold 1 Epoch 8: Train Loss=0.0131, Val Loss=0.0379, Time=30.2s
+[HPO] Trial 17 Fold 1 Epoch 9: Train Loss=0.0049, Val Loss=0.0518, Time=30.2s
+[HPO] Trial 17: Average Loss=0.0357
+[DEBUG] Creating ResNet50 with lr=5.941675761238076e-05, weight_decay=1.542533397997363e-05
+[HPO] Trial 18 Fold 0 Epoch 0: Train Loss=0.1642, Val Loss=0.0500, Time=30.3s
+[HPO] Trial 18 Fold 0 Epoch 1: Train Loss=0.0215, Val Loss=0.0563, Time=30.3s
+[HPO] Trial 18 Fold 0 Epoch 2: Train Loss=0.0089, Val Loss=0.0334, Time=30.3s
+[HPO] Trial 18 Fold 0 Epoch 3: Train Loss=0.0096, Val Loss=0.0323, Time=30.3s
+[HPO] Trial 18 Fold 0 Epoch 4: Train Loss=0.0059, Val Loss=0.0422, Time=30.3s
+[HPO] Trial 18 Fold 0 Epoch 5: Train Loss=0.0029, Val Loss=0.0317, Time=30.3s
+[HPO] Trial 18 Fold 0 Epoch 6: Train Loss=0.0017, Val Loss=0.0346, Time=30.3s
+[HPO] Trial 18 Fold 0 Epoch 7: Train Loss=0.0012, Val Loss=0.0364, Time=30.3s
+[HPO] Trial 18 Fold 0 Epoch 8: Train Loss=0.0005, Val Loss=0.0342, Time=30.3s
+[HPO] Trial 18 Fold 0 Epoch 9: Train Loss=0.0003, Val Loss=0.0334, Time=30.3s
+[DEBUG] Creating ResNet50 with lr=5.941675761238076e-05, weight_decay=1.542533397997363e-05
+[HPO] Trial 18 Fold 1 Epoch 0: Train Loss=0.1979, Val Loss=0.0400, Time=30.3s
+[HPO] Trial 18 Fold 1 Epoch 1: Train Loss=0.0215, Val Loss=0.0448, Time=30.3s
+[HPO] Trial 18 Fold 1 Epoch 2: Train Loss=0.0086, Val Loss=0.0493, Time=30.3s
+[HPO] Trial 18 Fold 1 Epoch 3: Train Loss=0.0068, Val Loss=0.0308, Time=30.3s
+[HPO] Trial 18 Fold 1 Epoch 4: Train Loss=0.0043, Val Loss=0.0492, Time=30.3s
+[HPO] Trial 18 Fold 1 Epoch 5: Train Loss=0.0015, Val Loss=0.0586, Time=30.3s
+[HPO] Trial 18 Fold 1 Epoch 6: Train Loss=0.0016, Val Loss=0.0523, Time=30.3s
+[HPO] Trial 18 Fold 1 Epoch 7: Train Loss=0.0207, Val Loss=0.0736, Time=30.3s
+[HPO] Trial 18 Fold 1 Epoch 8: Train Loss=0.0118, Val Loss=0.0434, Time=30.3s
+[HPO] Trial 18 Fold 1 Epoch 9: Train Loss=0.0027, Val Loss=0.0443, Time=30.3s
+[HPO] Trial 18: Average Loss=0.0313
+[DEBUG] Creating ResNet50 with lr=0.0004683896595883568, weight_decay=3.1205609107766963e-06
+[HPO] Trial 19 Fold 0 Epoch 0: Train Loss=0.1008, Val Loss=0.2856, Time=30.3s
+[HPO] Trial 19 Fold 0 Epoch 1: Train Loss=0.0347, Val Loss=0.0255, Time=30.3s
+[HPO] Trial 19 Fold 0 Epoch 2: Train Loss=0.0233, Val Loss=0.0342, Time=30.3s
+[HPO] Trial 19 Fold 0 Epoch 3: Train Loss=0.0158, Val Loss=0.0287, Time=30.3s
+[HPO] Trial 19 Fold 0 Epoch 4: Train Loss=0.0092, Val Loss=0.0271, Time=30.3s
+[HPO] Trial 19 Fold 0 Epoch 5: Train Loss=0.0128, Val Loss=0.0549, Time=30.3s
+[HPO] Trial 19 Fold 0 Epoch 6: Train Loss=0.0149, Val Loss=0.0440, Time=30.3s
+[HPO] Trial 19 Fold 0 Epoch 7: Train Loss=0.0089, Val Loss=0.0516, Time=30.3s
+[HPO] Trial 19 Fold 0 Epoch 8: Train Loss=0.0297, Val Loss=0.0301, Time=30.3s
+[HPO] Trial 19 Fold 0 Epoch 9: Train Loss=0.0050, Val Loss=0.0325, Time=30.3s
+[DEBUG] Creating ResNet50 with lr=0.0004683896595883568, weight_decay=3.1205609107766963e-06
+[HPO] Trial 19 Fold 1 Epoch 0: Train Loss=0.0999, Val Loss=0.0374, Time=30.4s
+[HPO] Trial 19 Fold 1 Epoch 1: Train Loss=0.0283, Val Loss=0.0303, Time=30.4s
+[HPO] Trial 19 Fold 1 Epoch 2: Train Loss=0.0194, Val Loss=0.0393, Time=30.4s
+[HPO] Trial 19 Fold 1 Epoch 3: Train Loss=0.0219, Val Loss=0.0685, Time=30.5s
+[HPO] Trial 19 Fold 1 Epoch 4: Train Loss=0.0170, Val Loss=0.0305, Time=30.4s
+[HPO] Trial 19 Fold 1 Epoch 5: Train Loss=0.0081, Val Loss=0.0508, Time=30.4s
+[HPO] Trial 19 Fold 1 Epoch 6: Train Loss=0.0080, Val Loss=0.0280, Time=30.3s
+[HPO] Trial 19 Fold 1 Epoch 7: Train Loss=0.0033, Val Loss=0.0423, Time=30.4s
+[HPO] Trial 19 Fold 1 Epoch 8: Train Loss=0.0014, Val Loss=0.0348, Time=30.3s
+[HPO] Trial 19 Fold 1 Epoch 9: Train Loss=0.0004, Val Loss=0.0333, Time=30.3s
+[HPO] Trial 19: Average Loss=0.0268
+[Debug] Best trial: lr=0.0001972310578432149, weight_decay=2.3330120259651262e-05
+[INFO] Best hyperparameters for Task 1: lr=0.0001972310578432149, weight_decay=2.3330120259651262e-05
+[MODEL INFO] Task 1: ResNet has total 23516228 parameters (23516228 trainable).
+[MODEL INFO] Task 1: Output layer has 4 units.
+[INFO] Task 1 Epoch 0: Train Loss=1.4406, Val Loss=1.4651, Train Acc=0.4919, Val Acc=0.2881
+[INFO] Task 1 Epoch 1: Train Loss=0.5844, Val Loss=1.1493, Train Acc=0.7781, Val Acc=0.2884
+[INFO] Task 1 Epoch 2: Train Loss=0.5098, Val Loss=1.0317, Train Acc=0.7792, Val Acc=0.2889
+[INFO] Task 1 Epoch 3: Train Loss=0.4687, Val Loss=0.9349, Train Acc=0.7803, Val Acc=0.3055
+[INFO] Task 1 Epoch 4: Train Loss=0.4324, Val Loss=0.8536, Train Acc=0.7897, Val Acc=0.3666
+[INFO] Task 1 Epoch 5: Train Loss=0.3993, Val Loss=0.7890, Train Acc=0.8105, Val Acc=0.4584
+[INFO] Task 1 Epoch 6: Train Loss=0.3656, Val Loss=0.7141, Train Acc=0.8368, Val Acc=0.5605
+[INFO] Task 1 Epoch 7: Train Loss=0.3326, Val Loss=0.6586, Train Acc=0.8550, Val Acc=0.6257
+[INFO] Task 1 Epoch 8: Train Loss=0.3025, Val Loss=0.6049, Train Acc=0.8725, Val Acc=0.6998
+[INFO] Task 1 Epoch 9: Train Loss=0.2735, Val Loss=0.5608, Train Acc=0.8860, Val Acc=0.7576
+[INFO] Finished Task 1
+[INFO] Model checkpoint saved to model_checkpoints/baseline/20250322_202558/task1/model_20250322_202558.pth
+[INFO] Evaluating performance for tasks 1 to 2...
+ => Ave accuracy (this task):    75.757
+ => Ave accuracy (tasks so far): 37.878
+[DEBUG] Creating ResNet50 with lr=0.0005184194873933105, weight_decay=5.866743151394987e-05
+[HPO] Trial 0 Fold 0 Epoch 0: Train Loss=0.2857, Val Loss=24.1889, Time=4.6s
+[HPO] Trial 0 Fold 0 Epoch 1: Train Loss=0.0241, Val Loss=1.9477, Time=4.6s
+[HPO] Trial 0 Fold 0 Epoch 2: Train Loss=0.0108, Val Loss=0.0070, Time=4.6s
+[HPO] Trial 0 Fold 0 Epoch 3: Train Loss=0.0024, Val Loss=0.0060, Time=4.6s
+[HPO] Trial 0 Fold 0 Epoch 4: Train Loss=0.0006, Val Loss=0.0069, Time=4.6s
+[HPO] Trial 0 Fold 0 Epoch 5: Train Loss=0.0014, Val Loss=0.0065, Time=4.6s
+[HPO] Trial 0 Fold 0 Epoch 6: Train Loss=0.0005, Val Loss=0.0072, Time=4.6s
+[HPO] Trial 0 Fold 0 Epoch 7: Train Loss=0.0002, Val Loss=0.0100, Time=4.6s
+[HPO] Trial 0 Fold 0 Epoch 8: Train Loss=0.0001, Val Loss=0.0086, Time=4.6s
+[HPO] Trial 0 Fold 0 Epoch 9: Train Loss=0.0002, Val Loss=0.0143, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=0.0005184194873933105, weight_decay=5.866743151394987e-05
+[HPO] Trial 0 Fold 1 Epoch 0: Train Loss=0.2391, Val Loss=25.4471, Time=4.6s
+[HPO] Trial 0 Fold 1 Epoch 1: Train Loss=0.0092, Val Loss=0.4590, Time=4.6s
+[HPO] Trial 0 Fold 1 Epoch 2: Train Loss=0.0027, Val Loss=0.0138, Time=4.6s
+[HPO] Trial 0 Fold 1 Epoch 3: Train Loss=0.0009, Val Loss=0.0254, Time=4.6s
+[HPO] Trial 0 Fold 1 Epoch 4: Train Loss=0.0001, Val Loss=0.0167, Time=4.6s
+[HPO] Trial 0 Fold 1 Epoch 5: Train Loss=0.0001, Val Loss=0.0115, Time=4.6s
+[HPO] Trial 0 Fold 1 Epoch 6: Train Loss=0.0001, Val Loss=0.0121, Time=4.6s
+[HPO] Trial 0 Fold 1 Epoch 7: Train Loss=0.0000, Val Loss=0.0128, Time=4.6s
+[HPO] Trial 0 Fold 1 Epoch 8: Train Loss=0.0001, Val Loss=0.0133, Time=4.6s
+[HPO] Trial 0 Fold 1 Epoch 9: Train Loss=0.0028, Val Loss=0.0173, Time=4.6s
+[HPO] Trial 0: Average Loss=0.0087
+[DEBUG] Creating ResNet50 with lr=1.9322886599760858e-05, weight_decay=0.0021018914086327607
+[HPO] Trial 1 Fold 0 Epoch 0: Train Loss=1.2178, Val Loss=1.0083, Time=4.6s
+[HPO] Trial 1 Fold 0 Epoch 1: Train Loss=0.6584, Val Loss=0.6487, Time=4.6s
+[HPO] Trial 1 Fold 0 Epoch 2: Train Loss=0.3029, Val Loss=0.3711, Time=4.6s
+[HPO] Trial 1 Fold 0 Epoch 3: Train Loss=0.1581, Val Loss=0.1845, Time=4.6s
+[HPO] Trial 1 Fold 0 Epoch 4: Train Loss=0.0771, Val Loss=0.1037, Time=4.6s
+[HPO] Trial 1 Fold 0 Epoch 5: Train Loss=0.0623, Val Loss=0.0622, Time=4.6s
+[HPO] Trial 1 Fold 0 Epoch 6: Train Loss=0.0435, Val Loss=0.0406, Time=4.6s
+[HPO] Trial 1 Fold 0 Epoch 7: Train Loss=0.0353, Val Loss=0.0470, Time=4.6s
+[HPO] Trial 1 Fold 0 Epoch 8: Train Loss=0.0262, Val Loss=0.0392, Time=4.6s
+[HPO] Trial 1 Fold 0 Epoch 9: Train Loss=0.0223, Val Loss=0.0364, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=1.9322886599760858e-05, weight_decay=0.0021018914086327607
+[HPO] Trial 1 Fold 1 Epoch 0: Train Loss=1.7026, Val Loss=1.5345, Time=4.6s
+[HPO] Trial 1 Fold 1 Epoch 1: Train Loss=0.9310, Val Loss=1.1369, Time=4.6s
+[HPO] Trial 1 Fold 1 Epoch 2: Train Loss=0.4261, Val Loss=0.6464, Time=4.6s
+[HPO] Trial 1 Fold 1 Epoch 3: Train Loss=0.2149, Val Loss=0.2090, Time=4.6s
+[HPO] Trial 1 Fold 1 Epoch 4: Train Loss=0.1091, Val Loss=0.1055, Time=4.6s
+[HPO] Trial 1 Fold 1 Epoch 5: Train Loss=0.1314, Val Loss=0.0688, Time=4.6s
+[HPO] Trial 1 Fold 1 Epoch 6: Train Loss=0.0976, Val Loss=0.0714, Time=4.6s
+[HPO] Trial 1 Fold 1 Epoch 7: Train Loss=0.0842, Val Loss=0.0654, Time=4.6s
+[HPO] Trial 1 Fold 1 Epoch 8: Train Loss=0.0575, Val Loss=0.0522, Time=4.6s
+[HPO] Trial 1 Fold 1 Epoch 9: Train Loss=0.0435, Val Loss=0.0434, Time=4.6s
+[HPO] Trial 1: Average Loss=0.0399
+[DEBUG] Creating ResNet50 with lr=9.286814701846055e-05, weight_decay=0.0008846438660883361
+[HPO] Trial 2 Fold 0 Epoch 0: Train Loss=0.8117, Val Loss=0.3035, Time=4.6s
+[HPO] Trial 2 Fold 0 Epoch 1: Train Loss=0.0666, Val Loss=0.0733, Time=4.7s
+[HPO] Trial 2 Fold 0 Epoch 2: Train Loss=0.0209, Val Loss=0.0319, Time=4.7s
+[HPO] Trial 2 Fold 0 Epoch 3: Train Loss=0.0167, Val Loss=0.0206, Time=4.7s
+[HPO] Trial 2 Fold 0 Epoch 4: Train Loss=0.0119, Val Loss=0.0380, Time=4.7s
+[HPO] Trial 2 Fold 0 Epoch 5: Train Loss=0.0073, Val Loss=0.0088, Time=4.7s
+[HPO] Trial 2 Fold 0 Epoch 6: Train Loss=0.0055, Val Loss=0.0061, Time=4.6s
+[HPO] Trial 2 Fold 0 Epoch 7: Train Loss=0.0039, Val Loss=0.0047, Time=4.6s
+[HPO] Trial 2 Fold 0 Epoch 8: Train Loss=0.0031, Val Loss=0.0038, Time=4.6s
+[HPO] Trial 2 Fold 0 Epoch 9: Train Loss=0.0032, Val Loss=0.0031, Time=4.7s
+[DEBUG] Creating ResNet50 with lr=9.286814701846055e-05, weight_decay=0.0008846438660883361
+[HPO] Trial 2 Fold 1 Epoch 0: Train Loss=0.8272, Val Loss=0.4293, Time=4.7s
+[HPO] Trial 2 Fold 1 Epoch 1: Train Loss=0.0668, Val Loss=0.0526, Time=4.7s
+[HPO] Trial 2 Fold 1 Epoch 2: Train Loss=0.0223, Val Loss=0.0378, Time=4.6s
+[HPO] Trial 2 Fold 1 Epoch 3: Train Loss=0.0082, Val Loss=0.0256, Time=4.6s
+[HPO] Trial 2 Fold 1 Epoch 4: Train Loss=0.0061, Val Loss=0.0234, Time=4.6s
+[HPO] Trial 2 Fold 1 Epoch 5: Train Loss=0.0100, Val Loss=0.0249, Time=4.6s
+[HPO] Trial 2 Fold 1 Epoch 6: Train Loss=0.0089, Val Loss=0.0165, Time=4.6s
+[HPO] Trial 2 Fold 1 Epoch 7: Train Loss=0.0057, Val Loss=0.0113, Time=4.6s
+[HPO] Trial 2 Fold 1 Epoch 8: Train Loss=0.0031, Val Loss=0.0103, Time=4.6s
+[HPO] Trial 2 Fold 1 Epoch 9: Train Loss=0.0048, Val Loss=0.0198, Time=4.6s
+[HPO] Trial 2: Average Loss=0.0067
+[DEBUG] Creating ResNet50 with lr=0.0008945729759834544, weight_decay=0.002865315132257372
+[HPO] Trial 3 Fold 0 Epoch 0: Train Loss=0.2391, Val Loss=8.8154, Time=4.7s
+[HPO] Trial 3 Fold 0 Epoch 1: Train Loss=0.0047, Val Loss=0.0195, Time=4.7s
+[HPO] Trial 3 Fold 0 Epoch 2: Train Loss=0.1463, Val Loss=0.0670, Time=4.7s
+[HPO] Trial 3 Fold 0 Epoch 3: Train Loss=0.1372, Val Loss=3.0287, Time=4.7s
+[HPO] Trial 3 Fold 0 Epoch 4: Train Loss=0.0598, Val Loss=0.0476, Time=4.7s
+[HPO] Trial 3 Fold 0 Epoch 5: Train Loss=0.0291, Val Loss=0.1342, Time=4.7s
+[HPO] Trial 3 Fold 0 Epoch 6: Train Loss=0.0116, Val Loss=0.0175, Time=4.7s
+[HPO] Trial 3 Fold 0 Epoch 7: Train Loss=0.0073, Val Loss=0.0351, Time=4.7s
+[HPO] Trial 3 Fold 0 Epoch 8: Train Loss=0.0395, Val Loss=0.2744, Time=4.7s
+[HPO] Trial 3 Fold 0 Epoch 9: Train Loss=0.0236, Val Loss=0.0870, Time=4.7s
+[DEBUG] Creating ResNet50 with lr=0.0008945729759834544, weight_decay=0.002865315132257372
+[HPO] Trial 3 Fold 1 Epoch 0: Train Loss=0.2323, Val Loss=0.2763, Time=4.7s
+[HPO] Trial 3 Fold 1 Epoch 1: Train Loss=0.1180, Val Loss=0.4994, Time=4.7s
+[HPO] Trial 3 Fold 1 Epoch 2: Train Loss=0.0347, Val Loss=0.5876, Time=4.7s
+[HPO] Trial 3 Fold 1 Epoch 3: Train Loss=0.0158, Val Loss=0.0345, Time=4.7s
+[HPO] Trial 3 Fold 1 Epoch 4: Train Loss=0.0042, Val Loss=0.0791, Time=4.7s
+[HPO] Trial 3 Fold 1 Epoch 5: Train Loss=0.0032, Val Loss=0.1862, Time=4.7s
+[HPO] Trial 3 Fold 1 Epoch 6: Train Loss=0.0255, Val Loss=0.0705, Time=4.7s
+[HPO] Trial 3 Fold 1 Epoch 7: Train Loss=0.0093, Val Loss=0.0107, Time=4.7s
+[HPO] Trial 3 Fold 1 Epoch 8: Train Loss=0.0049, Val Loss=0.0272, Time=4.7s
+[HPO] Trial 3 Fold 1 Epoch 9: Train Loss=0.0029, Val Loss=0.1316, Time=4.7s
+[HPO] Trial 3: Average Loss=0.0141
+[DEBUG] Creating ResNet50 with lr=0.0002451402542712165, weight_decay=0.0005061631649846791
+[HPO] Trial 4 Fold 0 Epoch 0: Train Loss=0.3568, Val Loss=1.9203, Time=4.6s
+[HPO] Trial 4 Fold 0 Epoch 1: Train Loss=0.0095, Val Loss=0.6414, Time=4.6s
+[HPO] Trial 4 Fold 0 Epoch 2: Train Loss=0.0149, Val Loss=0.3940, Time=4.7s
+[HPO] Trial 4 Fold 0 Epoch 3: Train Loss=0.0052, Val Loss=0.0162, Time=4.6s
+[HPO] Trial 4 Fold 0 Epoch 4: Train Loss=0.0025, Val Loss=0.0085, Time=4.7s
+[HPO] Trial 4 Fold 0 Epoch 5: Train Loss=0.0009, Val Loss=0.0040, Time=4.6s
+[HPO] Trial 4 Fold 0 Epoch 6: Train Loss=0.0007, Val Loss=0.0066, Time=4.6s
+[HPO] Trial 4 Fold 0 Epoch 7: Train Loss=0.0005, Val Loss=0.0040, Time=4.7s
+[HPO] Trial 4 Fold 0 Epoch 8: Train Loss=0.0005, Val Loss=0.0053, Time=4.6s
+[HPO] Trial 4 Fold 0 Epoch 9: Train Loss=0.0004, Val Loss=0.0046, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=0.0002451402542712165, weight_decay=0.0005061631649846791
+[HPO] Trial 4 Fold 1 Epoch 0: Train Loss=0.3259, Val Loss=1.0496, Time=4.6s
+[HPO] Trial 4 Fold 1 Epoch 1: Train Loss=0.0107, Val Loss=0.3566, Time=4.6s
+[HPO] Trial 4 Fold 1 Epoch 2: Train Loss=0.0015, Val Loss=0.0446, Time=4.6s
+[HPO] Trial 4 Fold 1 Epoch 3: Train Loss=0.0008, Val Loss=0.0151, Time=4.7s
+[HPO] Trial 4 Fold 1 Epoch 4: Train Loss=0.0007, Val Loss=0.0120, Time=4.6s
+[HPO] Trial 4 Fold 1 Epoch 5: Train Loss=0.0005, Val Loss=0.0088, Time=4.6s
+[HPO] Trial 4 Fold 1 Epoch 6: Train Loss=0.0005, Val Loss=0.0096, Time=4.6s
+[HPO] Trial 4 Fold 1 Epoch 7: Train Loss=0.0004, Val Loss=0.0093, Time=4.6s
+[HPO] Trial 4 Fold 1 Epoch 8: Train Loss=0.0004, Val Loss=0.0122, Time=4.6s
+[HPO] Trial 4 Fold 1 Epoch 9: Train Loss=0.0003, Val Loss=0.0151, Time=4.6s
+[HPO] Trial 4: Average Loss=0.0064
+[DEBUG] Creating ResNet50 with lr=0.0001667936150687349, weight_decay=4.335126239542579e-05
+[HPO] Trial 5 Fold 0 Epoch 0: Train Loss=0.4084, Val Loss=0.1574, Time=4.6s
+[HPO] Trial 5 Fold 0 Epoch 1: Train Loss=0.0140, Val Loss=0.0740, Time=4.6s
+[HPO] Trial 5 Fold 0 Epoch 2: Train Loss=0.0089, Val Loss=0.0102, Time=4.6s
+[HPO] Trial 5 Fold 0 Epoch 3: Train Loss=0.0025, Val Loss=0.0062, Time=4.6s
+[HPO] Trial 5 Fold 0 Epoch 4: Train Loss=0.0027, Val Loss=0.0025, Time=4.6s
+[HPO] Trial 5 Fold 0 Epoch 5: Train Loss=0.0017, Val Loss=0.0043, Time=4.6s
+[HPO] Trial 5 Fold 0 Epoch 6: Train Loss=0.0014, Val Loss=0.0023, Time=4.6s
+[HPO] Trial 5 Fold 0 Epoch 7: Train Loss=0.0009, Val Loss=0.0013, Time=4.6s
+[HPO] Trial 5 Fold 0 Epoch 8: Train Loss=0.0010, Val Loss=0.0010, Time=4.6s
+[HPO] Trial 5 Fold 0 Epoch 9: Train Loss=0.0007, Val Loss=0.0152, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=0.0001667936150687349, weight_decay=4.335126239542579e-05
+[HPO] Trial 5 Fold 1 Epoch 0: Train Loss=0.4395, Val Loss=0.0355, Time=4.6s
+[HPO] Trial 5 Fold 1 Epoch 1: Train Loss=0.0092, Val Loss=0.0399, Time=4.6s
+[HPO] Trial 5 Fold 1 Epoch 2: Train Loss=0.0023, Val Loss=0.0131, Time=4.6s
+[HPO] Trial 5 Fold 1 Epoch 3: Train Loss=0.0044, Val Loss=0.0041, Time=4.6s
+[HPO] Trial 5 Fold 1 Epoch 4: Train Loss=0.0027, Val Loss=0.0172, Time=4.6s
+[HPO] Trial 5 Fold 1 Epoch 5: Train Loss=0.0089, Val Loss=0.0209, Time=4.6s
+[HPO] Trial 5 Fold 1 Epoch 6: Train Loss=0.0082, Val Loss=0.0239, Time=4.6s
+[HPO] Trial 5 Fold 1 Epoch 7: Train Loss=0.0018, Val Loss=0.0152, Time=4.6s
+[HPO] Trial 5 Fold 1 Epoch 8: Train Loss=0.0016, Val Loss=0.0129, Time=4.6s
+[HPO] Trial 5 Fold 1 Epoch 9: Train Loss=0.0010, Val Loss=0.0127, Time=4.6s
+[HPO] Trial 5: Average Loss=0.0026
+[DEBUG] Creating ResNet50 with lr=3.390737000597879e-05, weight_decay=0.0005701845297270417
+[HPO] Trial 6 Fold 0 Epoch 0: Train Loss=1.1762, Val Loss=0.7716, Time=4.6s
+[HPO] Trial 6 Fold 0 Epoch 1: Train Loss=0.3676, Val Loss=0.2109, Time=4.6s
+[HPO] Trial 6 Fold 0 Epoch 2: Train Loss=0.1010, Val Loss=0.1231, Time=4.6s
+[HPO] Trial 6 Fold 0 Epoch 3: Train Loss=0.0502, Val Loss=0.0642, Time=4.6s
+[HPO] Trial 6 Fold 0 Epoch 4: Train Loss=0.0333, Val Loss=0.0483, Time=4.6s
+[HPO] Trial 6 Fold 0 Epoch 5: Train Loss=0.0231, Val Loss=0.0271, Time=4.6s
+[HPO] Trial 6 Fold 0 Epoch 6: Train Loss=0.0172, Val Loss=0.0163, Time=4.6s
+[HPO] Trial 6 Fold 0 Epoch 7: Train Loss=0.0147, Val Loss=0.0190, Time=4.6s
+[HPO] Trial 6 Fold 0 Epoch 8: Train Loss=0.0125, Val Loss=0.0152, Time=4.6s
+[HPO] Trial 6 Fold 0 Epoch 9: Train Loss=0.0100, Val Loss=0.0120, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=3.390737000597879e-05, weight_decay=0.0005701845297270417
+[HPO] Trial 6 Fold 1 Epoch 0: Train Loss=1.2178, Val Loss=1.0127, Time=4.6s
+[HPO] Trial 6 Fold 1 Epoch 1: Train Loss=0.3604, Val Loss=0.3246, Time=4.6s
+[HPO] Trial 6 Fold 1 Epoch 2: Train Loss=0.1091, Val Loss=0.1224, Time=4.7s
+[HPO] Trial 6 Fold 1 Epoch 3: Train Loss=0.0510, Val Loss=0.0790, Time=4.7s
+[HPO] Trial 6 Fold 1 Epoch 4: Train Loss=0.0306, Val Loss=0.0347, Time=4.6s
+[HPO] Trial 6 Fold 1 Epoch 5: Train Loss=0.0248, Val Loss=0.0219, Time=4.6s
+[HPO] Trial 6 Fold 1 Epoch 6: Train Loss=0.0173, Val Loss=0.0163, Time=4.6s
+[HPO] Trial 6 Fold 1 Epoch 7: Train Loss=0.0141, Val Loss=0.0205, Time=4.6s
+[HPO] Trial 6 Fold 1 Epoch 8: Train Loss=0.0121, Val Loss=0.0181, Time=4.6s
+[HPO] Trial 6 Fold 1 Epoch 9: Train Loss=0.0128, Val Loss=0.0181, Time=4.7s
+[HPO] Trial 6: Average Loss=0.0142
+[DEBUG] Creating ResNet50 with lr=0.0005095029776218012, weight_decay=0.002311490292793
+[HPO] Trial 7 Fold 0 Epoch 0: Train Loss=0.2537, Val Loss=5.9842, Time=4.7s
+[HPO] Trial 7 Fold 0 Epoch 1: Train Loss=0.0104, Val Loss=2.9819, Time=4.7s
+[HPO] Trial 7 Fold 0 Epoch 2: Train Loss=0.0339, Val Loss=0.0134, Time=4.7s
+[HPO] Trial 7 Fold 0 Epoch 3: Train Loss=0.0090, Val Loss=0.0165, Time=4.7s
+[HPO] Trial 7 Fold 0 Epoch 4: Train Loss=0.0048, Val Loss=0.0085, Time=4.7s
+[HPO] Trial 7 Fold 0 Epoch 5: Train Loss=0.0060, Val Loss=0.0322, Time=4.7s
+[HPO] Trial 7 Fold 0 Epoch 6: Train Loss=0.0036, Val Loss=0.0082, Time=4.7s
+[HPO] Trial 7 Fold 0 Epoch 7: Train Loss=0.2685, Val Loss=0.0544, Time=4.6s
+[HPO] Trial 7 Fold 0 Epoch 8: Train Loss=0.0625, Val Loss=54.0398, Time=4.6s
+[HPO] Trial 7 Fold 0 Epoch 9: Train Loss=0.0308, Val Loss=0.0287, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=0.0005095029776218012, weight_decay=0.002311490292793
+[HPO] Trial 7 Fold 1 Epoch 0: Train Loss=0.2425, Val Loss=9.3193, Time=4.7s
+[HPO] Trial 7 Fold 1 Epoch 1: Train Loss=0.0322, Val Loss=0.0087, Time=4.7s
+[HPO] Trial 7 Fold 1 Epoch 2: Train Loss=0.0054, Val Loss=0.0264, Time=4.6s
+[HPO] Trial 7 Fold 1 Epoch 3: Train Loss=0.0203, Val Loss=0.0180, Time=4.6s
+[HPO] Trial 7 Fold 1 Epoch 4: Train Loss=0.0104, Val Loss=0.0161, Time=4.6s
+[HPO] Trial 7 Fold 1 Epoch 5: Train Loss=0.0060, Val Loss=0.0102, Time=4.6s
+[HPO] Trial 7 Fold 1 Epoch 6: Train Loss=0.0018, Val Loss=0.0100, Time=4.6s
+[HPO] Trial 7 Fold 1 Epoch 7: Train Loss=0.0026, Val Loss=0.0111, Time=4.6s
+[HPO] Trial 7 Fold 1 Epoch 8: Train Loss=0.0022, Val Loss=0.0871, Time=4.7s
+[HPO] Trial 7 Fold 1 Epoch 9: Train Loss=0.0945, Val Loss=0.0462, Time=4.6s
+[HPO] Trial 7: Average Loss=0.0084
+[DEBUG] Creating ResNet50 with lr=1.9439406596638904e-05, weight_decay=0.00023752256655677181
+[HPO] Trial 8 Fold 0 Epoch 0: Train Loss=1.3825, Val Loss=1.3824, Time=4.6s
+[HPO] Trial 8 Fold 0 Epoch 1: Train Loss=0.7524, Val Loss=1.0366, Time=4.6s
+[HPO] Trial 8 Fold 0 Epoch 2: Train Loss=0.3463, Val Loss=0.6226, Time=4.6s
+[HPO] Trial 8 Fold 0 Epoch 3: Train Loss=0.1569, Val Loss=0.2654, Time=4.6s
+[HPO] Trial 8 Fold 0 Epoch 4: Train Loss=0.0908, Val Loss=0.1237, Time=4.6s
+[HPO] Trial 8 Fold 0 Epoch 5: Train Loss=0.0677, Val Loss=0.0616, Time=4.6s
+[HPO] Trial 8 Fold 0 Epoch 6: Train Loss=0.0590, Val Loss=0.0392, Time=4.6s
+[HPO] Trial 8 Fold 0 Epoch 7: Train Loss=0.0472, Val Loss=0.0314, Time=4.6s
+[HPO] Trial 8 Fold 0 Epoch 8: Train Loss=0.0309, Val Loss=0.0310, Time=4.6s
+[HPO] Trial 8 Fold 0 Epoch 9: Train Loss=0.0369, Val Loss=0.0270, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=1.9439406596638904e-05, weight_decay=0.00023752256655677181
+[HPO] Trial 8 Fold 1 Epoch 0: Train Loss=1.1931, Val Loss=1.0173, Time=4.6s
+[HPO] Trial 8 Fold 1 Epoch 1: Train Loss=0.6173, Val Loss=0.7191, Time=4.6s
+[HPO] Trial 8 Fold 1 Epoch 2: Train Loss=0.2809, Val Loss=0.3846, Time=4.6s
+[HPO] Trial 8 Fold 1 Epoch 3: Train Loss=0.1390, Val Loss=0.1854, Time=4.6s
+[HPO] Trial 8 Fold 1 Epoch 4: Train Loss=0.0810, Val Loss=0.0902, Time=4.6s
+[HPO] Trial 8 Fold 1 Epoch 5: Train Loss=0.0720, Val Loss=0.0589, Time=4.6s
+[HPO] Trial 8 Fold 1 Epoch 6: Train Loss=0.0494, Val Loss=0.0435, Time=4.6s
+[HPO] Trial 8 Fold 1 Epoch 7: Train Loss=0.0423, Val Loss=0.0343, Time=4.6s
+[HPO] Trial 8 Fold 1 Epoch 8: Train Loss=0.0320, Val Loss=0.0286, Time=4.6s
+[HPO] Trial 8 Fold 1 Epoch 9: Train Loss=0.0359, Val Loss=0.0320, Time=4.6s
+[HPO] Trial 8: Average Loss=0.0278
+[DEBUG] Creating ResNet50 with lr=5.989041543037434e-05, weight_decay=0.006465658648393908
+[HPO] Trial 9 Fold 0 Epoch 0: Train Loss=0.9621, Val Loss=0.4460, Time=4.6s
+[HPO] Trial 9 Fold 0 Epoch 1: Train Loss=0.1248, Val Loss=0.1132, Time=4.6s
+[HPO] Trial 9 Fold 0 Epoch 2: Train Loss=0.0362, Val Loss=0.1145, Time=4.6s
+[HPO] Trial 9 Fold 0 Epoch 3: Train Loss=0.0245, Val Loss=0.0403, Time=4.6s
+[HPO] Trial 9 Fold 0 Epoch 4: Train Loss=0.0240, Val Loss=0.0274, Time=4.6s
+[HPO] Trial 9 Fold 0 Epoch 5: Train Loss=0.0194, Val Loss=0.0193, Time=4.6s
+[HPO] Trial 9 Fold 0 Epoch 6: Train Loss=0.0111, Val Loss=0.0220, Time=4.6s
+[HPO] Trial 9 Fold 0 Epoch 7: Train Loss=0.0085, Val Loss=0.0193, Time=4.6s
+[HPO] Trial 9 Fold 0 Epoch 8: Train Loss=0.0162, Val Loss=0.0130, Time=4.6s
+[HPO] Trial 9 Fold 0 Epoch 9: Train Loss=0.0280, Val Loss=0.0532, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=5.989041543037434e-05, weight_decay=0.006465658648393908
+[HPO] Trial 9 Fold 1 Epoch 0: Train Loss=1.0788, Val Loss=0.5243, Time=4.6s
+[HPO] Trial 9 Fold 1 Epoch 1: Train Loss=0.1284, Val Loss=0.0990, Time=4.6s
+[HPO] Trial 9 Fold 1 Epoch 2: Train Loss=0.0307, Val Loss=0.0538, Time=4.6s
+[HPO] Trial 9 Fold 1 Epoch 3: Train Loss=0.0161, Val Loss=0.0323, Time=4.6s
+[HPO] Trial 9 Fold 1 Epoch 4: Train Loss=0.0136, Val Loss=0.0255, Time=4.7s
+[HPO] Trial 9 Fold 1 Epoch 5: Train Loss=0.0112, Val Loss=0.0237, Time=4.6s
+[HPO] Trial 9 Fold 1 Epoch 6: Train Loss=0.0092, Val Loss=0.0175, Time=4.6s
+[HPO] Trial 9 Fold 1 Epoch 7: Train Loss=0.0085, Val Loss=0.0162, Time=4.6s
+[HPO] Trial 9 Fold 1 Epoch 8: Train Loss=0.0079, Val Loss=0.0168, Time=4.6s
+[HPO] Trial 9 Fold 1 Epoch 9: Train Loss=0.0080, Val Loss=0.0181, Time=4.7s
+[HPO] Trial 9: Average Loss=0.0146
+[DEBUG] Creating ResNet50 with lr=0.0001846957839770533, weight_decay=4.066304100505998e-06
+[HPO] Trial 10 Fold 0 Epoch 0: Train Loss=0.4562, Val Loss=0.4551, Time=4.6s
+[HPO] Trial 10 Fold 0 Epoch 1: Train Loss=0.0188, Val Loss=1.7612, Time=4.6s
+[HPO] Trial 10 Fold 0 Epoch 2: Train Loss=0.0072, Val Loss=0.0086, Time=4.6s
+[HPO] Trial 10 Fold 0 Epoch 3: Train Loss=0.0021, Val Loss=0.0034, Time=4.7s
+[HPO] Trial 10 Fold 0 Epoch 4: Train Loss=0.0012, Val Loss=0.0016, Time=4.6s
+[HPO] Trial 10 Fold 0 Epoch 5: Train Loss=0.0009, Val Loss=0.0013, Time=4.6s
+[HPO] Trial 10 Fold 0 Epoch 6: Train Loss=0.0007, Val Loss=0.0017, Time=4.6s
+[HPO] Trial 10 Fold 0 Epoch 7: Train Loss=0.0006, Val Loss=0.0015, Time=4.6s
+[HPO] Trial 10 Fold 0 Epoch 8: Train Loss=0.0209, Val Loss=0.0258, Time=4.6s
+[HPO] Trial 10 Fold 0 Epoch 9: Train Loss=0.0187, Val Loss=1.3002, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=0.0001846957839770533, weight_decay=4.066304100505998e-06
+[HPO] Trial 10 Fold 1 Epoch 0: Train Loss=0.5100, Val Loss=0.0714, Time=4.6s
+[HPO] Trial 10 Fold 1 Epoch 1: Train Loss=0.0216, Val Loss=0.8728, Time=4.6s
+[HPO] Trial 10 Fold 1 Epoch 2: Train Loss=0.0048, Val Loss=0.0507, Time=4.6s
+[HPO] Trial 10 Fold 1 Epoch 3: Train Loss=0.0036, Val Loss=0.0205, Time=4.6s
+[HPO] Trial 10 Fold 1 Epoch 4: Train Loss=0.0023, Val Loss=0.0109, Time=4.6s
+[HPO] Trial 10 Fold 1 Epoch 5: Train Loss=0.0015, Val Loss=0.0088, Time=4.6s
+[HPO] Trial 10 Fold 1 Epoch 6: Train Loss=0.0011, Val Loss=0.0071, Time=4.6s
+[HPO] Trial 10 Fold 1 Epoch 7: Train Loss=0.0008, Val Loss=0.0078, Time=4.6s
+[HPO] Trial 10 Fold 1 Epoch 8: Train Loss=0.0007, Val Loss=0.0091, Time=4.6s
+[HPO] Trial 10 Fold 1 Epoch 9: Train Loss=0.0029, Val Loss=0.0086, Time=4.6s
+[HPO] Trial 10: Average Loss=0.0042
+[DEBUG] Creating ResNet50 with lr=0.00019934876369831015, weight_decay=3.8116692260635082e-06
+[HPO] Trial 11 Fold 0 Epoch 0: Train Loss=0.4892, Val Loss=2.4829, Time=4.6s
+[HPO] Trial 11 Fold 0 Epoch 1: Train Loss=0.0204, Val Loss=1.7930, Time=4.6s
+[HPO] Trial 11 Fold 0 Epoch 2: Train Loss=0.0140, Val Loss=0.0192, Time=4.6s
+[HPO] Trial 11 Fold 0 Epoch 3: Train Loss=0.0085, Val Loss=0.0314, Time=4.6s
+[HPO] Trial 11 Fold 0 Epoch 4: Train Loss=0.0033, Val Loss=0.0035, Time=4.6s
+[HPO] Trial 11 Fold 0 Epoch 5: Train Loss=0.0017, Val Loss=0.0028, Time=4.6s
+[HPO] Trial 11 Fold 0 Epoch 6: Train Loss=0.0010, Val Loss=0.0021, Time=4.6s
+[HPO] Trial 11 Fold 0 Epoch 7: Train Loss=0.0011, Val Loss=0.0026, Time=4.6s
+[HPO] Trial 11 Fold 0 Epoch 8: Train Loss=0.0008, Val Loss=0.0030, Time=4.6s
+[HPO] Trial 11 Fold 0 Epoch 9: Train Loss=0.0007, Val Loss=0.0019, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=0.00019934876369831015, weight_decay=3.8116692260635082e-06
+[HPO] Trial 11 Fold 1 Epoch 0: Train Loss=0.5482, Val Loss=0.3339, Time=4.6s
+[HPO] Trial 11 Fold 1 Epoch 1: Train Loss=0.0115, Val Loss=0.0635, Time=4.6s
+[HPO] Trial 11 Fold 1 Epoch 2: Train Loss=0.0029, Val Loss=0.0107, Time=4.6s
+[HPO] Trial 11 Fold 1 Epoch 3: Train Loss=0.0019, Val Loss=0.0122, Time=4.6s
+[HPO] Trial 11 Fold 1 Epoch 4: Train Loss=0.0012, Val Loss=0.0106, Time=4.6s
+[HPO] Trial 11 Fold 1 Epoch 5: Train Loss=0.0009, Val Loss=0.0162, Time=4.6s
+[HPO] Trial 11 Fold 1 Epoch 6: Train Loss=0.0007, Val Loss=0.0168, Time=4.6s
+[HPO] Trial 11 Fold 1 Epoch 7: Train Loss=0.0006, Val Loss=0.0175, Time=4.6s
+[HPO] Trial 11 Fold 1 Epoch 8: Train Loss=0.0005, Val Loss=0.0176, Time=4.6s
+[HPO] Trial 11 Fold 1 Epoch 9: Train Loss=0.0005, Val Loss=0.0160, Time=4.6s
+[HPO] Trial 11: Average Loss=0.0063
+[DEBUG] Creating ResNet50 with lr=0.00019301465320643472, weight_decay=8.149176388801632e-06
+[HPO] Trial 12 Fold 0 Epoch 0: Train Loss=0.5271, Val Loss=0.2423, Time=4.6s
+[HPO] Trial 12 Fold 0 Epoch 1: Train Loss=0.0120, Val Loss=0.4414, Time=4.6s
+[HPO] Trial 12 Fold 0 Epoch 2: Train Loss=0.0068, Val Loss=0.4186, Time=4.6s
+[HPO] Trial 12 Fold 0 Epoch 3: Train Loss=0.0046, Val Loss=0.0174, Time=4.6s
+[HPO] Trial 12 Fold 0 Epoch 4: Train Loss=0.0031, Val Loss=0.0067, Time=4.6s
+[HPO] Trial 12 Fold 0 Epoch 5: Train Loss=0.0013, Val Loss=0.0051, Time=4.6s
+[HPO] Trial 12 Fold 0 Epoch 6: Train Loss=0.0009, Val Loss=0.0042, Time=4.6s
+[HPO] Trial 12 Fold 0 Epoch 7: Train Loss=0.0008, Val Loss=0.0037, Time=4.6s
+[HPO] Trial 12 Fold 0 Epoch 8: Train Loss=0.0029, Val Loss=0.0030, Time=4.6s
+[HPO] Trial 12 Fold 0 Epoch 9: Train Loss=0.0102, Val Loss=0.0299, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=0.00019301465320643472, weight_decay=8.149176388801632e-06
+[HPO] Trial 12 Fold 1 Epoch 0: Train Loss=0.3340, Val Loss=0.0246, Time=4.6s
+[HPO] Trial 12 Fold 1 Epoch 1: Train Loss=0.0501, Val Loss=1.5817, Time=4.6s
+[HPO] Trial 12 Fold 1 Epoch 2: Train Loss=0.0197, Val Loss=0.1244, Time=4.6s
+[HPO] Trial 12 Fold 1 Epoch 3: Train Loss=0.0326, Val Loss=0.0041, Time=4.6s
+[HPO] Trial 12 Fold 1 Epoch 4: Train Loss=0.0129, Val Loss=0.0480, Time=4.6s
+[HPO] Trial 12 Fold 1 Epoch 5: Train Loss=0.0045, Val Loss=0.0079, Time=4.6s
+[HPO] Trial 12 Fold 1 Epoch 6: Train Loss=0.0020, Val Loss=0.0052, Time=4.6s
+[HPO] Trial 12 Fold 1 Epoch 7: Train Loss=0.0013, Val Loss=0.0056, Time=4.6s
+[HPO] Trial 12 Fold 1 Epoch 8: Train Loss=0.0011, Val Loss=0.0069, Time=4.6s
+[HPO] Trial 12 Fold 1 Epoch 9: Train Loss=0.0009, Val Loss=0.0069, Time=4.6s
+[HPO] Trial 12: Average Loss=0.0036
+[DEBUG] Creating ResNet50 with lr=9.372105748318819e-05, weight_decay=2.346986122380745e-05
+[HPO] Trial 13 Fold 0 Epoch 0: Train Loss=0.7897, Val Loss=0.0971, Time=4.6s
+[HPO] Trial 13 Fold 0 Epoch 1: Train Loss=0.0389, Val Loss=0.0516, Time=4.6s
+[HPO] Trial 13 Fold 0 Epoch 2: Train Loss=0.0306, Val Loss=0.0177, Time=4.6s
+[HPO] Trial 13 Fold 0 Epoch 3: Train Loss=0.0103, Val Loss=0.0111, Time=4.6s
+[HPO] Trial 13 Fold 0 Epoch 4: Train Loss=0.0087, Val Loss=0.0156, Time=4.6s
+[HPO] Trial 13 Fold 0 Epoch 5: Train Loss=0.0052, Val Loss=0.0072, Time=4.6s
+[HPO] Trial 13 Fold 0 Epoch 6: Train Loss=0.0039, Val Loss=0.0045, Time=4.6s
+[HPO] Trial 13 Fold 0 Epoch 7: Train Loss=0.0029, Val Loss=0.0035, Time=4.6s
+[HPO] Trial 13 Fold 0 Epoch 8: Train Loss=0.0037, Val Loss=0.0105, Time=4.6s
+[HPO] Trial 13 Fold 0 Epoch 9: Train Loss=0.0042, Val Loss=0.0038, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=9.372105748318819e-05, weight_decay=2.346986122380745e-05
+[HPO] Trial 13 Fold 1 Epoch 0: Train Loss=0.6530, Val Loss=0.1977, Time=4.7s
+[HPO] Trial 13 Fold 1 Epoch 1: Train Loss=0.0360, Val Loss=0.0252, Time=4.6s
+[HPO] Trial 13 Fold 1 Epoch 2: Train Loss=0.0104, Val Loss=0.0194, Time=4.6s
+[HPO] Trial 13 Fold 1 Epoch 3: Train Loss=0.0069, Val Loss=0.0192, Time=4.6s
+[HPO] Trial 13 Fold 1 Epoch 4: Train Loss=0.0074, Val Loss=0.0160, Time=4.6s
+[HPO] Trial 13 Fold 1 Epoch 5: Train Loss=0.0054, Val Loss=0.0143, Time=4.7s
+[HPO] Trial 13 Fold 1 Epoch 6: Train Loss=0.0040, Val Loss=0.0160, Time=4.6s
+[HPO] Trial 13 Fold 1 Epoch 7: Train Loss=0.0029, Val Loss=0.0138, Time=4.6s
+[HPO] Trial 13 Fold 1 Epoch 8: Train Loss=0.0021, Val Loss=0.0131, Time=4.6s
+[HPO] Trial 13 Fold 1 Epoch 9: Train Loss=0.0019, Val Loss=0.0113, Time=4.6s
+[HPO] Trial 13: Average Loss=0.0074
+[DEBUG] Creating ResNet50 with lr=0.0002611327051634124, weight_decay=2.1054629466059106e-05
+[HPO] Trial 14 Fold 0 Epoch 0: Train Loss=0.3940, Val Loss=0.0260, Time=4.6s
+[HPO] Trial 14 Fold 0 Epoch 1: Train Loss=0.0220, Val Loss=0.0081, Time=4.6s
+[HPO] Trial 14 Fold 0 Epoch 2: Train Loss=0.0037, Val Loss=0.0031, Time=4.6s
+[HPO] Trial 14 Fold 0 Epoch 3: Train Loss=0.0012, Val Loss=0.0020, Time=4.6s
+[HPO] Trial 14 Fold 0 Epoch 4: Train Loss=0.0007, Val Loss=0.0014, Time=4.6s
+[HPO] Trial 14 Fold 0 Epoch 5: Train Loss=0.0007, Val Loss=0.0015, Time=4.6s
+[HPO] Trial 14 Fold 0 Epoch 6: Train Loss=0.0006, Val Loss=0.0020, Time=4.6s
+[HPO] Trial 14 Fold 0 Epoch 7: Train Loss=0.0005, Val Loss=0.0014, Time=4.6s
+[HPO] Trial 14 Fold 0 Epoch 8: Train Loss=0.0004, Val Loss=0.0012, Time=4.6s
+[HPO] Trial 14 Fold 0 Epoch 9: Train Loss=0.0004, Val Loss=0.0010, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=0.0002611327051634124, weight_decay=2.1054629466059106e-05
+[HPO] Trial 14 Fold 1 Epoch 0: Train Loss=0.3412, Val Loss=2.0867, Time=4.6s
+[HPO] Trial 14 Fold 1 Epoch 1: Train Loss=0.0111, Val Loss=0.0599, Time=4.6s
+[HPO] Trial 14 Fold 1 Epoch 2: Train Loss=0.0036, Val Loss=0.0097, Time=4.6s
+[HPO] Trial 14 Fold 1 Epoch 3: Train Loss=0.0018, Val Loss=0.0419, Time=4.6s
+[HPO] Trial 14 Fold 1 Epoch 4: Train Loss=0.0011, Val Loss=0.0040, Time=4.6s
+[HPO] Trial 14 Fold 1 Epoch 5: Train Loss=0.0005, Val Loss=0.0020, Time=4.7s
+[HPO] Trial 14 Fold 1 Epoch 6: Train Loss=0.0004, Val Loss=0.0022, Time=4.6s
+[HPO] Trial 14 Fold 1 Epoch 7: Train Loss=0.0005, Val Loss=0.0035, Time=4.6s
+[HPO] Trial 14 Fold 1 Epoch 8: Train Loss=0.0003, Val Loss=0.0020, Time=4.6s
+[HPO] Trial 14 Fold 1 Epoch 9: Train Loss=0.0003, Val Loss=0.0034, Time=4.6s
+[HPO] Trial 14: Average Loss=0.0015
+[DEBUG] Creating ResNet50 with lr=0.00032882797527298625, weight_decay=3.214923918687804e-05
+[HPO] Trial 15 Fold 0 Epoch 0: Train Loss=0.3085, Val Loss=0.2951, Time=4.6s
+[HPO] Trial 15 Fold 0 Epoch 1: Train Loss=0.0102, Val Loss=0.0209, Time=4.6s
+[HPO] Trial 15 Fold 0 Epoch 2: Train Loss=0.0027, Val Loss=0.0082, Time=4.6s
+[HPO] Trial 15 Fold 0 Epoch 3: Train Loss=0.0006, Val Loss=0.0051, Time=4.6s
+[HPO] Trial 15 Fold 0 Epoch 4: Train Loss=0.0010, Val Loss=0.0049, Time=4.6s
+[HPO] Trial 15 Fold 0 Epoch 5: Train Loss=0.0005, Val Loss=0.0043, Time=4.6s
+[HPO] Trial 15 Fold 0 Epoch 6: Train Loss=0.0003, Val Loss=0.0028, Time=4.6s
+[HPO] Trial 15 Fold 0 Epoch 7: Train Loss=0.0002, Val Loss=0.0045, Time=4.7s
+[HPO] Trial 15 Fold 0 Epoch 8: Train Loss=0.0011, Val Loss=0.0147, Time=4.6s
+[HPO] Trial 15 Fold 0 Epoch 9: Train Loss=0.0008, Val Loss=0.0024, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=0.00032882797527298625, weight_decay=3.214923918687804e-05
+[HPO] Trial 15 Fold 1 Epoch 0: Train Loss=0.3338, Val Loss=1.0687, Time=4.6s
+[HPO] Trial 15 Fold 1 Epoch 1: Train Loss=0.0184, Val Loss=0.0147, Time=4.6s
+[HPO] Trial 15 Fold 1 Epoch 2: Train Loss=0.0131, Val Loss=0.0043, Time=4.6s
+[HPO] Trial 15 Fold 1 Epoch 3: Train Loss=0.0026, Val Loss=0.0107, Time=4.6s
+[HPO] Trial 15 Fold 1 Epoch 4: Train Loss=0.0180, Val Loss=0.0075, Time=4.6s
+[HPO] Trial 15 Fold 1 Epoch 5: Train Loss=0.0129, Val Loss=0.4138, Time=4.6s
+[HPO] Trial 15 Fold 1 Epoch 6: Train Loss=0.0329, Val Loss=0.2557, Time=4.6s
+[HPO] Trial 15 Fold 1 Epoch 7: Train Loss=0.0040, Val Loss=0.0040, Time=4.6s
+[HPO] Trial 15 Fold 1 Epoch 8: Train Loss=0.0014, Val Loss=0.0034, Time=4.6s
+[HPO] Trial 15 Fold 1 Epoch 9: Train Loss=0.0011, Val Loss=0.0054, Time=4.6s
+[HPO] Trial 15: Average Loss=0.0029
+[DEBUG] Creating ResNet50 with lr=6.0966247277291605e-05, weight_decay=1.341560857915924e-06
+[HPO] Trial 16 Fold 0 Epoch 0: Train Loss=1.0323, Val Loss=0.5701, Time=4.6s
+[HPO] Trial 16 Fold 0 Epoch 1: Train Loss=0.1375, Val Loss=0.0818, Time=4.6s
+[HPO] Trial 16 Fold 0 Epoch 2: Train Loss=0.0286, Val Loss=0.0409, Time=4.6s
+[HPO] Trial 16 Fold 0 Epoch 3: Train Loss=0.0191, Val Loss=0.0248, Time=4.6s
+[HPO] Trial 16 Fold 0 Epoch 4: Train Loss=0.0167, Val Loss=0.0125, Time=4.6s
+[HPO] Trial 16 Fold 0 Epoch 5: Train Loss=0.0124, Val Loss=0.0119, Time=4.6s
+[HPO] Trial 16 Fold 0 Epoch 6: Train Loss=0.0103, Val Loss=0.0107, Time=4.6s
+[HPO] Trial 16 Fold 0 Epoch 7: Train Loss=0.0335, Val Loss=0.0055, Time=4.6s
+[HPO] Trial 16 Fold 0 Epoch 8: Train Loss=0.0438, Val Loss=0.0202, Time=4.6s
+[HPO] Trial 16 Fold 0 Epoch 9: Train Loss=0.0191, Val Loss=0.0209, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=6.0966247277291605e-05, weight_decay=1.341560857915924e-06
+[HPO] Trial 16 Fold 1 Epoch 0: Train Loss=0.9204, Val Loss=0.4847, Time=4.6s
+[HPO] Trial 16 Fold 1 Epoch 1: Train Loss=0.1079, Val Loss=0.1323, Time=4.7s
+[HPO] Trial 16 Fold 1 Epoch 2: Train Loss=0.0365, Val Loss=0.0441, Time=4.7s
+[HPO] Trial 16 Fold 1 Epoch 3: Train Loss=0.0182, Val Loss=0.0222, Time=4.7s
+[HPO] Trial 16 Fold 1 Epoch 4: Train Loss=0.0120, Val Loss=0.0224, Time=4.7s
+[HPO] Trial 16 Fold 1 Epoch 5: Train Loss=0.0086, Val Loss=0.0203, Time=4.7s
+[HPO] Trial 16 Fold 1 Epoch 6: Train Loss=0.0069, Val Loss=0.0146, Time=4.7s
+[HPO] Trial 16 Fold 1 Epoch 7: Train Loss=0.0073, Val Loss=0.0139, Time=4.7s
+[HPO] Trial 16 Fold 1 Epoch 8: Train Loss=0.0051, Val Loss=0.0146, Time=4.6s
+[HPO] Trial 16 Fold 1 Epoch 9: Train Loss=0.0081, Val Loss=0.0145, Time=4.6s
+[HPO] Trial 16: Average Loss=0.0097
+[DEBUG] Creating ResNet50 with lr=0.00013126881846746587, weight_decay=0.00010275497617928522
+[HPO] Trial 17 Fold 0 Epoch 0: Train Loss=0.5062, Val Loss=0.0714, Time=4.6s
+[HPO] Trial 17 Fold 0 Epoch 1: Train Loss=0.0195, Val Loss=0.0246, Time=4.6s
+[HPO] Trial 17 Fold 0 Epoch 2: Train Loss=0.0044, Val Loss=0.0077, Time=4.6s
+[HPO] Trial 17 Fold 0 Epoch 3: Train Loss=0.0054, Val Loss=0.0484, Time=4.6s
+[HPO] Trial 17 Fold 0 Epoch 4: Train Loss=0.0193, Val Loss=0.6988, Time=4.6s
+[HPO] Trial 17 Fold 0 Epoch 5: Train Loss=0.0201, Val Loss=0.1609, Time=4.6s
+[HPO] Trial 17 Fold 0 Epoch 6: Train Loss=0.0118, Val Loss=0.0288, Time=4.6s
+[HPO] Trial 17 Fold 0 Epoch 7: Train Loss=0.0051, Val Loss=0.0107, Time=4.6s
+[HPO] Trial 17 Fold 0 Epoch 8: Train Loss=0.0022, Val Loss=0.0045, Time=4.6s
+[HPO] Trial 17 Fold 0 Epoch 9: Train Loss=0.0078, Val Loss=0.0043, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=0.00013126881846746587, weight_decay=0.00010275497617928522
+[HPO] Trial 17 Fold 1 Epoch 0: Train Loss=0.7895, Val Loss=0.3603, Time=4.6s
+[HPO] Trial 17 Fold 1 Epoch 1: Train Loss=0.0338, Val Loss=0.2447, Time=4.6s
+[HPO] Trial 17 Fold 1 Epoch 2: Train Loss=0.0161, Val Loss=0.0358, Time=4.6s
+[HPO] Trial 17 Fold 1 Epoch 3: Train Loss=0.0060, Val Loss=0.0141, Time=4.6s
+[HPO] Trial 17 Fold 1 Epoch 4: Train Loss=0.0036, Val Loss=0.0153, Time=4.6s
+[HPO] Trial 17 Fold 1 Epoch 5: Train Loss=0.0026, Val Loss=0.0106, Time=4.6s
+[HPO] Trial 17 Fold 1 Epoch 6: Train Loss=0.0084, Val Loss=0.0195, Time=4.6s
+[HPO] Trial 17 Fold 1 Epoch 7: Train Loss=0.0090, Val Loss=0.0090, Time=4.6s
+[HPO] Trial 17 Fold 1 Epoch 8: Train Loss=0.0045, Val Loss=0.0243, Time=4.6s
+[HPO] Trial 17 Fold 1 Epoch 9: Train Loss=0.0049, Val Loss=0.0119, Time=4.7s
+[HPO] Trial 17: Average Loss=0.0066
+[DEBUG] Creating ResNet50 with lr=0.0004397363873106315, weight_decay=2.388690942570528e-05
+[HPO] Trial 18 Fold 0 Epoch 0: Train Loss=0.2676, Val Loss=0.2310, Time=4.6s
+[HPO] Trial 18 Fold 0 Epoch 1: Train Loss=0.0302, Val Loss=0.0004, Time=4.6s
+[HPO] Trial 18 Fold 0 Epoch 2: Train Loss=0.0159, Val Loss=1.7557, Time=4.6s
+[HPO] Trial 18 Fold 0 Epoch 3: Train Loss=0.0090, Val Loss=0.0536, Time=4.6s
+[HPO] Trial 18 Fold 0 Epoch 4: Train Loss=0.0040, Val Loss=0.0245, Time=4.6s
+[HPO] Trial 18 Fold 0 Epoch 5: Train Loss=0.0011, Val Loss=0.0074, Time=4.6s
+[HPO] Trial 18 Fold 0 Epoch 6: Train Loss=0.0003, Val Loss=0.0050, Time=4.6s
+[HPO] Trial 18 Fold 0 Epoch 7: Train Loss=0.0784, Val Loss=0.0023, Time=4.6s
+[HPO] Trial 18 Fold 0 Epoch 8: Train Loss=0.0809, Val Loss=0.0550, Time=4.6s
+[HPO] Trial 18 Fold 0 Epoch 9: Train Loss=0.0095, Val Loss=0.1319, Time=4.6s
+[DEBUG] Creating ResNet50 with lr=0.0004397363873106315, weight_decay=2.388690942570528e-05
+[HPO] Trial 18 Fold 1 Epoch 0: Train Loss=0.2933, Val Loss=0.4116, Time=4.6s
+[HPO] Trial 18 Fold 1 Epoch 1: Train Loss=0.0061, Val Loss=0.1341, Time=4.6s
+[HPO] Trial 18 Fold 1 Epoch 2: Train Loss=0.0019, Val Loss=0.0220, Time=4.6s
+[HPO] Trial 18 Fold 1 Epoch 3: Train Loss=0.0091, Val Loss=0.0021, Time=4.6s
+[HPO] Trial 18 Fold 1 Epoch 4: Train Loss=0.0007, Val Loss=0.0014, Time=4.6s
+[HPO] Trial 18 Fold 1 Epoch 5: Train Loss=0.1243, Val Loss=0.0016, Time=4.6s
+[HPO] Trial 18 Fold 1 Epoch 6: Train Loss=0.0221, Val Loss=0.0054, Time=4.7s
+[HPO] Trial 18 Fold 1 Epoch 7: Train Loss=0.0062, Val Loss=0.0116, Time=4.7s
+[HPO] Trial 18 Fold 1 Epoch 8: Train Loss=0.0017, Val Loss=0.0034, Time=4.7s
+[HPO] Trial 18 Fold 1 Epoch 9: Train Loss=0.0008, Val Loss=0.0059, Time=4.7s
+[HPO] Trial 18: Average Loss=0.0009
+[DEBUG] Creating ResNet50 with lr=0.0007873335348991763, weight_decay=1.5260759953197976e-05
+[HPO] Trial 19 Fold 0 Epoch 0: Train Loss=0.2389, Val Loss=35.2250, Time=4.7s
+[HPO] Trial 19 Fold 0 Epoch 1: Train Loss=0.0194, Val Loss=0.3906, Time=4.7s
+[HPO] Trial 19 Fold 0 Epoch 2: Train Loss=0.0061, Val Loss=0.1620, Time=4.7s
+[HPO] Trial 19 Fold 0 Epoch 3: Train Loss=0.1456, Val Loss=0.0410, Time=4.7s
+[HPO] Trial 19 Fold 0 Epoch 4: Train Loss=0.0492, Val Loss=0.7124, Time=4.7s
+[HPO] Trial 19 Fold 0 Epoch 5: Train Loss=0.0541, Val Loss=0.0025, Time=4.7s
+[HPO] Trial 19 Fold 0 Epoch 6: Train Loss=0.0286, Val Loss=0.0154, Time=4.7s
+[HPO] Trial 19 Fold 0 Epoch 7: Train Loss=0.0052, Val Loss=0.0044, Time=4.7s
+[HPO] Trial 19 Fold 0 Epoch 8: Train Loss=0.0013, Val Loss=0.0016, Time=4.7s
+[HPO] Trial 19 Fold 0 Epoch 9: Train Loss=0.0005, Val Loss=0.0017, Time=4.7s
+[DEBUG] Creating ResNet50 with lr=0.0007873335348991763, weight_decay=1.5260759953197976e-05
+[HPO] Trial 19 Fold 1 Epoch 0: Train Loss=0.2269, Val Loss=12.3516, Time=4.6s
+[HPO] Trial 19 Fold 1 Epoch 1: Train Loss=0.0204, Val Loss=0.0010, Time=4.7s
+[HPO] Trial 19 Fold 1 Epoch 2: Train Loss=0.0041, Val Loss=0.0402, Time=4.7s
+[HPO] Trial 19 Fold 1 Epoch 3: Train Loss=0.0053, Val Loss=0.0025, Time=4.7s
+[HPO] Trial 19 Fold 1 Epoch 4: Train Loss=0.0067, Val Loss=0.0197, Time=4.7s
+[HPO] Trial 19 Fold 1 Epoch 5: Train Loss=0.0005, Val Loss=0.0095, Time=4.7s
+[HPO] Trial 19 Fold 1 Epoch 6: Train Loss=0.0007, Val Loss=0.0022, Time=4.7s
+[HPO] Trial 19 Fold 1 Epoch 7: Train Loss=0.0007, Val Loss=0.0124, Time=4.7s
+[HPO] Trial 19 Fold 1 Epoch 8: Train Loss=0.0159, Val Loss=0.0334, Time=4.7s
+[HPO] Trial 19 Fold 1 Epoch 9: Train Loss=0.0026, Val Loss=0.0366, Time=4.7s
+[HPO] Trial 19: Average Loss=0.0013
+[Debug] Best trial: lr=0.0004397363873106315, weight_decay=2.388690942570528e-05
+[INFO] Best hyperparameters for Task 2: lr=0.0004397363873106315, weight_decay=2.388690942570528e-05
+[MODEL INFO] Task 2: ResNet has total 23520326 parameters (23520326 trainable).
+[MODEL INFO] Task 2: Output layer has 6 units.
+[INFO] Task 2 Epoch 0: Train Loss=2.3433, Val Loss=0.7947, Train Acc=0.1027, Val Acc=0.9449
+[INFO] Task 2 Epoch 1: Train Loss=0.5845, Val Loss=0.3805, Train Acc=0.9654, Val Acc=0.9541
+[INFO] Task 2 Epoch 2: Train Loss=0.3591, Val Loss=0.3098, Train Acc=0.9677, Val Acc=0.9541
+[INFO] Task 2 Epoch 3: Train Loss=0.2845, Val Loss=0.2805, Train Acc=0.9677, Val Acc=0.9541
+[INFO] Task 2 Epoch 4: Train Loss=0.2722, Val Loss=0.2583, Train Acc=0.9677, Val Acc=0.9541
+[INFO] Task 2 Epoch 5: Train Loss=0.2265, Val Loss=0.2444, Train Acc=0.9677, Val Acc=0.9541
+[INFO] Task 2 Epoch 6: Train Loss=0.2098, Val Loss=0.2320, Train Acc=0.9677, Val Acc=0.9541
+[INFO] Task 2 Epoch 7: Train Loss=0.1982, Val Loss=0.2235, Train Acc=0.9677, Val Acc=0.9541
+[INFO] Task 2 Epoch 8: Train Loss=0.1850, Val Loss=0.2139, Train Acc=0.9677, Val Acc=0.9541
+[INFO] Task 2 Epoch 9: Train Loss=0.1847, Val Loss=0.2052, Train Acc=0.9677, Val Acc=0.9541
+[INFO] Finished Task 2
+[INFO] Model checkpoint saved to model_checkpoints/baseline/20250322_202558/task2/model_20250322_202558.pth
+[INFO] Evaluating performance for tasks 1 to 3...
+ => Ave accuracy (this task):    95.406
+ => Ave accuracy (tasks so far): 31.802
+[DEBUG] Creating ResNet50 with lr=4.790577232896264e-05, weight_decay=0.00011703017431847844
+[HPO] Trial 0 Fold 0 Epoch 0: Train Loss=1.1419, Val Loss=0.8279, Time=3.0s
+[HPO] Trial 0 Fold 0 Epoch 1: Train Loss=0.1788, Val Loss=0.1342, Time=3.0s
+[HPO] Trial 0 Fold 0 Epoch 2: Train Loss=0.0520, Val Loss=0.0562, Time=3.0s
+[HPO] Trial 0 Fold 0 Epoch 3: Train Loss=0.0138, Val Loss=0.0405, Time=3.0s
+[HPO] Trial 0 Fold 0 Epoch 4: Train Loss=0.0061, Val Loss=0.0280, Time=3.0s
+[HPO] Trial 0 Fold 0 Epoch 5: Train Loss=0.0062, Val Loss=0.0226, Time=3.0s
+[HPO] Trial 0 Fold 0 Epoch 6: Train Loss=0.0032, Val Loss=0.0125, Time=3.0s
+[HPO] Trial 0 Fold 0 Epoch 7: Train Loss=0.0029, Val Loss=0.0108, Time=3.0s
+[HPO] Trial 0 Fold 0 Epoch 8: Train Loss=0.0028, Val Loss=0.0108, Time=3.0s
+[HPO] Trial 0 Fold 0 Epoch 9: Train Loss=0.0023, Val Loss=0.0108, Time=3.0s
+[DEBUG] Creating ResNet50 with lr=4.790577232896264e-05, weight_decay=0.00011703017431847844
+[HPO] Trial 0 Fold 1 Epoch 0: Train Loss=1.4042, Val Loss=0.9174, Time=3.0s
+[HPO] Trial 0 Fold 1 Epoch 1: Train Loss=0.2618, Val Loss=0.1378, Time=3.0s
+[HPO] Trial 0 Fold 1 Epoch 2: Train Loss=0.0427, Val Loss=0.0638, Time=3.0s
+[HPO] Trial 0 Fold 1 Epoch 3: Train Loss=0.0144, Val Loss=0.0544, Time=3.0s
+[HPO] Trial 0 Fold 1 Epoch 4: Train Loss=0.0081, Val Loss=0.0470, Time=3.1s
+[HPO] Trial 0 Fold 1 Epoch 5: Train Loss=0.0054, Val Loss=0.0407, Time=3.0s
+[HPO] Trial 0 Fold 1 Epoch 6: Train Loss=0.0089, Val Loss=0.0349, Time=3.0s
+[HPO] Trial 0 Fold 1 Epoch 7: Train Loss=0.0044, Val Loss=0.0282, Time=3.1s
+[HPO] Trial 0 Fold 1 Epoch 8: Train Loss=0.0083, Val Loss=0.0229, Time=3.1s
+[HPO] Trial 0 Fold 1 Epoch 9: Train Loss=0.0052, Val Loss=0.0206, Time=3.0s
+[HPO] Trial 0: Average Loss=0.0157
+[DEBUG] Creating ResNet50 with lr=0.000328447654226703, weight_decay=0.0009126012904546927
+[HPO] Trial 1 Fold 0 Epoch 0: Train Loss=0.4909, Val Loss=0.0185, Time=3.0s
+[HPO] Trial 1 Fold 0 Epoch 1: Train Loss=0.0339, Val Loss=0.0367, Time=3.0s
+[HPO] Trial 1 Fold 0 Epoch 2: Train Loss=0.0093, Val Loss=0.0133, Time=3.1s
+[HPO] Trial 1 Fold 0 Epoch 3: Train Loss=0.0018, Val Loss=0.0097, Time=3.1s
+[HPO] Trial 1 Fold 0 Epoch 4: Train Loss=0.0125, Val Loss=0.0174, Time=3.1s
+[HPO] Trial 1 Fold 0 Epoch 5: Train Loss=0.0135, Val Loss=0.0123, Time=3.1s
+[HPO] Trial 1 Fold 0 Epoch 6: Train Loss=0.0019, Val Loss=0.0294, Time=3.1s
+[HPO] Trial 1 Fold 0 Epoch 7: Train Loss=0.0014, Val Loss=0.0238, Time=3.1s
+[HPO] Trial 1 Fold 0 Epoch 8: Train Loss=0.0005, Val Loss=0.0131, Time=3.1s
+[HPO] Trial 1 Fold 0 Epoch 9: Train Loss=0.0005, Val Loss=0.0148, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=0.000328447654226703, weight_decay=0.0009126012904546927
+[HPO] Trial 1 Fold 1 Epoch 0: Train Loss=0.3950, Val Loss=0.5696, Time=3.1s
+[HPO] Trial 1 Fold 1 Epoch 1: Train Loss=0.0167, Val Loss=0.1034, Time=3.1s
+[HPO] Trial 1 Fold 1 Epoch 2: Train Loss=0.0021, Val Loss=0.0244, Time=3.1s
+[HPO] Trial 1 Fold 1 Epoch 3: Train Loss=0.0082, Val Loss=0.0178, Time=3.1s
+[HPO] Trial 1 Fold 1 Epoch 4: Train Loss=0.0033, Val Loss=0.0254, Time=3.1s
+[HPO] Trial 1 Fold 1 Epoch 5: Train Loss=0.0223, Val Loss=0.0559, Time=3.1s
+[HPO] Trial 1 Fold 1 Epoch 6: Train Loss=0.0140, Val Loss=0.0463, Time=3.1s
+[HPO] Trial 1 Fold 1 Epoch 7: Train Loss=0.0262, Val Loss=0.0956, Time=3.1s
+[HPO] Trial 1 Fold 1 Epoch 8: Train Loss=0.0068, Val Loss=0.0558, Time=3.1s
+[HPO] Trial 1 Fold 1 Epoch 9: Train Loss=0.0036, Val Loss=0.0182, Time=3.1s
+[HPO] Trial 1: Average Loss=0.0138
+[DEBUG] Creating ResNet50 with lr=6.401296005054995e-05, weight_decay=0.007752329327990219
+[HPO] Trial 2 Fold 0 Epoch 0: Train Loss=0.9747, Val Loss=0.4432, Time=3.1s
+[HPO] Trial 2 Fold 0 Epoch 1: Train Loss=0.1101, Val Loss=0.0631, Time=3.1s
+[HPO] Trial 2 Fold 0 Epoch 2: Train Loss=0.0148, Val Loss=0.0426, Time=3.1s
+[HPO] Trial 2 Fold 0 Epoch 3: Train Loss=0.0151, Val Loss=0.0212, Time=3.1s
+[HPO] Trial 2 Fold 0 Epoch 4: Train Loss=0.0058, Val Loss=0.0198, Time=3.1s
+[HPO] Trial 2 Fold 0 Epoch 5: Train Loss=0.0051, Val Loss=0.0288, Time=3.1s
+[HPO] Trial 2 Fold 0 Epoch 6: Train Loss=0.0034, Val Loss=0.0279, Time=3.1s
+[HPO] Trial 2 Fold 0 Epoch 7: Train Loss=0.0038, Val Loss=0.0208, Time=3.1s
+[HPO] Trial 2 Fold 0 Epoch 8: Train Loss=0.0030, Val Loss=0.0178, Time=3.1s
+[HPO] Trial 2 Fold 0 Epoch 9: Train Loss=0.0039, Val Loss=0.0160, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=6.401296005054995e-05, weight_decay=0.007752329327990219
+[HPO] Trial 2 Fold 1 Epoch 0: Train Loss=1.0407, Val Loss=0.6237, Time=3.1s
+[HPO] Trial 2 Fold 1 Epoch 1: Train Loss=0.1250, Val Loss=0.0966, Time=3.1s
+[HPO] Trial 2 Fold 1 Epoch 2: Train Loss=0.0335, Val Loss=0.0506, Time=3.1s
+[HPO] Trial 2 Fold 1 Epoch 3: Train Loss=0.0102, Val Loss=0.0482, Time=3.1s
+[HPO] Trial 2 Fold 1 Epoch 4: Train Loss=0.0068, Val Loss=0.0329, Time=3.1s
+[HPO] Trial 2 Fold 1 Epoch 5: Train Loss=0.0178, Val Loss=0.0548, Time=3.1s
+[HPO] Trial 2 Fold 1 Epoch 6: Train Loss=0.0054, Val Loss=0.0423, Time=3.1s
+[HPO] Trial 2 Fold 1 Epoch 7: Train Loss=0.0051, Val Loss=0.0201, Time=3.1s
+[HPO] Trial 2 Fold 1 Epoch 8: Train Loss=0.0036, Val Loss=0.0160, Time=3.1s
+[HPO] Trial 2 Fold 1 Epoch 9: Train Loss=0.0030, Val Loss=0.0143, Time=3.1s
+[HPO] Trial 2: Average Loss=0.0152
+[DEBUG] Creating ResNet50 with lr=0.00021349902183087838, weight_decay=0.0018528936438395173
+[HPO] Trial 3 Fold 0 Epoch 0: Train Loss=0.5591, Val Loss=0.1002, Time=3.1s
+[HPO] Trial 3 Fold 0 Epoch 1: Train Loss=0.0113, Val Loss=0.0286, Time=3.1s
+[HPO] Trial 3 Fold 0 Epoch 2: Train Loss=0.0242, Val Loss=0.0071, Time=3.1s
+[HPO] Trial 3 Fold 0 Epoch 3: Train Loss=0.0049, Val Loss=0.0096, Time=3.1s
+[HPO] Trial 3 Fold 0 Epoch 4: Train Loss=0.0011, Val Loss=0.0087, Time=3.1s
+[HPO] Trial 3 Fold 0 Epoch 5: Train Loss=0.0006, Val Loss=0.0130, Time=3.1s
+[HPO] Trial 3 Fold 0 Epoch 6: Train Loss=0.0003, Val Loss=0.0081, Time=3.1s
+[HPO] Trial 3 Fold 0 Epoch 7: Train Loss=0.0002, Val Loss=0.0052, Time=3.1s
+[HPO] Trial 3 Fold 0 Epoch 8: Train Loss=0.0002, Val Loss=0.0043, Time=3.1s
+[HPO] Trial 3 Fold 0 Epoch 9: Train Loss=0.0003, Val Loss=0.0039, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=0.00021349902183087838, weight_decay=0.0018528936438395173
+[HPO] Trial 3 Fold 1 Epoch 0: Train Loss=0.4262, Val Loss=0.1043, Time=3.1s
+[HPO] Trial 3 Fold 1 Epoch 1: Train Loss=0.0097, Val Loss=0.0184, Time=3.1s
+[HPO] Trial 3 Fold 1 Epoch 2: Train Loss=0.0703, Val Loss=0.0363, Time=3.1s
+[HPO] Trial 3 Fold 1 Epoch 3: Train Loss=0.0334, Val Loss=0.0097, Time=3.1s
+[HPO] Trial 3 Fold 1 Epoch 4: Train Loss=0.0285, Val Loss=0.0119, Time=3.1s
+[HPO] Trial 3 Fold 1 Epoch 5: Train Loss=0.0035, Val Loss=0.0310, Time=3.1s
+[HPO] Trial 3 Fold 1 Epoch 6: Train Loss=0.0018, Val Loss=0.0343, Time=3.1s
+[HPO] Trial 3 Fold 1 Epoch 7: Train Loss=0.0008, Val Loss=0.0295, Time=3.1s
+[HPO] Trial 3 Fold 1 Epoch 8: Train Loss=0.0006, Val Loss=0.0251, Time=3.1s
+[HPO] Trial 3 Fold 1 Epoch 9: Train Loss=0.0006, Val Loss=0.0246, Time=3.1s
+[HPO] Trial 3: Average Loss=0.0068
+[DEBUG] Creating ResNet50 with lr=0.0004667502851330464, weight_decay=3.97473379666185e-06
+[HPO] Trial 4 Fold 0 Epoch 0: Train Loss=0.3638, Val Loss=0.3258, Time=3.1s
+[HPO] Trial 4 Fold 0 Epoch 1: Train Loss=0.0750, Val Loss=0.2477, Time=3.1s
+[HPO] Trial 4 Fold 0 Epoch 2: Train Loss=0.0270, Val Loss=0.0494, Time=3.1s
+[HPO] Trial 4 Fold 0 Epoch 3: Train Loss=0.0100, Val Loss=0.0315, Time=3.1s
+[HPO] Trial 4 Fold 0 Epoch 4: Train Loss=0.0194, Val Loss=0.0150, Time=3.1s
+[HPO] Trial 4 Fold 0 Epoch 5: Train Loss=0.0162, Val Loss=0.4831, Time=3.1s
+[HPO] Trial 4 Fold 0 Epoch 6: Train Loss=0.0020, Val Loss=0.0438, Time=3.1s
+[HPO] Trial 4 Fold 0 Epoch 7: Train Loss=0.0127, Val Loss=0.0074, Time=3.1s
+[HPO] Trial 4 Fold 0 Epoch 8: Train Loss=0.0279, Val Loss=0.0259, Time=3.1s
+[HPO] Trial 4 Fold 0 Epoch 9: Train Loss=0.0174, Val Loss=0.0213, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=0.0004667502851330464, weight_decay=3.97473379666185e-06
+[HPO] Trial 4 Fold 1 Epoch 0: Train Loss=0.4317, Val Loss=0.0520, Time=3.1s
+[HPO] Trial 4 Fold 1 Epoch 1: Train Loss=0.1051, Val Loss=0.0121, Time=3.1s
+[HPO] Trial 4 Fold 1 Epoch 2: Train Loss=0.0299, Val Loss=0.0288, Time=3.1s
+[HPO] Trial 4 Fold 1 Epoch 3: Train Loss=0.0019, Val Loss=0.0178, Time=3.1s
+[HPO] Trial 4 Fold 1 Epoch 4: Train Loss=0.0015, Val Loss=0.0068, Time=3.1s
+[HPO] Trial 4 Fold 1 Epoch 5: Train Loss=0.0005, Val Loss=0.0041, Time=3.1s
+[HPO] Trial 4 Fold 1 Epoch 6: Train Loss=0.0002, Val Loss=0.0031, Time=3.1s
+[HPO] Trial 4 Fold 1 Epoch 7: Train Loss=0.0006, Val Loss=0.0023, Time=3.1s
+[HPO] Trial 4 Fold 1 Epoch 8: Train Loss=0.0002, Val Loss=0.0033, Time=3.1s
+[HPO] Trial 4 Fold 1 Epoch 9: Train Loss=0.0001, Val Loss=0.0044, Time=3.1s
+[HPO] Trial 4: Average Loss=0.0048
+[DEBUG] Creating ResNet50 with lr=0.0005021347119315867, weight_decay=0.00011531435974017791
+[HPO] Trial 5 Fold 0 Epoch 0: Train Loss=0.4881, Val Loss=16.1941, Time=3.1s
+[HPO] Trial 5 Fold 0 Epoch 1: Train Loss=0.0797, Val Loss=0.0262, Time=3.1s
+[HPO] Trial 5 Fold 0 Epoch 2: Train Loss=0.0179, Val Loss=0.0181, Time=3.1s
+[HPO] Trial 5 Fold 0 Epoch 3: Train Loss=0.0179, Val Loss=0.0164, Time=3.1s
+[HPO] Trial 5 Fold 0 Epoch 4: Train Loss=0.0037, Val Loss=0.0128, Time=3.1s
+[HPO] Trial 5 Fold 0 Epoch 5: Train Loss=0.0004, Val Loss=0.0093, Time=3.1s
+[HPO] Trial 5 Fold 0 Epoch 6: Train Loss=0.0003, Val Loss=0.0056, Time=3.1s
+[HPO] Trial 5 Fold 0 Epoch 7: Train Loss=0.0003, Val Loss=0.0041, Time=3.1s
+[HPO] Trial 5 Fold 0 Epoch 8: Train Loss=0.0003, Val Loss=0.0038, Time=3.1s
+[HPO] Trial 5 Fold 0 Epoch 9: Train Loss=0.0003, Val Loss=0.0024, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=0.0005021347119315867, weight_decay=0.00011531435974017791
+[HPO] Trial 5 Fold 1 Epoch 0: Train Loss=0.4276, Val Loss=0.9221, Time=3.1s
+[HPO] Trial 5 Fold 1 Epoch 1: Train Loss=0.0191, Val Loss=0.6789, Time=3.1s
+[HPO] Trial 5 Fold 1 Epoch 2: Train Loss=0.0221, Val Loss=0.0965, Time=3.1s
+[HPO] Trial 5 Fold 1 Epoch 3: Train Loss=0.0191, Val Loss=0.0889, Time=3.1s
+[HPO] Trial 5 Fold 1 Epoch 4: Train Loss=0.0062, Val Loss=0.0725, Time=3.1s
+[HPO] Trial 5 Fold 1 Epoch 5: Train Loss=0.0055, Val Loss=0.0088, Time=3.1s
+[HPO] Trial 5 Fold 1 Epoch 6: Train Loss=0.0005, Val Loss=0.0292, Time=3.1s
+[HPO] Trial 5 Fold 1 Epoch 7: Train Loss=0.0011, Val Loss=0.0069, Time=3.1s
+[HPO] Trial 5 Fold 1 Epoch 8: Train Loss=0.0014, Val Loss=0.0075, Time=3.1s
+[HPO] Trial 5 Fold 1 Epoch 9: Train Loss=0.0002, Val Loss=0.0109, Time=3.1s
+[HPO] Trial 5: Average Loss=0.0047
+[DEBUG] Creating ResNet50 with lr=0.00010185186283982347, weight_decay=0.0009944524955099643
+[HPO] Trial 6 Fold 0 Epoch 0: Train Loss=0.6514, Val Loss=0.1358, Time=3.1s
+[HPO] Trial 6 Fold 0 Epoch 1: Train Loss=0.0331, Val Loss=0.0320, Time=3.1s
+[HPO] Trial 6 Fold 0 Epoch 2: Train Loss=0.0158, Val Loss=0.0398, Time=3.1s
+[HPO] Trial 6 Fold 0 Epoch 3: Train Loss=0.0245, Val Loss=0.0297, Time=3.1s
+[HPO] Trial 6 Fold 0 Epoch 4: Train Loss=0.0112, Val Loss=0.0207, Time=3.1s
+[HPO] Trial 6 Fold 0 Epoch 5: Train Loss=0.0050, Val Loss=0.0445, Time=3.1s
+[HPO] Trial 6 Fold 0 Epoch 6: Train Loss=0.0020, Val Loss=0.0239, Time=3.1s
+[HPO] Trial 6 Fold 0 Epoch 7: Train Loss=0.0030, Val Loss=0.0170, Time=3.1s
+[HPO] Trial 6 Fold 0 Epoch 8: Train Loss=0.0012, Val Loss=0.0122, Time=3.1s
+[HPO] Trial 6 Fold 0 Epoch 9: Train Loss=0.0012, Val Loss=0.0106, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=0.00010185186283982347, weight_decay=0.0009944524955099643
+[HPO] Trial 6 Fold 1 Epoch 0: Train Loss=0.7471, Val Loss=0.1657, Time=3.1s
+[HPO] Trial 6 Fold 1 Epoch 1: Train Loss=0.0400, Val Loss=0.0416, Time=3.1s
+[HPO] Trial 6 Fold 1 Epoch 2: Train Loss=0.0089, Val Loss=0.0329, Time=3.1s
+[HPO] Trial 6 Fold 1 Epoch 3: Train Loss=0.0041, Val Loss=0.0367, Time=3.1s
+[HPO] Trial 6 Fold 1 Epoch 4: Train Loss=0.0015, Val Loss=0.0267, Time=3.1s
+[HPO] Trial 6 Fold 1 Epoch 5: Train Loss=0.0020, Val Loss=0.0201, Time=3.1s
+[HPO] Trial 6 Fold 1 Epoch 6: Train Loss=0.0009, Val Loss=0.0228, Time=3.1s
+[HPO] Trial 6 Fold 1 Epoch 7: Train Loss=0.0010, Val Loss=0.0199, Time=3.1s
+[HPO] Trial 6 Fold 1 Epoch 8: Train Loss=0.0010, Val Loss=0.0237, Time=3.1s
+[HPO] Trial 6 Fold 1 Epoch 9: Train Loss=0.0010, Val Loss=0.0184, Time=3.1s
+[HPO] Trial 6: Average Loss=0.0145
+[DEBUG] Creating ResNet50 with lr=1.1800521706217325e-05, weight_decay=0.0041946287964871485
+[HPO] Trial 7 Fold 0 Epoch 0: Train Loss=1.6768, Val Loss=1.6149, Time=3.1s
+[HPO] Trial 7 Fold 0 Epoch 1: Train Loss=1.0754, Val Loss=1.0861, Time=3.1s
+[HPO] Trial 7 Fold 0 Epoch 2: Train Loss=0.6901, Val Loss=0.7077, Time=3.1s
+[HPO] Trial 7 Fold 0 Epoch 3: Train Loss=0.4214, Val Loss=0.4812, Time=3.1s
+[HPO] Trial 7 Fold 0 Epoch 4: Train Loss=0.3085, Val Loss=0.3127, Time=3.1s
+[HPO] Trial 7 Fold 0 Epoch 5: Train Loss=0.1809, Val Loss=0.2157, Time=3.1s
+[HPO] Trial 7 Fold 0 Epoch 6: Train Loss=0.1284, Val Loss=0.1511, Time=3.1s
+[HPO] Trial 7 Fold 0 Epoch 7: Train Loss=0.0965, Val Loss=0.1065, Time=3.1s
+[HPO] Trial 7 Fold 0 Epoch 8: Train Loss=0.0954, Val Loss=0.0818, Time=3.1s
+[HPO] Trial 7 Fold 0 Epoch 9: Train Loss=0.0580, Val Loss=0.0687, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=1.1800521706217325e-05, weight_decay=0.0041946287964871485
+[HPO] Trial 7 Fold 1 Epoch 0: Train Loss=1.9131, Val Loss=1.7791, Time=3.1s
+[HPO] Trial 7 Fold 1 Epoch 1: Train Loss=1.2625, Val Loss=1.2529, Time=3.1s
+[HPO] Trial 7 Fold 1 Epoch 2: Train Loss=0.8174, Val Loss=0.8152, Time=3.1s
+[HPO] Trial 7 Fold 1 Epoch 3: Train Loss=0.5126, Val Loss=0.5615, Time=3.1s
+[HPO] Trial 7 Fold 1 Epoch 4: Train Loss=0.3209, Val Loss=0.3956, Time=3.1s
+[HPO] Trial 7 Fold 1 Epoch 5: Train Loss=0.2148, Val Loss=0.2863, Time=3.1s
+[HPO] Trial 7 Fold 1 Epoch 6: Train Loss=0.1626, Val Loss=0.1981, Time=3.1s
+[HPO] Trial 7 Fold 1 Epoch 7: Train Loss=0.1133, Val Loss=0.1362, Time=3.1s
+[HPO] Trial 7 Fold 1 Epoch 8: Train Loss=0.0931, Val Loss=0.1042, Time=3.1s
+[HPO] Trial 7 Fold 1 Epoch 9: Train Loss=0.0639, Val Loss=0.0878, Time=3.1s
+[HPO] Trial 7: Average Loss=0.0782
+[DEBUG] Creating ResNet50 with lr=0.0008872605720054755, weight_decay=0.0073945553952149065
+[HPO] Trial 8 Fold 0 Epoch 0: Train Loss=0.5006, Val Loss=13.1502, Time=3.1s
+[HPO] Trial 8 Fold 0 Epoch 1: Train Loss=0.1914, Val Loss=0.9060, Time=3.1s
+[HPO] Trial 8 Fold 0 Epoch 2: Train Loss=0.0671, Val Loss=0.0697, Time=3.1s
+[HPO] Trial 8 Fold 0 Epoch 3: Train Loss=0.0541, Val Loss=0.1271, Time=3.1s
+[HPO] Trial 8 Fold 0 Epoch 4: Train Loss=0.0253, Val Loss=0.1619, Time=3.1s
+[HPO] Trial 8 Fold 0 Epoch 5: Train Loss=0.0334, Val Loss=0.3886, Time=3.1s
+[HPO] Trial 8 Fold 0 Epoch 6: Train Loss=0.1051, Val Loss=0.2586, Time=3.1s
+[HPO] Trial 8 Fold 0 Epoch 7: Train Loss=0.1246, Val Loss=16.6310, Time=3.1s
+[HPO] Trial 8 Fold 0 Epoch 8: Train Loss=0.0395, Val Loss=0.1447, Time=3.1s
+[HPO] Trial 8 Fold 0 Epoch 9: Train Loss=0.0450, Val Loss=0.1843, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=0.0008872605720054755, weight_decay=0.0073945553952149065
+[HPO] Trial 8 Fold 1 Epoch 0: Train Loss=0.5014, Val Loss=116.7056, Time=3.1s
+[HPO] Trial 8 Fold 1 Epoch 1: Train Loss=0.0359, Val Loss=0.2757, Time=3.1s
+[HPO] Trial 8 Fold 1 Epoch 2: Train Loss=0.0305, Val Loss=0.0323, Time=3.1s
+[HPO] Trial 8 Fold 1 Epoch 3: Train Loss=0.0083, Val Loss=0.0864, Time=3.1s
+[HPO] Trial 8 Fold 1 Epoch 4: Train Loss=0.0023, Val Loss=0.1648, Time=3.1s
+[HPO] Trial 8 Fold 1 Epoch 5: Train Loss=0.0238, Val Loss=0.2669, Time=3.1s
+[HPO] Trial 8 Fold 1 Epoch 6: Train Loss=0.0692, Val Loss=0.1631, Time=3.1s
+[HPO] Trial 8 Fold 1 Epoch 7: Train Loss=0.0481, Val Loss=0.1326, Time=3.1s
+[HPO] Trial 8 Fold 1 Epoch 8: Train Loss=0.0570, Val Loss=2.1906, Time=3.1s
+[HPO] Trial 8 Fold 1 Epoch 9: Train Loss=0.0075, Val Loss=0.9707, Time=3.1s
+[HPO] Trial 8: Average Loss=0.0510
+[DEBUG] Creating ResNet50 with lr=0.0005070092080295254, weight_decay=0.0017518841610521267
+[HPO] Trial 9 Fold 0 Epoch 0: Train Loss=0.4028, Val Loss=0.0598, Time=3.1s
+[HPO] Trial 9 Fold 0 Epoch 1: Train Loss=0.0303, Val Loss=0.0227, Time=3.1s
+[HPO] Trial 9 Fold 0 Epoch 2: Train Loss=0.0052, Val Loss=0.0328, Time=3.1s
+[HPO] Trial 9 Fold 0 Epoch 3: Train Loss=0.0019, Val Loss=0.0112, Time=3.1s
+[HPO] Trial 9 Fold 0 Epoch 4: Train Loss=0.0017, Val Loss=0.0084, Time=3.1s
+[HPO] Trial 9 Fold 0 Epoch 5: Train Loss=0.0015, Val Loss=0.0457, Time=3.1s
+[HPO] Trial 9 Fold 0 Epoch 6: Train Loss=0.0083, Val Loss=0.0073, Time=3.1s
+[HPO] Trial 9 Fold 0 Epoch 7: Train Loss=0.0409, Val Loss=0.0062, Time=3.1s
+[HPO] Trial 9 Fold 0 Epoch 8: Train Loss=0.0069, Val Loss=0.0758, Time=3.1s
+[HPO] Trial 9 Fold 0 Epoch 9: Train Loss=0.1210, Val Loss=0.1224, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=0.0005070092080295254, weight_decay=0.0017518841610521267
+[HPO] Trial 9 Fold 1 Epoch 0: Train Loss=0.4111, Val Loss=3.6089, Time=3.1s
+[HPO] Trial 9 Fold 1 Epoch 1: Train Loss=0.1269, Val Loss=0.1420, Time=3.1s
+[HPO] Trial 9 Fold 1 Epoch 2: Train Loss=0.0147, Val Loss=0.0623, Time=3.1s
+[HPO] Trial 9 Fold 1 Epoch 3: Train Loss=0.0094, Val Loss=0.0451, Time=3.1s
+[HPO] Trial 9 Fold 1 Epoch 4: Train Loss=0.0100, Val Loss=0.0139, Time=3.1s
+[HPO] Trial 9 Fold 1 Epoch 5: Train Loss=0.0053, Val Loss=0.0127, Time=3.1s
+[HPO] Trial 9 Fold 1 Epoch 6: Train Loss=0.0008, Val Loss=0.0186, Time=3.1s
+[HPO] Trial 9 Fold 1 Epoch 7: Train Loss=0.0010, Val Loss=0.0237, Time=3.1s
+[HPO] Trial 9 Fold 1 Epoch 8: Train Loss=0.0005, Val Loss=0.0207, Time=3.1s
+[HPO] Trial 9 Fold 1 Epoch 9: Train Loss=0.0003, Val Loss=0.0179, Time=3.1s
+[HPO] Trial 9: Average Loss=0.0095
+[DEBUG] Creating ResNet50 with lr=0.00015321583039964063, weight_decay=7.073552393964882e-06
+[HPO] Trial 10 Fold 0 Epoch 0: Train Loss=0.5622, Val Loss=0.1059, Time=3.1s
+[HPO] Trial 10 Fold 0 Epoch 1: Train Loss=0.0256, Val Loss=0.0304, Time=3.1s
+[HPO] Trial 10 Fold 0 Epoch 2: Train Loss=0.0035, Val Loss=0.0334, Time=3.1s
+[HPO] Trial 10 Fold 0 Epoch 3: Train Loss=0.0012, Val Loss=0.0211, Time=3.1s
+[HPO] Trial 10 Fold 0 Epoch 4: Train Loss=0.0015, Val Loss=0.0096, Time=3.1s
+[HPO] Trial 10 Fold 0 Epoch 5: Train Loss=0.0025, Val Loss=0.0070, Time=3.1s
+[HPO] Trial 10 Fold 0 Epoch 6: Train Loss=0.0066, Val Loss=0.0410, Time=3.1s
+[HPO] Trial 10 Fold 0 Epoch 7: Train Loss=0.0050, Val Loss=0.0111, Time=3.1s
+[HPO] Trial 10 Fold 0 Epoch 8: Train Loss=0.0054, Val Loss=0.0107, Time=3.1s
+[HPO] Trial 10 Fold 0 Epoch 9: Train Loss=0.0012, Val Loss=0.0073, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=0.00015321583039964063, weight_decay=7.073552393964882e-06
+[HPO] Trial 10 Fold 1 Epoch 0: Train Loss=0.5347, Val Loss=0.1110, Time=3.1s
+[HPO] Trial 10 Fold 1 Epoch 1: Train Loss=0.0284, Val Loss=0.0942, Time=3.1s
+[HPO] Trial 10 Fold 1 Epoch 2: Train Loss=0.0388, Val Loss=0.0524, Time=3.1s
+[HPO] Trial 10 Fold 1 Epoch 3: Train Loss=0.0038, Val Loss=0.0510, Time=3.1s
+[HPO] Trial 10 Fold 1 Epoch 4: Train Loss=0.0028, Val Loss=0.0446, Time=3.1s
+[HPO] Trial 10 Fold 1 Epoch 5: Train Loss=0.0010, Val Loss=0.0352, Time=3.1s
+[HPO] Trial 10 Fold 1 Epoch 6: Train Loss=0.0007, Val Loss=0.0258, Time=3.1s
+[HPO] Trial 10 Fold 1 Epoch 7: Train Loss=0.0006, Val Loss=0.0224, Time=3.1s
+[HPO] Trial 10 Fold 1 Epoch 8: Train Loss=0.0005, Val Loss=0.0261, Time=3.1s
+[HPO] Trial 10 Fold 1 Epoch 9: Train Loss=0.0003, Val Loss=0.0263, Time=3.1s
+[HPO] Trial 10: Average Loss=0.0147
+[DEBUG] Creating ResNet50 with lr=0.0009791564065281715, weight_decay=1.0815020148229942e-06
+[HPO] Trial 11 Fold 0 Epoch 0: Train Loss=0.4776, Val Loss=10.9529, Time=3.1s
+[HPO] Trial 11 Fold 0 Epoch 1: Train Loss=0.0175, Val Loss=9.6642, Time=3.1s
+[HPO] Trial 11 Fold 0 Epoch 2: Train Loss=0.0450, Val Loss=0.0457, Time=3.1s
+[HPO] Trial 11 Fold 0 Epoch 3: Train Loss=0.0437, Val Loss=0.1210, Time=3.1s
+[HPO] Trial 11 Fold 0 Epoch 4: Train Loss=0.0359, Val Loss=0.0299, Time=3.1s
+[HPO] Trial 11 Fold 0 Epoch 5: Train Loss=0.0137, Val Loss=0.0193, Time=3.1s
+[HPO] Trial 11 Fold 0 Epoch 6: Train Loss=0.0049, Val Loss=0.0163, Time=3.1s
+[HPO] Trial 11 Fold 0 Epoch 7: Train Loss=0.0014, Val Loss=0.0055, Time=3.1s
+[HPO] Trial 11 Fold 0 Epoch 8: Train Loss=0.0004, Val Loss=0.0056, Time=3.1s
+[HPO] Trial 11 Fold 0 Epoch 9: Train Loss=0.0004, Val Loss=0.0046, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=0.0009791564065281715, weight_decay=1.0815020148229942e-06
+[HPO] Trial 11 Fold 1 Epoch 0: Train Loss=0.5171, Val Loss=30.0784, Time=3.1s
+[HPO] Trial 11 Fold 1 Epoch 1: Train Loss=0.0717, Val Loss=14.7351, Time=3.1s
+[HPO] Trial 11 Fold 1 Epoch 2: Train Loss=0.0238, Val Loss=0.0802, Time=3.1s
+[HPO] Trial 11 Fold 1 Epoch 3: Train Loss=0.0114, Val Loss=0.0373, Time=3.1s
+[HPO] Trial 11 Fold 1 Epoch 4: Train Loss=0.0089, Val Loss=0.0187, Time=3.1s
+[HPO] Trial 11 Fold 1 Epoch 5: Train Loss=0.0069, Val Loss=0.0229, Time=3.1s
+[HPO] Trial 11 Fold 1 Epoch 6: Train Loss=0.0024, Val Loss=0.0183, Time=3.1s
+[HPO] Trial 11 Fold 1 Epoch 7: Train Loss=0.0016, Val Loss=0.0201, Time=3.1s
+[HPO] Trial 11 Fold 1 Epoch 8: Train Loss=0.0005, Val Loss=0.0271, Time=3.1s
+[HPO] Trial 11 Fold 1 Epoch 9: Train Loss=0.0251, Val Loss=0.0157, Time=3.1s
+[HPO] Trial 11: Average Loss=0.0102
+[DEBUG] Creating ResNet50 with lr=0.0004223780268230506, weight_decay=2.8766797827136332e-05
+[HPO] Trial 12 Fold 0 Epoch 0: Train Loss=0.6142, Val Loss=0.3361, Time=3.1s
+[HPO] Trial 12 Fold 0 Epoch 1: Train Loss=0.0960, Val Loss=0.1809, Time=3.1s
+[HPO] Trial 12 Fold 0 Epoch 2: Train Loss=0.0151, Val Loss=0.0283, Time=3.1s
+[HPO] Trial 12 Fold 0 Epoch 3: Train Loss=0.0105, Val Loss=0.0359, Time=3.1s
+[HPO] Trial 12 Fold 0 Epoch 4: Train Loss=0.0036, Val Loss=0.0262, Time=3.1s
+[HPO] Trial 12 Fold 0 Epoch 5: Train Loss=0.0023, Val Loss=0.0167, Time=3.1s
+[HPO] Trial 12 Fold 0 Epoch 6: Train Loss=0.0066, Val Loss=0.0269, Time=3.1s
+[HPO] Trial 12 Fold 0 Epoch 7: Train Loss=0.0080, Val Loss=0.0157, Time=3.1s
+[HPO] Trial 12 Fold 0 Epoch 8: Train Loss=0.0082, Val Loss=0.0110, Time=3.1s
+[HPO] Trial 12 Fold 0 Epoch 9: Train Loss=0.0035, Val Loss=0.0129, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=0.0004223780268230506, weight_decay=2.8766797827136332e-05
+[HPO] Trial 12 Fold 1 Epoch 0: Train Loss=0.4021, Val Loss=0.0466, Time=3.1s
+[HPO] Trial 12 Fold 1 Epoch 1: Train Loss=0.0035, Val Loss=0.2432, Time=3.1s
+[HPO] Trial 12 Fold 1 Epoch 2: Train Loss=0.0013, Val Loss=0.0523, Time=3.1s
+[HPO] Trial 12 Fold 1 Epoch 3: Train Loss=0.0003, Val Loss=0.0578, Time=3.1s
+[HPO] Trial 12 Fold 1 Epoch 4: Train Loss=0.0011, Val Loss=0.0341, Time=3.1s
+[HPO] Trial 12 Fold 1 Epoch 5: Train Loss=0.0024, Val Loss=0.0586, Time=3.1s
+[HPO] Trial 12 Fold 1 Epoch 6: Train Loss=0.0195, Val Loss=0.0388, Time=3.1s
+[HPO] Trial 12 Fold 1 Epoch 7: Train Loss=0.0078, Val Loss=0.0830, Time=3.1s
+[HPO] Trial 12 Fold 1 Epoch 8: Train Loss=0.0078, Val Loss=0.0744, Time=3.1s
+[HPO] Trial 12 Fold 1 Epoch 9: Train Loss=0.0032, Val Loss=0.0039, Time=3.1s
+[HPO] Trial 12: Average Loss=0.0075
+[DEBUG] Creating ResNet50 with lr=2.6648420437766805e-05, weight_decay=0.00018028525634753044
+[HPO] Trial 13 Fold 0 Epoch 0: Train Loss=1.6984, Val Loss=1.7190, Time=3.0s
+[HPO] Trial 13 Fold 0 Epoch 1: Train Loss=0.6806, Val Loss=0.6486, Time=3.1s
+[HPO] Trial 13 Fold 0 Epoch 2: Train Loss=0.2351, Val Loss=0.2667, Time=3.1s
+[HPO] Trial 13 Fold 0 Epoch 3: Train Loss=0.1019, Val Loss=0.1520, Time=3.1s
+[HPO] Trial 13 Fold 0 Epoch 4: Train Loss=0.0492, Val Loss=0.0813, Time=3.1s
+[HPO] Trial 13 Fold 0 Epoch 5: Train Loss=0.0255, Val Loss=0.0494, Time=3.1s
+[HPO] Trial 13 Fold 0 Epoch 6: Train Loss=0.0255, Val Loss=0.0362, Time=3.1s
+[HPO] Trial 13 Fold 0 Epoch 7: Train Loss=0.0171, Val Loss=0.0263, Time=3.1s
+[HPO] Trial 13 Fold 0 Epoch 8: Train Loss=0.0125, Val Loss=0.0234, Time=3.1s
+[HPO] Trial 13 Fold 0 Epoch 9: Train Loss=0.0128, Val Loss=0.0229, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=2.6648420437766805e-05, weight_decay=0.00018028525634753044
+[HPO] Trial 13 Fold 1 Epoch 0: Train Loss=1.1816, Val Loss=1.0279, Time=3.1s
+[HPO] Trial 13 Fold 1 Epoch 1: Train Loss=0.4141, Val Loss=0.3803, Time=3.1s
+[HPO] Trial 13 Fold 1 Epoch 2: Train Loss=0.1442, Val Loss=0.1428, Time=3.1s
+[HPO] Trial 13 Fold 1 Epoch 3: Train Loss=0.0623, Val Loss=0.0918, Time=3.1s
+[HPO] Trial 13 Fold 1 Epoch 4: Train Loss=0.0289, Val Loss=0.0606, Time=3.1s
+[HPO] Trial 13 Fold 1 Epoch 5: Train Loss=0.0214, Val Loss=0.0414, Time=3.1s
+[HPO] Trial 13 Fold 1 Epoch 6: Train Loss=0.0138, Val Loss=0.0337, Time=3.1s
+[HPO] Trial 13 Fold 1 Epoch 7: Train Loss=0.0223, Val Loss=0.0306, Time=3.1s
+[HPO] Trial 13 Fold 1 Epoch 8: Train Loss=0.0122, Val Loss=0.0260, Time=3.1s
+[HPO] Trial 13 Fold 1 Epoch 9: Train Loss=0.0089, Val Loss=0.0236, Time=3.1s
+[HPO] Trial 13: Average Loss=0.0232
+[DEBUG] Creating ResNet50 with lr=0.00025301699918822506, weight_decay=1.674340229958318e-05
+[HPO] Trial 14 Fold 0 Epoch 0: Train Loss=0.4337, Val Loss=0.0770, Time=3.1s
+[HPO] Trial 14 Fold 0 Epoch 1: Train Loss=0.0221, Val Loss=0.0111, Time=3.1s
+[HPO] Trial 14 Fold 0 Epoch 2: Train Loss=0.0252, Val Loss=0.0162, Time=3.1s
+[HPO] Trial 14 Fold 0 Epoch 3: Train Loss=0.0320, Val Loss=0.0248, Time=3.1s
+[HPO] Trial 14 Fold 0 Epoch 4: Train Loss=0.0028, Val Loss=0.0276, Time=3.1s
+[HPO] Trial 14 Fold 0 Epoch 5: Train Loss=0.0259, Val Loss=0.0244, Time=3.1s
+[HPO] Trial 14 Fold 0 Epoch 6: Train Loss=0.0103, Val Loss=0.0215, Time=3.1s
+[HPO] Trial 14 Fold 0 Epoch 7: Train Loss=0.0017, Val Loss=0.0177, Time=3.1s
+[HPO] Trial 14 Fold 0 Epoch 8: Train Loss=0.0007, Val Loss=0.0177, Time=3.1s
+[HPO] Trial 14 Fold 0 Epoch 9: Train Loss=0.0009, Val Loss=0.0170, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=0.00025301699918822506, weight_decay=1.674340229958318e-05
+[HPO] Trial 14 Fold 1 Epoch 0: Train Loss=0.4776, Val Loss=0.0510, Time=3.1s
+[HPO] Trial 14 Fold 1 Epoch 1: Train Loss=0.0066, Val Loss=0.0200, Time=3.1s
+[HPO] Trial 14 Fold 1 Epoch 2: Train Loss=0.0027, Val Loss=0.0201, Time=3.1s
+[HPO] Trial 14 Fold 1 Epoch 3: Train Loss=0.0023, Val Loss=0.0184, Time=3.1s
+[HPO] Trial 14 Fold 1 Epoch 4: Train Loss=0.0004, Val Loss=0.0142, Time=3.1s
+[HPO] Trial 14 Fold 1 Epoch 5: Train Loss=0.0004, Val Loss=0.0415, Time=3.1s
+[HPO] Trial 14 Fold 1 Epoch 6: Train Loss=0.0002, Val Loss=0.0609, Time=3.1s
+[HPO] Trial 14 Fold 1 Epoch 7: Train Loss=0.0001, Val Loss=0.0648, Time=3.1s
+[HPO] Trial 14 Fold 1 Epoch 8: Train Loss=0.0003, Val Loss=0.0595, Time=3.1s
+[HPO] Trial 14 Fold 1 Epoch 9: Train Loss=0.0001, Val Loss=0.0552, Time=3.1s
+[HPO] Trial 14: Average Loss=0.0126
+[DEBUG] Creating ResNet50 with lr=0.0005789567968626578, weight_decay=1.7163835978331356e-06
+[HPO] Trial 15 Fold 0 Epoch 0: Train Loss=0.4433, Val Loss=2.1462, Time=3.1s
+[HPO] Trial 15 Fold 0 Epoch 1: Train Loss=0.1170, Val Loss=5.2026, Time=3.1s
+[HPO] Trial 15 Fold 0 Epoch 2: Train Loss=0.0459, Val Loss=7.2889, Time=3.1s
+[HPO] Trial 15 Fold 0 Epoch 3: Train Loss=0.0206, Val Loss=0.8435, Time=3.1s
+[HPO] Trial 15 Fold 0 Epoch 4: Train Loss=0.0316, Val Loss=0.4604, Time=3.1s
+[HPO] Trial 15 Fold 0 Epoch 5: Train Loss=0.0087, Val Loss=0.0372, Time=3.1s
+[HPO] Trial 15 Fold 0 Epoch 6: Train Loss=0.0045, Val Loss=0.0477, Time=3.1s
+[HPO] Trial 15 Fold 0 Epoch 7: Train Loss=0.0026, Val Loss=0.0221, Time=3.1s
+[HPO] Trial 15 Fold 0 Epoch 8: Train Loss=0.0034, Val Loss=0.0216, Time=3.1s
+[HPO] Trial 15 Fold 0 Epoch 9: Train Loss=0.0015, Val Loss=0.0279, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=0.0005789567968626578, weight_decay=1.7163835978331356e-06
+[HPO] Trial 15 Fold 1 Epoch 0: Train Loss=0.3928, Val Loss=1.1798, Time=3.1s
+[HPO] Trial 15 Fold 1 Epoch 1: Train Loss=0.0232, Val Loss=6.3629, Time=3.1s
+[HPO] Trial 15 Fold 1 Epoch 2: Train Loss=0.0121, Val Loss=0.8154, Time=3.1s
+[HPO] Trial 15 Fold 1 Epoch 3: Train Loss=0.0030, Val Loss=0.0281, Time=3.1s
+[HPO] Trial 15 Fold 1 Epoch 4: Train Loss=0.0009, Val Loss=0.0189, Time=3.1s
+[HPO] Trial 15 Fold 1 Epoch 5: Train Loss=0.0074, Val Loss=0.0172, Time=3.1s
+[HPO] Trial 15 Fold 1 Epoch 6: Train Loss=0.0037, Val Loss=0.0095, Time=3.1s
+[HPO] Trial 15 Fold 1 Epoch 7: Train Loss=0.0101, Val Loss=0.0257, Time=3.1s
+[HPO] Trial 15 Fold 1 Epoch 8: Train Loss=0.0147, Val Loss=0.0727, Time=3.1s
+[HPO] Trial 15 Fold 1 Epoch 9: Train Loss=0.0348, Val Loss=0.0385, Time=3.1s
+[HPO] Trial 15: Average Loss=0.0155
+[DEBUG] Creating ResNet50 with lr=0.00013879622255999995, weight_decay=0.00029147707860167405
+[HPO] Trial 16 Fold 0 Epoch 0: Train Loss=0.4643, Val Loss=0.1088, Time=3.1s
+[HPO] Trial 16 Fold 0 Epoch 1: Train Loss=0.0198, Val Loss=0.0181, Time=3.1s
+[HPO] Trial 16 Fold 0 Epoch 2: Train Loss=0.0066, Val Loss=0.0156, Time=3.1s
+[HPO] Trial 16 Fold 0 Epoch 3: Train Loss=0.0103, Val Loss=0.0516, Time=3.1s
+[HPO] Trial 16 Fold 0 Epoch 4: Train Loss=0.0035, Val Loss=0.0299, Time=3.1s
+[HPO] Trial 16 Fold 0 Epoch 5: Train Loss=0.0012, Val Loss=0.0085, Time=3.1s
+[HPO] Trial 16 Fold 0 Epoch 6: Train Loss=0.0028, Val Loss=0.0078, Time=3.1s
+[HPO] Trial 16 Fold 0 Epoch 7: Train Loss=0.0006, Val Loss=0.0101, Time=3.1s
+[HPO] Trial 16 Fold 0 Epoch 8: Train Loss=0.0147, Val Loss=0.0077, Time=3.1s
+[HPO] Trial 16 Fold 0 Epoch 9: Train Loss=0.0030, Val Loss=0.0209, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=0.00013879622255999995, weight_decay=0.00029147707860167405
+[HPO] Trial 16 Fold 1 Epoch 0: Train Loss=0.5282, Val Loss=0.0610, Time=3.1s
+[HPO] Trial 16 Fold 1 Epoch 1: Train Loss=0.0391, Val Loss=0.1161, Time=3.1s
+[HPO] Trial 16 Fold 1 Epoch 2: Train Loss=0.0050, Val Loss=0.3183, Time=3.1s
+[HPO] Trial 16 Fold 1 Epoch 3: Train Loss=0.0034, Val Loss=0.0972, Time=3.1s
+[HPO] Trial 16 Fold 1 Epoch 4: Train Loss=0.0025, Val Loss=0.0493, Time=3.1s
+[HPO] Trial 16 Fold 1 Epoch 5: Train Loss=0.0014, Val Loss=0.0456, Time=3.1s
+[HPO] Trial 16 Fold 1 Epoch 6: Train Loss=0.0007, Val Loss=0.0250, Time=3.1s
+[HPO] Trial 16 Fold 1 Epoch 7: Train Loss=0.0005, Val Loss=0.0127, Time=3.1s
+[HPO] Trial 16 Fold 1 Epoch 8: Train Loss=0.0003, Val Loss=0.0100, Time=3.1s
+[HPO] Trial 16 Fold 1 Epoch 9: Train Loss=0.0004, Val Loss=0.0082, Time=3.1s
+[HPO] Trial 16: Average Loss=0.0079
+[DEBUG] Creating ResNet50 with lr=0.0007221892257318899, weight_decay=6.527957320960774e-06
+[HPO] Trial 17 Fold 0 Epoch 0: Train Loss=0.5296, Val Loss=0.0269, Time=3.1s
+[HPO] Trial 17 Fold 0 Epoch 1: Train Loss=0.0539, Val Loss=0.0013, Time=3.1s
+[HPO] Trial 17 Fold 0 Epoch 2: Train Loss=0.0564, Val Loss=0.0776, Time=3.1s
+[HPO] Trial 17 Fold 0 Epoch 3: Train Loss=0.1470, Val Loss=0.0454, Time=3.1s
+[HPO] Trial 17 Fold 0 Epoch 4: Train Loss=0.0387, Val Loss=0.1707, Time=3.1s
+[HPO] Trial 17 Fold 0 Epoch 5: Train Loss=0.0219, Val Loss=0.0747, Time=3.1s
+[HPO] Trial 17 Fold 0 Epoch 6: Train Loss=0.0565, Val Loss=0.0383, Time=3.1s
+[HPO] Trial 17 Fold 0 Epoch 7: Train Loss=0.0137, Val Loss=0.0052, Time=3.1s
+[HPO] Trial 17 Fold 0 Epoch 8: Train Loss=0.0169, Val Loss=0.0106, Time=3.1s
+[HPO] Trial 17 Fold 0 Epoch 9: Train Loss=0.0063, Val Loss=0.0147, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=0.0007221892257318899, weight_decay=6.527957320960774e-06
+[HPO] Trial 17 Fold 1 Epoch 0: Train Loss=0.5747, Val Loss=25.2861, Time=3.1s
+[HPO] Trial 17 Fold 1 Epoch 1: Train Loss=0.0448, Val Loss=3.4956, Time=3.1s
+[HPO] Trial 17 Fold 1 Epoch 2: Train Loss=0.0300, Val Loss=0.2488, Time=3.1s
+[HPO] Trial 17 Fold 1 Epoch 3: Train Loss=0.0212, Val Loss=0.0410, Time=3.1s
+[HPO] Trial 17 Fold 1 Epoch 4: Train Loss=0.0057, Val Loss=0.0375, Time=3.1s
+[HPO] Trial 17 Fold 1 Epoch 5: Train Loss=0.0023, Val Loss=0.0225, Time=3.1s
+[HPO] Trial 17 Fold 1 Epoch 6: Train Loss=0.0004, Val Loss=0.0147, Time=3.1s
+[HPO] Trial 17 Fold 1 Epoch 7: Train Loss=0.0003, Val Loss=0.0134, Time=3.1s
+[HPO] Trial 17 Fold 1 Epoch 8: Train Loss=0.0003, Val Loss=0.0131, Time=3.1s
+[HPO] Trial 17 Fold 1 Epoch 9: Train Loss=0.0013, Val Loss=0.0133, Time=3.1s
+[HPO] Trial 17: Average Loss=0.0072
+[DEBUG] Creating ResNet50 with lr=0.0003254129055326989, weight_decay=4.384077535679588e-05
+[HPO] Trial 18 Fold 0 Epoch 0: Train Loss=0.4519, Val Loss=0.0857, Time=3.1s
+[HPO] Trial 18 Fold 0 Epoch 1: Train Loss=0.0271, Val Loss=0.0158, Time=3.1s
+[HPO] Trial 18 Fold 0 Epoch 2: Train Loss=0.0059, Val Loss=0.0158, Time=3.1s
+[HPO] Trial 18 Fold 0 Epoch 3: Train Loss=0.0027, Val Loss=0.0226, Time=3.1s
+[HPO] Trial 18 Fold 0 Epoch 4: Train Loss=0.0074, Val Loss=0.0202, Time=3.1s
+[HPO] Trial 18 Fold 0 Epoch 5: Train Loss=0.0118, Val Loss=0.1306, Time=3.1s
+[HPO] Trial 18 Fold 0 Epoch 6: Train Loss=0.0436, Val Loss=0.0906, Time=3.1s
+[HPO] Trial 18 Fold 0 Epoch 7: Train Loss=0.0139, Val Loss=0.0055, Time=3.1s
+[HPO] Trial 18 Fold 0 Epoch 8: Train Loss=0.0152, Val Loss=0.0029, Time=3.1s
+[HPO] Trial 18 Fold 0 Epoch 9: Train Loss=0.0321, Val Loss=1.5299, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=0.0003254129055326989, weight_decay=4.384077535679588e-05
+[HPO] Trial 18 Fold 1 Epoch 0: Train Loss=0.5089, Val Loss=0.0404, Time=3.1s
+[HPO] Trial 18 Fold 1 Epoch 1: Train Loss=0.0232, Val Loss=0.0471, Time=3.1s
+[HPO] Trial 18 Fold 1 Epoch 2: Train Loss=0.0130, Val Loss=0.0977, Time=3.1s
+[HPO] Trial 18 Fold 1 Epoch 3: Train Loss=0.0136, Val Loss=0.0469, Time=3.1s
+[HPO] Trial 18 Fold 1 Epoch 4: Train Loss=0.0063, Val Loss=0.0086, Time=3.1s
+[HPO] Trial 18 Fold 1 Epoch 5: Train Loss=0.0021, Val Loss=0.0072, Time=3.1s
+[HPO] Trial 18 Fold 1 Epoch 6: Train Loss=0.0023, Val Loss=0.0189, Time=3.1s
+[HPO] Trial 18 Fold 1 Epoch 7: Train Loss=0.0007, Val Loss=0.0065, Time=3.1s
+[HPO] Trial 18 Fold 1 Epoch 8: Train Loss=0.0003, Val Loss=0.0052, Time=3.1s
+[HPO] Trial 18 Fold 1 Epoch 9: Train Loss=0.0001, Val Loss=0.0044, Time=3.1s
+[HPO] Trial 18: Average Loss=0.0037
+[DEBUG] Creating ResNet50 with lr=0.00022869841983697302, weight_decay=5.9708412642481604e-05
+[HPO] Trial 19 Fold 0 Epoch 0: Train Loss=0.4271, Val Loss=0.0493, Time=3.1s
+[HPO] Trial 19 Fold 0 Epoch 1: Train Loss=0.0451, Val Loss=0.0350, Time=3.1s
+[HPO] Trial 19 Fold 0 Epoch 2: Train Loss=0.0233, Val Loss=0.0191, Time=3.1s
+[HPO] Trial 19 Fold 0 Epoch 3: Train Loss=0.0132, Val Loss=0.0110, Time=3.1s
+[HPO] Trial 19 Fold 0 Epoch 4: Train Loss=0.0018, Val Loss=0.0085, Time=3.1s
+[HPO] Trial 19 Fold 0 Epoch 5: Train Loss=0.0005, Val Loss=0.0076, Time=3.1s
+[HPO] Trial 19 Fold 0 Epoch 6: Train Loss=0.0002, Val Loss=0.0065, Time=3.1s
+[HPO] Trial 19 Fold 0 Epoch 7: Train Loss=0.0002, Val Loss=0.0042, Time=3.1s
+[HPO] Trial 19 Fold 0 Epoch 8: Train Loss=0.0002, Val Loss=0.0030, Time=3.1s
+[HPO] Trial 19 Fold 0 Epoch 9: Train Loss=0.0003, Val Loss=0.0024, Time=3.1s
+[DEBUG] Creating ResNet50 with lr=0.00022869841983697302, weight_decay=5.9708412642481604e-05
+[HPO] Trial 19 Fold 1 Epoch 0: Train Loss=0.5229, Val Loss=0.0720, Time=3.1s
+[HPO] Trial 19 Fold 1 Epoch 1: Train Loss=0.0395, Val Loss=0.0184, Time=3.1s
+[HPO] Trial 19 Fold 1 Epoch 2: Train Loss=0.0163, Val Loss=0.1621, Time=3.1s
+[HPO] Trial 19 Fold 1 Epoch 3: Train Loss=0.0081, Val Loss=0.0076, Time=3.1s
+[HPO] Trial 19 Fold 1 Epoch 4: Train Loss=0.0031, Val Loss=0.0089, Time=3.1s
+[HPO] Trial 19 Fold 1 Epoch 5: Train Loss=0.0012, Val Loss=0.0100, Time=3.1s
+[HPO] Trial 19 Fold 1 Epoch 6: Train Loss=0.0009, Val Loss=0.0045, Time=3.1s
+[HPO] Trial 19 Fold 1 Epoch 7: Train Loss=0.0004, Val Loss=0.0034, Time=3.1s
+[HPO] Trial 19 Fold 1 Epoch 8: Train Loss=0.0002, Val Loss=0.0034, Time=3.1s
+[HPO] Trial 19 Fold 1 Epoch 9: Train Loss=0.0017, Val Loss=0.0040, Time=3.1s
+[HPO] Trial 19: Average Loss=0.0029
+[Debug] Best trial: lr=0.00022869841983697302, weight_decay=5.9708412642481604e-05
+[INFO] Best hyperparameters for Task 3: lr=0.00022869841983697302, weight_decay=5.9708412642481604e-05
+[MODEL INFO] Task 3: ResNet has total 23524424 parameters (23524424 trainable).
+[MODEL INFO] Task 3: Output layer has 8 units.
+[INFO] Task 3 Epoch 0: Train Loss=4.6762, Val Loss=3.7393, Train Acc=0.0000, Val Acc=0.0000
+[INFO] Task 3 Epoch 1: Train Loss=3.0352, Val Loss=2.3450, Train Acc=0.0000, Val Acc=0.0000
+[INFO] Task 3 Epoch 2: Train Loss=1.9305, Val Loss=1.5815, Train Acc=0.0000, Val Acc=0.0011
+[INFO] Task 3 Epoch 3: Train Loss=1.3443, Val Loss=1.2249, Train Acc=0.2831, Val Acc=0.6274
+[INFO] Task 3 Epoch 4: Train Loss=1.0487, Val Loss=1.0460, Train Acc=0.7971, Val Acc=0.6853
+[INFO] Task 3 Epoch 5: Train Loss=0.8825, Val Loss=0.9575, Train Acc=0.8170, Val Acc=0.6442
+[INFO] Task 3 Epoch 6: Train Loss=0.7758, Val Loss=0.8875, Train Acc=0.8251, Val Acc=0.6432
+[INFO] Task 3 Epoch 7: Train Loss=0.7012, Val Loss=0.8512, Train Acc=0.8296, Val Acc=0.6253
+[INFO] Task 3 Epoch 8: Train Loss=0.6424, Val Loss=0.8174, Train Acc=0.8386, Val Acc=0.6284
+[INFO] Task 3 Epoch 9: Train Loss=0.5973, Val Loss=0.7831, Train Acc=0.8386, Val Acc=0.6400
+[INFO] Finished Task 3
+[INFO] Model checkpoint saved to model_checkpoints/baseline/20250322_202558/task3/model_20250322_202558.pth
+[INFO] Evaluating performance for tasks 1 to 4...
+ => Ave accuracy (this task):    64.000
+ => Ave accuracy (tasks so far): 16.000
+[INFO] Continual learning training completed.
+Launching Continual Learning Training Pipeline...

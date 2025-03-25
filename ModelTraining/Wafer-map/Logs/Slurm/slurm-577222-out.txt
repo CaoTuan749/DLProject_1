@@ -1,0 +1,145 @@
+PYTHONPATH=~/tmp/miniconda3/envs/MaProject/bin/python:
+[I 2025-03-24 00:08:32,841] A new study created in memory with name: no-name-621fbd49-550c-4ae6-aa29-4048b2c6ab53
+[I 2025-03-24 00:09:42,990] Trial 0 finished with value: 0.01964364765397829 and parameters: {'lr': 0.00021344740818681404, 'weight_decay': 0.00010758905870195221}. Best is trial 0 with value: 0.01964364765397829.
+[I 2025-03-24 00:11:29,928] A new study created in memory with name: no-name-72a0b3c5-de84-41bc-8a95-b7f646a565db
+[I 2025-03-24 00:14:47,205] Trial 0 finished with value: 0.042473448282053565 and parameters: {'lr': 2.3693079097668345e-05, 'weight_decay': 1.8713813386829436e-05}. Best is trial 0 with value: 0.042473448282053565.
+[INFO] Loaded configuration:
+dataset:
+  path: /home/anhcao/tmp/Dataset/Wafermap-dataset/WM811K.pkl
+experiment:
+  checkpoint_base_dir: model_checkpoints
+  continual_learning: true
+  continual_method: ewc
+  ewc_lambda: 100.0
+  final_epochs: 3
+  final_model_filename: final_model.pth
+  num_epochs: 3
+  num_trials: 1
+  reproducibility: true
+  save_model: true
+  seed: 42
+  suggest:
+    lr:
+      high: 1e-3
+      log: true
+      low: 1e-5
+    weight_decay:
+      high: 1e-2
+      log: true
+      low: 1e-6
+  task_list:
+  - - 0
+    - 1
+  - - 2
+    - 3
+  - - 4
+    - 5
+  - - 6
+    - 7
+  tensorboard_log_dir: Logs
+logging:
+  base_log_dir: ./Logs
+model:
+  lr: 1e-4
+  type: resnet50
+  weight_decay: 1e-4
+
+[INFO] Reproducibility enabled. Seed set to 42
+[INFO] Using device: cuda
+[INFO] Starting continual learning training pipeline with method: ewc
+[INFO] Configuration being used:
+dataset:
+  path: /home/anhcao/tmp/Dataset/Wafermap-dataset/WM811K.pkl
+experiment:
+  checkpoint_base_dir: model_checkpoints
+  continual_learning: true
+  continual_method: ewc
+  ewc_lambda: 100.0
+  final_epochs: 3
+  final_model_filename: final_model.pth
+  num_epochs: 3
+  num_trials: 1
+  reproducibility: true
+  save_model: true
+  seed: 42
+  suggest:
+    lr:
+      high: 1e-3
+      log: true
+      low: 1e-5
+    weight_decay:
+      high: 1e-2
+      log: true
+      low: 1e-6
+  task_list:
+  - - 0
+    - 1
+  - - 2
+    - 3
+  - - 4
+    - 5
+  - - 6
+    - 7
+  tensorboard_log_dir: Logs
+logging:
+  base_log_dir: ./Logs
+model:
+  lr: 1e-4
+  type: resnet50
+  weight_decay: 1e-4
+
+[DEBUG] Creating ResNet50 with lr=0.00021344740818681404, weight_decay=0.00010758905870195221
+[HPO] Trial 0 Fold 0 Epoch 0: Train Loss=0.1318, Val Loss=0.5357, Time=10.8s
+[HPO] Trial 0 Fold 0 Epoch 1: Train Loss=0.0324, Val Loss=0.0415, Time=10.5s
+[HPO] Trial 0 Fold 0 Epoch 2: Train Loss=0.0041, Val Loss=0.0277, Time=10.5s
+[DEBUG] Creating ResNet50 with lr=0.00021344740818681404, weight_decay=0.00010758905870195221
+[HPO] Trial 0 Fold 1 Epoch 0: Train Loss=0.1286, Val Loss=0.0631, Time=10.6s
+[HPO] Trial 0 Fold 1 Epoch 1: Train Loss=0.0189, Val Loss=0.0271, Time=10.6s
+[HPO] Trial 0 Fold 1 Epoch 2: Train Loss=0.0048, Val Loss=0.0116, Time=10.6s
+[HPO] Trial 0: Average Loss=0.0196
+[Debug] Best trial: lr=0.00021344740818681404, weight_decay=0.00010758905870195221
+[INFO] Best hyperparameters for Task 0: lr=0.00021344740818681404, weight_decay=0.00010758905870195221
+[DEBUG] Creating ResNet50 with lr=0.00021344740818681404, weight_decay=0.00010758905870195221
+[MODEL INFO] Task 0: ResNet has total 23512130 parameters (23512130 trainable).
+[MODEL INFO] Task 0: Output layer has 2 units.
+[INFO] Task 0 Epoch 0: Train Loss=0.0663, Val Loss=0.0762, Train Acc=0.9768, Val Acc=0.9724
+[INFO] Task 0 Epoch 1: Train Loss=0.0115, Val Loss=0.0999, Train Acc=0.9972, Val Acc=0.9642
+[INFO] Task 0 Epoch 2: Train Loss=0.0121, Val Loss=0.2312, Train Acc=0.9966, Val Acc=0.9090
+[INFO] Finished Task 0
+[INFO] Model checkpoint saved to model_checkpoints/ewc/20250324_000745/task0/model_20250324_000745.pth
+[INFO] Evaluating performance for tasks 1 to 1...
+ => Ave accuracy (this task):    90.900
+ => Ave accuracy (tasks so far): 90.900
+[DEBUG] Creating ResNet50 with lr=2.3693079097668345e-05, weight_decay=1.8713813386829436e-05
+[HPO] Trial 0 Fold 0 Epoch 0: Train Loss=0.3063, Val Loss=0.0678, Time=30.0s
+[HPO] Trial 0 Fold 0 Epoch 1: Train Loss=0.0400, Val Loss=0.0541, Time=30.3s
+[HPO] Trial 0 Fold 0 Epoch 2: Train Loss=0.0146, Val Loss=0.0353, Time=30.4s
+[DEBUG] Creating ResNet50 with lr=2.3693079097668345e-05, weight_decay=1.8713813386829436e-05
+[HPO] Trial 0 Fold 1 Epoch 0: Train Loss=0.2839, Val Loss=0.0672, Time=30.4s
+[HPO] Trial 0 Fold 1 Epoch 1: Train Loss=0.0296, Val Loss=0.0533, Time=30.5s
+[HPO] Trial 0 Fold 1 Epoch 2: Train Loss=0.0150, Val Loss=0.0496, Time=30.5s
+[HPO] Trial 0: Average Loss=0.0425
+[Debug] Best trial: lr=2.3693079097668345e-05, weight_decay=1.8713813386829436e-05
+[INFO] Best hyperparameters for Task 1: lr=2.3693079097668345e-05, weight_decay=1.8713813386829436e-05
+[MODEL INFO] Task 1: ResNet has total 23516228 parameters (23516228 trainable).
+[MODEL INFO] Task 1: Output layer has 4 units.
+[INFO] Finished Task 1
+Traceback (most recent call last):
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/train_continual.py", line 419, in <module>
+    main()
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/train_continual.py", line 415, in main
+    final_model = continual_training_pipeline(config, model_factory, device)
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/train_continual.py", line 384, in continual_training_pipeline
+    estimate_fisher(
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/train_continual.py", line 154, in estimate_fisher
+    est_fisher_info[param_name] += ewc_gamma * prev_fisher
+RuntimeError: The size of tensor a (4) must match the size of tensor b (2) at non-singleton dimension 0
+Launching Continual Learning Training Pipeline...
+Traceback (most recent call last):
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/main_train.py", line 36, in <module>
+    main()
+  File "/home/anhcao/tmp/GitHub/DLProject_1/ModelTraining/Wafer-map/main_train.py", line 30, in main
+    subprocess.run(["python", "Wafer-map/train_continual.py", "--config", args.config], check=True)
+  File "/home/anhcao/tmp/miniconda3/envs/MaProject/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', 'Wafer-map/train_continual.py', '--config', 'Wafer-map/config.yaml']' returned non-zero exit status 1.
